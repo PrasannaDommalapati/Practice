@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="IEWindowsLocal"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="381.110">
+  <properties />
+  
+  
+            <testcase name="CreateSalesandSupportTaskContact" time="138.953" classname="com.SalesForce.scripts.Activity" />
+                <testcase name="CreateActivityFromContact" time="132.811" classname="com.SalesForce.scripts.Activity" />
+                <testcase name="DifferentiationBetweenActivityAndTask" time="109.346" classname="com.SalesForce.scripts.Activity" />
+      
+</testsuite>

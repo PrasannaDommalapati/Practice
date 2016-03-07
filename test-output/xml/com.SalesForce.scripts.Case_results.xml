@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ChromeWindowsLocal"
+           tests="10"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="819.621">
+  <properties />
+  
+  
+            <testcase name="CaseEscalationRules" time="160.473" classname="com.SalesForce.scripts.Case" />
+                <testcase name="CreateCaseFromAccounts" time="0.000" classname="com.SalesForce.scripts.Case" />
+                <testcase name="CreateCaseFromOpportunity" time="0.000" classname="com.SalesForce.scripts.Case" />
+                <testcase name="CreateCaseFromOpportunity" time="0.000" classname="com.SalesForce.scripts.Case" />
+                <testcase name="TransferCase" time="121.140" classname="com.SalesForce.scripts.Case" />
+                <testcase name="CreateCaseFromOpportunity" time="151.732" classname="com.SalesForce.scripts.Case" />
+                <testcase name="CreateCaseFromContact" time="143.077" classname="com.SalesForce.scripts.Case" />
+                <testcase name="CreateCaseFromOpportunity" time="0.000" classname="com.SalesForce.scripts.Case" />
+                <testcase name="CreateCaseFromAccounts" time="120.795" classname="com.SalesForce.scripts.Case" />
+                <testcase name="TransferCase" time="122.404" classname="com.SalesForce.scripts.Case" />
+      
+</testsuite>

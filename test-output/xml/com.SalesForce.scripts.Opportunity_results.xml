@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ChromeWindowsLocal"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="366.254">
+  <properties />
+  
+  
+            <testcase name="TestCreateNegativeWinBackOpportunity" time="129.613" classname="com.SalesForce.scripts.Opportunity" />
+                <testcase name="TestCreateNegativeWinBackOpportunityWorkflow" time="127.595" classname="com.SalesForce.scripts.Opportunity" />
+                <testcase name="TestCreateLPDOpportunity" time="109.046" classname="com.SalesForce.scripts.Opportunity" />
+      
+</testsuite>

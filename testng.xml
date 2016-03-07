@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE suite SYSTEM 'http://testng.org/testng-1.0.dtd'>
+<suite name='Mumms Automation test suite' parallel='tests' thread-count='15'>
+
+<parameter name='suiteExecuted' value='Regression' />
+<parameter name='executionType' value='Sequential' />
+<listeners>
+	<listener class-name="org.uncommons.reportng.HTMLReporter" />
+	<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	<listener class-name="com.automation.utilities.AssignTestPriorityTransformer" />
+</listeners>
+	<test name="chromeWindowsLocal" preserve-order='false'>
+			<parameter name="browser" value="chrome"></parameter>
+			<parameter name="automationName" value="selenium"></parameter>
+			<parameter name="browserVersion" value="46.0"></parameter>
+			<parameter name="platformName" value="windows 7"></parameter>
+			<parameter name="environment" value="local"></parameter>
+		 <classes>
+			<class name="com.Mumms.scripts.Reports">
+				<methods>
+			<parameter name="userrole" value="AdminUser "></parameter>
+					 <include name="testGenerateVisitReport" />
+				</methods>
+			 </class>
+		 </classes>
+	</test>
+
+</suite>

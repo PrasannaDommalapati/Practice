@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ChromeWindowsLocal"
+           tests="8"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="627.521">
+  <properties />
+  
+  
+            <testcase name="TestCreateNewAccount" time="92.247" classname="com.SalesForce.scripts.Accounts" />
+                <testcase name="TestViewHierarchy" time="67.665" classname="com.SalesForce.scripts.Accounts" />
+                <testcase name="TestViewAndEditMyAccounts" time="83.489" classname="com.SalesForce.scripts.Accounts" />
+                <testcase name="TestViewExistingAccount" time="40.913" classname="com.SalesForce.scripts.Accounts" />
+                <testcase name="TestCreateNewReport" time="123.702" classname="com.SalesForce.scripts.Accounts" />
+                <testcase name="Test360viewofaccount" time="74.874" classname="com.SalesForce.scripts.Accounts" />
+                <testcase name="TestCreateContactForAnAccount" time="89.468" classname="com.SalesForce.scripts.Accounts" />
+                <testcase name="TestViewCompetitorProducts" time="55.163" classname="com.SalesForce.scripts.Accounts" />
+      
+</testsuite>

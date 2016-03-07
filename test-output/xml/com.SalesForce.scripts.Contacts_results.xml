@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ChromeWindowsLocal"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="524.825">
+  <properties />
+  
+  
+            <testcase name="TestCreateContact" time="188.088" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestViewAllContacts" time="54.033" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestLinkContactWithMultipleAccounts" time="138.693" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateDuplicateContact" time="144.011" classname="com.SalesForce.scripts.Contacts" />
+      
+</testsuite>
