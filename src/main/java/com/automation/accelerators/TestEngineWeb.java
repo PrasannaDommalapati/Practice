@@ -86,6 +86,7 @@ public class TestEngineWeb {
 	@Parameters({"executionType","suiteExecuted"})
 	@BeforeSuite(alwaysRun=true)
 	public void beforeSuite(ITestContext ctx,String type,String suite) throws Throwable{
+		System.out.println("The start of the program");
 		executionType=type;
 		suiteExecution=suite;
 		PropertyConfigurator.configure(System.getProperty("user.dir")+"/Log.properties");
