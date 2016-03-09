@@ -247,7 +247,7 @@ public class TestEngineWeb {
 			Thread.sleep(2000);
 			System.out.println("iam in case Chrome");
 			System.setProperty("webdriver.chrome.driver",
-					"/usr/bin/chromedriver");
+					"/opt/selenium/chromedriver-2.20");
 
 			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 			ChromeOptions options = new ChromeOptions();
