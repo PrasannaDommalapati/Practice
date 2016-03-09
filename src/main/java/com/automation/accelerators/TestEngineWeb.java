@@ -88,7 +88,7 @@ public class TestEngineWeb {
 	public void beforeSuite(ITestContext ctx,String type,String suite) throws Throwable{
 		executionType=type;
 		suiteExecution=suite;
-		PropertyConfigurator.configure(System.getProperty("user.dir")+"\\Log.properties");
+		PropertyConfigurator.configure(System.getProperty("user.dir")+"/Log.properties");
 		//ReportStampSupport.calculateSuiteStartTime();
 		//ObjectRepository.storeIdentification();
 		//ObjectRepository.storeValue();
@@ -246,7 +246,7 @@ public class TestEngineWeb {
 			Thread.sleep(2000);
 			System.out.println("iam in case Chrome");
 			System.setProperty("webdriver.chrome.driver",
-					"Drivers\\chromedriver.exe");
+					"/usr/bin/google-chrome");
 
 			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 			ChromeOptions options = new ChromeOptions();

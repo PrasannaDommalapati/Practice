@@ -31,10 +31,10 @@ public class TestUtil {
 		}
 	
 	
-		public static Xls_Reader xls = new Xls_Reader(System.getProperty("user.dir")+"\\TestData\\LoginData.xlsx");
+		public static Xls_Reader xls = new Xls_Reader(System.getProperty("user.dir")+"/TestData/LoginData.xlsx");
 	synchronized public Hashtable<String, String> getData(String testCase, String sheetName){
 		System.out.println("*************");
-		System.out.println("*************"+System.getProperty("user.dir")+"\\TestData\\LoginData.xlsx");
+		System.out.println("*************"+System.getProperty("user.dir")+"/TestData/LoginData.xlsx");
 		// find the test in xls
 		// find number of cols in test
 		// number of rows in test
