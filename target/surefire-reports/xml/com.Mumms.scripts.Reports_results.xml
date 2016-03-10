@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="chromeWindowsLocal"
+<testsuite name="firefoxWindowsLocal"
            tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="79.184">
+           time="78.304">
   <properties />
   
   
-            <testcase name="testGenerateVisitReport" time="79.184" classname="com.Mumms.scripts.Reports" />
+            <testcase name="testGenerateVisitReport" time="78.304" classname="com.Mumms.scripts.Reports" />
       
 </testsuite>

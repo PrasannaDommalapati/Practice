@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Mumms Automation test suite" duration-ms="136115" started-at="2016-03-10T17:53:31Z" finished-at="2016-03-10T17:55:47Z">
+  <suite name="Mumms Automation test suite" duration-ms="146706" started-at="2016-03-10T19:30:19Z" finished-at="2016-03-10T19:32:46Z">
     <groups>
     </groups>
-    <test name="chromeWindowsLocal" duration-ms="136115" started-at="2016-03-10T17:53:31Z" finished-at="2016-03-10T17:55:47Z">
+    <test name="firefoxWindowsLocal" duration-ms="146706" started-at="2016-03-10T19:30:19Z" finished-at="2016-03-10T19:32:46Z">
       <class name="com.Mumms.scripts.Reports">
-        <test-method status="PASS" signature="beforeSuite(org.testng.ITestContext, java.lang.String, java.lang.String)[pri:0, instance:com.Mumms.scripts.Reports@20f5239f]" name="beforeSuite" is-config="true" duration-ms="33" started-at="2016-03-10T11:53:31Z" finished-at="2016-03-10T11:53:31Z">
+        <test-method status="PASS" signature="beforeSuite(org.testng.ITestContext, java.lang.String, java.lang.String)[pri:0, instance:com.Mumms.scripts.Reports@20f5239f]" name="beforeSuite" is-config="true" duration-ms="126" started-at="2016-03-10T13:30:19Z" finished-at="2016-03-10T13:30:19Z">
           <params>
             <param index="0">
               <value>
@@ -28,7 +28,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.Mumms.scripts.Reports@20f5239f]" name="beforeTest" is-config="true" duration-ms="21314" started-at="2016-03-10T11:53:31Z" finished-at="2016-03-10T11:53:53Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.Mumms.scripts.Reports@20f5239f]" name="beforeTest" is-config="true" duration-ms="30179" started-at="2016-03-10T13:30:19Z" finished-at="2016-03-10T13:30:49Z">
           <params>
             <param index="0">
               <value>
@@ -37,12 +37,12 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[46.0]]>
+                <![CDATA[43.0]]>
               </value>
             </param>
             <param index="3">
@@ -59,7 +59,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Mumms.scripts.Reports@20f5239f]" name="beforeMethod" is-config="true" duration-ms="38" started-at="2016-03-10T11:53:53Z" finished-at="2016-03-10T11:53:53Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Mumms.scripts.Reports@20f5239f]" name="beforeMethod" is-config="true" duration-ms="349" started-at="2016-03-10T13:30:50Z" finished-at="2016-03-10T13:30:50Z">
           <params>
             <param index="0">
               <value>
@@ -70,7 +70,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:com.Mumms.scripts.Reports@20f5239f]" name="login" is-config="true" duration-ms="26421" started-at="2016-03-10T11:53:53Z" finished-at="2016-03-10T11:54:19Z">
+        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:com.Mumms.scripts.Reports@20f5239f]" name="login" is-config="true" duration-ms="28287" started-at="2016-03-10T13:30:50Z" finished-at="2016-03-10T13:31:18Z">
           <params>
             <param index="0">
               <value>
@@ -81,7 +81,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="testGenerateVisitReport(java.util.Hashtable)[pri:0, instance:com.Mumms.scripts.Reports@20f5239f]" name="testGenerateVisitReport" duration-ms="79184" started-at="2016-03-10T11:54:19Z" data-provider="getTestDataFor_visitReport" finished-at="2016-03-10T11:55:38Z">
+        <test-method status="PASS" signature="testGenerateVisitReport(java.util.Hashtable)[pri:0, instance:com.Mumms.scripts.Reports@20f5239f]" name="testGenerateVisitReport" duration-ms="78304" started-at="2016-03-10T13:31:18Z" data-provider="getTestDataFor_visitReport" finished-at="2016-03-10T13:32:37Z">
           <params>
             <param index="0">
               <value>
@@ -92,19 +92,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGenerateVisitReport -->
-        <test-method status="PASS" signature="logOut()[pri:0, instance:com.Mumms.scripts.Reports@20f5239f]" name="logOut" is-config="true" duration-ms="8607" started-at="2016-03-10T11:55:38Z" finished-at="2016-03-10T11:55:47Z">
+        <test-method status="PASS" signature="logOut()[pri:0, instance:com.Mumms.scripts.Reports@20f5239f]" name="logOut" is-config="true" duration-ms="9006" started-at="2016-03-10T13:32:37Z" finished-at="2016-03-10T13:32:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOut -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Mumms.scripts.Reports@20f5239f]" name="afterMethod" is-config="true" duration-ms="27" started-at="2016-03-10T11:55:47Z" finished-at="2016-03-10T11:55:47Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Mumms.scripts.Reports@20f5239f]" name="afterMethod" is-config="true" duration-ms="42" started-at="2016-03-10T13:32:46Z" finished-at="2016-03-10T13:32:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest(java.lang.String)[pri:0, instance:com.Mumms.scripts.Reports@20f5239f]" name="afterTest" is-config="true" duration-ms="369" started-at="2016-03-10T11:55:47Z" finished-at="2016-03-10T11:55:47Z">
+        <test-method status="PASS" signature="afterTest(java.lang.String)[pri:0, instance:com.Mumms.scripts.Reports@20f5239f]" name="afterTest" is-config="true" duration-ms="245" started-at="2016-03-10T13:32:46Z" finished-at="2016-03-10T13:32:46Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
           </params>
@@ -112,6 +112,6 @@
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- com.Mumms.scripts.Reports -->
-    </test> <!-- chromeWindowsLocal -->
+    </test> <!-- firefoxWindowsLocal -->
   </suite> <!-- Mumms Automation test suite -->
 </testng-results>

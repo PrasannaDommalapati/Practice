@@ -217,7 +217,14 @@ public class TestEngineWeb {
 		{
 		case "firefox":
 			Thread.sleep(13000);
-			this.WebDriver = new FirefoxDriver();
+			//this.WebDriver = new FirefoxDriver();
+			DesiredCapabilities ffcapabilities = DesiredCapabilities.firefox();
+			//ChromeOptions options = new ChromeOptions();
+			//options.addArguments("test-type");
+			//capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+			String ffurl = "http://10.29.8.11:4445/wd/hub";
+			//DesiredCapabilities capabillities=DesiredCapabilities.chrome();
+			this.WebDriver = new RemoteWebDriver(new URL(ffurl),ffcapabilities);
 			Thread.sleep(5000);
 			break;
 		case "ie":
@@ -260,9 +267,9 @@ public class TestEngineWeb {
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("test-type");
 			capabilities.setCapability(ChromeOptions.CAPABILITY, options);
-			String url = "http://10.29.8.11:4444/wd/hub";
+			String chromeurl = "http://10.29.8.11:4444/wd/hub";
 			DesiredCapabilities capabillities=DesiredCapabilities.chrome();
-			this.WebDriver = new RemoteWebDriver(new URL(url),capabillities);
+			this.WebDriver = new RemoteWebDriver(new URL(chromeurl),capabillities);
 			Thread.sleep(10000);
 			break;
 		case "Safari":
