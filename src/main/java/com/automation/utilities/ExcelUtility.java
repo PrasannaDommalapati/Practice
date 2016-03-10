@@ -18,7 +18,6 @@ public class ExcelUtility {
 	synchronized public static void createXml(String sheetName) throws IOException {
 
 		try {
-			System.out.println("In the createXml method");
 			System.out.println("Test Data path " + xls.path);
 			System.out.println("Test Data filename " + xls.filename);
 

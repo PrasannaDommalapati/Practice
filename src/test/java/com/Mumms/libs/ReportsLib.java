@@ -661,7 +661,7 @@ public class ReportsLib extends MummsLib {
 
 		}
 		new ReportsPage().Reports_Page();
-		click(ReportsPage.hisReportForDischarge, "HIS report for Admission");
+		click(ReportsPage.hisReportForDischarge, "HIS report for Discharge");
 		sleep(10000);
 		if (VerifyElementPresent(ReportsPage.fromDate_day, "Day field from the From_date section", true)
 				&& VerifyElementPresent(ReportsPage.fromDate_month, "Month field from the From_date", true)

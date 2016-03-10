@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Mumms Automation test suite" duration-ms="218096" started-at="2016-03-05T23:13:14Z" finished-at="2016-03-05T23:16:52Z">
+  <suite name="Mumms Automation test suite" duration-ms="157443" started-at="2016-03-10T01:22:26Z" finished-at="2016-03-10T01:25:04Z">
     <groups>
     </groups>
-    <test name="chromeWindowsLocal" duration-ms="218096" started-at="2016-03-05T23:13:14Z" finished-at="2016-03-05T23:16:52Z">
+    <test name="firefoxWindowsLocal" duration-ms="157443" started-at="2016-03-10T01:22:26Z" finished-at="2016-03-10T01:25:04Z">
       <class name="com.Mumms.scripts.Reports">
-        <test-method status="PASS" signature="beforeSuite(org.testng.ITestContext, java.lang.String, java.lang.String)[pri:0, instance:com.Mumms.scripts.Reports@20f5239f]" name="beforeSuite" is-config="true" duration-ms="202" started-at="2016-03-05T17:13:13Z" finished-at="2016-03-05T17:13:14Z">
+        <test-method status="PASS" signature="beforeSuite(org.testng.ITestContext, java.lang.String, java.lang.String)[pri:0, instance:com.Mumms.scripts.Reports@20f5239f]" name="beforeSuite" is-config="true" duration-ms="73" started-at="2016-03-09T19:22:26Z" finished-at="2016-03-09T19:22:26Z">
           <params>
             <param index="0">
               <value>
@@ -28,7 +28,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.Mumms.scripts.Reports@20f5239f]" name="beforeTest" is-config="true" duration-ms="38507" started-at="2016-03-05T17:13:14Z" finished-at="2016-03-05T17:13:52Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.Mumms.scripts.Reports@20f5239f]" name="beforeTest" is-config="true" duration-ms="34794" started-at="2016-03-09T19:22:26Z" finished-at="2016-03-09T19:23:01Z">
           <params>
             <param index="0">
               <value>
@@ -37,12 +37,12 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[46.0]]>
+                <![CDATA[43.0]]>
               </value>
             </param>
             <param index="3">
@@ -59,7 +59,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Mumms.scripts.Reports@20f5239f]" name="beforeMethod" is-config="true" duration-ms="128" started-at="2016-03-05T17:13:52Z" finished-at="2016-03-05T17:13:53Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Mumms.scripts.Reports@20f5239f]" name="beforeMethod" is-config="true" duration-ms="73" started-at="2016-03-09T19:23:02Z" finished-at="2016-03-09T19:23:02Z">
           <params>
             <param index="0">
               <value>
@@ -70,7 +70,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:com.Mumms.scripts.Reports@20f5239f]" name="login" is-config="true" duration-ms="29492" started-at="2016-03-05T17:13:53Z" finished-at="2016-03-05T17:14:22Z">
+        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:com.Mumms.scripts.Reports@20f5239f]" name="login" is-config="true" duration-ms="45076" started-at="2016-03-09T19:23:02Z" finished-at="2016-03-09T19:23:47Z">
           <params>
             <param index="0">
               <value>
@@ -81,7 +81,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="testGenerateVisitReport(java.util.Hashtable)[pri:0, instance:com.Mumms.scripts.Reports@20f5239f]" name="testGenerateVisitReport" duration-ms="136569" started-at="2016-03-05T17:14:22Z" data-provider="getTestDataFor_visitReport" finished-at="2016-03-05T17:16:39Z">
+        <test-method status="PASS" signature="testGenerateVisitReport(java.util.Hashtable)[pri:0, instance:com.Mumms.scripts.Reports@20f5239f]" name="testGenerateVisitReport" duration-ms="65897" started-at="2016-03-09T19:23:47Z" data-provider="getTestDataFor_visitReport" finished-at="2016-03-09T19:24:53Z">
           <params>
             <param index="0">
               <value>
@@ -92,94 +92,26 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGenerateVisitReport -->
-        <test-method status="FAIL" signature="logOut()[pri:0, instance:com.Mumms.scripts.Reports@20f5239f]" name="logOut" is-config="true" duration-ms="0" started-at="2016-03-05T17:16:39Z" finished-at="2016-03-05T17:16:39Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[chrome not reachable
-  (Session info: chrome=48.0.2564.116)
-  (Driver info: chromedriver=2.20.353145 (343b531d31eeb933ec778dbcf7081628a1396067),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 2.01 seconds
-Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
-System info: host: 'HW1611', ip: '10.0.1.129', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\IN02107\AppData\Local\Temp\scoped_dir4280_4464}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=48.0.2564.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 8456977ef9b60d5175e5dcd713d7d9d6]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=48.0.2564.116)
-  (Driver info: chromedriver=2.20.353145 (343b531d31eeb933ec778dbcf7081628a1396067),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 2.01 seconds
-Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
-System info: host: 'HW1611', ip: '10.0.1.129', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\IN02107\AppData\Local\Temp\scoped_dir4280_4464}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=48.0.2564.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 8456977ef9b60d5175e5dcd713d7d9d6
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:335)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:103)
-	at com.sun.proxy.$Proxy12.getScreenshotAs(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:270)
-	at com.automation.report.CReporter.screenShot(CReporter.java:1518)
-	at com.automation.report.CReporter.failureReport(CReporter.java:1421)
-	at com.automation.accelerators.ActionEngine.click(ActionEngine.java:330)
-	at com.Mumms.libs.MummsLib.doLogout(MummsLib.java:76)
-	at com.Mumms.scripts.Reports.logOut(Reports.java:50)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:708)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:773)
-	at org.testng.TestRunner.run(TestRunner.java:623)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method status="PASS" signature="logOut()[pri:0, instance:com.Mumms.scripts.Reports@20f5239f]" name="logOut" is-config="true" duration-ms="8428" started-at="2016-03-09T19:24:53Z" finished-at="2016-03-09T19:25:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOut -->
-        <test-method status="PASS" signature="afterTest(java.lang.String)[pri:0, instance:com.Mumms.scripts.Reports@20f5239f]" name="afterTest" is-config="true" duration-ms="3999" started-at="2016-03-05T17:16:48Z" finished-at="2016-03-05T17:16:52Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Mumms.scripts.Reports@20f5239f]" name="afterMethod" is-config="true" duration-ms="33" started-at="2016-03-09T19:25:01Z" finished-at="2016-03-09T19:25:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest(java.lang.String)[pri:0, instance:com.Mumms.scripts.Reports@20f5239f]" name="afterTest" is-config="true" duration-ms="2801" started-at="2016-03-09T19:25:01Z" finished-at="2016-03-09T19:25:04Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:com.Mumms.scripts.Reports@20f5239f]" name="afterMethod" is-config="true" duration-ms="0" started-at="2016-03-05T17:16:48Z" finished-at="2016-03-05T17:16:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
       </class> <!-- com.Mumms.scripts.Reports -->
-    </test> <!-- chromeWindowsLocal -->
+    </test> <!-- firefoxWindowsLocal -->
   </suite> <!-- Mumms Automation test suite -->
 </testng-results>

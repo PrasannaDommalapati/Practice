@@ -86,7 +86,6 @@ public class TestEngineWeb {
 	@Parameters({"executionType","suiteExecuted"})
 	@BeforeSuite(alwaysRun=true)
 	public void beforeSuite(ITestContext ctx,String type,String suite) throws Throwable{
-		System.out.println("The start of the program");
 		executionType=type;
 		suiteExecution=suite;
 		PropertyConfigurator.configure(System.getProperty("user.dir")+"/Log.properties");
@@ -247,7 +246,7 @@ public class TestEngineWeb {
 			Thread.sleep(2000);
 			System.out.println("iam in case Chrome");
 			System.setProperty("webdriver.chrome.driver",
-					"/opt/selenium/chromedriver-2.20");
+					"/usr/bin/google-chrome");
 
 			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 			ChromeOptions options = new ChromeOptions();

@@ -149,10 +149,10 @@
     &lt;listener class-name=&quot;org.uncommons.reportng.JUnitXMLReporter&quot;/&gt;
     &lt;listener class-name=&quot;com.automation.utilities.AssignTestPriorityTransformer&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test name=&quot;chromeWindowsLocal&quot; preserve-order=&quot;false&quot;&gt;
+  &lt;test name=&quot;firefoxWindowsLocal&quot; preserve-order=&quot;false&quot;&gt;
     &lt;parameter name=&quot;environment&quot; value=&quot;local&quot;/&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
-    &lt;parameter name=&quot;browserVersion&quot; value=&quot;46.0&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;parameter name=&quot;browserVersion&quot; value=&quot;43.0&quot;/&gt;
     &lt;parameter name=&quot;automationName&quot; value=&quot;selenium&quot;/&gt;
     &lt;parameter name=&quot;platformName&quot; value=&quot;windows 7&quot;/&gt;
     &lt;classes&gt;
@@ -163,7 +163,7 @@
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- com.Mumms.scripts.Reports --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- chromeWindowsLocal --&gt;
+  &lt;/test&gt; &lt;!-- firefoxWindowsLocal --&gt;
 &lt;/suite&gt; &lt;!-- Mumms Automation test suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -175,7 +175,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">chromeWindowsLocal (1 class)</span>
+                <span class="test-name">firefoxWindowsLocal (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -205,12 +205,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testGenerateVisitReport')
 data.setCell(0, 2, 'com.Mumms.scripts.Reports')
-data.setCell(0, 3, 136569);
+data.setCell(0, 3, 65897);
 window.suiteTableData['Mumms_Automation_test_suite']= { tableData: data, tableDiv: 'times-div-Mumms_Automation_test_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Mumms_Automation_test_suite">
               </div> <!-- times-div-Mumms_Automation_test_suite -->
             </div> <!-- times-div -->
@@ -225,9 +225,22 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Mumms_Automation_test_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.Mumms.scripts.Reports</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testGeneratePaymentsAndAdjustmentsReport</span>
+                <br/>
+                <span class="ignored-method-name">testGenerateHISForAdmissionReport</span>
+                <br/>
+                <span class="ignored-method-name">testGenerateMonthlyRevenueReport</span>
+                <br/>
+                <span class="ignored-method-name">testGenerateMonthEndARReconciliationReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Mumms_Automation_test_suite" class="panel">
@@ -242,30 +255,32 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
-                <span class="method-name">beforeTest(selenium, chrome, 46.0, local, windows 7)</span>
-                <span class="method-start">234 ms</span>
+                <span class="method-name">beforeTest(selenium, firefox, 43.0, local, windows 7)</span>
+                <span class="method-start">95 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public void com.Mumms.scripts.Reports.testGenerateVisitReport(java.util.Hashtable) throws java.lang....)</span>
-                <span class="method-start">39069 ms</span>
+                <span class="method-start">35219 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">login(AdminUser )</span>
-                <span class="method-start">39197 ms</span>
+                <span class="method-start">35292 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testGenerateVisitReport({toDate_Month=2.0, ReportingPeriod=02/10/16 - 03/02/16, Program=Palliative Care, fromDate_Month=1.0,...)</span>
-                <span class="method-start">68689 ms</span>
+                <span class="method-start">80368 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">logOut</span>
-                <span class="method-start">205258 ms</span>
+                <span class="method-start">146265 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">154693 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
-                <span class="method-name">afterTest(chrome)</span>
-                <span class="method-start">214324 ms</span>
+                <span class="method-name">afterTest(firefox)</span>
+                <span class="method-start">154727 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

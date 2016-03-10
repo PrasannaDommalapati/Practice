@@ -27,8 +27,6 @@
           <include name="beforeSuite"/>
           <include name="testGenerateVisitReport"/>
           <include name="beforeTest"/>
-          <include name="login"/>
-          <include name="beforeMethod"/>
         </methods>
       </class> <!-- com.Mumms.scripts.Reports -->
     </classes>

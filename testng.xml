@@ -9,10 +9,10 @@
 	<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
 	<listener class-name="com.automation.utilities.AssignTestPriorityTransformer" />
 </listeners>
-	<test name="chromeWindowsLocal" preserve-order='false'>
-			<parameter name="browser" value="chrome"></parameter>
+	<test name="firefoxWindowsLocal" preserve-order='false'>
+			<parameter name="browser" value="firefox"></parameter>
 			<parameter name="automationName" value="selenium"></parameter>
-			<parameter name="browserVersion" value="46.0"></parameter>
+			<parameter name="browserVersion" value="43.0"></parameter>
 			<parameter name="platformName" value="windows 7"></parameter>
 			<parameter name="environment" value="local"></parameter>
 		 <classes>
