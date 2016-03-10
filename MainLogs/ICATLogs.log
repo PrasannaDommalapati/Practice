@@ -36720,3 +36720,209 @@ Session ID: a717f369-adf5-4958-bc99-3be5b0a5f1b4
 10 Mar 10:05:10,084 INFO - test method is present in package_testname[1] : testGenerateVisitReport- 
 10 Mar 10:05:10,084 INFO - value against package_testname is : PASS 
 10 Mar 10:05:10,092 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:12:27,437 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:12:27,440 INFO - key = clientName 
+10 Mar 10:12:27,441 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:12:27,441 INFO - key = deviceName 
+10 Mar 10:12:27,442 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:12:27,443 INFO - key = iterationMode 
+10 Mar 10:12:27,444 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:12:27,444 INFO - key = suiteName 
+10 Mar 10:12:27,445 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:12:27,446 INFO - key = onErrorAction 
+10 Mar 10:12:27,447 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:12:27,448 INFO - key = singleThreadExecution 
+10 Mar 10:12:27,449 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:12:27,450 INFO - key = AUT 
+10 Mar 10:12:27,451 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:12:27,451 INFO - key = baseUrl 
+10 Mar 10:12:27,452 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:12:27,453 INFO - key = baseUrl2 
+10 Mar 10:12:27,454 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:12:27,454 INFO - key = Waittime 
+10 Mar 10:12:27,456 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:12:27,456 INFO - key = browserName 
+10 Mar 10:12:27,457 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:12:27,458 INFO - key = version 
+10 Mar 10:12:27,459 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:12:27,459 INFO - key = platform 
+10 Mar 10:12:27,461 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:12:27,461 INFO - key = reportFormat 
+10 Mar 10:12:27,462 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:12:27,462 INFO - key = locationResult 
+10 Mar 10:12:27,463 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:12:27,464 INFO - key = folderScreenShot 
+10 Mar 10:12:27,465 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:12:27,465 INFO - key = locationClientLogo 
+10 Mar 10:12:27,466 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:12:27,466 INFO - key = locationCompanyLogo 
+10 Mar 10:12:27,467 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:12:27,467 INFO - key = locationFailedLogo 
+10 Mar 10:12:27,468 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:12:27,468 INFO - key = locationMinusLogo 
+10 Mar 10:12:27,469 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:12:27,469 INFO - key = locationPassedLogo 
+10 Mar 10:12:27,470 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:12:27,470 INFO - key = locationPlusLogo 
+10 Mar 10:12:27,471 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:12:27,471 INFO - key = locationWarningLogo 
+10 Mar 10:12:27,473 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:12:27,473 INFO - key = onSuccessScreenshot 
+10 Mar 10:12:27,474 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:12:27,474 INFO - key = userName 
+10 Mar 10:12:27,476 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:12:27,476 INFO - key = accessKey 
+10 Mar 10:12:27,477 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:12:27,478 INFO - key = cloudImplicitWait 
+10 Mar 10:12:27,479 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:12:27,479 INFO - key = cloudPageLoadTimeOut 
+10 Mar 10:12:27,481 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:12:27,481 INFO - key = locationCssFolder 
+10 Mar 10:12:27,482 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:12:27,482 INFO - key = locationJsFolder 
+10 Mar 10:12:27,483 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:12:27,484 INFO - key = locationImagesFolder 
+10 Mar 10:12:52,347 INFO - New BrowserContext Instance Was Created And Placed In Map : BrowserContext.mapBrowserContext 
+10 Mar 10:12:52,347 INFO - <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+10 Mar 10:12:52,347 INFO - BrowserContext Info Being returned: <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+10 Mar 10:12:52,348 INFO - <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+10 Mar 10:12:52,349 INFO - BrowserContext Info Being returned: <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+10 Mar 10:12:52,349 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:12:52,350 INFO - instance member browserContext was set to :  
+10 Mar 10:12:52,350 INFO - <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+10 Mar 10:12:52,350 INFO - <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+10 Mar 10:12:52,351 INFO - Instance Of CReporter Created 
+10 Mar 10:12:52,354 INFO - reporter was placed into CReporter.mapBrowserContextReporter 
+10 Mar 10:12:58,801 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:13:00,952 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:13:05,467 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:13:11,091 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:13:33,192 INFO - Unable to locate element: {"method":"xpath","selector":"//table[@id='gwt-debug-reports-module-button']"}
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'HW1611', ip: '10.33.0.176', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=44.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 6b723470-0777-406f-9ee8-c2d696afa79d
+*** Element info: {Using=xpath, value=//table[@id='gwt-debug-reports-module-button']} 
+10 Mar 10:13:33,193 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:13:33,280 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:13:50,429 INFO - Unable to locate element: {"method":"xpath","selector":"//div[text()='Visit Report']"}
+Command duration or timeout: 10.08 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'HW1611', ip: '10.33.0.176', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=44.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 6b723470-0777-406f-9ee8-c2d696afa79d
+*** Element info: {Using=xpath, value=//div[text()='Visit Report']} 
+10 Mar 10:13:50,430 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:13:50,507 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:14:10,559 INFO - Unable to locate element: {"method":"xpath","selector":"//div[@id='gwt-debug-p_from_date']//select[@class='day hb-date-dropdown-novalue']"}
+Command duration or timeout: 10.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'HW1611', ip: '10.33.0.176', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=44.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 6b723470-0777-406f-9ee8-c2d696afa79d
+*** Element info: {Using=xpath, value=//div[@id='gwt-debug-p_from_date']//select[@class='day hb-date-dropdown-novalue']} 
+10 Mar 10:14:20,636 INFO - Unable to locate element: {"method":"xpath","selector":"//div[@id='gwt-debug-p_to_date']//select[@class='day hb-date-dropdown-novalue']"}
+Command duration or timeout: 10.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'HW1611', ip: '10.33.0.176', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=44.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 6b723470-0777-406f-9ee8-c2d696afa79d
+*** Element info: {Using=xpath, value=//div[@id='gwt-debug-p_to_date']//select[@class='day hb-date-dropdown-novalue']} 
+10 Mar 10:14:30,662 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:14:30,664 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:14:43,726 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:14:43,726 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:14:58,876 INFO - Unable to locate element: {"method":"xpath","selector":"//button[text()='GENERATE REPORT']"}
+Command duration or timeout: 10.12 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'HW1611', ip: '10.33.0.176', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=44.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 6b723470-0777-406f-9ee8-c2d696afa79d
+*** Element info: {Using=xpath, value=//button[text()='GENERATE REPORT']} 
+10 Mar 10:14:58,877 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:14:58,972 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:15:15,032 INFO - Unable to locate element: {"method":"xpath","selector":"//div[@class='hb-float-title']"}
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'HW1611', ip: '10.33.0.176', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=44.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 6b723470-0777-406f-9ee8-c2d696afa79d
+*** Element info: {Using=xpath, value=//div[@class='hb-float-title']} 
+10 Mar 10:15:15,034 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:15:15,129 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:15:15,146 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:15:15,164 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:15:15,164 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:15:29,275 INFO - Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'REPORTING PERIOD')]"}
+Command duration or timeout: 10.09 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'HW1611', ip: '10.33.0.176', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=44.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 6b723470-0777-406f-9ee8-c2d696afa79d
+*** Element info: {Using=xpath, value=//span[contains(text(),'REPORTING PERIOD')]} 
+10 Mar 10:15:29,276 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:15:29,362 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:15:29,379 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:15:29,397 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:15:29,398 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:15:43,440 INFO - Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'VISIT TYPE:')]"}
+Command duration or timeout: 10.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'HW1611', ip: '10.33.0.176', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=44.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 6b723470-0777-406f-9ee8-c2d696afa79d
+*** Element info: {Using=xpath, value=//span[contains(text(),'VISIT TYPE:')]} 
+10 Mar 10:15:43,441 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:15:43,521 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:15:43,561 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:15:43,578 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:15:43,579 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:15:57,777 INFO - Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'PROGRAM')]"}
+Command duration or timeout: 10.12 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'HW1611', ip: '10.33.0.176', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=44.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 6b723470-0777-406f-9ee8-c2d696afa79d
+*** Element info: {Using=xpath, value=//span[contains(text(),'PROGRAM')]} 
+10 Mar 10:15:57,778 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:15:57,866 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:15:57,886 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:15:57,905 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:15:57,905 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:16:13,052 INFO - Unable to locate element: {"method":"xpath","selector":"//div[@class='hb-top-toolbar']/table/tbody/tr/td[6]/img"}
+Command duration or timeout: 10.12 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'HW1611', ip: '10.33.0.176', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=44.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 6b723470-0777-406f-9ee8-c2d696afa79d
+*** Element info: {Using=xpath, value=//div[@class='hb-top-toolbar']/table/tbody/tr/td[6]/img} 
+10 Mar 10:16:13,052 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:16:13,134 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:16:13,151 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:16:13,593 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:16:13,596 INFO - Key of mapEntry1 : com.Mumms.scripts:testGenerateVisitReport- 
+10 Mar 10:16:13,596 INFO - package is present in package_testname[0] : com.Mumms.scripts 
+10 Mar 10:16:13,596 INFO - test method is present in package_testname[1] : testGenerateVisitReport- 
+10 Mar 10:16:13,597 INFO - value against package_testname is : PASS 
+10 Mar 10:16:13,605 INFO - resultDir = results\FF-windows 7-local 
