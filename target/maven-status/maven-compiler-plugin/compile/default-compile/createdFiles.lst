@@ -7,6 +7,7 @@ com\automation\support\ExcelReader.class
 com\automation\utilities\Zip.class
 com\automation\report\CReporter.class
 com\automation\report\TestResult.class
+com\automation\utilities\NewExcelToXML.class
 com\automation\utilities\ReadMail$1.class
 com\automation\accelerators\ActionEngine.class
 com\automation\accelerators\AppiumActionEngine.class
