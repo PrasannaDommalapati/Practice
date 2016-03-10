@@ -36438,3 +36438,285 @@ Session ID: 8456977ef9b60d5175e5dcd713d7d9d6
 10 Mar 09:40:28,956 INFO - key = locationJsFolder 
 10 Mar 09:40:28,956 INFO - fileName = resources/gallopReporter.properties 
 10 Mar 09:40:28,956 INFO - key = locationImagesFolder 
+10 Mar 09:51:01,923 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:51:01,941 INFO - key = clientName 
+10 Mar 09:51:01,949 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:51:01,949 INFO - key = deviceName 
+10 Mar 09:51:01,951 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:51:01,951 INFO - key = iterationMode 
+10 Mar 09:51:01,954 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:51:01,954 INFO - key = suiteName 
+10 Mar 09:51:01,955 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:51:01,957 INFO - key = onErrorAction 
+10 Mar 09:51:01,958 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:51:01,959 INFO - key = singleThreadExecution 
+10 Mar 09:51:01,964 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:51:01,964 INFO - key = AUT 
+10 Mar 09:51:01,965 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:51:01,966 INFO - key = baseUrl 
+10 Mar 09:51:01,966 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:51:01,967 INFO - key = baseUrl2 
+10 Mar 09:51:01,968 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:51:01,968 INFO - key = Waittime 
+10 Mar 09:51:01,970 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:51:01,971 INFO - key = browserName 
+10 Mar 09:51:01,972 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:51:01,972 INFO - key = version 
+10 Mar 09:51:01,974 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:51:01,974 INFO - key = platform 
+10 Mar 09:51:01,975 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:51:01,975 INFO - key = reportFormat 
+10 Mar 09:51:01,976 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:51:01,976 INFO - key = locationResult 
+10 Mar 09:51:01,977 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:51:01,977 INFO - key = folderScreenShot 
+10 Mar 09:51:01,978 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:51:01,979 INFO - key = locationClientLogo 
+10 Mar 09:51:01,980 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:51:01,980 INFO - key = locationCompanyLogo 
+10 Mar 09:51:01,981 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:51:01,981 INFO - key = locationFailedLogo 
+10 Mar 09:51:01,982 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:51:01,982 INFO - key = locationMinusLogo 
+10 Mar 09:51:01,983 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:51:01,983 INFO - key = locationPassedLogo 
+10 Mar 09:51:01,984 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:51:01,984 INFO - key = locationPlusLogo 
+10 Mar 09:51:01,985 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:51:01,985 INFO - key = locationWarningLogo 
+10 Mar 09:51:01,986 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:51:01,986 INFO - key = onSuccessScreenshot 
+10 Mar 09:51:01,987 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:51:01,987 INFO - key = userName 
+10 Mar 09:51:01,988 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:51:01,989 INFO - key = accessKey 
+10 Mar 09:51:01,989 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:51:01,990 INFO - key = cloudImplicitWait 
+10 Mar 09:51:01,990 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:51:01,991 INFO - key = cloudPageLoadTimeOut 
+10 Mar 09:51:01,991 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:51:01,992 INFO - key = locationCssFolder 
+10 Mar 09:51:01,992 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:51:01,993 INFO - key = locationJsFolder 
+10 Mar 09:51:01,994 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:51:01,994 INFO - key = locationImagesFolder 
+10 Mar 09:56:54,432 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:56:54,435 INFO - key = clientName 
+10 Mar 09:56:54,436 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:56:54,437 INFO - key = deviceName 
+10 Mar 09:56:54,438 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:56:54,439 INFO - key = iterationMode 
+10 Mar 09:56:54,440 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:56:54,441 INFO - key = suiteName 
+10 Mar 09:56:54,442 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:56:54,442 INFO - key = onErrorAction 
+10 Mar 09:56:54,444 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:56:54,444 INFO - key = singleThreadExecution 
+10 Mar 09:56:54,445 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:56:54,446 INFO - key = AUT 
+10 Mar 09:56:54,448 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:56:54,448 INFO - key = baseUrl 
+10 Mar 09:56:54,449 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:56:54,450 INFO - key = baseUrl2 
+10 Mar 09:56:54,451 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:56:54,451 INFO - key = Waittime 
+10 Mar 09:56:54,453 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:56:54,453 INFO - key = browserName 
+10 Mar 09:56:54,454 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:56:54,455 INFO - key = version 
+10 Mar 09:56:54,457 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:56:54,457 INFO - key = platform 
+10 Mar 09:56:54,460 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:56:54,461 INFO - key = reportFormat 
+10 Mar 09:56:54,462 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:56:54,462 INFO - key = locationResult 
+10 Mar 09:56:54,464 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:56:54,465 INFO - key = folderScreenShot 
+10 Mar 09:56:54,466 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:56:54,468 INFO - key = locationClientLogo 
+10 Mar 09:56:54,470 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:56:54,470 INFO - key = locationCompanyLogo 
+10 Mar 09:56:54,472 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:56:54,472 INFO - key = locationFailedLogo 
+10 Mar 09:56:54,473 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:56:54,473 INFO - key = locationMinusLogo 
+10 Mar 09:56:54,474 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:56:54,474 INFO - key = locationPassedLogo 
+10 Mar 09:56:54,475 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:56:54,476 INFO - key = locationPlusLogo 
+10 Mar 09:56:54,476 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:56:54,477 INFO - key = locationWarningLogo 
+10 Mar 09:56:54,477 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:56:54,478 INFO - key = onSuccessScreenshot 
+10 Mar 09:56:54,478 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:56:54,479 INFO - key = userName 
+10 Mar 09:56:54,479 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:56:54,480 INFO - key = accessKey 
+10 Mar 09:56:54,481 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:56:54,481 INFO - key = cloudImplicitWait 
+10 Mar 09:56:54,482 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:56:54,483 INFO - key = cloudPageLoadTimeOut 
+10 Mar 09:56:54,484 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:56:54,485 INFO - key = locationCssFolder 
+10 Mar 09:56:54,486 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:56:54,486 INFO - key = locationJsFolder 
+10 Mar 09:56:54,487 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 09:56:54,488 INFO - key = locationImagesFolder 
+10 Mar 10:01:38,048 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:01:38,049 INFO - key = clientName 
+10 Mar 10:01:38,051 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:01:38,051 INFO - key = deviceName 
+10 Mar 10:01:38,052 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:01:38,053 INFO - key = iterationMode 
+10 Mar 10:01:38,054 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:01:38,054 INFO - key = suiteName 
+10 Mar 10:01:38,055 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:01:38,056 INFO - key = onErrorAction 
+10 Mar 10:01:38,057 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:01:38,058 INFO - key = singleThreadExecution 
+10 Mar 10:01:38,059 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:01:38,059 INFO - key = AUT 
+10 Mar 10:01:38,061 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:01:38,061 INFO - key = baseUrl 
+10 Mar 10:01:38,062 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:01:38,063 INFO - key = baseUrl2 
+10 Mar 10:01:38,064 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:01:38,065 INFO - key = Waittime 
+10 Mar 10:01:38,066 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:01:38,067 INFO - key = browserName 
+10 Mar 10:01:38,068 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:01:38,068 INFO - key = version 
+10 Mar 10:01:38,070 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:01:38,070 INFO - key = platform 
+10 Mar 10:01:38,072 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:01:38,072 INFO - key = reportFormat 
+10 Mar 10:01:38,073 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:01:38,074 INFO - key = locationResult 
+10 Mar 10:01:38,075 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:01:38,076 INFO - key = folderScreenShot 
+10 Mar 10:01:38,077 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:01:38,078 INFO - key = locationClientLogo 
+10 Mar 10:01:38,079 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:01:38,079 INFO - key = locationCompanyLogo 
+10 Mar 10:01:38,080 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:01:38,080 INFO - key = locationFailedLogo 
+10 Mar 10:01:38,082 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:01:38,082 INFO - key = locationMinusLogo 
+10 Mar 10:01:38,083 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:01:38,084 INFO - key = locationPassedLogo 
+10 Mar 10:01:38,085 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:01:38,086 INFO - key = locationPlusLogo 
+10 Mar 10:01:38,087 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:01:38,087 INFO - key = locationWarningLogo 
+10 Mar 10:01:38,088 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:01:38,088 INFO - key = onSuccessScreenshot 
+10 Mar 10:01:38,089 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:01:38,090 INFO - key = userName 
+10 Mar 10:01:38,091 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:01:38,091 INFO - key = accessKey 
+10 Mar 10:01:38,092 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:01:38,092 INFO - key = cloudImplicitWait 
+10 Mar 10:01:38,094 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:01:38,094 INFO - key = cloudPageLoadTimeOut 
+10 Mar 10:01:38,095 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:01:38,096 INFO - key = locationCssFolder 
+10 Mar 10:01:38,097 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:01:38,097 INFO - key = locationJsFolder 
+10 Mar 10:01:38,099 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 10:01:38,099 INFO - key = locationImagesFolder 
+10 Mar 10:02:05,096 INFO - New BrowserContext Instance Was Created And Placed In Map : BrowserContext.mapBrowserContext 
+10 Mar 10:02:05,098 INFO - <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+10 Mar 10:02:05,098 INFO - BrowserContext Info Being returned: <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+10 Mar 10:02:05,102 INFO - <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+10 Mar 10:02:05,103 INFO - BrowserContext Info Being returned: <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+10 Mar 10:02:05,104 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:02:05,105 INFO - instance member browserContext was set to :  
+10 Mar 10:02:05,107 INFO - <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+10 Mar 10:02:05,106 INFO - <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+10 Mar 10:02:05,108 INFO - Instance Of CReporter Created 
+10 Mar 10:02:05,108 INFO - reporter was placed into CReporter.mapBrowserContextReporter 
+10 Mar 10:02:12,461 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:02:14,596 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:02:18,954 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:03:06,727 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:03:24,581 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:03:35,078 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:03:45,225 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:03:45,328 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:03:45,434 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:03:45,870 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:03:46,316 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:03:46,697 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:03:46,814 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:03:46,971 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:03:47,072 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:03:47,624 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:03:47,982 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:03:48,395 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:03:48,718 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:03:52,051 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:04:00,290 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:04:16,385 INFO - Unable to locate element: {"method":"xpath","selector":"//div[@class='hb-float-title']"}
+Command duration or timeout: 10.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'HW1611', ip: '10.33.0.176', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=44.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a717f369-adf5-4958-bc99-3be5b0a5f1b4
+*** Element info: {Using=xpath, value=//div[@class='hb-float-title']} 
+10 Mar 10:04:16,385 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:04:16,554 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:04:16,571 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:04:16,586 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:04:16,586 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:04:30,631 INFO - Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'REPORTING PERIOD')]"}
+Command duration or timeout: 10.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'HW1611', ip: '10.33.0.176', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=44.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a717f369-adf5-4958-bc99-3be5b0a5f1b4
+*** Element info: {Using=xpath, value=//span[contains(text(),'REPORTING PERIOD')]} 
+10 Mar 10:04:30,631 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:04:30,767 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:04:30,783 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:04:30,799 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:04:30,799 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:04:44,904 INFO - Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'VISIT TYPE:')]"}
+Command duration or timeout: 10.09 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'HW1611', ip: '10.33.0.176', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=44.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a717f369-adf5-4958-bc99-3be5b0a5f1b4
+*** Element info: {Using=xpath, value=//span[contains(text(),'VISIT TYPE:')]} 
+10 Mar 10:04:44,905 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:04:45,143 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:04:45,170 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:04:45,197 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:04:45,197 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:04:59,235 INFO - Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'PROGRAM')]"}
+Command duration or timeout: 10.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'HW1611', ip: '10.33.0.176', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=44.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a717f369-adf5-4958-bc99-3be5b0a5f1b4
+*** Element info: {Using=xpath, value=//span[contains(text(),'PROGRAM')]} 
+10 Mar 10:04:59,235 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:04:59,367 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:04:59,385 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:04:59,402 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:04:59,402 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:05:08,097 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:05:08,144 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:05:10,081 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 10:05:10,084 INFO - Key of mapEntry1 : com.Mumms.scripts:testGenerateVisitReport- 
+10 Mar 10:05:10,084 INFO - package is present in package_testname[0] : com.Mumms.scripts 
+10 Mar 10:05:10,084 INFO - test method is present in package_testname[1] : testGenerateVisitReport- 
+10 Mar 10:05:10,084 INFO - value against package_testname is : PASS 
+10 Mar 10:05:10,092 INFO - resultDir = results\FF-windows 7-local 
