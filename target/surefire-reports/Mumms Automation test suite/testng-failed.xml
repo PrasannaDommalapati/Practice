@@ -4,8 +4,8 @@
   <parameter name="environment" value="local"/>
   <parameter name="suiteExecuted" value="Regression"/>
   <parameter name="executionType" value="Sequential"/>
-  <parameter name="browser" value="chrome"/>
-  <parameter name="browserVersion" value="46.0"/>
+  <parameter name="browser" value="firefox"/>
+  <parameter name="browserVersion" value="43.0"/>
   <parameter name="automationName" value="selenium"/>
   <parameter name="platformName" value="windows 7"/>
   <listeners>
@@ -13,10 +13,10 @@
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
     <listener class-name="com.automation.utilities.AssignTestPriorityTransformer"/>
   </listeners>
-  <test name="chromeWindowsLocal(failed)" parallel="tests">
+  <test name="firefoxWindowsLocal(failed)" parallel="tests">
     <parameter name="environment" value="local"/>
-    <parameter name="browser" value="chrome"/>
-    <parameter name="browserVersion" value="46.0"/>
+    <parameter name="browser" value="firefox"/>
+    <parameter name="browserVersion" value="43.0"/>
     <parameter name="automationName" value="selenium"/>
     <parameter name="platformName" value="windows 7"/>
     <classes>
@@ -30,5 +30,5 @@
         </methods>
       </class> <!-- com.Mumms.scripts.Reports -->
     </classes>
-  </test> <!-- chromeWindowsLocal(failed) -->
+  </test> <!-- firefoxWindowsLocal(failed) -->
 </suite> <!-- Failed suite [Mumms Automation test suite] -->

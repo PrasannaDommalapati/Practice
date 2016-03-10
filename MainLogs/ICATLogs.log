@@ -36926,3 +36926,208 @@ Session ID: 6b723470-0777-406f-9ee8-c2d696afa79d
 10 Mar 10:16:13,596 INFO - test method is present in package_testname[1] : testGenerateVisitReport- 
 10 Mar 10:16:13,597 INFO - value against package_testname is : PASS 
 10 Mar 10:16:13,605 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 11:51:19,804 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:51:19,813 INFO - key = clientName 
+10 Mar 11:51:19,825 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:51:19,826 INFO - key = deviceName 
+10 Mar 11:51:19,828 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:51:19,828 INFO - key = iterationMode 
+10 Mar 11:51:19,830 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:51:19,830 INFO - key = suiteName 
+10 Mar 11:51:19,832 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:51:19,832 INFO - key = onErrorAction 
+10 Mar 11:51:19,836 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:51:19,836 INFO - key = singleThreadExecution 
+10 Mar 11:51:19,838 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:51:19,839 INFO - key = AUT 
+10 Mar 11:51:19,841 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:51:19,841 INFO - key = baseUrl 
+10 Mar 11:51:19,843 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:51:19,843 INFO - key = baseUrl2 
+10 Mar 11:51:19,845 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:51:19,846 INFO - key = Waittime 
+10 Mar 11:51:19,847 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:51:19,847 INFO - key = browserName 
+10 Mar 11:51:19,849 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:51:19,849 INFO - key = version 
+10 Mar 11:51:19,850 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:51:19,851 INFO - key = platform 
+10 Mar 11:51:19,853 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:51:19,853 INFO - key = reportFormat 
+10 Mar 11:51:19,854 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:51:19,855 INFO - key = locationResult 
+10 Mar 11:51:19,856 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:51:19,856 INFO - key = folderScreenShot 
+10 Mar 11:51:19,857 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:51:19,858 INFO - key = locationClientLogo 
+10 Mar 11:51:19,859 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:51:19,860 INFO - key = locationCompanyLogo 
+10 Mar 11:51:19,862 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:51:19,862 INFO - key = locationFailedLogo 
+10 Mar 11:51:19,863 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:51:19,864 INFO - key = locationMinusLogo 
+10 Mar 11:51:19,865 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:51:19,865 INFO - key = locationPassedLogo 
+10 Mar 11:51:19,866 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:51:19,867 INFO - key = locationPlusLogo 
+10 Mar 11:51:19,869 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:51:19,869 INFO - key = locationWarningLogo 
+10 Mar 11:51:19,871 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:51:19,872 INFO - key = onSuccessScreenshot 
+10 Mar 11:51:19,873 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:51:19,873 INFO - key = userName 
+10 Mar 11:51:19,874 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:51:19,874 INFO - key = accessKey 
+10 Mar 11:51:19,876 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:51:19,876 INFO - key = cloudImplicitWait 
+10 Mar 11:51:19,877 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:51:19,877 INFO - key = cloudPageLoadTimeOut 
+10 Mar 11:51:19,878 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:51:19,879 INFO - key = locationCssFolder 
+10 Mar 11:51:19,880 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:51:19,881 INFO - key = locationJsFolder 
+10 Mar 11:51:19,883 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:51:19,883 INFO - key = locationImagesFolder 
+10 Mar 11:51:52,613 INFO - New BrowserContext Instance Was Created And Placed In Map : BrowserContext.mapBrowserContext 
+10 Mar 11:51:52,614 INFO - <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+10 Mar 11:51:52,618 INFO - BrowserContext Info Being returned: <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+10 Mar 11:51:52,619 INFO - <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+10 Mar 11:51:52,620 INFO - BrowserContext Info Being returned: <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+10 Mar 11:51:52,620 INFO - resultDir = results\FF-windows 7-local 
+10 Mar 11:51:52,622 INFO - instance member browserContext was set to :  
+10 Mar 11:51:52,625 INFO - <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+10 Mar 11:51:52,625 INFO - <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+10 Mar 11:51:52,626 INFO - Instance Of CReporter Created 
+10 Mar 11:51:52,627 INFO - reporter was placed into CReporter.mapBrowserContextReporter 
+10 Mar 11:53:31,773 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:53:31,777 INFO - key = clientName 
+10 Mar 11:53:31,778 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:53:31,778 INFO - key = deviceName 
+10 Mar 11:53:31,779 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:53:31,780 INFO - key = iterationMode 
+10 Mar 11:53:31,781 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:53:31,781 INFO - key = suiteName 
+10 Mar 11:53:31,782 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:53:31,783 INFO - key = onErrorAction 
+10 Mar 11:53:31,784 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:53:31,784 INFO - key = singleThreadExecution 
+10 Mar 11:53:31,785 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:53:31,785 INFO - key = AUT 
+10 Mar 11:53:31,789 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:53:31,789 INFO - key = baseUrl 
+10 Mar 11:53:31,790 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:53:31,791 INFO - key = baseUrl2 
+10 Mar 11:53:31,791 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:53:31,792 INFO - key = Waittime 
+10 Mar 11:53:31,793 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:53:31,793 INFO - key = browserName 
+10 Mar 11:53:31,794 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:53:31,795 INFO - key = version 
+10 Mar 11:53:31,796 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:53:31,796 INFO - key = platform 
+10 Mar 11:53:31,797 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:53:31,798 INFO - key = reportFormat 
+10 Mar 11:53:31,799 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:53:31,799 INFO - key = locationResult 
+10 Mar 11:53:31,801 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:53:31,802 INFO - key = folderScreenShot 
+10 Mar 11:53:31,803 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:53:31,805 INFO - key = locationClientLogo 
+10 Mar 11:53:31,806 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:53:31,806 INFO - key = locationCompanyLogo 
+10 Mar 11:53:31,807 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:53:31,817 INFO - key = locationFailedLogo 
+10 Mar 11:53:31,818 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:53:31,818 INFO - key = locationMinusLogo 
+10 Mar 11:53:31,820 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:53:31,820 INFO - key = locationPassedLogo 
+10 Mar 11:53:31,822 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:53:31,823 INFO - key = locationPlusLogo 
+10 Mar 11:53:31,824 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:53:31,825 INFO - key = locationWarningLogo 
+10 Mar 11:53:31,825 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:53:31,826 INFO - key = onSuccessScreenshot 
+10 Mar 11:53:31,828 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:53:31,828 INFO - key = userName 
+10 Mar 11:53:31,829 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:53:31,830 INFO - key = accessKey 
+10 Mar 11:53:31,832 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:53:31,832 INFO - key = cloudImplicitWait 
+10 Mar 11:53:31,834 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:53:31,834 INFO - key = cloudPageLoadTimeOut 
+10 Mar 11:53:31,835 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:53:31,835 INFO - key = locationCssFolder 
+10 Mar 11:53:31,837 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:53:31,838 INFO - key = locationJsFolder 
+10 Mar 11:53:31,839 INFO - fileName = resources/gallopReporter.properties 
+10 Mar 11:53:31,839 INFO - key = locationImagesFolder 
+10 Mar 11:53:45,810 INFO - New BrowserContext Instance Was Created And Placed In Map : BrowserContext.mapBrowserContext 
+10 Mar 11:53:45,812 INFO - <BrowserContext><Name> chrome</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+10 Mar 11:53:45,813 INFO - BrowserContext Info Being returned: <BrowserContext><Name> chrome</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+10 Mar 11:53:45,814 INFO - <BrowserContext><Name> chrome</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+10 Mar 11:53:45,815 INFO - BrowserContext Info Being returned: <BrowserContext><Name> chrome</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+10 Mar 11:53:45,815 INFO - resultDir = results\CHROME-windows 7-local 
+10 Mar 11:53:45,817 INFO - resultDir = results\CHROME-windows 7-local 
+10 Mar 11:53:45,819 INFO - Current Logo Name : logos/logo.png 
+10 Mar 11:53:45,949 INFO - logos\logo.pngcopied to D:\GitHubServer\results\CHROME-windows 7-local\screenshots 
+10 Mar 11:53:45,952 INFO - Current Logo Name : logos/gallop_logo.png 
+10 Mar 11:53:46,060 INFO - logos\gallop_logo.pngcopied to D:\GitHubServer\results\CHROME-windows 7-local\screenshots 
+10 Mar 11:53:46,060 INFO - Current Logo Name : logos/failed.ico 
+10 Mar 11:53:46,140 INFO - logos\failed.icocopied to D:\GitHubServer\results\CHROME-windows 7-local\screenshots 
+10 Mar 11:53:46,140 INFO - Current Logo Name : logos/Minus.ico 
+10 Mar 11:53:46,172 INFO - logos\Minus.icocopied to D:\GitHubServer\results\CHROME-windows 7-local\screenshots 
+10 Mar 11:53:46,174 INFO - Current Logo Name : logos/passed.ico 
+10 Mar 11:53:46,180 INFO - logos\passed.icocopied to D:\GitHubServer\results\CHROME-windows 7-local\screenshots 
+10 Mar 11:53:46,181 INFO - Current Logo Name : logos/Plus.ico 
+10 Mar 11:53:46,208 INFO - logos\Plus.icocopied to D:\GitHubServer\results\CHROME-windows 7-local\screenshots 
+10 Mar 11:53:46,209 INFO - Current Logo Name : logos/warning.ico 
+10 Mar 11:53:46,240 INFO - logos\warning.icocopied to D:\GitHubServer\results\CHROME-windows 7-local\screenshots 
+10 Mar 11:53:46,241 INFO - Current Logo Name : logos/css 
+10 Mar 11:53:46,453 INFO - Current Logo Name : logos/images 
+10 Mar 11:53:46,526 INFO - Current Logo Name : logos/js 
+10 Mar 11:53:46,760 INFO - instance member browserContext was set to :  
+10 Mar 11:53:46,761 INFO - <BrowserContext><Name> chrome</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+10 Mar 11:53:46,760 INFO - <BrowserContext><Name> chrome</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+10 Mar 11:53:46,761 INFO - Instance Of CReporter Created 
+10 Mar 11:53:46,762 INFO - reporter was placed into CReporter.mapBrowserContextReporter 
+10 Mar 11:53:53,167 INFO - resultDir = results\CHROME-windows 7-local 
+10 Mar 11:53:55,659 INFO - resultDir = results\CHROME-windows 7-local 
+10 Mar 11:54:00,780 INFO - resultDir = results\CHROME-windows 7-local 
+10 Mar 11:54:09,601 INFO - resultDir = results\CHROME-windows 7-local 
+10 Mar 11:54:25,173 INFO - resultDir = results\CHROME-windows 7-local 
+10 Mar 11:54:35,827 INFO - resultDir = results\CHROME-windows 7-local 
+10 Mar 11:54:46,219 INFO - resultDir = results\CHROME-windows 7-local 
+10 Mar 11:54:46,614 INFO - resultDir = results\CHROME-windows 7-local 
+10 Mar 11:54:47,025 INFO - resultDir = results\CHROME-windows 7-local 
+10 Mar 11:54:49,390 INFO - resultDir = results\CHROME-windows 7-local 
+10 Mar 11:54:50,892 INFO - resultDir = results\CHROME-windows 7-local 
+10 Mar 11:54:51,732 INFO - resultDir = results\CHROME-windows 7-local 
+10 Mar 11:54:52,196 INFO - resultDir = results\CHROME-windows 7-local 
+10 Mar 11:54:52,838 INFO - resultDir = results\CHROME-windows 7-local 
+10 Mar 11:54:53,619 INFO - resultDir = results\CHROME-windows 7-local 
+10 Mar 11:54:54,746 INFO - resultDir = results\CHROME-windows 7-local 
+10 Mar 11:54:55,595 INFO - resultDir = results\CHROME-windows 7-local 
+10 Mar 11:54:56,405 INFO - resultDir = results\CHROME-windows 7-local 
+10 Mar 11:54:57,388 INFO - resultDir = results\CHROME-windows 7-local 
+10 Mar 11:55:02,178 INFO - resultDir = results\CHROME-windows 7-local 
+10 Mar 11:55:10,691 INFO - resultDir = results\CHROME-windows 7-local 
+10 Mar 11:55:17,204 INFO - resultDir = results\CHROME-windows 7-local 
+10 Mar 11:55:17,524 INFO - resultDir = results\CHROME-windows 7-local 
+10 Mar 11:55:17,549 INFO - resultDir = results\CHROME-windows 7-local 
+10 Mar 11:55:21,934 INFO - resultDir = results\CHROME-windows 7-local 
+10 Mar 11:55:22,242 INFO - resultDir = results\CHROME-windows 7-local 
+10 Mar 11:55:22,267 INFO - resultDir = results\CHROME-windows 7-local 
+10 Mar 11:55:32,324 INFO - resultDir = results\CHROME-windows 7-local 
+10 Mar 11:55:33,023 INFO - resultDir = results\CHROME-windows 7-local 
+10 Mar 11:55:33,050 INFO - resultDir = results\CHROME-windows 7-local 
+10 Mar 11:55:37,957 INFO - resultDir = results\CHROME-windows 7-local 
+10 Mar 11:55:38,716 INFO - resultDir = results\CHROME-windows 7-local 
+10 Mar 11:55:38,783 INFO - resultDir = results\CHROME-windows 7-local 
+10 Mar 11:55:47,392 INFO - resultDir = results\CHROME-windows 7-local 
+10 Mar 11:55:47,419 INFO - resultDir = results\CHROME-windows 7-local 
+10 Mar 11:55:47,712 INFO - resultDir = results\CHROME-windows 7-local 
+10 Mar 11:55:47,753 INFO - Key of mapEntry1 : com.Mumms.scripts:testGenerateVisitReport- 
+10 Mar 11:55:47,755 INFO - package is present in package_testname[0] : com.Mumms.scripts 
+10 Mar 11:55:47,756 INFO - test method is present in package_testname[1] : testGenerateVisitReport- 
+10 Mar 11:55:47,757 INFO - value against package_testname is : PASS 
+10 Mar 11:55:47,790 INFO - resultDir = results\CHROME-windows 7-local 

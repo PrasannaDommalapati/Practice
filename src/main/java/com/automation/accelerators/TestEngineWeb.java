@@ -245,7 +245,7 @@ public class TestEngineWeb {
 		case "chrome":
 			Thread.sleep(2000);
 			System.out.println("iam in case Chrome");
-			System.setProperty("webdriver.chrome.driver",
+		/*	System.setProperty("webdriver.chrome.driver",
 					"/usr/bin/google-chrome");
 
 			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
@@ -253,6 +253,16 @@ public class TestEngineWeb {
 			options.addArguments("test-type");
 			capabilities.setCapability(ChromeOptions.CAPABILITY, options);
 			this.WebDriver = new ChromeDriver(capabilities);
+			Thread.sleep(10000);*/
+			
+			System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("test-type");
+			capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+			String url = "http://10.29.8.11:4444/wd/hub";
+			DesiredCapabilities capabillities=DesiredCapabilities.chrome();
+			this.WebDriver = new RemoteWebDriver(new URL(url),capabillities);
 			Thread.sleep(10000);
 			break;
 		case "Safari":
