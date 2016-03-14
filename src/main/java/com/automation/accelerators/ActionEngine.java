@@ -21,7 +21,7 @@ public class ActionEngine extends TestEngineWeb {
 
 	private final String msgClickSuccess = "Successfully clicked on ";
 	private final String msgClickFailure = "Unable to click on ";
-	private final String msgTypeSuccess = "Successfully entered in ";
+	private final String msgTypeSuccess = "Successfully entered ";
 	private final String msgTypeFailure = "Unable to type on ";
 	private final String msgIsElementFoundSuccess = "Successfully found element ";
 	private final String msgIsElementFoundFailure = "Unable to find element ";
@@ -376,7 +376,7 @@ public class ActionEngine extends TestEngineWeb {
 			Driver.findElement(locator).clear();
 			Thread.sleep(sleep);
 			Driver.findElement(locator).sendKeys(testdata);
-			reporter.SuccessReport("Enter text in " + locatorName, msgTypeSuccess + locatorName);
+			reporter.SuccessReport("Enter text in " + locatorName, msgTypeSuccess+" "+testdata+" in "+ locatorName+" input field");
 			status = true;
 		} catch (Exception e) {
 			status = false;
@@ -401,7 +401,7 @@ public class ActionEngine extends TestEngineWeb {
 			JavascriptExecutor myExecutor = ((JavascriptExecutor) Driver);
 			myExecutor.executeScript("arguments[0].value='" + testdata + "';", searchbox);
 
-			reporter.SuccessReport("Enter text in " + locatorName, msgTypeSuccess + locatorName);
+			reporter.SuccessReport("Enter text in " + locatorName, msgTypeSuccess+" "+testdata+" in "+ locatorName+" input field");
 			status = true;
 		} catch (Exception e) {
 			status = false;
