@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="331.46" tests="6" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="313.664" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_73\jre\bin"/>
@@ -63,10 +63,10 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="testGenerateVisitReport" classname="com.Mumms.scripts.Reports" time="77.343"/>
-  <testcase name="testSearchPatientInfo" classname="com.Mumms.scripts.Patient" time="36.883"/>
-  <testcase name="testGenerateHISForAdmissionReport" classname="com.Mumms.scripts.Reports" time="69.537"/>
-  <testcase name="testGenerateTeamMeetingReport" classname="com.Mumms.scripts.Reports" time="84.954"/>
-  <testcase name="testaddWidgetPatientByFacilityType" classname="com.Mumms.scripts.Admin" time="30.651"/>
-  <testcase name="testaddWidgetPatientByPayerType" classname="com.Mumms.scripts.Admin" time="32.092"/>
+  <testcase name="testGenerateVisitReport" classname="com.Mumms.scripts.Reports" time="77.394"/>
+  <testcase name="testSearchPatientInfo" classname="com.Mumms.scripts.Patient" time="35.531"/>
+  <testcase name="testGenerateHISForAdmissionReport" classname="com.Mumms.scripts.Reports" time="67.773"/>
+  <testcase name="testGenerateTeamMeetingReport" classname="com.Mumms.scripts.Reports" time="71.837"/>
+  <testcase name="testaddWidgetPatientByFacilityType" classname="com.Mumms.scripts.Admin" time="30.518"/>
+  <testcase name="testaddWidgetPatientByPayerType" classname="com.Mumms.scripts.Admin" time="30.611"/>
 </testsuite>
