@@ -770,11 +770,11 @@ public class ReportsLib extends MummsLib {
 		// This block of code will extract the text from each web element and
 		// then it vl compare it with the data coming from the excel sheet
 		assertTextMatching(ReportsPage.reportTitleInReport, data.get("ReportName"), "Report name");
-		assertTextMatching(ReportsPage.reportingPeriodInReport, data.get("ReportingPeriodInReport"),
-				"Reporting Period");
-		assertTextMatching(ReportsPage.siteOrOfficeInReport, data.get("Site"), "Site/Office");
-		assertTextMatching(ReportsPage.program, data.get("Program"), "Site/Office");
-		assertTextMatching(ReportsPage.selectedTeam, data.get("Team"), "Selected Team");
+		/*assertTextMatching(ReportsPage.reportingPeriodInReport, data.get("ReportingPeriodInReport"),
+				"Reporting Period");*/
+		//assertTextMatching(ReportsPage.siteOrOfficeInReport, data.get("Site"), "Site/Office");
+		assertTextMatching(ReportsPage.program, data.get("Program"), "program");
+		//assertTextMatching(ReportsPage.selectedTeam, data.get("Team"), "Selected Team");
 		assertTextMatching(ReportsPage.patientStatusInReport, data.get("PatientStatus"), "Patient status");
 		click(ReportsPage.saveButton, "Save button");
 		reporter.SuccessReport("Report generation time", timeTaken + " secs");
