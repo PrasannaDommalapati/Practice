@@ -798,6 +798,81 @@ public class Admin extends AdminLib {
 		}
 	}
 
+	@DataProvider
+	public Object[][] getTestDataFor_sendActivationEmail() {
+		return TestUtil.getData("sendActivationEmail", TestData, "Admin");
+	}
+
+	@Test(dataProvider = "getTestDataFor_sendActivationEmail")
+	public void sendActivationEmail(Hashtable<String, String> data) throws Throwable {
+
+		try {
+
+			if (data.get("RunMode").equals("Y")) {
+				this.reporter.initTestCaseDescription("SQA-102");
+				selectAgency("RUTH");
+				goToAdmin();
+
+				int randNum = generateRandonNumber();
+				String personName = data.get("PersonsFirstName") + "_" + Integer.toString(randNum);
+				createNewPerson(data, personName);
+
+				verifyEmail(data);
+				deleteEmail();
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+	
+	@DataProvider
+	public Object[][] getTestDataFor_addWidgets() {
+		return TestUtil.getData("testAddWidgets", TestData, "Admin");
+	}
+
+	@Test(dataProvider = "getTestDataFor_addWidgets")
+	public void testAddWidgets(Hashtable<String, String> data) throws Throwable {
+
+		try {
+
+			if (data.get("RunMode").equals("Y")) {
+				this.reporter.initTestCaseDescription("Adding Widgets");
+				selectAgency("RUTH");
+				addWidgets();
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+	
+	@DataProvider
+	public Object[][] getTestDataFor_addWidgetsname() {
+		return TestUtil.getData("testAddWidgetsName", TestData, "Admin");
+	}
+
+	@Test(dataProvider = "getTestDataFor_addWidgetsname")
+	public void testAddWidgetsName(Hashtable<String, String> data) throws Throwable {
+
+		try {
+
+			if (data.get("RunMode").equals("Y")) {
+				this.reporter.initTestCaseDescription("Adding Widgets");
+				selectAgency("RUTH");
+				addWidgetsName();
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+	
+	
+
 	@AfterMethod
 	public void logOut() throws Throwable {
 		doLogout();

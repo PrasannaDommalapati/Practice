@@ -13,6 +13,7 @@ public class HomePage extends ActionEngine {
 	public static By AgencyAccountType;
 	public static By AdminIcon;
 	public static By ReportsIcon;
+	public static By username;
 
 	// Jairam
 
@@ -26,6 +27,7 @@ public class HomePage extends ActionEngine {
 		AgencyAccountType = By.xpath("//div[text()='RUTH']");
 		AdminIcon = By.xpath(".//*[@id='gwt-debug-admin-module-button']/tbody/tr[1]/td/div/img");
 		ReportsIcon = By.xpath("//table[@id='gwt-debug-reports-module-button']");
+		username = By.xpath("//div[@class='hb-top-toolbar-login-info-username']");
 	}
 
 }

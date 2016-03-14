@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="firefoxWindowsLocal"
-           tests="1"
+           tests="3"
            failures="0"
            errors="0"
            skipped="0"
-           time="78.304">
+           time="204.099">
   <properties />
   
   
-            <testcase name="testGenerateVisitReport" time="78.304" classname="com.Mumms.scripts.Reports" />
+            <testcase name="testGenerateTeamMeetingReport" time="85.135" classname="com.Mumms.scripts.Reports" />
+                <testcase name="testGenerateHISForAdmissionReport" time="57.225" classname="com.Mumms.scripts.Reports" />
+                <testcase name="testGenerateVisitReport" time="61.739" classname="com.Mumms.scripts.Reports" />
       
 </testsuite>

@@ -22,6 +22,7 @@ public class Patient extends PatientLib {
 	@Parameters({"userrole"})
 	@BeforeMethod
 	public void login(String userrole) throws Throwable{	
+		System.out.println("The value of User role is "+userrole);
 		loginAsUserRole(userrole);
 	}
 
@@ -43,7 +44,26 @@ public class Patient extends PatientLib {
 			e.printStackTrace();
 		}
 	}
+	@DataProvider
+	public Object[][] getTestDataFor_TestSearchPatientInfo() {
+		return TestUtil.getData("testSearchPatientInfo", TestData, "Patient");
+	}
 
+	@Test(dataProvider = "getTestDataFor_TestSearchPatientInfo")
+	public void testSearchPatientInfo(Hashtable<String, String> data) throws Throwable {
+		try {
+			if (data.get("RunMode").equals("Y")){
+
+				this.reporter.initTestCaseDescription("This test case is to verify the time taken for the search results to apepar");	
+				selectAgency("RUTH");
+				searchPatientInfo(data);
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
 
 	@AfterMethod
 	public void logOut() throws Throwable {

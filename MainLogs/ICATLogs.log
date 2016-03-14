@@ -37245,3 +37245,846 @@ Session ID: 6b723470-0777-406f-9ee8-c2d696afa79d
 10 Mar 13:32:46,467 INFO - test method is present in package_testname[1] : testGenerateVisitReport- 
 10 Mar 13:32:46,467 INFO - value against package_testname is : PASS 
 10 Mar 13:32:46,494 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:29:18,313 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:29:18,322 INFO - key = clientName 
+14 Mar 11:29:18,324 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:29:18,324 INFO - key = deviceName 
+14 Mar 11:29:18,325 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:29:18,326 INFO - key = iterationMode 
+14 Mar 11:29:18,328 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:29:18,329 INFO - key = suiteName 
+14 Mar 11:29:18,331 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:29:18,331 INFO - key = onErrorAction 
+14 Mar 11:29:18,336 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:29:18,337 INFO - key = singleThreadExecution 
+14 Mar 11:29:18,338 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:29:18,339 INFO - key = AUT 
+14 Mar 11:29:18,340 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:29:18,340 INFO - key = baseUrl 
+14 Mar 11:29:18,343 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:29:18,345 INFO - key = baseUrl2 
+14 Mar 11:29:18,365 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:29:18,365 INFO - key = Waittime 
+14 Mar 11:29:18,375 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:29:18,376 INFO - key = browserName 
+14 Mar 11:29:18,376 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:29:18,377 INFO - key = version 
+14 Mar 11:29:18,379 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:29:18,379 INFO - key = platform 
+14 Mar 11:29:18,382 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:29:18,383 INFO - key = reportFormat 
+14 Mar 11:29:18,383 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:29:18,384 INFO - key = locationResult 
+14 Mar 11:29:18,385 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:29:18,386 INFO - key = folderScreenShot 
+14 Mar 11:29:18,388 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:29:18,390 INFO - key = locationClientLogo 
+14 Mar 11:29:18,391 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:29:18,391 INFO - key = locationCompanyLogo 
+14 Mar 11:29:18,392 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:29:18,400 INFO - key = locationFailedLogo 
+14 Mar 11:29:18,401 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:29:18,401 INFO - key = locationMinusLogo 
+14 Mar 11:29:18,402 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:29:18,403 INFO - key = locationPassedLogo 
+14 Mar 11:29:18,403 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:29:18,404 INFO - key = locationPlusLogo 
+14 Mar 11:29:18,404 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:29:18,405 INFO - key = locationWarningLogo 
+14 Mar 11:29:18,406 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:29:18,406 INFO - key = onSuccessScreenshot 
+14 Mar 11:29:18,407 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:29:18,407 INFO - key = userName 
+14 Mar 11:29:18,408 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:29:18,408 INFO - key = accessKey 
+14 Mar 11:29:18,409 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:29:18,409 INFO - key = cloudImplicitWait 
+14 Mar 11:29:18,410 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:29:18,410 INFO - key = cloudPageLoadTimeOut 
+14 Mar 11:29:18,412 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:29:18,412 INFO - key = locationCssFolder 
+14 Mar 11:29:18,477 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:29:18,478 INFO - key = locationJsFolder 
+14 Mar 11:29:18,479 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:29:18,479 INFO - key = locationImagesFolder 
+14 Mar 11:29:39,919 INFO - New BrowserContext Instance Was Created And Placed In Map : BrowserContext.mapBrowserContext 
+14 Mar 11:29:39,920 INFO - <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+14 Mar 11:29:39,921 INFO - BrowserContext Info Being returned: <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+14 Mar 11:29:39,922 INFO - <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+14 Mar 11:29:39,922 INFO - BrowserContext Info Being returned: <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+14 Mar 11:29:39,923 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:29:39,924 INFO - instance member browserContext was set to :  
+14 Mar 11:29:39,925 INFO - <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+14 Mar 11:29:39,925 INFO - <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+14 Mar 11:29:39,928 INFO - Instance Of CReporter Created 
+14 Mar 11:29:39,928 INFO - reporter was placed into CReporter.mapBrowserContextReporter 
+14 Mar 11:29:46,121 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:29:48,620 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:29:54,327 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:30:02,132 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:30:18,047 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:30:29,203 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:30:39,787 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:30:40,693 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:30:41,192 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:30:42,661 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:30:44,522 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:30:46,058 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:30:46,574 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:30:47,056 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:30:47,511 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:30:49,894 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:30:51,454 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:30:53,258 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:30:54,352 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:30:59,164 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:31:08,067 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:31:14,555 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:31:15,237 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:31:15,264 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:31:19,801 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:31:20,705 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:31:20,827 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:31:25,200 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:31:25,695 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:31:25,741 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:31:30,164 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:31:30,611 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:31:30,672 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:31:39,357 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:31:39,399 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:31:39,578 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:31:39,581 INFO - Key of mapEntry1 : com.Mumms.scripts:testGenerateVisitReport- 
+14 Mar 11:31:39,581 INFO - package is present in package_testname[0] : com.Mumms.scripts 
+14 Mar 11:31:39,581 INFO - test method is present in package_testname[1] : testGenerateVisitReport- 
+14 Mar 11:31:39,581 INFO - value against package_testname is : PASS 
+14 Mar 11:31:39,597 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:33:38,564 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:33:38,566 INFO - key = clientName 
+14 Mar 11:33:38,568 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:33:38,568 INFO - key = deviceName 
+14 Mar 11:33:38,569 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:33:38,569 INFO - key = iterationMode 
+14 Mar 11:33:38,570 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:33:38,571 INFO - key = suiteName 
+14 Mar 11:33:38,572 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:33:38,572 INFO - key = onErrorAction 
+14 Mar 11:33:38,573 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:33:38,573 INFO - key = singleThreadExecution 
+14 Mar 11:33:38,574 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:33:38,574 INFO - key = AUT 
+14 Mar 11:33:38,575 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:33:38,576 INFO - key = baseUrl 
+14 Mar 11:33:38,577 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:33:38,578 INFO - key = baseUrl2 
+14 Mar 11:33:38,578 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:33:38,579 INFO - key = Waittime 
+14 Mar 11:33:38,580 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:33:38,581 INFO - key = browserName 
+14 Mar 11:33:38,581 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:33:38,582 INFO - key = version 
+14 Mar 11:33:38,583 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:33:38,583 INFO - key = platform 
+14 Mar 11:33:38,584 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:33:38,584 INFO - key = reportFormat 
+14 Mar 11:33:38,585 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:33:38,585 INFO - key = locationResult 
+14 Mar 11:33:38,586 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:33:38,587 INFO - key = folderScreenShot 
+14 Mar 11:33:38,588 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:33:38,589 INFO - key = locationClientLogo 
+14 Mar 11:33:38,590 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:33:38,591 INFO - key = locationCompanyLogo 
+14 Mar 11:33:38,592 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:33:38,592 INFO - key = locationFailedLogo 
+14 Mar 11:33:38,593 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:33:38,593 INFO - key = locationMinusLogo 
+14 Mar 11:33:38,594 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:33:38,595 INFO - key = locationPassedLogo 
+14 Mar 11:33:38,596 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:33:38,596 INFO - key = locationPlusLogo 
+14 Mar 11:33:38,597 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:33:38,598 INFO - key = locationWarningLogo 
+14 Mar 11:33:38,599 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:33:38,599 INFO - key = onSuccessScreenshot 
+14 Mar 11:33:38,600 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:33:38,600 INFO - key = userName 
+14 Mar 11:33:38,602 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:33:38,602 INFO - key = accessKey 
+14 Mar 11:33:38,603 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:33:38,603 INFO - key = cloudImplicitWait 
+14 Mar 11:33:38,604 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:33:38,605 INFO - key = cloudPageLoadTimeOut 
+14 Mar 11:33:38,606 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:33:38,606 INFO - key = locationCssFolder 
+14 Mar 11:33:38,607 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:33:38,607 INFO - key = locationJsFolder 
+14 Mar 11:33:38,608 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:33:38,608 INFO - key = locationImagesFolder 
+14 Mar 11:33:59,393 INFO - New BrowserContext Instance Was Created And Placed In Map : BrowserContext.mapBrowserContext 
+14 Mar 11:33:59,394 INFO - <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+14 Mar 11:33:59,395 INFO - BrowserContext Info Being returned: <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+14 Mar 11:33:59,396 INFO - <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+14 Mar 11:33:59,396 INFO - BrowserContext Info Being returned: <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+14 Mar 11:33:59,397 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:33:59,399 INFO - instance member browserContext was set to :  
+14 Mar 11:33:59,400 INFO - <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+14 Mar 11:33:59,399 INFO - <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+14 Mar 11:33:59,401 INFO - Instance Of CReporter Created 
+14 Mar 11:33:59,401 INFO - reporter was placed into CReporter.mapBrowserContextReporter 
+14 Mar 11:34:05,670 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:34:08,496 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:34:14,191 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:34:21,642 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:34:22,187 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:34:27,984 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:34:31,463 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:34:31,465 INFO - key = clientName 
+14 Mar 11:34:31,466 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:34:31,466 INFO - key = deviceName 
+14 Mar 11:34:31,467 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:34:31,468 INFO - key = iterationMode 
+14 Mar 11:34:31,469 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:34:31,469 INFO - key = suiteName 
+14 Mar 11:34:31,470 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:34:31,470 INFO - key = onErrorAction 
+14 Mar 11:34:31,475 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:34:31,475 INFO - key = singleThreadExecution 
+14 Mar 11:34:31,476 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:34:31,477 INFO - key = AUT 
+14 Mar 11:34:31,479 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:34:31,479 INFO - key = baseUrl 
+14 Mar 11:34:31,480 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:34:31,481 INFO - key = baseUrl2 
+14 Mar 11:34:31,482 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:34:31,482 INFO - key = Waittime 
+14 Mar 11:34:31,483 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:34:31,484 INFO - key = browserName 
+14 Mar 11:34:31,485 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:34:31,485 INFO - key = version 
+14 Mar 11:34:31,489 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:34:31,490 INFO - key = platform 
+14 Mar 11:34:31,491 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:34:31,491 INFO - key = reportFormat 
+14 Mar 11:34:31,492 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:34:31,492 INFO - key = locationResult 
+14 Mar 11:34:31,493 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:34:31,494 INFO - key = folderScreenShot 
+14 Mar 11:34:31,495 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:34:31,495 INFO - key = locationClientLogo 
+14 Mar 11:34:31,496 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:34:31,497 INFO - key = locationCompanyLogo 
+14 Mar 11:34:31,498 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:34:31,498 INFO - key = locationFailedLogo 
+14 Mar 11:34:31,499 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:34:31,499 INFO - key = locationMinusLogo 
+14 Mar 11:34:31,500 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:34:31,500 INFO - key = locationPassedLogo 
+14 Mar 11:34:31,502 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:34:31,502 INFO - key = locationPlusLogo 
+14 Mar 11:34:31,503 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:34:31,504 INFO - key = locationWarningLogo 
+14 Mar 11:34:31,505 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:34:31,505 INFO - key = onSuccessScreenshot 
+14 Mar 11:34:31,506 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:34:31,507 INFO - key = userName 
+14 Mar 11:34:31,508 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:34:31,508 INFO - key = accessKey 
+14 Mar 11:34:31,509 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:34:31,509 INFO - key = cloudImplicitWait 
+14 Mar 11:34:31,510 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:34:31,511 INFO - key = cloudPageLoadTimeOut 
+14 Mar 11:34:31,512 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:34:31,513 INFO - key = locationCssFolder 
+14 Mar 11:34:31,513 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:34:31,514 INFO - key = locationJsFolder 
+14 Mar 11:34:31,515 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:34:31,515 INFO - key = locationImagesFolder 
+14 Mar 11:34:39,981 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:34:50,569 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:34:51,023 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:34:51,479 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:34:52,512 INFO - New BrowserContext Instance Was Created And Placed In Map : BrowserContext.mapBrowserContext 
+14 Mar 11:34:52,512 INFO - <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+14 Mar 11:34:52,518 INFO - BrowserContext Info Being returned: <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+14 Mar 11:34:52,519 INFO - <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+14 Mar 11:34:52,519 INFO - BrowserContext Info Being returned: <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+14 Mar 11:34:52,520 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:34:52,521 INFO - instance member browserContext was set to :  
+14 Mar 11:34:52,521 INFO - <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+14 Mar 11:34:52,521 INFO - <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+14 Mar 11:34:52,521 INFO - Instance Of CReporter Created 
+14 Mar 11:34:52,522 INFO - reporter was placed into CReporter.mapBrowserContextReporter 
+14 Mar 11:34:52,937 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:34:54,487 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:34:55,875 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:34:56,571 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:34:57,342 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:34:58,047 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:34:58,483 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:35:00,233 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:35:01,317 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:35:02,568 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:35:04,635 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:35:06,133 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:35:06,945 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:35:11,077 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:35:15,445 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:35:18,127 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:35:20,290 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:35:24,677 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:35:28,096 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:35:28,683 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:35:28,744 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:35:33,096 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:35:33,611 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:35:33,664 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:35:35,721 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:35:38,024 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:35:38,521 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:35:38,571 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:35:44,092 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:35:44,154 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:35:46,707 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:35:47,450 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:35:48,118 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:35:49,566 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:35:52,175 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:35:53,612 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:35:53,661 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:35:53,829 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:35:53,835 INFO - Key of mapEntry1 : com.Mumms.scripts:testGenerateVisitReport- 
+14 Mar 11:35:53,836 INFO - package is present in package_testname[0] : com.Mumms.scripts 
+14 Mar 11:35:53,837 INFO - test method is present in package_testname[1] : testGenerateVisitReport- 
+14 Mar 11:35:53,837 INFO - value against package_testname is : PASS 
+14 Mar 11:35:53,856 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:35:53,875 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:35:54,363 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:35:54,705 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:35:55,187 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:35:56,553 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:35:58,185 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:35:59,551 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:36:00,959 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:36:05,655 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:36:14,366 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:36:21,571 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:36:22,046 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:36:22,109 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:36:26,828 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:36:27,739 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:36:27,794 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:36:32,759 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:36:33,245 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:36:33,292 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:36:38,764 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:36:38,824 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:36:47,845 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:36:47,898 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:37:08,446 INFO - <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+14 Mar 11:37:08,447 INFO - BrowserContext Info Being returned: <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+14 Mar 11:37:14,088 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:37:16,479 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:37:21,942 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:37:29,310 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:37:29,743 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:37:35,443 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:37:40,987 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:37:51,906 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:38:00,172 INFO - Element is not clickable at point (86, 109.89999389648438). Other element would receive the click: <div style="position: absolute; left: 0px; top: 0px; visibility: visible; display: block; width: 1360px; height: 902px;" class="hb-progress-indicator-glass hb-progress-z"></div>
+Command duration or timeout: 252 milliseconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:06:42'
+System info: host: 'dea2d584caf8', ip: '172.17.0.2', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-327.3.1.el7.x86_64', java.version: '1.8.0_45-internal'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=44.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 4549e7b2-fff2-4205-ae0f-8188c54f156e
+Command duration or timeout: 2.59 seconds
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'HW1611', ip: '10.33.0.176', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=44.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=076f487a-960c-4674-9c33-635d12f95f1c, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 076f487a-960c-4674-9c33-635d12f95f1c 
+14 Mar 11:38:00,174 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:38:01,106 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:38:03,480 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:38:48,451 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:38:48,454 INFO - key = clientName 
+14 Mar 11:38:48,455 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:38:48,456 INFO - key = deviceName 
+14 Mar 11:38:48,457 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:38:48,457 INFO - key = iterationMode 
+14 Mar 11:38:48,459 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:38:48,459 INFO - key = suiteName 
+14 Mar 11:38:48,460 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:38:48,461 INFO - key = onErrorAction 
+14 Mar 11:38:48,462 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:38:48,463 INFO - key = singleThreadExecution 
+14 Mar 11:38:48,464 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:38:48,464 INFO - key = AUT 
+14 Mar 11:38:48,465 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:38:48,466 INFO - key = baseUrl 
+14 Mar 11:38:48,467 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:38:48,468 INFO - key = baseUrl2 
+14 Mar 11:38:48,470 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:38:48,470 INFO - key = Waittime 
+14 Mar 11:38:48,472 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:38:48,472 INFO - key = browserName 
+14 Mar 11:38:48,473 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:38:48,474 INFO - key = version 
+14 Mar 11:38:48,477 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:38:48,477 INFO - key = platform 
+14 Mar 11:38:48,479 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:38:48,479 INFO - key = reportFormat 
+14 Mar 11:38:48,480 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:38:48,480 INFO - key = locationResult 
+14 Mar 11:38:48,481 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:38:48,482 INFO - key = folderScreenShot 
+14 Mar 11:38:48,483 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:38:48,483 INFO - key = locationClientLogo 
+14 Mar 11:38:48,484 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:38:48,484 INFO - key = locationCompanyLogo 
+14 Mar 11:38:48,486 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:38:48,486 INFO - key = locationFailedLogo 
+14 Mar 11:38:48,487 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:38:48,487 INFO - key = locationMinusLogo 
+14 Mar 11:38:48,488 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:38:48,489 INFO - key = locationPassedLogo 
+14 Mar 11:38:48,490 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:38:48,490 INFO - key = locationPlusLogo 
+14 Mar 11:38:48,491 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:38:48,491 INFO - key = locationWarningLogo 
+14 Mar 11:38:48,492 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:38:48,492 INFO - key = onSuccessScreenshot 
+14 Mar 11:38:48,493 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:38:48,493 INFO - key = userName 
+14 Mar 11:38:48,494 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:38:48,494 INFO - key = accessKey 
+14 Mar 11:38:48,495 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:38:48,495 INFO - key = cloudImplicitWait 
+14 Mar 11:38:48,496 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:38:48,496 INFO - key = cloudPageLoadTimeOut 
+14 Mar 11:38:48,497 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:38:48,498 INFO - key = locationCssFolder 
+14 Mar 11:38:48,498 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:38:48,499 INFO - key = locationJsFolder 
+14 Mar 11:38:48,499 INFO - fileName = resources/gallopReporter.properties 
+14 Mar 11:38:48,500 INFO - key = locationImagesFolder 
+14 Mar 11:39:12,762 INFO - New BrowserContext Instance Was Created And Placed In Map : BrowserContext.mapBrowserContext 
+14 Mar 11:39:12,763 INFO - <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+14 Mar 11:39:12,763 INFO - BrowserContext Info Being returned: <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+14 Mar 11:39:12,764 INFO - <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+14 Mar 11:39:12,765 INFO - BrowserContext Info Being returned: <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+14 Mar 11:39:12,766 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:39:12,767 INFO - instance member browserContext was set to :  
+14 Mar 11:39:12,768 INFO - <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+14 Mar 11:39:12,768 INFO - <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+14 Mar 11:39:12,769 INFO - Instance Of CReporter Created 
+14 Mar 11:39:12,769 INFO - reporter was placed into CReporter.mapBrowserContextReporter 
+14 Mar 11:39:19,170 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:39:21,337 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:39:25,641 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:39:51,232 INFO - Element is not clickable at point (1336.5, 24.5). Other element would receive the click: <div style="position: absolute; left: 0px; top: 0px; visibility: visible; display: block; width: 1360px; height: 902px;" class="hb-progress-indicator-glass hb-progress-z"></div>
+Command duration or timeout: 133 milliseconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:06:42'
+System info: host: 'dea2d584caf8', ip: '172.17.0.2', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-327.3.1.el7.x86_64', java.version: '1.8.0_45-internal'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=44.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 4549e7b2-fff2-4205-ae0f-8188c54f156e
+Command duration or timeout: 809 milliseconds
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'HW1611', ip: '10.33.0.176', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=44.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=076f487a-960c-4674-9c33-635d12f95f1c, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 076f487a-960c-4674-9c33-635d12f95f1c 
+14 Mar 11:39:51,269 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:39:51,851 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:39:51,872 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:39:52,035 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:39:52,040 INFO - Key of mapEntry1 : com.Mumms.scripts:testSearchPatientInfo- 
+14 Mar 11:39:52,041 INFO - package is present in package_testname[0] : com.Mumms.scripts 
+14 Mar 11:39:52,042 INFO - test method is present in package_testname[1] : testSearchPatientInfo- 
+14 Mar 11:39:52,042 INFO - value against package_testname is : PASS 
+14 Mar 11:39:52,043 INFO - Key of mapEntry1 : com.Mumms.scripts:testGenerateVisitReport- 
+14 Mar 11:39:52,044 INFO - package is present in package_testname[0] : com.Mumms.scripts 
+14 Mar 11:39:52,044 INFO - test method is present in package_testname[1] : testGenerateVisitReport- 
+14 Mar 11:39:52,045 INFO - value against package_testname is : PASS 
+14 Mar 11:39:52,059 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:39:52,074 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:39:54,621 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:39:56,723 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:39:59,677 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:40:02,192 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:40:06,838 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:40:08,110 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:40:08,308 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:40:14,508 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:40:18,639 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:40:25,972 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:40:28,846 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:40:28,956 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:40:29,072 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:40:29,528 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:40:29,876 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:40:30,270 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:40:30,384 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:40:30,524 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:40:30,643 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:40:31,041 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:40:31,352 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:40:31,745 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:40:32,074 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:40:35,417 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:40:36,490 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:40:36,896 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:40:37,636 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:40:39,243 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:40:40,350 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:40:41,756 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:40:42,275 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:40:42,622 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:40:43,173 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:40:43,722 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:40:44,352 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:40:45,699 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:40:47,151 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:40:50,086 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:40:50,203 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:40:50,234 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:40:54,360 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:40:54,471 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:40:54,502 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:40:55,927 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:40:58,632 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:40:58,744 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:40:58,775 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:41:03,929 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:41:03,964 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:41:03,990 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:41:04,392 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:41:04,406 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:41:08,902 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:41:09,417 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:41:09,431 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:41:13,037 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:41:13,096 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:41:14,998 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:41:15,023 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:41:23,925 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:41:23,949 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:41:23,980 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:41:26,600 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:41:31,687 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:41:35,879 INFO - <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+14 Mar 11:41:35,880 INFO - BrowserContext Info Being returned: <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+14 Mar 11:41:38,584 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:41:40,015 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:41:42,122 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:41:44,262 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:41:46,479 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:41:48,578 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:41:57,385 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:42:07,846 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:42:08,581 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:42:08,993 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:42:09,400 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:42:10,125 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:42:11,422 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:42:12,443 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:42:22,670 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:42:24,806 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:42:24,807 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:42:25,566 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:42:25,682 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:42:26,843 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:42:30,932 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:42:35,559 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:42:36,113 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:42:45,619 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:42:46,017 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:42:46,038 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:42:47,272 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:42:50,349 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:42:50,806 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:42:50,825 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:42:50,825 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:42:55,127 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:42:55,142 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:42:55,903 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:42:55,914 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:42:55,914 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:42:58,345 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:43:00,253 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:43:00,704 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:43:00,721 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:43:01,607 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:43:05,042 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:43:05,639 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:43:05,654 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:43:05,655 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:43:10,310 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:43:10,717 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:43:10,726 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:43:11,104 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:43:11,135 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:43:13,749 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:43:13,751 INFO - Key of mapEntry1 : com.Mumms.scripts:testSearchPatientInfo- 
+14 Mar 11:43:13,752 INFO - package is present in package_testname[0] : com.Mumms.scripts 
+14 Mar 11:43:13,752 INFO - test method is present in package_testname[1] : testSearchPatientInfo- 
+14 Mar 11:43:13,752 INFO - value against package_testname is : PASS 
+14 Mar 11:43:13,755 INFO - Key of mapEntry1 : com.Mumms.scripts:testGenerateVisitReport- 
+14 Mar 11:43:13,756 INFO - package is present in package_testname[0] : com.Mumms.scripts 
+14 Mar 11:43:13,756 INFO - test method is present in package_testname[1] : testGenerateVisitReport- 
+14 Mar 11:43:13,756 INFO - value against package_testname is : PASS 
+14 Mar 11:43:13,763 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:43:13,775 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:43:15,910 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:43:16,161 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:43:16,175 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:43:20,284 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:43:25,037 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:43:25,052 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:43:25,240 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:43:25,242 INFO - Key of mapEntry1 : com.Mumms.scripts:testSearchPatientInfo- 
+14 Mar 11:43:25,243 INFO - package is present in package_testname[0] : com.Mumms.scripts 
+14 Mar 11:43:25,243 INFO - test method is present in package_testname[1] : testSearchPatientInfo- 
+14 Mar 11:43:25,243 INFO - value against package_testname is : PASS 
+14 Mar 11:43:25,244 INFO - Key of mapEntry1 : com.Mumms.scripts:testGenerateVisitReport- 
+14 Mar 11:43:25,244 INFO - package is present in package_testname[0] : com.Mumms.scripts 
+14 Mar 11:43:25,244 INFO - test method is present in package_testname[1] : testGenerateVisitReport- 
+14 Mar 11:43:25,244 INFO - value against package_testname is : PASS 
+14 Mar 11:43:25,244 INFO - Key of mapEntry1 : com.Mumms.scripts:testGenerateHISForAdmissionReport- 
+14 Mar 11:43:25,245 INFO - package is present in package_testname[0] : com.Mumms.scripts 
+14 Mar 11:43:25,245 INFO - test method is present in package_testname[1] : testGenerateHISForAdmissionReport- 
+14 Mar 11:43:25,245 INFO - value against package_testname is : PASS 
+14 Mar 11:43:25,245 INFO - Key of mapEntry1 : com.Mumms.scripts:testGenerateTeamMeetingReport- 
+14 Mar 11:43:25,245 INFO - package is present in package_testname[0] : com.Mumms.scripts 
+14 Mar 11:43:25,246 INFO - test method is present in package_testname[1] : testGenerateTeamMeetingReport- 
+14 Mar 11:43:25,246 INFO - value against package_testname is : PASS 
+14 Mar 11:43:25,259 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:43:27,461 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:43:27,617 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:43:34,863 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:43:45,187 INFO - <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+14 Mar 11:43:45,187 INFO - BrowserContext Info Being returned: <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+14 Mar 11:43:45,291 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:43:50,843 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:43:53,183 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:43:55,441 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:43:55,554 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:43:55,680 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:43:56,143 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:43:56,541 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:43:56,914 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:43:57,016 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:43:57,141 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:43:57,241 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:43:57,636 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:43:57,948 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:43:58,341 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:43:58,951 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:44:06,026 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:44:06,589 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:44:06,648 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:44:12,923 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:44:15,201 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:44:15,311 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:44:15,322 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:44:18,570 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:44:19,484 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:44:19,644 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:44:19,656 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:44:24,812 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:44:24,844 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:44:29,395 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:44:33,609 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:44:33,640 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:44:33,668 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:44:35,748 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:44:40,014 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:44:42,821 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:44:46,623 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:44:46,834 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:44:51,533 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:44:51,555 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:44:51,577 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:44:53,150 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:44:53,868 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:44:59,173 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:45:03,807 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:45:06,304 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:45:06,800 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:45:12,310 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:45:13,938 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:45:14,026 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:45:14,115 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:45:14,204 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:45:14,290 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:45:14,448 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:45:14,588 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:45:17,817 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:45:24,711 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:45:24,713 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:45:24,873 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:45:25,225 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:45:28,909 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:45:33,503 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:45:42,545 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:45:44,254 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:45:44,351 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:45:44,363 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:45:48,480 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:45:48,568 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:45:48,580 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:45:48,580 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:45:51,954 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:45:51,983 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:45:52,196 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:45:52,202 INFO - Key of mapEntry1 : com.Mumms.scripts:testAddWidgets- 
+14 Mar 11:45:52,203 INFO - package is present in package_testname[0] : com.Mumms.scripts 
+14 Mar 11:45:52,204 INFO - test method is present in package_testname[1] : testAddWidgets- 
+14 Mar 11:45:52,204 INFO - value against package_testname is : PASS 
+14 Mar 11:45:52,204 INFO - Key of mapEntry1 : com.Mumms.scripts:testAddWidgetsName- 
+14 Mar 11:45:52,205 INFO - package is present in package_testname[0] : com.Mumms.scripts 
+14 Mar 11:45:52,205 INFO - test method is present in package_testname[1] : testAddWidgetsName- 
+14 Mar 11:45:52,205 INFO - value against package_testname is : PASS 
+14 Mar 11:45:52,205 INFO - Key of mapEntry1 : com.Mumms.scripts:testSearchPatientInfo- 
+14 Mar 11:45:52,205 INFO - package is present in package_testname[0] : com.Mumms.scripts 
+14 Mar 11:45:52,206 INFO - test method is present in package_testname[1] : testSearchPatientInfo- 
+14 Mar 11:45:52,206 INFO - value against package_testname is : PASS 
+14 Mar 11:45:52,206 INFO - Key of mapEntry1 : com.Mumms.scripts:testGenerateVisitReport- 
+14 Mar 11:45:52,206 INFO - package is present in package_testname[0] : com.Mumms.scripts 
+14 Mar 11:45:52,206 INFO - test method is present in package_testname[1] : testGenerateVisitReport- 
+14 Mar 11:45:52,207 INFO - value against package_testname is : PASS 
+14 Mar 11:45:52,207 INFO - Key of mapEntry1 : com.Mumms.scripts:testGenerateHISForAdmissionReport- 
+14 Mar 11:45:52,207 INFO - package is present in package_testname[0] : com.Mumms.scripts 
+14 Mar 11:45:52,207 INFO - test method is present in package_testname[1] : testGenerateHISForAdmissionReport- 
+14 Mar 11:45:52,207 INFO - value against package_testname is : PASS 
+14 Mar 11:45:52,208 INFO - Key of mapEntry1 : com.Mumms.scripts:testGenerateTeamMeetingReport- 
+14 Mar 11:45:52,208 INFO - package is present in package_testname[0] : com.Mumms.scripts 
+14 Mar 11:45:52,208 INFO - test method is present in package_testname[1] : testGenerateTeamMeetingReport- 
+14 Mar 11:45:52,208 INFO - value against package_testname is : PASS 
+14 Mar 11:45:52,223 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:45:52,684 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:45:52,793 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:45:52,806 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:45:52,807 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:45:56,906 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:45:57,011 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:45:57,022 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:46:01,690 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:46:02,585 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:46:02,597 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:46:02,597 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:46:06,707 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:46:06,802 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:46:06,813 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:46:11,934 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:46:11,966 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:46:20,611 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:46:20,644 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:46:24,191 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:46:24,196 INFO - Key of mapEntry1 : com.Mumms.scripts:testSearchPatientInfo- 
+14 Mar 11:46:24,197 INFO - package is present in package_testname[0] : com.Mumms.scripts 
+14 Mar 11:46:24,197 INFO - test method is present in package_testname[1] : testSearchPatientInfo- 
+14 Mar 11:46:24,197 INFO - value against package_testname is : PASS 
+14 Mar 11:46:24,198 INFO - Key of mapEntry1 : com.Mumms.scripts:testGenerateVisitReport- 
+14 Mar 11:46:24,198 INFO - package is present in package_testname[0] : com.Mumms.scripts 
+14 Mar 11:46:24,198 INFO - test method is present in package_testname[1] : testGenerateVisitReport- 
+14 Mar 11:46:24,198 INFO - value against package_testname is : PASS 
+14 Mar 11:46:24,199 INFO - Key of mapEntry1 : com.Mumms.scripts:testGenerateHISForAdmissionReport- 
+14 Mar 11:46:24,200 INFO - package is present in package_testname[0] : com.Mumms.scripts 
+14 Mar 11:46:24,201 INFO - test method is present in package_testname[1] : testGenerateHISForAdmissionReport- 
+14 Mar 11:46:24,201 INFO - value against package_testname is : PASS 
+14 Mar 11:46:24,202 INFO - Key of mapEntry1 : com.Mumms.scripts:testGenerateTeamMeetingReport- 
+14 Mar 11:46:24,202 INFO - package is present in package_testname[0] : com.Mumms.scripts 
+14 Mar 11:46:24,203 INFO - test method is present in package_testname[1] : testGenerateTeamMeetingReport- 
+14 Mar 11:46:24,203 INFO - value against package_testname is : PASS 
+14 Mar 11:46:24,223 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:46:48,447 INFO - <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+14 Mar 11:46:48,447 INFO - BrowserContext Info Being returned: <BrowserContext><Name> firefox</Name><Version> windows 7</Version><Platform>local</Platform></BrowserContext> 
+14 Mar 11:46:55,267 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:46:57,424 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:47:01,713 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:47:47,267 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:47:56,739 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:48:01,990 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:48:07,167 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:48:17,834 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:48:28,819 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:48:37,007 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:48:37,026 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:48:37,049 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:48:49,155 INFO - Unable to locate element: {"method":"xpath","selector":".//*[@name='j_username']"}
+Command duration or timeout: 10.09 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'HW1611', ip: '10.33.0.176', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=44.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 0e9b5719-f8b0-4b53-9f42-22a7f71cb680
+*** Element info: {Using=xpath, value=.//*[@name='j_username']} 
+14 Mar 11:48:49,155 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:48:49,317 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:49:01,393 INFO - Unable to locate element: {"method":"xpath","selector":"//*[@name='j_password']"}
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'HW1611', ip: '10.33.0.176', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=44.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 0e9b5719-f8b0-4b53-9f42-22a7f71cb680
+*** Element info: {Using=xpath, value=//*[@name='j_password']} 
+14 Mar 11:49:01,394 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:49:01,501 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:49:13,663 INFO - Unable to locate element: {"method":"xpath","selector":"//*[@value='Log In']"}
+Command duration or timeout: 10.14 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'HW1611', ip: '10.33.0.176', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=44.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 0e9b5719-f8b0-4b53-9f42-22a7f71cb680
+*** Element info: {Using=xpath, value=//*[@value='Log In']} 
+14 Mar 11:49:13,663 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:49:13,763 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:49:13,845 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:49:19,115 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:49:31,222 INFO - Element is not currently visible and so may not be interacted with
+Command duration or timeout: 10.01 seconds
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'HW1611', ip: '10.33.0.176', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=44.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 0e9b5719-f8b0-4b53-9f42-22a7f71cb680 
+14 Mar 11:49:31,223 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:49:31,347 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:49:41,663 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:49:52,458 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:50:01,633 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:50:01,663 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:50:03,380 INFO - resultDir = results\FF-windows 7-local 
+14 Mar 11:50:03,385 INFO - Key of mapEntry1 : com.Mumms.scripts:testAddWidgets- 
+14 Mar 11:50:03,386 INFO - package is present in package_testname[0] : com.Mumms.scripts 
+14 Mar 11:50:03,386 INFO - test method is present in package_testname[1] : testAddWidgets- 
+14 Mar 11:50:03,386 INFO - value against package_testname is : PASS 
+14 Mar 11:50:03,386 INFO - Key of mapEntry1 : com.Mumms.scripts:testAddWidgetsName- 
+14 Mar 11:50:03,386 INFO - package is present in package_testname[0] : com.Mumms.scripts 
+14 Mar 11:50:03,387 INFO - test method is present in package_testname[1] : testAddWidgetsName- 
+14 Mar 11:50:03,387 INFO - value against package_testname is : FAIL 
+14 Mar 11:50:03,387 INFO - Key of mapEntry1 : com.Mumms.scripts:testSearchPatientInfo- 
+14 Mar 11:50:03,387 INFO - package is present in package_testname[0] : com.Mumms.scripts 
+14 Mar 11:50:03,387 INFO - test method is present in package_testname[1] : testSearchPatientInfo- 
+14 Mar 11:50:03,388 INFO - value against package_testname is : PASS 
+14 Mar 11:50:03,388 INFO - Key of mapEntry1 : com.Mumms.scripts:testGenerateVisitReport- 
+14 Mar 11:50:03,388 INFO - package is present in package_testname[0] : com.Mumms.scripts 
+14 Mar 11:50:03,388 INFO - test method is present in package_testname[1] : testGenerateVisitReport- 
+14 Mar 11:50:03,388 INFO - value against package_testname is : PASS 
+14 Mar 11:50:03,389 INFO - Key of mapEntry1 : com.Mumms.scripts:testGenerateHISForAdmissionReport- 
+14 Mar 11:50:03,389 INFO - package is present in package_testname[0] : com.Mumms.scripts 
+14 Mar 11:50:03,389 INFO - test method is present in package_testname[1] : testGenerateHISForAdmissionReport- 
+14 Mar 11:50:03,389 INFO - value against package_testname is : PASS 
+14 Mar 11:50:03,389 INFO - Key of mapEntry1 : com.Mumms.scripts:testGenerateTeamMeetingReport- 
+14 Mar 11:50:03,390 INFO - package is present in package_testname[0] : com.Mumms.scripts 
+14 Mar 11:50:03,390 INFO - test method is present in package_testname[1] : testGenerateTeamMeetingReport- 
+14 Mar 11:50:03,390 INFO - value against package_testname is : PASS 
+14 Mar 11:50:03,405 INFO - resultDir = results\FF-windows 7-local 

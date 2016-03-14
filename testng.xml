@@ -20,6 +20,21 @@
 				<methods>
 			<parameter name="userrole" value="AdminUser "></parameter>
 					 <include name="testGenerateVisitReport" />
+					 <include name="testGenerateTeamMeetingReport" />
+					 <include name="testGenerateHISForAdmissionReport" />
+				</methods>
+			 </class>
+			<class name="com.Mumms.scripts.Patient">
+				<methods>
+			<parameter name="userrole" value="MummsAdmin"></parameter>
+					 <include name="testSearchPatientInfo" />
+				</methods>
+			 </class>
+			<class name="com.Mumms.scripts.Admin">
+				<methods>
+			<parameter name="userrole" value="MummsAdmin"></parameter>
+					 <include name="testAddWidgets" />
+					 <include name="testAddWidgetsName" />
 				</methods>
 			 </class>
 		 </classes>

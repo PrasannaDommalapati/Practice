@@ -217,14 +217,14 @@ public class TestEngineWeb {
 		{
 		case "firefox":
 			Thread.sleep(13000);
-			//this.WebDriver = new FirefoxDriver();
-			DesiredCapabilities ffcapabilities = DesiredCapabilities.firefox();
+			this.WebDriver = new FirefoxDriver();
+			//DesiredCapabilities ffcapabilities = DesiredCapabilities.firefox();
 			//ChromeOptions options = new ChromeOptions();
 			//options.addArguments("test-type");
 			//capabilities.setCapability(ChromeOptions.CAPABILITY, options);
-			String ffurl = "http://10.29.8.11:4445/wd/hub";
+			//String ffurl = "http://10.29.8.11:4445/wd/hub";
 			//DesiredCapabilities capabillities=DesiredCapabilities.chrome();
-			this.WebDriver = new RemoteWebDriver(new URL(ffurl),ffcapabilities);
+			//this.WebDriver = new RemoteWebDriver(new URL(ffurl),ffcapabilities);
 			Thread.sleep(5000);
 			break;
 		case "ie":

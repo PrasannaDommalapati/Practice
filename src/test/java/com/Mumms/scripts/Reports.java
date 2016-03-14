@@ -34,10 +34,11 @@ public class Reports extends ReportsLib {
 
 				this.reporter.initTestCaseDescription("SQA-120 - To Validate the visit report");
 				System.out.println("In the testVisitReport method");
-				// selectAgency("RUTH");
+				//selectAgency("RUTH");
 				goToReports();
 				generateVisitReport(data);
-				verifyVisitReport(data);
+				float pageLoadTime = appLoadingTime(ReportsPage.exportButton);
+				verifyVisitReport(data, pageLoadTime);
 			}
 
 		} catch (Exception e) {
@@ -129,11 +130,62 @@ public class Reports extends ReportsLib {
 			if (data.get("RunMode").equals("Y")) {
 
 				this.reporter.initTestCaseDescription("SQA-120 - To Validate the visit report");
-				System.out.println("In the testVisitReport method");
-				// selectAgency("RUTH");
+				System.out.println("In the testGenerateHISForAdmissionReport method");
+				//selectAgency("RUTH");
 				goToReports();
 				generateHISReportForAdmissionsReport(data);
-				verifyHISReportForAdmissionReport(data);
+				float pageLoadTime = appLoadingTime(ReportsPage.exportButton);
+				verifyHISReportForAdmissionReport(data, pageLoadTime);
+
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	@DataProvider
+	public Object[][] getTestDataFor_HISForDischargeReport() {
+		return TestUtil.getData("testGenerateHISForDischargeReport", TestData, "Admin");
+	}
+
+	@Test(dataProvider = "getTestDataFor_HISForDischargeReport")
+	public void testGenerateHISForDischargeReport(Hashtable<String, String> data) throws Throwable {
+
+		try {
+			if (data.get("RunMode").equals("Y")) {
+
+				this.reporter.initTestCaseDescription("SQA-120 - To Validate the visit report");
+				System.out.println("In the testGenerateHISForDischargeReport method");
+				// selectAgency("RUTH");
+				goToReports();
+				generateHISReportForDischargeReport(data);
+				verifyHISReportForDischargeReport(data);
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	@DataProvider
+	public Object[][] getTestDataFor_TeamMeetingReport() {
+		return TestUtil.getData("testGenerateTeamMeetingReport", TestData, "Admin");
+	}
+
+	@Test(dataProvider = "getTestDataFor_TeamMeetingReport")
+	public void testGenerateTeamMeetingReport(Hashtable<String, String> data) throws Throwable {
+
+		try {
+			if (data.get("RunMode").equals("Y")) {
+
+				this.reporter.initTestCaseDescription("SQA-120 - To Validate the visit report");
+				System.out.println("In the testGenerateTeamMeetingReport method");
+				// selectAgency("RUTH");
+				goToReports();
+				generateTeamMeetingReport(data);
+				float pageLoadTime = appLoadingTime(ReportsPage.exportButton);
+				verifyTeamMeetingReport(data, pageLoadTime);
 			}
 
 		} catch (Exception e) {

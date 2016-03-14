@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="firefoxWindowsLocal"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="35.926">
+  <properties />
+  
+  
+            <testcase name="testSearchPatientInfo" time="35.926" classname="com.Mumms.scripts.Patient" />
+      
+</testsuite>

@@ -45,7 +45,14 @@ public class ReportsPage extends ActionEngine {
 	public static By program;
 	public static By programInReport;
 	public static By paymentAdjustmentsReportByDate;
-	
+	public static By teamMeetingReport;
+	public static By teamMeetingReportingPeriod;
+	public static By patientStatus;
+	public static By teamInTeamMeetingReport;
+	public static By site;
+	public static By saveButton;
+	public static By selectedTeam;
+	public static By patientStatusInReport;
 	
 	public void Reports_Page()
 
@@ -82,6 +89,7 @@ public class ReportsPage extends ActionEngine {
 			teamMeeting = By.xpath("//div[text()='Team Meeting']");
 			paymentAdjustmentsReportByDate = By.xpath("//div[@class='gwt-Label hb-uneditable-text-clickable' and text()='Payments and Adjustments Report by date']");
 			upcomingF2FCertifications = By.xpath("//div[text()='Upcoming F2F and Certifications']");
+			teamMeetingReport = By.xpath("//div[text()='Team Meeting']");
 
 			fromDate_month = By
 					.xpath("//div[@id='gwt-debug-p_from_date']//select[@class='month hb-date-dropdown-novalue']");
@@ -104,6 +112,13 @@ public class ReportsPage extends ActionEngine {
 			visitTypeInReport = By.xpath("//span[contains(text(),'VISIT TYPE:')]");
 			siteOrOfficeInReport = By.xpath("//span[contains(text(),'SITE/OFFICE')]");
 			programInReport = By.xpath("//span[contains(text(),'PROGRAM')]");
+			teamMeetingReportingPeriod = By.xpath("//select[@id='gwt-debug-days_back']");
+			patientStatus = By.xpath("//select[@id='gwt-debug-Choose_Patient_Status_Filter']");
+			teamInTeamMeetingReport = By.xpath("//select[@id='gwt-debug-p_teampersonlist_id']");
+			selectedTeam = By.xpath("//span[contains(text(),'TEAM:')]");
+			site = By.xpath("//div[text()='Site/Office:']/parent::*/parent::*//select[@class='hb-textbox']");
+			saveButton = By.id("gwt-debug-data-modal-save-button");
+			patientStatusInReport = By.xpath("//span[contains(text(),'PATIENT STATUS:')]");
 			
 			
 			

@@ -8,6 +8,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import com.Mumms.page.AdminPage;
@@ -1118,6 +1120,213 @@ public class AdminLib extends MummsLib {
 			click(AdminPage.deleteLanguageCancel, "Cancel in the delete confirmation email");
 		}
 		click(AdminPage.languageSave, "save button");
+	}
+
+	public void createNewPerson(Hashtable<String, String> data, String personName) throws Throwable {
+
+		sleep(2000);
+		new AdminPage().Admin_Page();
+		click(AdminPage.Persons, "Persons link");
+		sleep(4000);
+		type(AdminPage.PersonsFirstName, personName, "Persons FirstName field");
+		sleep(3000);
+		type(AdminPage.PersonsLastName, data.get("PersonsLastName"), "Persons lastName field");
+		sleep(3000);
+		selectByVisibleText(AdminPage.PersonsRole, data.get("PersonsRole"), "Business from drop down");
+		sleep(3000);
+		click(AdminPage.ARAdd, "add Icon");
+		sleep(10000);
+		click(AdminPage.HummingBirdRadio, "Hummingbird Yes radio button");
+		sleep(2000);
+		selectByVisibleText(AdminPage.UserTypeDropdown, data.get("UserType"), "Select User type from the drop down");
+		click(AdminPage.HospiceEmployeeradio, "Hospice Employee radio button");
+		sleep(2000);
+		selectByVisibleText(AdminPage.EmployeeTypeDropdown, data.get("EmployeeType"),
+				"Select Employee type from the drop down");
+		selectByVisibleText(AdminPage.StartMonth, data.get("month"), "Select Month from the drop down");
+		selectByVisibleText(AdminPage.StartDate, data.get("day"), "Select Day from the drop down");
+		selectByVisibleText(AdminPage.StartYear, data.get("year"), "Select Year from the drop down");
+		type(AdminPage.EmailID, data.get("EmailId"), "Enter Email id");
+		sleep(3000);
+		click(AdminPage.PasswordButton, "Password Button");
+		sleep(3000);
+		click(AdminPage.OKButton, "OK button");
+		click(AdminPage.TickMark, "Tick Mark");
+		// click(AdminPage.SaveAndExitButton, "Save and Exit Button");
+		sleep(10000);
+	}
+
+	public void verifyEmail(Hashtable<String, String> data) throws Throwable {
+
+		JavascriptExecutor js = (JavascriptExecutor) Driver;
+		js.executeScript("window.open('https://mail.mumms.com/webmail/login2/','_blank');");
+		ArrayList<String> windows = new ArrayList<String>(Driver.getWindowHandles());
+		Driver.switchTo().window(windows.get(1));
+		sleep(6000);
+
+		WebElement user = Driver.findElement(By.xpath("//*[@id='username']"));
+
+		if (user.isDisplayed() == true) {
+			js.executeScript("arguments[0].value='" + data.get("UserName") + "';", user);
+			reporter.SuccessReport("Enter the user name", "User name is successfully entered");
+		} else {
+			reporter.failureReport("Enter the user name", "User name is not entered");
+		}
+
+		WebElement pwd = Driver.findElement(By.xpath("//*[@id='password']"));
+		if (pwd.isDisplayed() == true) {
+			js.executeScript("arguments[0].value='" + data.get("Password") + "';", pwd);
+			reporter.SuccessReport("Enter the password", "Password is successfully entered");
+		} else {
+			reporter.failureReport("Enter the password", "Password is not entered");
+		}
+
+		WebElement Btn = Driver.findElement(By.xpath("//*[@id='login-button']"));
+		if (Btn.isDisplayed() == true) {
+			js.executeScript("arguments[0].click();", Btn);
+			sleep(6000);
+			reporter.SuccessReport("Click on Login Button", "Login Button is successfully clicked");
+		} else {
+			reporter.failureReport("Click on Login Button", "Login Button is not clicked");
+		}
+
+		WebElement email = Driver
+				.findElement(By.xpath("//*[@class='x-grid-cell-inner x-unselectable']//div[@class='from']/span"));
+		String fromtext = email.getText();
+		if (fromtext.equalsIgnoreCase("jira-hbs@mumms.com")) {
+			System.out.println("Selected correct email id");
+			reporter.SuccessReport("Select and open the email", "Email is successfully opened");
+		} else {
+			reporter.failureReport("Select and open the email", "Correct email is not opened");
+		}
+
+		WebElement tmp = Driver.findElement(By.xpath("//div[@class='mcnt']/div/div/p[4]/strong[2]"));
+		if (tmp.isDisplayed() == true) {
+			System.out.println(tmp.getText());
+			reporter.SuccessReport("Retrieve the temporary password", "Temporary password is successfully retrieved");
+		} else {
+			reporter.failureReport("Retrieve the temporary password", "Temporary password is not retrieved");
+		}
+
+		String text = tmp.getText();
+
+		WebElement CnfrmBtn = Driver.findElement(
+				By.xpath("//*[@class='mcnt']/div/div//*[text()='click here']/parent::p/following-sibling::p/a"));
+		if (CnfrmBtn.isDisplayed() == true) {
+			js.executeScript("arguments[0].click();", CnfrmBtn);
+			sleep(2000);
+			reporter.SuccessReport("Click on Confirm your Account Button",
+					"Confirm your Account Button is successfully clicked");
+		} else {
+			reporter.failureReport("Click on Confirm your Account Button",
+					"Confirm your Account Button is not clicked");
+		}
+
+		sleep(10000);
+		ArrayList<String> tabs = new ArrayList<String>(Driver.getWindowHandles());
+		Driver.switchTo().window(tabs.get(2));
+
+		WebElement tmppwd = Driver
+				.findElement(By.xpath("//div[text()='Temporary Password:']/parent::td/following-sibling::td/input"));
+		if (tmppwd.isDisplayed() == true) {
+			js.executeScript("arguments[0].value='" + text + "';", tmppwd);
+			sleep(4000);
+			reporter.SuccessReport("Enter the temporary password", "Temporary password is successfully entered");
+		} else {
+			reporter.failureReport("Enter the temporary password", "Temporary password is not entered");
+		}
+
+		WebElement newpwd = Driver
+				.findElement(By.xpath("//div[text()='New Password:']/parent::td/following-sibling::td/input"));
+		if (tmppwd.isDisplayed() == true) {
+			js.executeScript("arguments[0].value='" + data.get("NewPassword") + "';", newpwd);
+			sleep(5000);
+			reporter.SuccessReport("Enter the New password", "New password is successfully entered");
+		} else {
+			reporter.failureReport("Enter the New password", "New password is not entered");
+		}
+
+		WebElement rptpwd = Driver
+				.findElement(By.xpath("//div[text()='Repeat Password:']/parent::td/following-sibling::td/input"));
+		if (rptpwd.isDisplayed() == true) {
+			js.executeScript("arguments[0].value='" + data.get("RepeatPassword") + "';", rptpwd);
+			sleep(5000);
+			reporter.SuccessReport("Enter the Repeat password", "Repeat password is successfully entered");
+		} else {
+			reporter.failureReport("Enter the Repeat password", "Repeat password is not entered");
+		}
+
+		WebElement HummingbirdBtn = Driver.findElement(By.xpath("//button[text()='LOGIN TO HUMMINGBIRD']"));
+		if (HummingbirdBtn.isDisplayed() == true) {
+			js.executeScript("arguments[0].click();", HummingbirdBtn);
+			sleep(5000);
+			reporter.SuccessReport("Click on Hummingbird button", "Hummingbird button is successfully clicked");
+		} else {
+			reporter.failureReport("Click on Hummingbird button", "Hummingbird button is not clicked");
+		}
+
+		Driver.close();
+
+	}
+
+	public void deleteEmail() throws Throwable {
+
+		sleep(3000);
+		ArrayList<String> tabs = new ArrayList<String>(Driver.getWindowHandles());
+		Driver.switchTo().window(tabs.get(1));
+
+		JavascriptExecutor myExecutor = ((JavascriptExecutor) Driver);
+		WebElement DeleteBtn = Driver.findElement(By.xpath("//*[@id='webmailbutton-1177-btn']"));
+		if (DeleteBtn.isDisplayed() == true) {
+			myExecutor.executeScript("arguments[0].click();", DeleteBtn);
+			sleep(2000);
+			reporter.SuccessReport("Click on Delete button", "Delete button is successfully clicked");
+		} else {
+			reporter.failureReport("Click on Delete button", "Delete button is not clicked");
+		}
+
+	}
+
+	/**
+	 * This method is to delete the given language
+	 *
+	 * @return nothing will be returned
+	 */
+	public void addWidgets() throws Throwable {
+		sleep(2000);
+		new AdminPage().Admin_Page();
+		click(AdminPage.verticalRightBar, "vertical right bar");
+		Actions act = new Actions(Driver);
+		WebElement PatientsbyPayer = Driver.findElement(By.xpath("//div[@class='hb-widget-container']/div[6]/img"));
+		WebElement Destination = Driver.findElement(By.xpath("//div[@class='GKGO0M2BPK']"));
+		act.dragAndDrop(PatientsbyPayer, Destination).build().perform();
+		long start = System.currentTimeMillis();
+		WebDriverWait wait = new WebDriverWait(Driver, 100);
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(AdminPage.loadingText));
+		long stop = System.currentTimeMillis();
+		float timeTaken = (stop - start) / 1000;
+		reporter.SuccessReport("Took", timeTaken + " secs to load the widget");
+	}
+	
+	/**
+	 * This method is to delete the given language
+	 *
+	 * @return nothing will be returned
+	 */
+	public void addWidgetsName() throws Throwable {
+		sleep(2000);
+		new AdminPage().Admin_Page();
+		click(AdminPage.verticalRightBar, "vertical right bar");
+		Actions act = new Actions(Driver);
+		WebElement PatientsbyPayer = Driver.findElement(By.xpath("//div[@class='hb-widget-container']/div[7]/img"));
+		WebElement Destination = Driver.findElement(By.xpath("//div[@class='GKGO0M2BPK']"));
+		act.dragAndDrop(PatientsbyPayer, Destination).build().perform();
+		long start = System.currentTimeMillis();
+		WebDriverWait wait = new WebDriverWait(Driver, 100);
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(AdminPage.loadingText));
+		long stop = System.currentTimeMillis();
+		float timeTaken = (stop - start) / 1000;
+		reporter.SuccessReport("Took", timeTaken + " secs to load the widget");
 	}
 
 }
