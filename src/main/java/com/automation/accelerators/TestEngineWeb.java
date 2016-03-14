@@ -36,6 +36,7 @@ import com.automation.report.CReporter;
 import com.automation.report.ReporterConstants;
 import com.automation.support.ExcelReader;
 import com.automation.support.MyListener;
+
 /**
  * 
  * @author in01518
@@ -50,10 +51,10 @@ public class TestEngineWeb {
 	public final Logger LOG = Logger.getLogger(TestEngineWeb.class);
 	protected AppiumDriver appiumDriver = null;
 	protected WebDriver WebDriver = null;
-	public EventFiringWebDriver Driver=null;
+	public EventFiringWebDriver Driver = null;
 	protected CReporter reporter = null;
 
-	/*cloud platform*/
+	/* cloud platform */
 	public String browser = null;
 	public String version = null;
 	public String platform = null;
@@ -67,51 +68,55 @@ public class TestEngineWeb {
 	public String updateJira = null;
 	public String buildNumber = "";
 	public String jobName = "";
-	public String executedFrom = null; 
+	public String executedFrom = null;
 	public String executionType = null;
 	public String suiteExecution = null;
 	public String suiteStartTime = null;
 	public static long startTime;
-	
 
-	//public static ExcelReader xlsrdr = new ExcelReader("C:\\Idexx\\Copy of SalesForceAccelerator\\TestData\\TestData.xls","Campaigns");
-	//public static ExcelReader xlsrdr = new ExcelReader("C:\\Idexx\\Copy of SalesForceAccelerator\\TestData\\TestData.xls","Campaigns");
-	public static String fileName = System.getProperty("user.dir")+"/TestData/TestData.xls";
-	public static ExcelReader xlsrdr= new ExcelReader(fileName);
-	
+	// public static ExcelReader xlsrdr = new ExcelReader("C:\\Idexx\\Copy of
+	// SalesForceAccelerator\\TestData\\TestData.xls","Campaigns");
+	// public static ExcelReader xlsrdr = new ExcelReader("C:\\Idexx\\Copy of
+	// SalesForceAccelerator\\TestData\\TestData.xls","Campaigns");
+	public static String fileName = System.getProperty("user.dir") + "/TestData/TestData.xls";
+	public static ExcelReader xlsrdr = new ExcelReader(fileName);
 
 	/**/
 
-	//private DesiredCapabilities capabilitiesForAppium = new DesiredCapabilities();
-	@Parameters({"executionType","suiteExecuted"})
-	@BeforeSuite(alwaysRun=true)
-	public void beforeSuite(ITestContext ctx,String type,String suite) throws Throwable{
-		executionType=type;
-		suiteExecution=suite;
-		PropertyConfigurator.configure(System.getProperty("user.dir")+"/Log.properties");
-		//ReportStampSupport.calculateSuiteStartTime();
-		//ObjectRepository.storeIdentification();
-		//ObjectRepository.storeValue();
+	// private DesiredCapabilities capabilitiesForAppium = new
+	// DesiredCapabilities();
+	@Parameters({ "executionType", "suiteExecuted" })
+	@BeforeSuite(alwaysRun = true)
+	public void beforeSuite(ITestContext ctx, String type, String suite) throws Throwable {
+		executionType = type;
+		suiteExecution = suite;
+		PropertyConfigurator.configure(System.getProperty("user.dir") + "/Log.properties");
+		// ReportStampSupport.calculateSuiteStartTime();
+		// ObjectRepository.storeIdentification();
+		// ObjectRepository.storeValue();
 		startTime = System.currentTimeMillis();
 		Date date = new Date();
 		SimpleDateFormat sdf = new SimpleDateFormat("dd_MMM_yyyy hh mm ss SSS");
 		String formattedDate = sdf.format(date);
-		suiteStartTime = formattedDate.replace(":","_").replace(" ","_");
-		System.out.println("Suite time ==============>"+suiteStartTime);
+		suiteStartTime = formattedDate.replace(":", "_").replace(" ", "_");
+		System.out.println("Suite time ==============>" + suiteStartTime);
 
-		
-	
 	}
-	//  @Parameters({"browser"})
-	@BeforeClass(alwaysRun=true)
-	//@BeforeTest
-	@Parameters({"automationName","browser","browserVersion","environment","platformName"})
-	public void beforeTest(String automationName, String browser, String browserVersion,String environment,String platformName) throws IOException, InterruptedException
-	{
-		/*PropertyConfigurator.configure(System.getProperty("user.dir")+"\\Log.properties");
-		   System.out.println(System.getProperty("user.dir")+"\\Log.properties");*/
 
-		/*get configuration */
+	// @Parameters({"browser"})
+	@BeforeClass(alwaysRun = true)
+	// @BeforeTest
+	@Parameters({ "automationName", "browser", "browserVersion", "environment", "platformName" })
+	public void beforeTest(String automationName, String browser, String browserVersion, String environment,
+			String platformName) throws IOException, InterruptedException {
+		/*
+		 * PropertyConfigurator.configure(System.getProperty("user.dir")+
+		 * "\\Log.properties");
+		 * System.out.println(System.getProperty("user.dir")+"\\Log.properties")
+		 * ;
+		 */
+
+		/* get configuration */
 		this.browser = browser;
 		this.version = browserVersion;
 		this.platform = platformName;
@@ -122,183 +127,178 @@ public class TestEngineWeb {
 		this.accessKey = ReporterConstants.SAUCELAB_ACCESSKEY;
 		this.executedFrom = System.getenv("COMPUTERNAME");
 		this.cloudImplicitWait = ReporterConstants.CLOUD_IMPLICIT_WAIT;
-		this.cloudPageLoadTimeOut = ReporterConstants.CLOUD_PAGELOAD_TIMEOUT;        
+		this.cloudPageLoadTimeOut = ReporterConstants.CLOUD_PAGELOAD_TIMEOUT;
 		this.updateJira = "";
 
 		/**/
 		System.out.println(environment);
 
-		if(environment.equalsIgnoreCase("local"))
-		{
+		if (environment.equalsIgnoreCase("local")) {
 			this.setWebDriverForLocal(browser);
 		}
-		if(environment.equalsIgnoreCase("cloudSauceLabs"))
-		{
+		if (environment.equalsIgnoreCase("cloudSauceLabs")) {
 
-			this.setRemoteWebDriverForCloudSauceLabs();	           
+			this.setRemoteWebDriverForCloudSauceLabs();
 		}
-		if(environment.equalsIgnoreCase("cloudSauceLabsJenkins"))
-		{
+		if (environment.equalsIgnoreCase("cloudSauceLabsJenkins")) {
 			this.updateConfigurationForCloudSauceLabsJenkins();
-			/*set remoteWebDriver for cloudsaucelabs*/        
+			/* set remoteWebDriver for cloudsaucelabs */
 
-			this.setRemoteWebDriverForCloudSauceLabs();	           
+			this.setRemoteWebDriverForCloudSauceLabs();
 		}
 
-
-		if (environment.equalsIgnoreCase("cloudBrowserStackJenkins"))
-		{
-			/*TBD: Not Implemented For Running Using Jenkins*/
+		if (environment.equalsIgnoreCase("cloudBrowserStackJenkins")) {
+			/* TBD: Not Implemented For Running Using Jenkins */
 			this.updateConfigurationForCloudBrowserStackJenkins();
 		}
-		reporter = CReporter.getCReporter(browser, platformName , environment, true);
+		reporter = CReporter.getCReporter(browser, platformName, environment, true);
 		Driver = new EventFiringWebDriver(this.WebDriver);
 		MyListener myListener = new MyListener();
 		Driver.register(myListener);
 		Driver.get(ReporterConstants.APP_BASE_URL);
-		//Driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+		// Driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 		Driver.manage().window().maximize();
 		Driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		Thread.sleep(5000);
 		reporter.calculateSuiteStartTime();
 	}
 
-
-	@Parameters({"browser"})
-	@AfterClass(alwaysRun=true)
-	//public void close(String browser) throws Exception{
-	//@AfterTest
-	public void afterTest(String browser) throws Exception
-	{
+	@Parameters({ "browser" })
+	@AfterClass(alwaysRun = true)
+	// public void close(String browser) throws Exception{
+	// @AfterTest
+	public void afterTest(String browser) throws Exception {
 		if (browser.equalsIgnoreCase("firefox")) {
 			Driver.quit();
-			/*Runtime.getRuntime().exec("taskkill /F /IM firefox.exe");
-			Thread.sleep(2000);
-			Runtime.getRuntime().exec("taskkill /F /IM plugin-container.exe");
-			Runtime.getRuntime().exec("taskkill /F /IM WerFault.exe"); */
-		}
-		else{
+			/*
+			 * Runtime.getRuntime().exec("taskkill /F /IM firefox.exe");
+			 * Thread.sleep(2000); Runtime.getRuntime().exec(
+			 * "taskkill /F /IM plugin-container.exe");
+			 * Runtime.getRuntime().exec("taskkill /F /IM WerFault.exe");
+			 */
+		} else {
 			Driver.quit();
 		}
-		//Driver.close();
+		// Driver.close();
 
 		reporter.calculateSuiteExecutionTime();
-		reporter.createHtmlSummaryReport(ReporterConstants.APP_BASE_URL,true);
+		reporter.createHtmlSummaryReport(ReporterConstants.APP_BASE_URL, true);
 		reporter.closeSummaryReport();
-
 
 	}
 
 	@BeforeMethod
 
-	public void beforeMethod(Method method)
-	{
-		//get browser info		
+	public void beforeMethod(Method method) {
+		// get browser info
 
-		//reporter = CReporter.getCReporter(deviceName, platformName, platformVersion, true);	
-		reporter.initTestCase(this.getClass().getName().substring(0,this.getClass().getName().lastIndexOf(".")), method.getName(), null, true);
+		// reporter = CReporter.getCReporter(deviceName, platformName,
+		// platformVersion, true);
+		reporter.initTestCase(this.getClass().getName().substring(0, this.getClass().getName().lastIndexOf(".")),
+				method.getName(), null, true);
 	}
 
 	@AfterMethod
 
-	public void afterMethod() throws IOException
-	{
-		//get browser info
+	public void afterMethod() throws IOException {
+		// get browser info
 
-		//reporter = CReporter.getCReporter(deviceName, platformName, platformVersion, true);				
-		reporter.calculateTestCaseExecutionTime();		
-		reporter.closeDetailedReport();		
+		// reporter = CReporter.getCReporter(deviceName, platformName,
+		// platformVersion, true);
+		reporter.calculateTestCaseExecutionTime();
+		reporter.closeDetailedReport();
 		reporter.updateTestCaseStatus();
 	}
 
-	public void setWebDriverForLocal(String browser) throws IOException, InterruptedException
-	{
-		switch(browser)
-		{
-/*		case "firefox":
-			Thread.sleep(13000);
-			//this.WebDriver = new FirefoxDriver();
-			DesiredCapabilities ffcapabilities = DesiredCapabilities.firefox();
-			//ChromeOptions options = new ChromeOptions();
-			//options.addArguments("test-type");
-			//capabilities.setCapability(ChromeOptions.CAPABILITY, options);
-			String ffurl = "http://10.29.8.11:4445/wd/hub";
-			//DesiredCapabilities capabillities=DesiredCapabilities.chrome();
-			this.WebDriver = new RemoteWebDriver(new URL(ffurl),ffcapabilities);
-			Thread.sleep(5000);
-			break;*/
+	public void setWebDriverForLocal(String browser) throws IOException, InterruptedException {
+		switch (browser) {
 		case "firefox":
 			Thread.sleep(13000);
-			this.WebDriver = new FirefoxDriver();
-			//DesiredCapabilities ffcapabilities = DesiredCapabilities.firefox();
-			//ChromeOptions options = new ChromeOptions();
-			//options.addArguments("test-type");
-			//capabilities.setCapability(ChromeOptions.CAPABILITY, options);
-			//String ffurl = "http://10.29.8.11:4445/wd/hub";
-			//DesiredCapabilities capabillities=DesiredCapabilities.chrome();
-			//this.WebDriver = new RemoteWebDriver(new URL(ffurl),ffcapabilities);
+			// this.WebDriver = new FirefoxDriver();
+			DesiredCapabilities ffcapabilities = DesiredCapabilities.firefox();
+			// ChromeOptions options = new ChromeOptions();
+			// options.addArguments("test-type");
+			// capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+			String ffurl = "http://10.29.8.11:4445/wd/hub";
+			// DesiredCapabilities capabillities=DesiredCapabilities.chrome();
+			this.WebDriver = new RemoteWebDriver(new URL(ffurl), ffcapabilities);
 			Thread.sleep(5000);
 			break;
+		/*
+		 * case "firefox": Thread.sleep(13000); this.WebDriver = new
+		 * FirefoxDriver(); //DesiredCapabilities ffcapabilities =
+		 * DesiredCapabilities.firefox(); //ChromeOptions options = new
+		 * ChromeOptions(); //options.addArguments("test-type");
+		 * //capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+		 * //String ffurl = "http://10.29.8.11:4445/wd/hub";
+		 * //DesiredCapabilities capabillities=DesiredCapabilities.chrome();
+		 * //this.WebDriver = new RemoteWebDriver(new
+		 * URL(ffurl),ffcapabilities); Thread.sleep(5000); break;
+		 */
 		case "ie":
 			Thread.sleep(10000);
 			System.out.println("iam in case IE");
 			DesiredCapabilities capab = DesiredCapabilities.internetExplorer();
-			capab.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS,true);
+			capab.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
 			capab.internetExplorer().setCapability("ignoreProtectedModeSettings", true);
-			//capab.setCapability(InternetExplorerDriver.INITIAL_BROWSER_URL, INIT_PAGE);
+			// capab.setCapability(InternetExplorerDriver.INITIAL_BROWSER_URL,
+			// INIT_PAGE);
 
 			File file = new File("Drivers\\IEDriverServer.exe");
-			System.setProperty("webdriver.ie.driver",file.getAbsolutePath());
+			System.setProperty("webdriver.ie.driver", file.getAbsolutePath());
 			capab.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
 			capab.setJavascriptEnabled(true);
 			capab.setCapability("requireWindowFocus", true);
 			capab.setCapability("enablePersistentHover", false);
 
 			this.WebDriver = new InternetExplorerDriver(capab);
-			/* Process p = Runtime
-						.getRuntime()
-						.exec("RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 255");
-				p.waitFor();*/
+			/*
+			 * Process p = Runtime .getRuntime() .exec(
+			 * "RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 255");
+			 * p.waitFor();
+			 */
 			Thread.sleep(8000);
 			break;
 		case "chrome":
 			Thread.sleep(2000);
 			System.out.println("We are in Chrome browser");
-		/*	System.setProperty("webdriver.chrome.driver",
-					"/usr/bin/google-chrome");
+			/*
+			 * System.setProperty("webdriver.chrome.driver",
+			 * "/usr/bin/google-chrome");
+			 * 
+			 * DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+			 * ChromeOptions options = new ChromeOptions();
+			 * options.addArguments("test-type");
+			 * capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+			 * this.WebDriver = new ChromeDriver(capabilities);
+			 * Thread.sleep(10000);
+			 */
 
-			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-			ChromeOptions options = new ChromeOptions();
-			options.addArguments("test-type");
-			capabilities.setCapability(ChromeOptions.CAPABILITY, options);
-			this.WebDriver = new ChromeDriver(capabilities);
-			Thread.sleep(10000);*/
-			
 			System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("test-type");
 			capabilities.setCapability(ChromeOptions.CAPABILITY, options);
 			String chromeurl = "http://10.29.8.11:4444/wd/hub";
-			DesiredCapabilities capabillities=DesiredCapabilities.chrome();
-			this.WebDriver = new RemoteWebDriver(new URL(chromeurl),capabillities);
+			DesiredCapabilities capabillities = DesiredCapabilities.chrome();
+			this.WebDriver = new RemoteWebDriver(new URL(chromeurl), capabillities);
 			Thread.sleep(10000);
 			break;
 		case "Safari":
 
-			for(int i=1;i<=10;i++){
+			for (int i = 1; i <= 10; i++) {
 
-				try{
-					this.WebDriver=new SafariDriver();
+				try {
+					this.WebDriver = new SafariDriver();
 
 					break;
-				}catch(Exception e1){
+				} catch (Exception e1) {
 					Runtime.getRuntime().exec("taskkill /F /IM Safari.exe");
 					Thread.sleep(3000);
 					Runtime.getRuntime().exec("taskkill /F /IM plugin-container.exe");
-					Runtime.getRuntime().exec("taskkill /F /IM WerFault.exe"); 
+					Runtime.getRuntime().exec("taskkill /F /IM WerFault.exe");
 
-					continue;   
+					continue;
 
 				}
 
@@ -308,8 +308,7 @@ public class TestEngineWeb {
 
 	}
 
-	private void setRemoteWebDriverForCloudSauceLabs() throws IOException, InterruptedException
-	{
+	private void setRemoteWebDriverForCloudSauceLabs() throws IOException, InterruptedException {
 		if (this.browser.equalsIgnoreCase("Safari")) {
 			DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
 			desiredCapabilities.setCapability(CapabilityType.BROWSER_NAME, this.browser);
@@ -318,26 +317,26 @@ public class TestEngineWeb {
 			desiredCapabilities.setCapability("username", this.userName);
 			desiredCapabilities.setCapability("accessKey", this.accessKey);
 			desiredCapabilities.setCapability("accessKey", this.accessKey);
-			desiredCapabilities.setCapability("name", this.executedFrom + " - " /*+ this.jobName + " - " + this.buildNumber*/+this.platform +" - " +this.browser);
+			desiredCapabilities.setCapability("name", this.executedFrom
+					+ " - " /* + this.jobName + " - " + this.buildNumber */ + this.platform + " - " + this.browser);
 			URL commandExecutorUri = new URL("http://ondemand.saucelabs.com/wd/hub");
-			for(int i=1;i<=10;i++){
+			for (int i = 1; i <= 10; i++) {
 
-				try{
+				try {
 					this.WebDriver = new RemoteWebDriver(commandExecutorUri, desiredCapabilities);
 
 					break;
-				}catch(Exception e1){
+				} catch (Exception e1) {
 					Runtime.getRuntime().exec("taskkill /F /IM Safari.exe");
 					Thread.sleep(3000);
 					Runtime.getRuntime().exec("taskkill /F /IM plugin-container.exe");
-					Runtime.getRuntime().exec("taskkill /F /IM WerFault.exe"); 
+					Runtime.getRuntime().exec("taskkill /F /IM WerFault.exe");
 
-					continue;   
+					continue;
 
 				}
 			}
-		}
-		else{
+		} else {
 
 			DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
 			desiredCapabilities.setCapability(CapabilityType.BROWSER_NAME, this.browser);
@@ -346,17 +345,17 @@ public class TestEngineWeb {
 			desiredCapabilities.setCapability("username", this.userName);
 			desiredCapabilities.setCapability("accessKey", this.accessKey);
 			desiredCapabilities.setCapability("accessKey", this.accessKey);
-			desiredCapabilities.setCapability("name", this.executedFrom + " - " /*+ this.jobName + " - " + this.buildNumber*/+this.platform +" - " +this.browser);
+			desiredCapabilities.setCapability("name", this.executedFrom
+					+ " - " /* + this.jobName + " - " + this.buildNumber */ + this.platform + " - " + this.browser);
 			desiredCapabilities.setCapability("idleTimeout", 1000);
 			desiredCapabilities.setCapability("commandTimeout", 600);
-			
+
 			URL commandExecutorUri = new URL("http://ondemand.saucelabs.com/wd/hub");
 			this.WebDriver = new RemoteWebDriver(commandExecutorUri, desiredCapabilities);
 		}
 	}
 
-	private void updateConfigurationForCloudSauceLabsJenkins()
-	{
+	private void updateConfigurationForCloudSauceLabsJenkins() {
 		this.browser = System.getenv("SELENIUM_BROWSER");
 		this.version = System.getenv("SELENIUM_VERSION");
 		this.platform = System.getenv("SELENIUM_PLATFORM");
@@ -365,7 +364,7 @@ public class TestEngineWeb {
 		this.buildNumber = System.getenv("BUILD_NUMBER");
 		this.jobName = System.getenv("JOB_NAME");
 
-		/*For Debug Purpose*/
+		/* For Debug Purpose */
 		LOG.info("Debug: browser = " + this.browser);
 		LOG.info("Debug: version = " + this.version);
 		LOG.info("Debug: platform = " + this.platform);
@@ -376,14 +375,13 @@ public class TestEngineWeb {
 		LOG.info("Debug: jobName = " + this.jobName);
 	}
 
-	/*TBD: Not Implemented For Running Using Jenkins*/
-	private void updateConfigurationForCloudBrowserStackJenkins()
-	{
+	/* TBD: Not Implemented For Running Using Jenkins */
+	private void updateConfigurationForCloudBrowserStackJenkins() {
 
 	}
-	
-	public String getBrowser(){
-		  return this.browser;
-		 }
+
+	public String getBrowser() {
+		return this.browser;
+	}
 
 }
