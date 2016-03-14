@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Mumms Automation test suite" duration-ms="674975" started-at="2016-03-14T16:38:48Z" finished-at="2016-03-14T16:50:03Z">
+  <suite name="Mumms Automation test suite" duration-ms="615470" started-at="2016-03-14T17:08:00Z" finished-at="2016-03-14T17:18:15Z">
     <groups>
     </groups>
-    <test name="firefoxWindowsLocal" duration-ms="674975" started-at="2016-03-14T16:38:48Z" finished-at="2016-03-14T16:50:03Z">
+    <test name="firefoxWindowsLocal" duration-ms="615470" started-at="2016-03-14T17:08:00Z" finished-at="2016-03-14T17:18:15Z">
       <class name="com.Mumms.scripts.Patient">
-        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.Mumms.scripts.Patient@bd4dc25]" name="beforeTest" is-config="true" duration-ms="28995" started-at="2016-03-14T11:41:13Z" finished-at="2016-03-14T11:41:42Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.Mumms.scripts.Patient@bd4dc25]" name="beforeTest" is-config="true" duration-ms="26534" started-at="2016-03-14T12:10:37Z" finished-at="2016-03-14T12:11:03Z">
           <params>
             <param index="0">
               <value>
@@ -38,7 +38,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Mumms.scripts.Patient@bd4dc25]" name="beforeMethod" is-config="true" duration-ms="34" started-at="2016-03-14T11:41:42Z" finished-at="2016-03-14T11:41:42Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Mumms.scripts.Patient@bd4dc25]" name="beforeMethod" is-config="true" duration-ms="39" started-at="2016-03-14T12:11:03Z" finished-at="2016-03-14T12:11:03Z">
           <params>
             <param index="0">
               <value>
@@ -49,7 +49,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:com.Mumms.scripts.Patient@bd4dc25]" name="login" is-config="true" duration-ms="43539" started-at="2016-03-14T11:41:42Z" finished-at="2016-03-14T11:42:25Z">
+        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:com.Mumms.scripts.Patient@bd4dc25]" name="login" is-config="true" duration-ms="15780" started-at="2016-03-14T12:11:03Z" finished-at="2016-03-14T12:11:19Z">
           <params>
             <param index="0">
               <value>
@@ -60,7 +60,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="testSearchPatientInfo(java.util.Hashtable)[pri:0, instance:com.Mumms.scripts.Patient@bd4dc25]" name="testSearchPatientInfo" duration-ms="35926" started-at="2016-03-14T11:42:25Z" data-provider="getTestDataFor_TestSearchPatientInfo" finished-at="2016-03-14T11:43:01Z">
+        <test-method status="PASS" signature="testSearchPatientInfo(java.util.Hashtable)[pri:0, instance:com.Mumms.scripts.Patient@bd4dc25]" name="testSearchPatientInfo" duration-ms="37837" started-at="2016-03-14T12:11:19Z" data-provider="getTestDataFor_TestSearchPatientInfo" finished-at="2016-03-14T12:11:57Z">
           <params>
             <param index="0">
               <value>
@@ -71,15 +71,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchPatientInfo -->
-        <test-method status="PASS" signature="logOut()[pri:0, instance:com.Mumms.scripts.Patient@bd4dc25]" name="logOut" is-config="true" duration-ms="9513" started-at="2016-03-14T11:43:01Z" finished-at="2016-03-14T11:43:11Z">
+        <test-method status="PASS" signature="logOut()[pri:0, instance:com.Mumms.scripts.Patient@bd4dc25]" name="logOut" is-config="true" duration-ms="8971" started-at="2016-03-14T12:11:57Z" finished-at="2016-03-14T12:12:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOut -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Mumms.scripts.Patient@bd4dc25]" name="afterMethod" is-config="true" duration-ms="19" started-at="2016-03-14T11:43:11Z" finished-at="2016-03-14T11:43:11Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Mumms.scripts.Patient@bd4dc25]" name="afterMethod" is-config="true" duration-ms="38" started-at="2016-03-14T12:12:06Z" finished-at="2016-03-14T12:12:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest(java.lang.String)[pri:0, instance:com.Mumms.scripts.Patient@bd4dc25]" name="afterTest" is-config="true" duration-ms="2617" started-at="2016-03-14T11:43:11Z" finished-at="2016-03-14T11:43:13Z">
+        <test-method status="PASS" signature="afterTest(java.lang.String)[pri:0, instance:com.Mumms.scripts.Patient@bd4dc25]" name="afterTest" is-config="true" duration-ms="206" started-at="2016-03-14T12:12:06Z" finished-at="2016-03-14T12:12:06Z">
           <params>
             <param index="0">
               <value>
@@ -92,7 +92,7 @@
         </test-method> <!-- afterTest -->
       </class> <!-- com.Mumms.scripts.Patient -->
       <class name="com.Mumms.scripts.Admin">
-        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.Mumms.scripts.Admin@156b88f5]" name="beforeTest" is-config="true" duration-ms="30999" started-at="2016-03-14T11:46:24Z" finished-at="2016-03-14T11:46:55Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.Mumms.scripts.Admin@156b88f5]" name="beforeTest" is-config="true" duration-ms="26149" started-at="2016-03-14T12:15:45Z" finished-at="2016-03-14T12:16:12Z">
           <params>
             <param index="0">
               <value>
@@ -123,7 +123,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Mumms.scripts.Admin@156b88f5]" name="beforeMethod" is-config="true" duration-ms="51" started-at="2016-03-14T11:46:55Z" finished-at="2016-03-14T11:46:55Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Mumms.scripts.Admin@156b88f5]" name="beforeMethod" is-config="true" duration-ms="66" started-at="2016-03-14T12:16:12Z" finished-at="2016-03-14T12:16:12Z">
           <params>
             <param index="0">
               <value>
@@ -134,7 +134,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:com.Mumms.scripts.Admin@156b88f5]" name="login" is-config="true" duration-ms="61438" started-at="2016-03-14T11:46:55Z" finished-at="2016-03-14T11:47:56Z">
+        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:com.Mumms.scripts.Admin@156b88f5]" name="login" is-config="true" duration-ms="15545" started-at="2016-03-14T12:16:12Z" finished-at="2016-03-14T12:16:27Z">
           <params>
             <param index="0">
               <value>
@@ -145,7 +145,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="testAddWidgets(java.util.Hashtable)[pri:0, instance:com.Mumms.scripts.Admin@156b88f5]" name="testAddWidgets" duration-ms="32077" started-at="2016-03-14T11:47:56Z" data-provider="getTestDataFor_addWidgets" finished-at="2016-03-14T11:48:28Z">
+        <test-method status="PASS" signature="testAddWidgets(java.util.Hashtable)[pri:0, instance:com.Mumms.scripts.Admin@156b88f5]" name="testAddWidgets" duration-ms="36631" started-at="2016-03-14T12:16:27Z" data-provider="getTestDataFor_addWidgets" finished-at="2016-03-14T12:17:04Z">
           <params>
             <param index="0">
               <value>
@@ -156,15 +156,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddWidgets -->
-        <test-method status="PASS" signature="logOut()[pri:0, instance:com.Mumms.scripts.Admin@156b88f5]" name="logOut" is-config="true" duration-ms="8191" started-at="2016-03-14T11:48:28Z" finished-at="2016-03-14T11:48:37Z">
+        <test-method status="PASS" signature="logOut()[pri:0, instance:com.Mumms.scripts.Admin@156b88f5]" name="logOut" is-config="true" duration-ms="9276" started-at="2016-03-14T12:17:04Z" finished-at="2016-03-14T12:17:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOut -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Mumms.scripts.Admin@156b88f5]" name="afterMethod" is-config="true" duration-ms="19" started-at="2016-03-14T11:48:37Z" finished-at="2016-03-14T11:48:37Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Mumms.scripts.Admin@156b88f5]" name="afterMethod" is-config="true" duration-ms="30" started-at="2016-03-14T12:17:13Z" finished-at="2016-03-14T12:17:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Mumms.scripts.Admin@156b88f5]" name="beforeMethod" is-config="true" duration-ms="15" started-at="2016-03-14T11:48:37Z" finished-at="2016-03-14T11:48:37Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Mumms.scripts.Admin@156b88f5]" name="beforeMethod" is-config="true" duration-ms="43" started-at="2016-03-14T12:17:13Z" finished-at="2016-03-14T12:17:13Z">
           <params>
             <param index="0">
               <value>
@@ -175,7 +175,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:com.Mumms.scripts.Admin@156b88f5]" name="login" is-config="true" duration-ms="36794" started-at="2016-03-14T11:48:37Z" finished-at="2016-03-14T11:49:13Z">
+        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:com.Mumms.scripts.Admin@156b88f5]" name="login" is-config="true" duration-ms="16355" started-at="2016-03-14T12:17:13Z" finished-at="2016-03-14T12:17:30Z">
           <params>
             <param index="0">
               <value>
@@ -186,7 +186,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="testAddWidgetsName(java.util.Hashtable)[pri:0, instance:com.Mumms.scripts.Admin@156b88f5]" name="testAddWidgetsName" duration-ms="38616" started-at="2016-03-14T11:49:13Z" data-provider="getTestDataFor_addWidgetsname" finished-at="2016-03-14T11:49:52Z">
+        <test-method status="PASS" signature="testAddWidgetsName(java.util.Hashtable)[pri:0, instance:com.Mumms.scripts.Admin@156b88f5]" name="testAddWidgetsName" duration-ms="36435" started-at="2016-03-14T12:17:30Z" data-provider="getTestDataFor_addWidgetsname" finished-at="2016-03-14T12:18:06Z">
           <params>
             <param index="0">
               <value>
@@ -197,15 +197,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddWidgetsName -->
-        <test-method status="PASS" signature="logOut()[pri:0, instance:com.Mumms.scripts.Admin@156b88f5]" name="logOut" is-config="true" duration-ms="9190" started-at="2016-03-14T11:49:52Z" finished-at="2016-03-14T11:50:01Z">
+        <test-method status="PASS" signature="logOut()[pri:0, instance:com.Mumms.scripts.Admin@156b88f5]" name="logOut" is-config="true" duration-ms="8977" started-at="2016-03-14T12:18:06Z" finished-at="2016-03-14T12:18:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOut -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Mumms.scripts.Admin@156b88f5]" name="afterMethod" is-config="true" duration-ms="24" started-at="2016-03-14T11:50:01Z" finished-at="2016-03-14T11:50:01Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Mumms.scripts.Admin@156b88f5]" name="afterMethod" is-config="true" duration-ms="45" started-at="2016-03-14T12:18:15Z" finished-at="2016-03-14T12:18:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest(java.lang.String)[pri:0, instance:com.Mumms.scripts.Admin@156b88f5]" name="afterTest" is-config="true" duration-ms="1728" started-at="2016-03-14T11:50:01Z" finished-at="2016-03-14T11:50:03Z">
+        <test-method status="PASS" signature="afterTest(java.lang.String)[pri:0, instance:com.Mumms.scripts.Admin@156b88f5]" name="afterTest" is-config="true" duration-ms="194" started-at="2016-03-14T12:18:15Z" finished-at="2016-03-14T12:18:15Z">
           <params>
             <param index="0">
               <value>
@@ -218,7 +218,7 @@
         </test-method> <!-- afterTest -->
       </class> <!-- com.Mumms.scripts.Admin -->
       <class name="com.Mumms.scripts.Reports">
-        <test-method status="PASS" signature="beforeSuite(org.testng.ITestContext, java.lang.String, java.lang.String)[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="beforeSuite" is-config="true" duration-ms="26" started-at="2016-03-14T11:38:48Z" finished-at="2016-03-14T11:38:48Z">
+        <test-method status="PASS" signature="beforeSuite(org.testng.ITestContext, java.lang.String, java.lang.String)[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="beforeSuite" is-config="true" duration-ms="36" started-at="2016-03-14T12:08:00Z" finished-at="2016-03-14T12:08:00Z">
           <params>
             <param index="0">
               <value>
@@ -239,7 +239,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="beforeTest" is-config="true" duration-ms="30526" started-at="2016-03-14T11:38:48Z" finished-at="2016-03-14T11:39:18Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="beforeTest" is-config="true" duration-ms="28461" started-at="2016-03-14T12:08:00Z" finished-at="2016-03-14T12:08:28Z">
           <params>
             <param index="0">
               <value>
@@ -270,7 +270,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="beforeMethod" is-config="true" duration-ms="41" started-at="2016-03-14T11:39:19Z" finished-at="2016-03-14T11:39:19Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="beforeMethod" is-config="true" duration-ms="80" started-at="2016-03-14T12:08:28Z" finished-at="2016-03-14T12:08:28Z">
           <params>
             <param index="0">
               <value>
@@ -281,7 +281,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="login" is-config="true" duration-ms="43072" started-at="2016-03-14T11:39:19Z" finished-at="2016-03-14T11:40:02Z">
+        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="login" is-config="true" duration-ms="31207" started-at="2016-03-14T12:08:28Z" finished-at="2016-03-14T12:09:00Z">
           <params>
             <param index="0">
               <value>
@@ -292,7 +292,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="testGenerateVisitReport(java.util.Hashtable)[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="testGenerateVisitReport" duration-ms="61739" started-at="2016-03-14T11:40:02Z" data-provider="getTestDataFor_visitReport" finished-at="2016-03-14T11:41:04Z">
+        <test-method status="PASS" signature="testGenerateVisitReport(java.util.Hashtable)[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="testGenerateVisitReport" duration-ms="87219" started-at="2016-03-14T12:09:00Z" data-provider="getTestDataFor_visitReport" finished-at="2016-03-14T12:10:27Z">
           <params>
             <param index="0">
               <value>
@@ -303,15 +303,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGenerateVisitReport -->
-        <test-method status="PASS" signature="logOut()[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="logOut" is-config="true" duration-ms="9074" started-at="2016-03-14T11:41:04Z" finished-at="2016-03-14T11:41:13Z">
+        <test-method status="PASS" signature="logOut()[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="logOut" is-config="true" duration-ms="9616" started-at="2016-03-14T12:10:27Z" finished-at="2016-03-14T12:10:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOut -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="afterMethod" is-config="true" duration-ms="28" started-at="2016-03-14T11:41:13Z" finished-at="2016-03-14T11:41:13Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="afterMethod" is-config="true" duration-ms="58" started-at="2016-03-14T12:10:37Z" finished-at="2016-03-14T12:10:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="beforeMethod" is-config="true" duration-ms="25" started-at="2016-03-14T11:43:13Z" finished-at="2016-03-14T11:43:13Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="beforeMethod" is-config="true" duration-ms="27" started-at="2016-03-14T12:12:06Z" finished-at="2016-03-14T12:12:06Z">
           <params>
             <param index="0">
               <value>
@@ -322,7 +322,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="login" is-config="true" duration-ms="13835" started-at="2016-03-14T11:43:13Z" finished-at="2016-03-14T11:43:27Z">
+        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="login" is-config="true" duration-ms="15981" started-at="2016-03-14T12:12:06Z" finished-at="2016-03-14T12:12:22Z">
           <params>
             <param index="0">
               <value>
@@ -333,7 +333,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="testGenerateHISForAdmissionReport(java.util.Hashtable)[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="testGenerateHISForAdmissionReport" duration-ms="57225" started-at="2016-03-14T11:43:27Z" data-provider="getTestDataFor_HISForAdmissionReport" finished-at="2016-03-14T11:44:24Z">
+        <test-method status="PASS" signature="testGenerateHISForAdmissionReport(java.util.Hashtable)[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="testGenerateHISForAdmissionReport" duration-ms="67729" started-at="2016-03-14T12:12:22Z" data-provider="getTestDataFor_HISForAdmissionReport" finished-at="2016-03-14T12:13:30Z">
           <params>
             <param index="0">
               <value>
@@ -344,15 +344,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGenerateHISForAdmissionReport -->
-        <test-method status="PASS" signature="logOut()[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="logOut" is-config="true" duration-ms="8778" started-at="2016-03-14T11:44:24Z" finished-at="2016-03-14T11:44:33Z">
+        <test-method status="PASS" signature="logOut()[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="logOut" is-config="true" duration-ms="9280" started-at="2016-03-14T12:13:30Z" finished-at="2016-03-14T12:13:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOut -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="afterMethod" is-config="true" duration-ms="21" started-at="2016-03-14T11:44:33Z" finished-at="2016-03-14T11:44:33Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="afterMethod" is-config="true" duration-ms="25" started-at="2016-03-14T12:13:39Z" finished-at="2016-03-14T12:13:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="beforeMethod" is-config="true" duration-ms="13" started-at="2016-03-14T11:44:33Z" finished-at="2016-03-14T11:44:33Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="beforeMethod" is-config="true" duration-ms="21" started-at="2016-03-14T12:13:39Z" finished-at="2016-03-14T12:13:39Z">
           <params>
             <param index="0">
               <value>
@@ -363,7 +363,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="login" is-config="true" duration-ms="13167" started-at="2016-03-14T11:44:33Z" finished-at="2016-03-14T11:44:46Z">
+        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="login" is-config="true" duration-ms="16460" started-at="2016-03-14T12:13:39Z" finished-at="2016-03-14T12:13:56Z">
           <params>
             <param index="0">
               <value>
@@ -374,7 +374,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="testGenerateTeamMeetingReport(java.util.Hashtable)[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="testGenerateTeamMeetingReport" duration-ms="85135" started-at="2016-03-14T11:44:46Z" data-provider="getTestDataFor_TeamMeetingReport" finished-at="2016-03-14T11:46:11Z">
+        <test-method status="PASS" signature="testGenerateTeamMeetingReport(java.util.Hashtable)[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="testGenerateTeamMeetingReport" duration-ms="100551" started-at="2016-03-14T12:13:56Z" data-provider="getTestDataFor_TeamMeetingReport" finished-at="2016-03-14T12:15:36Z">
           <params>
             <param index="0">
               <value>
@@ -385,15 +385,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGenerateTeamMeetingReport -->
-        <test-method status="PASS" signature="logOut()[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="logOut" is-config="true" duration-ms="8662" started-at="2016-03-14T11:46:11Z" finished-at="2016-03-14T11:46:20Z">
+        <test-method status="PASS" signature="logOut()[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="logOut" is-config="true" duration-ms="9081" started-at="2016-03-14T12:15:36Z" finished-at="2016-03-14T12:15:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOut -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="afterMethod" is-config="true" duration-ms="19" started-at="2016-03-14T11:46:20Z" finished-at="2016-03-14T11:46:20Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="afterMethod" is-config="true" duration-ms="40" started-at="2016-03-14T12:15:45Z" finished-at="2016-03-14T12:15:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest(java.lang.String)[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="afterTest" is-config="true" duration-ms="3577" started-at="2016-03-14T11:46:20Z" finished-at="2016-03-14T11:46:24Z">
+        <test-method status="PASS" signature="afterTest(java.lang.String)[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="afterTest" is-config="true" duration-ms="182" started-at="2016-03-14T12:15:45Z" finished-at="2016-03-14T12:15:45Z">
           <params>
             <param index="0">
               <value>

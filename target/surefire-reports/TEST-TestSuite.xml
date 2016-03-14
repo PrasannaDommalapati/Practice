@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="78.304" tests="1" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="366.4" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_73\jre\bin"/>
@@ -63,5 +63,10 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="testGenerateVisitReport" classname="com.Mumms.scripts.Reports" time="78.304"/>
+  <testcase name="testGenerateVisitReport" classname="com.Mumms.scripts.Reports" time="87.22"/>
+  <testcase name="testSearchPatientInfo" classname="com.Mumms.scripts.Patient" time="37.833"/>
+  <testcase name="testGenerateHISForAdmissionReport" classname="com.Mumms.scripts.Reports" time="67.728"/>
+  <testcase name="testGenerateTeamMeetingReport" classname="com.Mumms.scripts.Reports" time="100.552"/>
+  <testcase name="testAddWidgets" classname="com.Mumms.scripts.Admin" time="36.631"/>
+  <testcase name="testAddWidgetsName" classname="com.Mumms.scripts.Admin" time="36.436"/>
 </testsuite>

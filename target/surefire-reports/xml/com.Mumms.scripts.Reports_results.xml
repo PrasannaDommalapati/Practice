@@ -4,12 +4,12 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="204.099">
+           time="255.499">
   <properties />
   
   
-            <testcase name="testGenerateTeamMeetingReport" time="85.135" classname="com.Mumms.scripts.Reports" />
-                <testcase name="testGenerateHISForAdmissionReport" time="57.225" classname="com.Mumms.scripts.Reports" />
-                <testcase name="testGenerateVisitReport" time="61.739" classname="com.Mumms.scripts.Reports" />
+            <testcase name="testGenerateTeamMeetingReport" time="100.551" classname="com.Mumms.scripts.Reports" />
+                <testcase name="testGenerateVisitReport" time="87.219" classname="com.Mumms.scripts.Reports" />
+                <testcase name="testGenerateHISForAdmissionReport" time="67.729" classname="com.Mumms.scripts.Reports" />
       
 </testsuite>
