@@ -33,8 +33,8 @@
 			<class name="com.Mumms.scripts.Admin">
 				<methods>
 			<parameter name="userrole" value="MummsAdmin"></parameter>
-					 <include name="testAddWidgets" />
-					 <include name="testAddWidgetsName" />
+					 <include name="testaddWidgetPatientByFacilityType" />
+					 <include name="testaddWidgetPatientByPayerType" />
 				</methods>
 			 </class>
 		 </classes>

@@ -829,18 +829,18 @@ public class Admin extends AdminLib {
 	
 	@DataProvider
 	public Object[][] getTestDataFor_addWidgets() {
-		return TestUtil.getData("testAddWidgets", TestData, "Admin");
+		return TestUtil.getData("testaddWidgetPatientByFacilityType", TestData, "Admin");
 	}
 
 	@Test(dataProvider = "getTestDataFor_addWidgets")
-	public void testAddWidgets(Hashtable<String, String> data) throws Throwable {
+	public void testaddWidgetPatientByFacilityType(Hashtable<String, String> data) throws Throwable {
 
 		try {
 
 			if (data.get("RunMode").equals("Y")) {
 				this.reporter.initTestCaseDescription("Adding Widgets");
 				selectAgency("RUTH");
-				addWidgets();
+				addWidgetPatientByFacilityType();
 			}
 
 		} catch (Exception e) {
@@ -851,18 +851,18 @@ public class Admin extends AdminLib {
 	
 	@DataProvider
 	public Object[][] getTestDataFor_addWidgetsname() {
-		return TestUtil.getData("testAddWidgetsName", TestData, "Admin");
+		return TestUtil.getData("testaddWidgetPatientByPayerType", TestData, "Admin");
 	}
 
 	@Test(dataProvider = "getTestDataFor_addWidgetsname")
-	public void testAddWidgetsName(Hashtable<String, String> data) throws Throwable {
+	public void testaddWidgetPatientByPayerType(Hashtable<String, String> data) throws Throwable {
 
 		try {
 
 			if (data.get("RunMode").equals("Y")) {
 				this.reporter.initTestCaseDescription("Adding Widgets");
 				selectAgency("RUTH");
-				addWidgetsName();
+				addWidgetPatientByPayerType();
 			}
 
 		} catch (Exception e) {

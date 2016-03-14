@@ -1292,7 +1292,7 @@ public class AdminLib extends MummsLib {
 	 *
 	 * @return nothing will be returned
 	 */
-	public void addWidgets() throws Throwable {
+	public void addWidgetPatientByFacilityType() throws Throwable {
 		sleep(2000);
 		new AdminPage().Admin_Page();
 		click(AdminPage.verticalRightBar, "vertical right bar");
@@ -1313,7 +1313,7 @@ public class AdminLib extends MummsLib {
 	 *
 	 * @return nothing will be returned
 	 */
-	public void addWidgetsName() throws Throwable {
+	public void addWidgetPatientByPayerType() throws Throwable {
 		sleep(2000);
 		new AdminPage().Admin_Page();
 		click(AdminPage.verticalRightBar, "vertical right bar");

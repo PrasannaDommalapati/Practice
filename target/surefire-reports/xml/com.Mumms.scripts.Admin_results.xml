@@ -4,11 +4,11 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="73.066">
+           time="62.744">
   <properties />
   
   
-            <testcase name="testAddWidgetsName" time="36.435" classname="com.Mumms.scripts.Admin" />
-                <testcase name="testAddWidgets" time="36.631" classname="com.Mumms.scripts.Admin" />
+            <testcase name="testaddWidgetPatientByPayerType" time="32.092" classname="com.Mumms.scripts.Admin" />
+                <testcase name="testaddWidgetPatientByFacilityType" time="30.652" classname="com.Mumms.scripts.Admin" />
       
 </testsuite>
