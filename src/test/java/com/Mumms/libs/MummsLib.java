@@ -6,11 +6,10 @@ import java.util.Random;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
-import com.Mumms.page.HomePage;
-import com.Mumms.page.LoginPage;
 import com.automation.accelerators.ActionEngine;
 import com.automation.utilities.TestUtil;
 import com.automation.utilities.Xls_Reader;
+import com.Mumms.page.*;
 
 public class MummsLib extends ActionEngine {
 	
@@ -64,7 +63,9 @@ public class MummsLib extends ActionEngine {
 		typeUsingJavaScriptExecutor(LoginPage.userName, data.get("username"), "username");
 		type(LoginPage.password, data.get("password"), "password");
 		click(LoginPage.loginBtn, "Login button");
-		sleep(10000);
+		//appLoadingTimeByElementVisible(HomePage.username);
+		float pageLoadTime = appLoadingTime(LoginPage.logOut);
+		reporter.SuccessReport("The time taken for the home page to load after login is", pageLoadTime+ "secs");
 		System.out.println("login completed ");
 
 	}

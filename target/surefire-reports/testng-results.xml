@@ -1,34 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Mumms Automation test suite" duration-ms="146706" started-at="2016-03-10T19:30:19Z" finished-at="2016-03-10T19:32:46Z">
+  <suite name="Mumms Automation test suite" duration-ms="1448562" started-at="2016-03-14T21:37:23Z" finished-at="2016-03-14T22:01:32Z">
     <groups>
     </groups>
-    <test name="firefoxWindowsLocal" duration-ms="146706" started-at="2016-03-10T19:30:19Z" finished-at="2016-03-10T19:32:46Z">
-      <class name="com.Mumms.scripts.Reports">
-        <test-method status="PASS" signature="beforeSuite(org.testng.ITestContext, java.lang.String, java.lang.String)[pri:0, instance:com.Mumms.scripts.Reports@20f5239f]" name="beforeSuite" is-config="true" duration-ms="126" started-at="2016-03-10T13:30:19Z" finished-at="2016-03-10T13:30:19Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@1de5f259]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Sequential]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Regression]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.Mumms.scripts.Reports@20f5239f]" name="beforeTest" is-config="true" duration-ms="30179" started-at="2016-03-10T13:30:19Z" finished-at="2016-03-10T13:30:49Z">
+    <test name="firefoxWindowsLocal" duration-ms="1448562" started-at="2016-03-14T21:37:23Z" finished-at="2016-03-14T22:01:32Z">
+      <class name="com.Mumms.scripts.Patient">
+        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.Mumms.scripts.Patient@bd4dc25]" name="beforeTest" is-config="true" duration-ms="32261" started-at="2016-03-14T16:39:55Z" finished-at="2016-03-14T16:40:27Z">
           <params>
             <param index="0">
               <value>
@@ -59,7 +38,239 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Mumms.scripts.Reports@20f5239f]" name="beforeMethod" is-config="true" duration-ms="349" started-at="2016-03-10T13:30:50Z" finished-at="2016-03-10T13:30:50Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Mumms.scripts.Patient@bd4dc25]" name="beforeMethod" is-config="true" duration-ms="133" started-at="2016-03-14T16:40:27Z" finished-at="2016-03-14T16:40:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.Mumms.scripts.Patient.testSearchPatientInfo(java.util.Hashtable) throws java.lang.Throwable]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:com.Mumms.scripts.Patient@bd4dc25]" name="login" is-config="true" duration-ms="31094" started-at="2016-03-14T16:40:27Z" finished-at="2016-03-14T16:40:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MummsAdmin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="testSearchPatientInfo(java.util.Hashtable)[pri:0, instance:com.Mumms.scripts.Patient@bd4dc25]" name="testSearchPatientInfo" duration-ms="38541" started-at="2016-03-14T16:40:58Z" data-provider="getTestDataFor_TestSearchPatientInfo" finished-at="2016-03-14T16:41:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{RunMode=Y, patientLastName=Daniel, patientFirstName=Annie}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchPatientInfo -->
+        <test-method status="PASS" signature="logOut()[pri:0, instance:com.Mumms.scripts.Patient@bd4dc25]" name="logOut" is-config="true" duration-ms="9808" started-at="2016-03-14T16:41:37Z" finished-at="2016-03-14T16:41:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Mumms.scripts.Patient@bd4dc25]" name="afterMethod" is-config="true" duration-ms="32" started-at="2016-03-14T16:41:46Z" finished-at="2016-03-14T16:41:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest(java.lang.String)[pri:0, instance:com.Mumms.scripts.Patient@bd4dc25]" name="afterTest" is-config="true" duration-ms="4093" started-at="2016-03-14T16:41:46Z" finished-at="2016-03-14T16:41:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.Mumms.scripts.Patient -->
+      <class name="com.Mumms.scripts.Admin">
+        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.Mumms.scripts.Admin@156b88f5]" name="beforeTest" is-config="true" duration-ms="31116" started-at="2016-03-14T16:44:47Z" finished-at="2016-03-14T16:45:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[selenium]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[43.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[windows 7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Mumms.scripts.Admin@156b88f5]" name="beforeMethod" is-config="true" duration-ms="76" started-at="2016-03-14T16:45:19Z" finished-at="2016-03-14T16:45:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.Mumms.scripts.Admin.testaddWidgetPatientByFacilityType(java.util.Hashtable) throws java.lang.Throwable]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:com.Mumms.scripts.Admin@156b88f5]" name="login" is-config="true" duration-ms="860536" started-at="2016-03-14T16:45:19Z" finished-at="2016-03-14T16:59:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MummsAdmin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="testaddWidgetPatientByFacilityType(java.util.Hashtable)[pri:0, instance:com.Mumms.scripts.Admin@156b88f5]" name="testaddWidgetPatientByFacilityType" duration-ms="32111" started-at="2016-03-14T16:59:39Z" data-provider="getTestDataFor_addWidgets" finished-at="2016-03-14T17:00:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{RunMode=Y}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testaddWidgetPatientByFacilityType -->
+        <test-method status="PASS" signature="logOut()[pri:0, instance:com.Mumms.scripts.Admin@156b88f5]" name="logOut" is-config="true" duration-ms="9601" started-at="2016-03-14T17:00:11Z" finished-at="2016-03-14T17:00:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Mumms.scripts.Admin@156b88f5]" name="afterMethod" is-config="true" duration-ms="113" started-at="2016-03-14T17:00:21Z" finished-at="2016-03-14T17:00:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Mumms.scripts.Admin@156b88f5]" name="beforeMethod" is-config="true" duration-ms="60" started-at="2016-03-14T17:00:21Z" finished-at="2016-03-14T17:00:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.Mumms.scripts.Admin.testaddWidgetPatientByPayerType(java.util.Hashtable) throws java.lang.Throwable]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:com.Mumms.scripts.Admin@156b88f5]" name="login" is-config="true" duration-ms="16303" started-at="2016-03-14T17:00:21Z" finished-at="2016-03-14T17:00:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MummsAdmin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="testaddWidgetPatientByPayerType(java.util.Hashtable)[pri:0, instance:com.Mumms.scripts.Admin@156b88f5]" name="testaddWidgetPatientByPayerType" duration-ms="39054" started-at="2016-03-14T17:00:38Z" data-provider="getTestDataFor_addWidgetsname" finished-at="2016-03-14T17:01:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{RunMode=Y}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testaddWidgetPatientByPayerType -->
+        <test-method status="PASS" signature="logOut()[pri:0, instance:com.Mumms.scripts.Admin@156b88f5]" name="logOut" is-config="true" duration-ms="9799" started-at="2016-03-14T17:01:17Z" finished-at="2016-03-14T17:01:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Mumms.scripts.Admin@156b88f5]" name="afterMethod" is-config="true" duration-ms="42" started-at="2016-03-14T17:01:26Z" finished-at="2016-03-14T17:01:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest(java.lang.String)[pri:0, instance:com.Mumms.scripts.Admin@156b88f5]" name="afterTest" is-config="true" duration-ms="5201" started-at="2016-03-14T17:01:26Z" finished-at="2016-03-14T17:01:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.Mumms.scripts.Admin -->
+      <class name="com.Mumms.scripts.Reports">
+        <test-method status="PASS" signature="beforeSuite(org.testng.ITestContext, java.lang.String, java.lang.String)[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="beforeSuite" is-config="true" duration-ms="117" started-at="2016-03-14T16:37:23Z" finished-at="2016-03-14T16:37:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@72e5a8e]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sequential]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Regression]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="beforeTest" is-config="true" duration-ms="37449" started-at="2016-03-14T16:37:23Z" finished-at="2016-03-14T16:38:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[selenium]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[43.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[windows 7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="beforeMethod" is-config="true" duration-ms="40" started-at="2016-03-14T16:38:01Z" finished-at="2016-03-14T16:38:01Z">
           <params>
             <param index="0">
               <value>
@@ -70,7 +281,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:com.Mumms.scripts.Reports@20f5239f]" name="login" is-config="true" duration-ms="28287" started-at="2016-03-10T13:30:50Z" finished-at="2016-03-10T13:31:18Z">
+        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="login" is-config="true" duration-ms="38651" started-at="2016-03-14T16:38:01Z" finished-at="2016-03-14T16:38:39Z">
           <params>
             <param index="0">
               <value>
@@ -81,26 +292,108 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="testGenerateVisitReport(java.util.Hashtable)[pri:0, instance:com.Mumms.scripts.Reports@20f5239f]" name="testGenerateVisitReport" duration-ms="78304" started-at="2016-03-10T13:31:18Z" data-provider="getTestDataFor_visitReport" finished-at="2016-03-10T13:32:37Z">
+        <test-method status="PASS" signature="testGenerateVisitReport(java.util.Hashtable)[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="testGenerateVisitReport" duration-ms="66136" started-at="2016-03-14T16:38:39Z" data-provider="getTestDataFor_visitReport" finished-at="2016-03-14T16:39:46Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{toDate_Month=2.0, ReportingPeriod=02/10/16 - 03/02/16, Program=Palliative Care, fromDate_Month=1.0, fromDate_Year=2016.0, fromDate_Day=10.0, VisitType_Report=DIRECT_CARE, Program_Report=Palliative Care, RunMode=Y, ReportName=Visit Report, toDate_Day=2.0, VisitType=Direct Care, toDate_Year=2016.0}]]>
+                <![CDATA[{toDate_Month=2.0, ReportingPeriod=02/10/16 - 03/02/16, Program=Palliative Care, fromDate_Month=1.0, fromDate_Year=2016.0, fromDate_Day=10.0, VisitType_Report=DIRECT_CARE, Program_Report=Palliative Care, RunMode=Y, toDate_Day=2.0, VisitType=Direct Care, toDate_Year=2016.0}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGenerateVisitReport -->
-        <test-method status="PASS" signature="logOut()[pri:0, instance:com.Mumms.scripts.Reports@20f5239f]" name="logOut" is-config="true" duration-ms="9006" started-at="2016-03-10T13:32:37Z" finished-at="2016-03-10T13:32:46Z">
+        <test-method status="PASS" signature="logOut()[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="logOut" is-config="true" duration-ms="8965" started-at="2016-03-14T16:39:46Z" finished-at="2016-03-14T16:39:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOut -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Mumms.scripts.Reports@20f5239f]" name="afterMethod" is-config="true" duration-ms="42" started-at="2016-03-10T13:32:46Z" finished-at="2016-03-10T13:32:46Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="afterMethod" is-config="true" duration-ms="32" started-at="2016-03-14T16:39:55Z" finished-at="2016-03-14T16:39:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest(java.lang.String)[pri:0, instance:com.Mumms.scripts.Reports@20f5239f]" name="afterTest" is-config="true" duration-ms="245" started-at="2016-03-10T13:32:46Z" finished-at="2016-03-10T13:32:46Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="beforeMethod" is-config="true" duration-ms="42" started-at="2016-03-14T16:41:51Z" finished-at="2016-03-14T16:41:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.Mumms.scripts.Reports.testGenerateHISForAdmissionReport(java.util.Hashtable) throws java.lang.Throwable]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="login" is-config="true" duration-ms="13872" started-at="2016-03-14T16:41:51Z" finished-at="2016-03-14T16:42:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AdminUser ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="testGenerateHISForAdmissionReport(java.util.Hashtable)[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="testGenerateHISForAdmissionReport" duration-ms="61999" started-at="2016-03-14T16:42:04Z" data-provider="getTestDataFor_HISForAdmissionReport" finished-at="2016-03-14T16:43:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{toDate_Month=2.0, ReportingPeriod=02/10/16 - 03/02/16, fromDate_Month=1.0, fromDate_Year=2016.0, fromDate_Day=10.0, RunMode=Y, ReportName=HIS Report For Admission, toDate_Day=2.0, toDate_Year=2016.0}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGenerateHISForAdmissionReport -->
+        <test-method status="PASS" signature="logOut()[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="logOut" is-config="true" duration-ms="9384" started-at="2016-03-14T16:43:06Z" finished-at="2016-03-14T16:43:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="afterMethod" is-config="true" duration-ms="33" started-at="2016-03-14T16:43:16Z" finished-at="2016-03-14T16:43:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="beforeMethod" is-config="true" duration-ms="46" started-at="2016-03-14T16:43:16Z" finished-at="2016-03-14T16:43:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.Mumms.scripts.Reports.testGenerateTeamMeetingReport(java.util.Hashtable) throws java.lang.Throwable]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="login" is-config="true" duration-ms="14263" started-at="2016-03-14T16:43:16Z" finished-at="2016-03-14T16:43:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AdminUser ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="testGenerateTeamMeetingReport(java.util.Hashtable)[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="testGenerateTeamMeetingReport" duration-ms="63448" started-at="2016-03-14T16:43:30Z" data-provider="getTestDataFor_TeamMeetingReport" finished-at="2016-03-14T16:44:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Program=Palliative Care, Site=ORL, Team=Cynthia Lovam, RunMode=Y, Reporting_Period=7 Days, ReportingPeriodInReport=03/04/16 - 03/11/16, ReportName=Team Meeting, PatientStatus=Admitted in Reporting Period}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGenerateTeamMeetingReport -->
+        <test-method status="PASS" signature="logOut()[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="logOut" is-config="true" duration-ms="9084" started-at="2016-03-14T16:44:34Z" finished-at="2016-03-14T16:44:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="afterMethod" is-config="true" duration-ms="33" started-at="2016-03-14T16:44:43Z" finished-at="2016-03-14T16:44:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest(java.lang.String)[pri:0, instance:com.Mumms.scripts.Reports@581ac8a8]" name="afterTest" is-config="true" duration-ms="4675" started-at="2016-03-14T16:44:43Z" finished-at="2016-03-14T16:44:47Z">
           <params>
             <param index="0">
               <value>

@@ -5,383 +5,535 @@ import org.openqa.selenium.By;
 import com.automation.support.ConfiguratorSupport;
 
 public class PatientPage {
-	
-	public static By firstContactDisplayed;
-	public static By firstContactDisplayedLink;
-	public static By topNameDisplayedOnContactHeader;
-	
-	public static By AccountTab ;
-	public static By AccountTitle ;
-	public static By Acconts_DropDown ;
-	public static By Tabledata ;
-	public static By Tabledata_DropDown_All ;
-	public static By Acconts_Display;
-	public static By Acconts_Detail;
-	public static By Account_Teams;
-	public static By GoBtn;
-	public static By Account_Go_cigniti1;
-	public static By Account_Go_cigniti1_title;
-	
-	public static By newAccount_title;
-	public static By view_Hierarchy;
-	public static By Account_Hierarchy;
-	
 
-	public static By homeTab;
-	public static By accountsTab;
-	public static By listview;
-	public static By goButton;
-	public static By tableData;
-	public static By accountName;
-	public static By accountDetail;
-	public static By salesRep;
+	public static By loginType;
+	public static By loginAccountType;
+	public static By patientInfoIcon;
+	public static By patientLastName;
+	public static By patientFirstName;
+	public static By patientListDropDown;
+	public static By addPatientIcon_patientListing;
+	public static By addPatientIcon_insuranceTab;
+	public static By addPatientIcon_historyTab;
+	//*[contains(text(),'History')]/parent::div//*[@id='gwt-debug-add-button-search-bar']/img
 
-	public static By newAccount;
-	public static By name;
-	public static By type;
-	public static By website;
-	public static By description;
-	public static By parentAccount;
-	public static By phone;
-	public static By industry;
-	public static By employees;
-	public static By billingStreet;
-	public static By billingState;
-	public static By billingCity;
-	public static By billingZip;
-	public static By billingCountry;
-
-	public static By shippingStreet;
-	public static By shippingState;
-	public static By shippingCity;
-	public static By shippingZip;
-	public static By shippingCountry;
-	public static By save;
-	public static By descText;
-
-	public static By newContact;
-	public static By saluatation;
-	public static By firstName;
-	public static By middleName;
-	public static By lastName;
-	public static By suffix;
-	public static By email;
-	public static By title;
-	public static By mobile;
-	public static By reportsTo;
-	public static By department;
-	public static By fax;
-	public static By mailingStreet;
-	public static By mailingState;
-	public static By mailingCity;
-	public static By mailingZip;
-	public static By mailingCountry;
-	public static By contactSave;
-	public static By contactsData;
-
-	public static By reportsTab;
-	public static By newReport;
-	public static By newReportPage;
-	public static By amountColumn;
-	public static By opportunities;
-	public static By create;
-	public static By add;
-	
-	
-	public static By homeicon;
-	public static By mmenu;
-	public static By loginlink;
-	public static By emailid;
-	public static By password;
-	public static By signin;
-	public static By search;
-	public static By submit;
-
-	public static By Hometab;
-	public static By Accountstab;
-	public static By view;
-	public static By gobtn;
-	public static By ExistAccountname;
-	public static By saleslist;
-	public static By newcontactbtn;
-	public static By cancelbtn;
-	public static By billingAddress;
-	public static By shippingAddress;
-	public static By showAddressSection;
-	public static By hideAddressSection;
-	public static By newTaskBtn;
-	public static By newEventBtn;
-	public static By editBtn;
+	public static By referredTo;
+	public static By address;
 	public static By phoneNumber;
-
-	public static By phoneAfterSave;
+	public static By dob_month;
+	public static By dob_day;
+	public static By dob_year;
+	public static By genderDropdown;
+	public static By ssn;
+	public static By earlier_referralDate_month;
+	public static By earlier_referralDate_day;
+	public static By earlier_referralDate_year;
+	public static By attendingPhysicianButton;
+	public static By firstDisplayedAttendingPhysician;
+	public static By saveButton;
+	public static By insuranceTab;
+	public static By insurancePayer;
+	public static By selectMedicareInsurance;
+	public static By historyTab;
+	public static By historyTab_priInsuranceDropdown;
+	public static By historyTab_effectiveDate_month;
+	public static By historyTab_effectiveDate_day;
+	public static By historyTab_effectiveDate_year;
+	public static By admitButton;
+	public static By admitDay;
+	public static By admitMonth;
+	public static By admitYear;
+	public static By okBtn_admitPopup;
+	public static By facilityInput;
+	public static By suggestPopupFacilty;
+	public static By statusPatient;
+	public static By gearIcon;
+	public static By electionsMenu;
+	public static By electionsTab;
+	public static By electionPeriod;
+	//	public static By physician_electionTab;
+	//scenario 2
+	public static By bottomGripBar;
+	public static By homeIcon;
+	public static By rightGripBar;
+	public static By claimsManagementSource;
+	public static By claimsManagementDestination;
+	public static By claimsManagement;
+	public static By notSent;
+	public static By generateClaimsBtn;
+	public static By monthAndYear;//Dec - 2015
+	public static By selectPayerType;//MEDICAID
+	public static By patientName;
+	public static By generateClaimsokBtn;
+	public static By okBtn;//.//div[@id='gwt-debug-dialog-box']/div[3]/div/table/tbody/tr/td/table/tbody/tr/td/button
+	public static By patientFirstName_1;
+	public static By patientLastName_1;
+	public static By verifyStatus;
 	
-
-	public static By filter;
-	public static By filterValue;
-	public static By ok;
-	public static By runReport;
-	public static By newReportData;
-	public static By edit;
-	public static By postalZip;
-	public static By territoriesSave;
-	public static By Hierarchy_Row;
+	public static By PatientTitle;
+	public static By PatientMiddleInitial;
+	public static By PatientSuffix;
+	public static By PatientNickName;
+	public static By PatientAdressLine1;
+	public static By PatientAdressLine2;
+	public static By PatientZip1;
+	public static By PatientZip1Sug;
+	public static By PatientZip2;
+	public static By PatientOffice;
+	public static By PatientOfficeSug1;
+	public static By PatientIDGTeams;
+	public static By PatientCallReceivedFrom;
+	public static By PatientPhoneNumber;
+	public static By PatientcallTakenBy;
+	public static By PatientreferralSourceType;
+	public static By PatientreRelationManager;
+	public static By PatientreRelationManagerSug1;
+	public static By PatientSex;
+	public static By maritalStatus;
+	public static By PatientRace;
+	public static By PatientEthnicity;
+	public static By PatientLanguage;
+	public static By secondaryLanguage;
+	public static By PatientReligion;
+	public static By PatientChurch;
+	public static By PatientChurchSelect;
+	public static By PatientPharmacy;
+	public static By PatientPharmacySelect;
+	public static By PatientDme;
+	public static By PatientDmeSelect;
+	public static By PatientfuneralHome;
+	public static By PatientfuneralHomeSelect;
+	public static By PatientVeteran;
+	public static By PatientAtRisk;
+	public static By PatientCauseOfStress;
+	public static By patientGreatestNeed;
+	public static By PatientResuscitate;
+	public static By powerOfAttorney;
+	public static By personpowerOfAttorney;
+	public static By PatientRefPhysician;
+	public static By personPhysician;
+	public static By personPhysicianPhone1;
+	public static By personPhysicianPhone2;
+	public static By PatientNotes;
+	public static By PatientChurchName;
 	
+	//1st Mar
+	public static By topDisplayedPatient;
+	public static By attendingPhysicianButtonVerify;
+	public static By facilityType;
+	public static By admitted_status_xpath;
+	public static By diagnosisTab;
+	public static By diagnosisPhysicalCondition;
+	public static By diagnosisEmotionalCondition;
+	public static By diagnosisPatient;
+	public static By diagnosisFamily;
+	public static By PrognosisPatient;
+	public static By PrognosisFamily;
+	public static By ICD9Code;
+	public static By ICD9CodeSug1;
+	public static By ICD10Code;
+	public static By ICD10CodeSug1;
+	public static By diagnosisAdd;
+	public static By diagnosisAddItem1;
+	public static By diagnosisAddItem2;
+	public static By diagnosisAddItem3;
 	
-	public static By accountData;
+	//shiney
+	public static By patient_grid;
+	public static By patientgrid_firstname;
+	public static By patientgrid_lastname;
+	public static By patientgrid_AddIcon;
+	public static By patientsearch;
+	public static By patienttab;
+	public static By Patientdemographics_initial;
+	public static By Patientdemographics_adderess1;
+	public static By Patientdemographics_adderess2;
+	public static By PatientInsurance_Tab;
+	public static By patientInsurance_prayer;
+	public static By patientInsurance_prayername;
+	public static By patientInsurance_prayerid;
+	public static By patientInsurance_prayerPolicyNum;
+	public static By patientInsurance_prayerAddIcon;
+	public static By patientInsurance_prayerSave;
+	public static By PatientAdd;
+	public static By AttorneyFirstName;
+	public static By AttorneyLastName;
+	public static By topDisplayedAttorneyFirstName;
+	public static By topDisplayedDMEFirstName;
+	public static By DMEFirstName;
+	public static By DMEAdress;
+	public static By DMEAdd;
+	public static By topDisplayedChurch;
+	public static By pharmacyAdd;
+	public static By allergiesTab;
+	public static By AllergyConfirm;
+	public static By AllergyType;
+	public static By AllergyReaction;
+	public static By AllergyAdd;
+	public static By TopDisplayedAllergy;
+	public static By AllergyVerify;
+	public static By assignmentTab;
+	public static By CNAName;
+	public static By assignmentFirstName;
+	public static By assignmentLastName;
+	public static By assignmentPersonAdd;
+	public static By topDisplayedPerson;
+	public static By assignmentCNAStartDate_day;
+	public static By assignmentCNAStartDate_month;
+	public static By assignmentCNAStartDate_year;
+	public static By assignmentCNAEndDate_day;
+	public static By assignmentCNAEndDate_month;
+	public static By assignmentCNAEndDate_year;
+	public static By selectedName;
+	public static By topDisplayedPersonSelect;
+	public static By addButton_historyTab;
 
-	public static By businessUnit;
-
-	public static By contactsTable;
-	public static By reportHeader;
-	public static By accountsDetailSection;
-	public static By newContactButton;
-	public static By contactsTableData;
-	public static By accountTeamHyperlink;
-    public static By teamMember;
-    public static By teamRole;
-    public static By accountDetail_AccountName;
-    public static By viewHierarchy_ParentAccount;
-    public static By viewHierarchy_GrandParentAccount;
-    public static By baseAccount;
-    public static By competitorProductsName;
-    public static By competitorProductDetailPageTitle;
-	public static By competitorProductsNameOnCompetitorsPage;
+	//shiney
+	public static By  dischargeButton;
+	public static By dischargetype;
+	public static By dischargereason;
+	public static By dischargedate_month;
+	public static By dischargedate_day;
+	public static By dischargedate_year;
 	
-	public static By contactsHyperlink;
-	public static By contacts_contactNameOnMouseHover;
-
-	public static By opportunitiesHyperlink;
-	public static By opportunity_nameOnMouseHover;
-	public static By opportunity_stageOnMouseHover;
-
-	public static By openActivitiesHyperlink;
-	public static By openActivities_subjectOnMouseHover;
-	public static By openActivities_relatedTo;
+	//sam
+	// sampath
+		public static By caregivers_tab;
+	//	public static By admitted_status_xpath;
+	//	public static By facilityType;
+		public static By addButton_Caregiver;
+		public static By firstName_caregiver;
+		public static By lastName_caregiver;
+		public static By relation_caregiver;
+		public static By addButton_caregiver_individual;
+		public static By saveBtn_caregiverTab;
+		public static By firstName_powerOfAttorney;
+		
+		public static By insurance_policyNumberInput;
+		
+		public static By insurance_payerInput;
+		public static By billForRB;
+		//public static By addButton_historyTab;
+		public static By current_election_Label;
+		public static By electionGrid_AttendingPhysician_priInsurer;
+		public static By electionGrid_verbalDate_month_attendingPhysician;
+		public static By electionGrid_verbalDate_day_attendingPhysician;
+		public static By electionGrid_verbalDate_year_attendingPhysician;
+		public static By electionGrid_signatureDate_month_attendingPhysician;
+		public static By electionGrid_signatureDate_day_attendingPhysician;
+		public static By electionGrid_signatureDate_year_attendingPhysician;
+		
+		public static By electionGrid_verbalDate_month_hospicePhysician;
+		public static By electionGrid_verbalDate_day_hospicePhysician;
+		public static By electionGrid_verbalDate_year_hospicePhysician;
+		public static By electionGrid_signatureDate_month_hospicePhysician;
+		public static By electionGrid_signatureDate_day_hospicePhysician;
+		public static By electionGrid_signatureDate_year_hospicePhysician;
+		public static By electionGrid_hospicePhysicianName;
+		public static By electionGrid_physicianName;
+		public static By electionGrid_certifyingPhysicianInput;
+		
+		public static By historyTab_LocationInput;
+		public static By historyTab_LocationDropdown;
+		public static By historyTab_FacilityInput;
+		public static By endDate_month_RespiteLocation;
+		public static By endDate_day_RespiteLocation;
+		public static By endDate_year_RespiteLocation;
+		public static By physicianInput_historyTab;
+		public static By facilitySug;
+		public static By electionGrid_TickMark;
+		
+		//patientHeader
+		public static By patientHeader_firstName;
+		public static By patientHeader_lastName;
+		public static By patientHeader_powerOfAtorney;
+		public static By patientHeader_physician;
+		public static By patientHeader_insurance;
+		public static By attendingPhysicianVerify;
+		public static By insuranceVerify;
+		public static By patientFirstNameVerify;
+		public static By patientLastNameVerify;
+		public static By historyTab_secondaryinsuranceDropdown;
+		public static By searchGridFirstName;
 	
-	public static By contactsDisplayedTableData;
-	public static By lpdBusinessPlanTextArea;
-	public static By lpdBussinessAreaTextAfterSave;
-
-
+	//samblock
+	
 	//public static ConfiguratorSupport configProps = new ConfiguratorSupport("config.properties");
 
-	public void AccountsPage()
+	public static void Patient_Page()
 
 	{
-		//if(configProps.getProperty("platformType").equalsIgnoreCase("Web_Fullscreen"))
 		{
+			loginType = By.xpath("//div[contains(@class,'login-info-currentHospice')]");
+			loginAccountType= By.xpath("//div[text()='RUTH']");
+			//patientInfoIcon = By.xpath(".//*[@id='gwt-debug-patient-module-button']/tbody/tr[1]/td/div/img");
+			patientInfoIcon = By.xpath("//table[@id='gwt-debug-patient-module-button']");
+			patientLastName = By.xpath("//input[@id='gwt-debug-lastName-search-bar']");
+			patientFirstName = By.xpath("//input[@id='gwt-debug-firstName-search-bar']");
+			patientListDropDown = By.xpath(".//*[@id='gwt-debug-patient-filter-select']");
+			//All Patients
+			addPatientIcon_patientListing = By.xpath(".//*[@id='gwt-debug-patient-listing']//*[@id='gwt-debug-add-button-search-bar']/img");
+			addPatientIcon_insuranceTab = By.xpath("//*[contains(text(),'insurance coverage')]/parent::div//*[@id='gwt-debug-add-button-search-bar']/img");
+			addPatientIcon_historyTab = By.xpath("//*[contains(text(),'History')]/parent::div//*[@id='gwt-debug-add-button-search-bar']/img");
+			referredTo = By.xpath("//div[text()='Referred']//parent::td//following-sibling::td[2]");
+			address = By.xpath("//input[@id='gwt-debug-Patient.primaryAddress.street1']");
+			phoneNumber = By.xpath(".//div[text()='Phone:']/parent::td/following-sibling::td[1]//td[2]/input");
+			dob_month = By.xpath(".//*[@id='gwt-debug-Patient.dateOfBirth']//span/select[contains(@class,'month')]");
+			dob_day = By.xpath(".//*[@id='gwt-debug-Patient.dateOfBirth']//select[contains(@class,'day')]");
+			dob_year = By.xpath(".//*[@id='gwt-debug-Patient.dateOfBirth']//select[contains(@class,'year')]");
+			genderDropdown = By.xpath(".//*[@id='gwt-debug-Patient.sex']");
+			ssn = By.xpath(".//*[@id='gwt-debug-Patient.ssn']");
+			earlier_referralDate_month = By.xpath(".//*[@id='gwt-debug-Patient.patientReferral.referralDateTime']//select[contains(@class,'month')]");
+			earlier_referralDate_day = By.xpath(".//*[@id='gwt-debug-Patient.patientReferral.referralDateTime']//select[contains(@class,'day')]");
+			earlier_referralDate_year = By.xpath(".//*[@id='gwt-debug-Patient.patientReferral.referralDateTime']//select[contains(@class,'year')]");
+			attendingPhysicianButton = By.xpath(".//*[@id='gwt-debug-transient.attPhysician']/input");
+			firstDisplayedAttendingPhysician = By.xpath(".//*[text()='Jeff']/parent::td/preceding-sibling::td[1]//input");
+			saveButton = By.xpath(".//*[@id='gwt-debug-selection-grid-view-save-button']");
+			insuranceTab = By.xpath(".//*[@id='gwt-debug-patient-basic-information']//div[text()='Insurance']");
+			insurancePayer = By.xpath(".//*[@id='gwt-debug-insurancecarrier-search-bar']/input");
+			selectMedicareInsurance = By.xpath(".//*[text()='Medicare']/parent::td/preceding-sibling::td[1]//input");
+			historyTab = By.xpath(".//*[@id='gwt-debug-patient-basic-information']//div[text()='HISTORY']");
+			historyTab_priInsuranceDropdown = By.xpath(".//*[@id='gwt-debug-primaryCoverage.carrierName-search-bar']");
 
-			AccountTab = By.xpath(".//*[@id='Account_Tab']/a");
-			AccountTitle = By.xpath(".//*[@class='pageType']");
-			Acconts_DropDown = By.xpath(".//*[@title='View:']");
-			Tabledata=By.xpath(".//*[@id='ext-gen8']");
-			Tabledata_DropDown_All=By.xpath(".//*[@id='00B28000003cpz1_listBody']");
-			Acconts_Display = By.xpath(".//*[@id='bodyCell']/div[3]/div[1]/div/div[2]/table/tbody/tr[2]/th/a");
-			Acconts_Detail = By.xpath(".//*[@id='ep']/div[1]/table/tbody/tr/td[1]/h2");
-			Account_Teams = By.xpath(".//*[@id='00128000002TiYc_RelatedAccountSalesTeam_link']/span");
-			GoBtn = By.xpath(".//*[@title='Go!']");
-			Account_Go_cigniti1 = By.xpath(".//*[@id='00128000002TiYc_Name']/a/span");
-			Account_Go_cigniti1_title = By.xpath(".//*[@id='contactHeaderRow']/div[2]/h2");
-			newAccount = By.xpath(".//*[@id='00128000002TiYc_RelatedContactList']/div[1]/div/div[1]/table/tbody/tr/td[2]/input[1]");
-			newAccount_title = By.xpath(".//*[@id='bodyCell']/div[1]/div[1]/div[1]/h2");
-			view_Hierarchy = By.xpath(".//a[text()='[View Hierarchy]']");
-			Account_Hierarchy = By.xpath(".//*[@class='pageType']");
+			historyTab_effectiveDate_day = By.xpath(".//*[@id='gwt-debug-effectiveDate-search-bar']//select[contains(@class,'day')]");
+			historyTab_effectiveDate_month = By.xpath(".//*[@id='gwt-debug-effectiveDate-search-bar']//select[contains(@class,'month')]");
+			historyTab_effectiveDate_year = By.xpath(".//*[@id='gwt-debug-effectiveDate-search-bar']//select[contains(@class,'year')]");
+			admitButton = By.xpath("//button[text()='ADMIT']");
+			admitDay = By.xpath(".//*[@id='gwt-debug-admitDate']/div[1]/div[2]/span/select[2]");
+			admitMonth = By.xpath(".//*[@id='gwt-debug-admitDate']/div[1]/div[2]/span/select[1]");
+			admitYear = By.xpath(".//*[@id='gwt-debug-admitDate']/div[1]/div[2]/span/select[3]");
+			okBtn_admitPopup = By.xpath(".//*[@id='gwt-debug-ok-button']");
+			facilityInput = By.xpath(".//*[@id='gwt-debug-facilityProxy']");
+			suggestPopupFacilty = By.xpath(".//*[text()='Autumn Care-Marion']");
+			statusPatient = By.xpath("//div[@class='hb-patient-header-box'][1]/table[2]//table/tbody/tr/td[1]/div");
+			gearIcon = By.xpath(".//*[@id='gwt-debug-insurancecarrier']/div[text()='Medicare']/parent::div/parent::td/following-sibling::td[6]/div/img");
+			electionsMenu = By.xpath("//div[text()='Elections']");
+			electionsTab = By.xpath("//div[@class='gwt-TabLayoutPanelTabInner']/div[text()='Elections']");
+			electionPeriod = By.xpath(".//tr[2]//*[@id='gwt-debug-electionPeriod']");
+			// physician_electionTab = By.xpath(".//*[@id='gwt-debug-certificationDTO.hospicePhysicianName']/div[1]/div[2]/input");
 
-			homeTab = By.xpath(".//*[@id='home_Tab']/a");
-			accountsTab = By.xpath("//a[text()='Accounts']");
-			goButton = By.xpath(".//*[@title='Go!']");
-			tableData = By.xpath("//div[@id='ext-gen21']/div/div[2]/div");
-			accountName = By.xpath(".//*[@id='00128000008utgr_Name']/a/span");
-			accountDetail = By.xpath(".//*[@id='contactHeaderRow']/div[2]/h2");
+			//scenario2
 
-			newAccount = By.xpath(".//*[@id='hotlist']/table/tbody/tr/td[2]/input");
-			type = By.id("acc6");
-			website = By.id("acc12");
-			description = By.xpath(".//*[@id='acc20']");
-			parentAccount = By.id("acc3");
-			phone = By.id("acc10");
-			industry = By.id("acc7");
-			employees = By.id("acc15");
-			billingStreet = By.id("acc17street");
-			billingCity = By.id("acc17city");
-			billingState = By.id("acc17state");
-			billingZip = By.id("acc17zip");
-			billingCountry = By.id("acc17country");
-			shippingStreet = By.id("acc18street");
-			shippingCity = By.id("acc18city");
-			shippingState = By.id("acc18state");
-			shippingZip = By.id("acc18zip");
-			shippingCountry = By.id("acc18country");
-			save = By.xpath(".//*[@id='bottomButtonRow']/input[1]");
+			bottomGripBar = By.xpath("//div[@style='position: absolute; overflow: hidden; left: 0em; top: 0em; right: 0em; height: 1.82em;']/div");
+			homeIcon = By.xpath(".//*[@id='gwt-debug-home-button']/tbody/tr[1]/td/div/img");
+			rightGripBar = By.xpath("//div[@class='hb-drawer hb-dance-floor-z hb-listing-drawer hb-left-grip-bar']/div/div[3]/div");
+			claimsManagementSource = By.xpath("//div[@class='hb-widget-container']/div[2]/img");
+			claimsManagementDestination = By.xpath("//div[@class='hb-panel-drop-placeholder dragdrop-dropTarget']/div/div[3]/div");
+			claimsManagement = By.xpath("//div[contains(text(),'CLAIMS MANAGEMENT')]");
+			notSent = By.xpath("//div[contains(text(),'NOT SENT')]");
+			generateClaimsBtn = By.xpath("(//button[contains(text(),'Generate Claims')])[1]");
+			monthAndYear = By.xpath("(//select[@class='hb-dropdown'])[2]");
+			selectPayerType = By.xpath("(//select[@class='hb-dropdown-novalue'])[3]");
+			patientName = By.xpath("//*[@id='gwt-debug-dialog-box']/div[3]/div/div/div[2]/div[3]/div[2]/input");
+			generateClaimsokBtn = By.xpath(".//*[@id='gwt-debug-ok-button']");
 
-			saluatation = By.xpath(".//*[@id='name_salutationcon2']");
-			firstName = By.id("name_firstcon2");
-			middleName = By.id("name_middlecon2");
-			suffix = By.id("name_suffixcon2");
-			email = By.id("con15");
-			title = By.id("con5");
-			mobile = By.id("con12");
-			reportsTo = By.id("con8");
-			department = By.id("con6");
-			fax = By.id("con11");
-			mailingStreet = By.id("con19street");
-			mailingCity = By.id("con19city");
-			mailingState = By.id("con19state");
-			mailingZip = By.id("con19zip");
-			mailingCountry = By.id("con19country");
-			contactSave = By.xpath(".//*[@title='Save']");
-			contactsData = By.id("ext-gen25");
-
-			reportsTab = By.xpath(".//*[@id='report_Tab']/a");
-			newReport = By.xpath(".//*[@id='ext-gen5']/input[1]");
-			newReportPage = By
-					.xpath(".//*[@id='bodyTable']/tbody/tr/td/div[1]/div/div[1]/h1");
-			amountColumn = By.xpath(".//*[@id='headerRow_0']/th[4]/a/strong");
-			opportunities = By
-					.xpath(".//*[@id='ext-gen10']/div/li[2]/div/a/span");
-			create = By.xpath(".//*[@id='thePage:rtForm:createButton']");
-			add = By.xpath(".//*[@id='filterPanel_addFilterButton']/tbody/tr[2]/td[2]/em");
-			filter = By.xpath(".//*[@id='ext-gen262']");
-			filterValue = By.xpath(".//*[@id='val-ext-gen257']");
-			ok = By.xpath(".//*[@id='ok-btn-id-ext-gen258']");
-			runReport = By.xpath(".//*[@id='ext-gen63']");
-			newReportData = By
-					.xpath(".//*[@id='report']/div[2]/div/div[2]/div/div/div[1]/div");
-
-			edit = By.xpath(".//*[@id='topButtonRow']/input[3]");
-			postalZip = By.xpath(".//*[@id='acc17zip']");
-			territoriesSave = By.xpath(".//*[@id='bottomButtonRow']/input[1]");
-		
-			Hometab = By.linkText("Home");
-			Accountstab = By.xpath(".//*[@id='Account_Tab']/a");
-			view = By.xpath(".//*[@id='fcf']");
-			gobtn = By.name("go");
-			ExistAccountname = By.id("00128000008utd2_Name");
-			saleslist = By.xpath(".//*[@id='tsidLabel']");
-			newcontactbtn = By.name("newContact");
-			cancelbtn = By.name("cancel");
-			shippingAddress = By
-					.xpath("//*[text()='Shipping Address']/following-sibling::td[1]//tr[1]/td[1]");
-			billingAddress = By
-					.xpath("//*[text()='Billing Address']/following-sibling::td[1]//tr[1]/td[1]");
-			showAddressSection = By
-					.xpath(".//*[@title='Show Section - Address Information']");
-			hideAddressSection = By
-					.xpath(".//*[@title='Hide Section - Address Information']");
-			newTaskBtn = By.xpath(".//*[@title='New Task']");
-			newEventBtn = By.xpath(".//*[@title='New Event']");
-			editBtn = By.xpath(".//*[@id='topButtonRow']//*[@name='edit']");
-			lpdBusinessPlanTextArea =  By.xpath(".//label[text()='LPD Business Plan']/parent::span/parent::td/following-sibling::td[1]/textarea");
-			save = By.xpath(".//td[@id='topButtonRow']/*[@title='Save']");
-			lpdBussinessAreaTextAfterSave = By.xpath(".//span[text()='LPD Business Plan']//parent::td//following-sibling::td[1]/div");
-			Hierarchy_Row = By.xpath(".//*[@class='detailList']/tbody/tr[2]/td[4]/div");
+			okBtn = By.xpath("//*[@id='gwt-debug-ok-no-cancel-button']");
+			patientFirstName_1 = By.xpath("(.//*[@id='gwt-debug-patientFirstName-search-bar'])[2]");
+			patientLastName_1 = By.xpath("(.//*[@id='gwt-debug-patientLastName-search-bar'])[2]")	;
+			verifyStatus = By.xpath("(//table[@class='hb-flex-table']/tbody/tr[1]/td[13])[4]");
+			PatientTitle = By.xpath(".//*[@id='gwt-debug-Patient.title']");
+			PatientMiddleInitial = By.xpath(".//*[@id='gwt-debug-Patient.middleInitial']");
+			PatientSuffix = By.xpath(".//*[@id='gwt-debug-Patient.suffix']");
+			PatientNickName = By.xpath(".//*[@id='gwt-debug-Patient.nickname']");
+			PatientAdressLine1 = By.xpath(".//*[@id='gwt-debug-Patient.primaryAddress.street1']");
+			PatientAdressLine2 = By.xpath(".//*[@id='gwt-debug-Patient.primaryAddress.street2']");
+			PatientZip1 = By.xpath(".//*[@id='gwt-debug-Patient.primaryAddress.zip']");
+			PatientZip1Sug = By.xpath(".//*[@class='hb-simple-grid-dropdown']//td[@class='suggestPopupMiddleCenter']//td[1][contains(text(),'45221')]");
 			
-			homeTab = By.xpath(".//*[@id='home_Tab']/a");
-			accountsTab = By.xpath("//a[text()='Accounts']");
-			listview = By.xpath(".//*[@id='is:islv:inlineSchedulerListView:enhancedList_listSelect']");
-			goButton = By.xpath(".//*[@title='Go!']");
-			tableData = By.xpath(".//*[@id='00121000002LlPb_RelatedContactList_body']/table");
-			accountData = By.xpath(".//*[@id='ext-gen24']");
+			PatientZip2 = By.xpath(".//*[@id='gwt-debug-Patient.primaryAddress.zip4']");
+			PatientOffice = By.xpath(".//*[@id='gwt-debug-Patient.office']");
+			PatientIDGTeams = By.xpath(".//*[@id='gwt-debug-Patient.teamPersonList']");
+			PatientCallReceivedFrom = By.xpath(".//*[@id='gwt-debug-Patient.patientReferral.callReceivedFrom']");
+			PatientPhoneNumber = By.xpath(".//*[@id='gwt-debug-Patient.patientReferral.callReceivedPhone.number']//input[@class='hb-textbox-novalue']");
+			PatientcallTakenBy = By.xpath(".//*[@id='gwt-debug-Patient.patientReferral.callTakenBy']");
+			PatientreferralSourceType = By.xpath(".//*[@id='gwt-debug-Patient.patientReferral.referralSourceType']");
+			PatientreRelationManager = By.xpath(".//*[@id='gwt-debug-Patient.patientReferral.crm']");
+			PatientSex = By.xpath(".//*[@id='gwt-debug-Patient.sex']");
+			maritalStatus = By.xpath(".//*[@id='gwt-debug-Patient.maritalStatus']");
+			PatientRace = By.xpath(".//*[@id='gwt-debug-Patient.race']");
+			PatientEthnicity = By.xpath(".//*[@id='gwt-debug-Patient.ethnicity']");
+			PatientLanguage = By.xpath(".//*[@id='gwt-debug-Patient.language']");
+			secondaryLanguage = By.xpath(".//*[@id='gwt-debug-Patient.secondaryLanguage']");
+			PatientReligion = By.xpath(".//*[@id='gwt-debug-Patient.religion']");
+			PatientChurch = By.xpath(".//*[@id='gwt-debug-Patient.church']/input");
+			PatientPharmacy = By.xpath(".//*[@id='gwt-debug-Patient.pharmacy']/input");
+			PatientDme = By.xpath(".//*[@id='gwt-debug-Patient.dme']/input");
+			PatientfuneralHome = By.xpath(".//*[@id='gwt-debug-Patient.funeralHome']/input");
+			PatientVeteran = By.xpath(".//*[@id='gwt-uid-131']");
+			PatientAtRisk = By.xpath(".//*[@id='gwt-uid-133']");
+			PatientCauseOfStress = By.xpath(".//*[@id='gwt-debug-Patient.causeOfStress']");
+			patientGreatestNeed = By.xpath(".//*[@id='gwt-debug-Patient.patientGreatestNeed']");
+			PatientResuscitate = By.xpath(".//*[@id='gwt-uid-135']");
+			powerOfAttorney = By.xpath(".//*[@id='gwt-debug-Patient.powerOfAttorney']/input");
+			personpowerOfAttorney = By.xpath(".//*[text()='Attoney1255']/parent::td/preceding-sibling::td[1]//input");
+			PatientRefPhysician = By.xpath(".//*[@id='gwt-debug-transient.refPhysician']/input");
+			personPhysician = By.xpath(".//*[text()='Jeff']/parent::td/preceding-sibling::td[1]//input");
+			personPhysicianPhone1 = By.xpath("(.//*[@id='gwt-debug-patient-demographics']//table[@class='hb-font-size hb-widget-right-space']//input[@class='hb-textbox-novalue'])[2]");
+			personPhysicianPhone2 = By.xpath("(.//*[@id='gwt-debug-patient-demographics']//table[@class='hb-font-size hb-widget-right-space']//input[@class='hb-textbox-novalue'])[3]");
+			PatientNotes = By.xpath(".//*[@id='gwt-debug-Patient.notes']");
+			PatientreRelationManagerSug1 = By.xpath(".//*[text()='test CRM role']");
+			PatientChurchSelect = By.xpath(".//*[text()='Church1255']/parent::td/preceding-sibling::td[1]//input");
+			PatientPharmacySelect = By.xpath(".//*[text()='Cipla1255']/parent::td/preceding-sibling::td[1]//input");
+			PatientDmeSelect = By.xpath(".//*[text()='DME1255']/parent::td/preceding-sibling::td[1]//input");
+			PatientfuneralHomeSelect = By.xpath(".//*[text()='Contact']/parent::td/preceding-sibling::td[1]//input");
+			PatientChurchName = By.xpath(".//*[@id='gwt-debug-name-search-bar']");
 			
-			accountName = By.xpath(".//*[@id='00121000002LlPb_Name']/a/span");
-			accountDetail = By.xpath(".//*[@id='contactHeaderRow']/div[2]/h2");
-
-			newAccount = By.xpath(".//*[@id='hotlist']/table/tbody/tr/td[2]/input");
-			name = By.xpath(".//label[text()='Account Name']/parent::td/following-sibling::td[1]//input");
-			type = By.xpath(".//*[@id='acc6']");
-			website = By.xpath(".//*[@id='acc12']");
-			description = By.xpath(".//*[@id='acc20']");
-			businessUnit = By.xpath(".//label[text()='Business Unit']/parent::td/following-sibling::td[1]//select");
-			parentAccount = By.xpath(".//*[@id='acc3']");
-			phone = By.id("acc10");
-			industry = By.xpath(".//label[text()='Industry']/parent::td/following-sibling::td[1]//select");
-			employees = By.id("acc15");
-			billingStreet = By.xpath(".//*[@id='acc17street']");
-			billingCity = By.id("acc17city");
-			billingState = By.id("acc17state");
-			billingZip = By.id("acc17zip");
-			billingCountry = By.id("acc17country");
-			shippingStreet = By.id("acc18street");
-			shippingCity = By.id("acc18city");
-			shippingState = By.id("acc18state");
-			shippingZip = By.id("acc18zip");
-			shippingCountry = By.id("acc18country");
-			save = By.xpath(".//*[@id='bottomButtonRow']/input[1]");
-			descText = By.xpath(".//*[@id='ep']/div[2]/div[2]/table/tbody/tr/td[2]/div");
-
-			newContact = By.xpath(".//*[contains(@id,'RelatedContactList')]/div[1]/div/div[1]/table/tbody/tr/td[2]/input");
-			saluatation = By.xpath(".//*[@id='name_salutationcon2']");
-			firstName = By.id("name_firstcon2");
-			middleName = By.id("name_middlecon2");
-			lastName = By.xpath(".//label[text()='Last Name']/parent::td/following-sibling::td[1]//input");
-			suffix = By.id("name_suffixcon2");
-			email = By.id("con15");
-			title = By.id("con5");
-			mobile = By.id("con12");
-			reportsTo = By.id("con8");
-			department = By.id("con6");
-			fax = By.id("con11");
-			mailingStreet = By.id("con19street");
-			mailingCity = By.id("con19city");
-			mailingState = By.id("con19state");
-			mailingZip = By.id("con19zip");
-			mailingCountry = By.id("con19country");
-			contactSave = By.xpath(".//*[@title='Save']");
-			contactsData = By.id("ext-gen25");
-
-			reportsTab = By.xpath(".//*[@id='report_Tab']/a");
-			newReport = By.xpath(".//*[@id='ext-gen5']/input[1]");
-			newReportPage = By
-					.xpath(".//*[@id='bodyTable']/tbody/tr/td/div[1]/div/div[1]/h1");
-			amountColumn = By.xpath(".//*[@id='headerRow_0']/th[4]/a/strong");
-			opportunities = By
-					.xpath(".//*[@id='ext-gen10']/div/li[2]/div/a/span");
-			create = By.xpath(".//*[@id='thePage:rtForm:createButton']");
-			add = By.xpath(".//*[@id='filterPanel_addFilterButton']/tbody/tr[2]/td[2]/em");
-			filter = By.xpath(".//*[@id='ext-gen262']");
-			filterValue = By.xpath(".//*[@id='val-ext-gen257']");
-			ok = By.xpath(".//*[@id='ok-btn-id-ext-gen258']");
-			runReport = By.xpath(".//*[@id='runReportBtn']/tbody/tr[2]/td[2]/em/button");
-			newReportData = By
-					.xpath(".//*[@id='report']/div[2]/div/div[2]/div/div/div[1]/div");
-
-			edit = By.xpath(".//*[@id='topButtonRow']/input[3]");
-			postalZip = By.xpath(".//*[@id='acc17zip']");
-			territoriesSave = By.xpath(".//*[@id='bottomButtonRow']/input[1]");
-			reportHeader = By.xpath(".//*[@id='noTableContainer']/div/div[1]/div[1]/div[1]/h1");
-			contactsTable = By.xpath(".//*[contains(@id,'RelatedContactList_body')]/table");
+			//1st Mar
 			
-			 firstContactDisplayed = By.xpath(".//div[contains(@class,'x-grid3-row-first')]/table/tbody/tr[1]/td[4]/div/a/span");
-			 firstContactDisplayedLink = By.xpath(".//div[contains(@class,'x-grid3-row-first')]/table/tbody/tr[1]/td[4]/div/a");
-			 topNameDisplayedOnContactHeader = By.xpath(".//*[@id='contactHeaderRow']/div[2]/h2");
-             accountsDetailSection = By.xpath("//h2[@class='mainTitle'][text()='Account Detail']");
-             newContactButton= By.xpath(".//*[@value='New Contact']");
-             
-             contactsTableData= By.xpath(".//*[contains(@id,'RelatedContactList_body')]/table");
-             accountTeamHyperlink = By.xpath(".//*[@class='listTitle'][text()='Account Team']");
-             teamMember = By.xpath(".//*[contains(@id,'RelatedAccountSalesTeam_body')]/table/tbody/tr[2]/th/a");
-             teamRole = By.xpath(".//*[contains(@id,'RelatedAccountSalesTeam_body')]/table/tbody/tr[2]/td[2]");
-             accountDetail_AccountName = By.xpath(".//a[text()='[View Hierarchy]']/parent::div");
-             baseAccount = By.xpath(".//div[@class='relatedAccountHierarchy']//div[2]/table/tbody/tr[4]/th[1]/a");
-             viewHierarchy_ParentAccount = By.xpath(".//div[@class='relatedAccountHierarchy']//div[2]/table/tbody/tr[3]/th[1]/a");
-             viewHierarchy_GrandParentAccount = By.xpath(".//div[@class='relatedAccountHierarchy']//div[2]/table/tbody/tr[2]/th[1]/a");
-             competitorProductsName = By.xpath(".//h3[text()='Competitor Products']//ancestor::div[@class='pbHeader']//following-sibling::div[1]//tr[2]/th[1]/a");
-             competitorProductDetailPageTitle = By.xpath(".//h2[@class='mainTitle'][text()='Competitor Product Detail']");
-             competitorProductsNameOnCompetitorsPage = By.xpath(".//td[text()='Competitor Products Name']/following-sibling::td[1]/div");
-             contactsHyperlink = By.xpath(".//*[@class='listTitle'][text()='Contacts']");
-             contacts_contactNameOnMouseHover = By.xpath(".//*[contains(@id,'RelatedContactList_body')]/table/tbody/tr[2]/th/a");
-             
-             opportunitiesHyperlink = By.xpath(".//*[@class='listTitle'][text()='Opportunities']");
-             opportunity_nameOnMouseHover = By.xpath(".//*[contains(@id,'RelatedOpportunityList_body')]/table/tbody/tr[2]/th/a");
-             opportunity_stageOnMouseHover = By.xpath(".//*[contains(@id,'RelatedOpportunityList_body')]/table/tbody/tr[2]/td[2]");
-             
-             openActivitiesHyperlink = By.xpath(".//*[@class='listTitle'][text()='Open Activities']");
-             openActivities_subjectOnMouseHover = By.xpath(".//*[contains(@id,'RelatedActivityList_body')]/table/tbody/tr[2]/th/a");
-             openActivities_relatedTo= By.xpath(".//*[contains(@id,'RelatedActivityList_body')]/table/tbody/tr[2]/td[3]/a");
-             
-             contactsDisplayedTableData = By.xpath(".//*[contains(@id,'RelatedContactList_body')]/table/tbody/tr");
+			topDisplayedPatient = By.xpath(".//td[@class='hb-flex-grid-data-cell']//div[@id='gwt-debug-firstName']");
+			attendingPhysicianButtonVerify = By.xpath(".//*[@id='gwt-debug-transient.attPhysician']/div");
+			facilityType = By.xpath(".//*[@id='gwt-debug-facilityTypeProxy']");
+			admitted_status_xpath = By.xpath("//div[text()='Admitted']");
+			diagnosisTab = By.xpath(".//div[@class='gwt-TabLayoutPanelTabInner']//div[text()='DIAGNOSIS']");
+			diagnosisPhysicalCondition = By.xpath(".//div[text()='Physical Condition:']/parent::td/following-sibling::td/select");
+			diagnosisEmotionalCondition = By.xpath(".//div[text()='Emotional Condition:']/parent::td/following-sibling::td/select");
+			diagnosisPatient = By.xpath("(.//div[text()='Patient:']/parent::td/following-sibling::td/select)[1]");
+			diagnosisFamily = By.xpath("(.//div[text()='Family:']/parent::td/following-sibling::td/select)[1]");
+			PrognosisPatient = By.xpath("(.//div[text()='Patient:']/parent::td/following-sibling::td/select)[2]");
+			PrognosisFamily = By.xpath("(.//div[text()='Family:']/parent::td/following-sibling::td/select)[2]");
+			ICD10Code = By.xpath(".//*[@id='gwt-debug-icd10diagnosis-search-bar']");
+			ICD10CodeSug1 = By.xpath(".//*[@class='hb-simple-grid-dropdown']//td[@class='suggestPopupMiddleCenter']//td[1][contains(text(),'Z3A12')]");
+			ICD9Code = By.xpath(".//*[@id='gwt-debug-diagnosis-search-bar']");
+			ICD9CodeSug1 = By.xpath(".//*[@class='hb-simple-grid-dropdown']//td[@class='suggestPopupMiddleCenter']//td[1][contains(text(),'001.0 : Cholera')]");
+			diagnosisAdd = By.xpath(".//div[@class='hb-formbox-header']/following-sibling::div//*[@id='gwt-debug-add-button-search-bar']/img");
+			/*diagnosisAddItem1 = By.xpath("(.//tr[@class='hb-mouse-over-dragable']//*[@id='gwt-debug-rank'])[1]");
+			diagnosisAddItem2 = By.xpath("(.//tr[@class='hb-mouse-over-dragable']//*[@id='gwt-debug-rank'])[2]");
+			diagnosisAddItem3 = By.xpath("(.//tr[@class='hb-mouse-over-dragable']//*[@id='gwt-debug-rank'])[3]");*/
+			diagnosisAddItem1 = By.xpath("(.//tr[@class='hb-mouse-over-dragable']//*[@id='gwt-debug-rank'])[1]/..");
+			diagnosisAddItem2 = By.xpath("(.//tr[@class='hb-mouse-over-dragable']//*[@id='gwt-debug-rank'])[2]/..");
+			diagnosisAddItem3 = By.xpath("(.//tr[@class='hb-mouse-over-dragable']//*[@id='gwt-debug-rank'])[3]/..");
+			
+			//shiney
+			patient_grid=By.xpath(".//*[@id='gwt-debug-patient-module-button']/tbody/tr[1]/td/div/img");
+			patientgrid_firstname=By.xpath(".//td[@class='hb-flex-grid-data-cell']//div[@id='gwt-debug-firstName']");
+			patientgrid_lastname=By.xpath(".//*[@id='gwt-debug-lastName-search-bar']");
+			patientgrid_AddIcon=By.xpath(".//div[@id='gwt-debug-add-button-search-bar']/img");
+			patientsearch=By.xpath(".//div[@id='gwt-debug-firstName']");
+			patienttab=By.xpath(".//input[@id='gwt-debug-firstName-search-bar']");
+			
+			Patientdemographics_initial=By.xpath(".//input[@id='gwt-debug-Patient.middleInitial']");
+			Patientdemographics_adderess1=By.xpath(".//input[@id='gwt-debug-Patient.primaryAddress.street1']");
+			Patientdemographics_adderess2=By.xpath(".//input[@id='gwt-debug-Patient.primaryAddress.street2']");
+			
+			PatientInsurance_Tab=By.xpath("//div[@class='gwt-TabLayoutPanelTabInner']//div[text()='Insurance']");
+			patientInsurance_prayer=By.xpath(".//div[@id='gwt-debug-insurancecarrier-search-bar']/input");
+			patientInsurance_prayername=By.xpath(".//input[@id='gwt-debug-carrierName-search-bar']");
+			patientInsurance_prayerid=By.xpath(".//input[@id='gwt-debug-payerId-search-bar']");
+			patientInsurance_prayerPolicyNum=By.xpath("//div[contains(text(),'Use this interface to manage')]/parent::div/div//table/tbody/tr[2]/td[3]/input");
+			patientInsurance_prayerAddIcon=By.xpath("//img[@class='gwt-Image hb-flex-add-button hb-mouse-over-clickable']");
+			patientInsurance_prayerSave=By.xpath(".//*[@id='gwt-debug-selection-grid-view-save-button']");
+
+			PatientAdd = By.xpath(".//*[@id='gwt-debug-add-button-search-bar']/img");
+			
+			
+			//4Th Mar
+			PatientOfficeSug1 = By.xpath(".//*[@class='hb-simple-grid-dropdown']//td[@class='suggestPopupMiddleCenter']//td[1][contains(text(),'Mumms')]");
+			AttorneyFirstName = By.xpath(".//*[@id='gwt-debug-person.firstName-search-bar']");
+			AttorneyLastName = By.xpath(".//*[@id='gwt-debug-person.lastName-search-bar']");
+			topDisplayedAttorneyFirstName = By.xpath(".//td[@class='hb-flex-grid-data-cell']//div[@id='gwt-debug-person.firstName']");
+			topDisplayedDMEFirstName = By.xpath(".//*[text()='DME1255']");
+			DMEFirstName = By.xpath(".//*[@id='gwt-debug-name-search-bar']");
+			DMEAdress = By.xpath(".//*[@id='gwt-debug-primaryAddress-search-bar']/input");
+			DMEAdd = By.xpath(".//td[@class='hb-flex-grid-entry-bar-cell']/div//*[@class='gwt-Image hb-flex-add-button hb-mouse-over-clickable']");
+			topDisplayedChurch = By.xpath(".//td[@class='hb-flex-grid-data-cell']//*[@id='gwt-debug-name']");
+			pharmacyAdd = By.xpath(".//img[@class='gwt-Image hb-flex-add-button hb-mouse-over-clickable']");
+			
+			allergiesTab = By.xpath(".//div[text()='ALLERGIES']");
+			AllergyConfirm = By.xpath(".//div[contains(text(),'any allergies?')]/parent::td/following-sibling::td//input[contains(@name,'Yes')]");
+			AllergyType = By.xpath(".//*[@id='gwt-debug-allergyType-search-bar']");
+			AllergyReaction = By.xpath(".//*[@id='gwt-debug-reaction-search-bar']");
+			AllergyAdd = By.xpath("(.//div[@class='hb-grid-button-column hb-grid-button-column-up']//img)[2]");
+			TopDisplayedAllergy = By.xpath("//td[@class='hb-flex-grid-data-cell']//*[@id='gwt-debug-name']");
+			AllergyVerify = By.xpath(".//*[contains(text(),'Allergy_Name_')]");
+			assignmentTab = By.xpath(".//div[text()='Assignments']");
+			CNAName = By.xpath(".//div[text()='Certified Nurse Assistant']/parent::td/following-sibling::td//div[@id='gwt-debug-person']/input");
+			assignmentFirstName = By.xpath(".//td[@class='hb-flex-grid-entry-bar-cell']//*[@id='gwt-debug-firstName-search-bar']");
+			assignmentLastName = By.xpath(".//td[@class='hb-flex-grid-entry-bar-cell']//*[@id='gwt-debug-lastName-search-bar']");
+			assignmentPersonAdd = By.xpath(".//*[@id='gwt-debug-add-button-search-bar']/img[@class='gwt-Image hb-flex-add-button hb-mouse-over-clickable']");
+			topDisplayedPerson = By.xpath("//div[text()='assignmentPerson']");
+			
+			assignmentCNAStartDate_day = By.xpath(".//div[text()='Certified Nurse Assistant']/parent::td/following-sibling::td[2]//div[@id='gwt-debug-startDate']//select[contains(@class,'day')]");
+			assignmentCNAStartDate_month = By.xpath(".//div[text()='Certified Nurse Assistant']/parent::td/following-sibling::td[2]//div[@id='gwt-debug-startDate']//select[contains(@class,'month')]");
+			assignmentCNAStartDate_year = By.xpath(".//div[text()='Certified Nurse Assistant']/parent::td/following-sibling::td[2]//div[@id='gwt-debug-startDate']//select[contains(@class,'year')]");
+			
+			assignmentCNAEndDate_day = By.xpath(".//div[text()='Certified Nurse Assistant']/parent::td/following-sibling::td[3]//div[@id='gwt-debug-endDate']//select[contains(@class,'day')]");
+			assignmentCNAEndDate_month = By.xpath(".//div[text()='Certified Nurse Assistant']/parent::td/following-sibling::td[3]//div[@id='gwt-debug-endDate']//select[contains(@class,'month')]");
+			assignmentCNAEndDate_year = By.xpath(".//div[text()='Certified Nurse Assistant']/parent::td/following-sibling::td[3]//div[@id='gwt-debug-endDate']//select[contains(@class,'year')]");
+			selectedName = By.xpath(".//div[text()='Certified Nurse Assistant']/parent::td/following-sibling::td[1]//input");
+			topDisplayedPersonSelect = By.xpath(".//*[text()='assignmentPerson']/parent::td/preceding-sibling::td[1]//input");
+			addButton_historyTab = By.xpath(".//*[@id='gwt-debug-primaryCoverage.carrierName-search-bar']/../following-sibling::td[3]//img");
+			
+			//shiney
+			
+			dischargeButton=By.xpath("//button[text()='DISCHARGE']");
+			dischargetype=By.xpath(".//select[@id='gwt-debug-dischargeCodeType.s']");
+			dischargereason=By.xpath(".//select[@id='gwt-debug-dischargeReason']");
+			dischargedate_month=By.xpath("//*[@id='gwt-debug-dischargeDate']//select[contains(@class,'month')]");
+			dischargedate_day=By.xpath("//*[@id='gwt-debug-dischargeDate']//select[contains(@class,'day')]");
+			dischargedate_year=By.xpath("//*[@id='gwt-debug-dischargeDate']//select[contains(@class,'year')]");
+			
+			
+			//sam
+			
+			//sampath
+			caregivers_tab = By.xpath("//div[text()='CAREGIVERS']");
+			admitted_status_xpath = By.xpath("//div[text()='Admitted']");
+			addButton_Caregiver = By.xpath(".//*[@id='gwt-debug-patient-basic-information']//img[contains(@class,'hb-flex-add-button')]");
+			firstName_caregiver = By.xpath(".//*[@id='gwt-debug-person.firstName-search-bar']");
+			lastName_caregiver = By.xpath(".//*[@id='gwt-debug-person.lastName-search-bar']");
+			relation_caregiver = By.xpath(".//*[@id='gwt-debug-relationship-search-bar']");
+			addButton_caregiver_individual = By.xpath("(//*[@id='gwt-debug-add-button-search-bar']/img)[2]");
+			saveBtn_caregiverTab = By.xpath(".//*[@id='gwt-debug-selection-grid-view-save-button']");
+			
+			insurance_policyNumberInput = By.xpath("//div[text()='Policy Number']/../../../preceding-sibling::tr[1]/td[3]/input");
+			insurance_payerInput = By.xpath(".//*[@id='gwt-debug-carrierName-search-bar']");
+			billForRB = By.xpath(".//*[@id='gwt-debug-billForRB-search-bar-input']");
+			addButton_historyTab = By.xpath(".//*[@id='gwt-debug-primaryCoverage.carrierName-search-bar']/../following-sibling::td[3]//img");
+			historyTab_secondaryinsuranceDropdown = By.xpath(".//*[@id='gwt-debug-secondaryCoverage.carrierName-search-bar']");
+			current_election_Label = By.xpath("(//div[text()='Current Election'])[1]");
+			
+			electionGrid_AttendingPhysician_priInsurer = By.xpath("//div[contains(text(),'Attending:')]/../div[2]/input");
+			electionGrid_verbalDate_month_attendingPhysician = By.xpath(".//*[@id='gwt-debug-certificationDTO.attendingPhysicianVerbalDate']//select[contains(@class,'month')]");
+			electionGrid_verbalDate_day_attendingPhysician = By.xpath(".//*[@id='gwt-debug-certificationDTO.attendingPhysicianVerbalDate']//select[contains(@class,'day')]");
+			electionGrid_verbalDate_year_attendingPhysician = By.xpath(".//*[@id='gwt-debug-certificationDTO.attendingPhysicianVerbalDate']//select[contains(@class,'year')]");
+			electionGrid_signatureDate_month_attendingPhysician = By.xpath("//*[@id='gwt-debug-certificationDTO.attendingPhysicianWrittenDate']//select[contains(@class,'month')]");
+			electionGrid_signatureDate_day_attendingPhysician = By.xpath("//*[@id='gwt-debug-certificationDTO.attendingPhysicianWrittenDate']//select[contains(@class,'day')]");
+			electionGrid_signatureDate_year_attendingPhysician = By.xpath("//*[@id='gwt-debug-certificationDTO.attendingPhysicianWrittenDate']//select[contains(@class,'year')]");
+			
+			electionGrid_verbalDate_month_hospicePhysician = By.xpath(".//*[@id='gwt-debug-certificationDTO.hospicePhysicianVerbalDate']//select[contains(@class,'month')]");
+			electionGrid_verbalDate_day_hospicePhysician = By.xpath(".//*[@id='gwt-debug-certificationDTO.hospicePhysicianVerbalDate']//select[contains(@class,'day')]");
+			electionGrid_verbalDate_year_hospicePhysician = By.xpath(".//*[@id='gwt-debug-certificationDTO.hospicePhysicianVerbalDate']//select[contains(@class,'year')]");
+			electionGrid_signatureDate_month_hospicePhysician = By.xpath("//*[@id='gwt-debug-certificationDTO.hospicePhysicianWrittenDate']//select[contains(@class,'month')]");
+			electionGrid_signatureDate_day_hospicePhysician = By.xpath("//*[@id='gwt-debug-certificationDTO.hospicePhysicianWrittenDate']//select[contains(@class,'day')]");
+			electionGrid_signatureDate_year_hospicePhysician = By.xpath("//*[@id='gwt-debug-certificationDTO.hospicePhysicianWrittenDate']//select[contains(@class,'year')]");
+			electionGrid_hospicePhysicianName = By.xpath("//div[contains(text(),'Hospice:')]/../div[2]/input");
+			electionGrid_physicianName = By.xpath("//div[text()='Physician:']/parent::td/following-sibling::td/input");
+			electionGrid_certifyingPhysicianInput = By.xpath("//div[contains(text(),'Certifying Physician:')]/../div[2]/input");
+			
+			historyTab_LocationInput = By.xpath(".//input[@id='gwt-debug-loc-search-bar']");
+			historyTab_LocationDropdown = By.xpath(".//select[@id='gwt-debug-levelOfCare']");
+			historyTab_FacilityInput = By.xpath("//div[text()='Facility:']/../following-sibling::td/input");
+			endDate_month_RespiteLocation = By.xpath(".//*[@id='gwt-debug-endDateProvided']//select[contains(@class,'month hb-date-dropdown-novalue')]");
+			endDate_day_RespiteLocation = By.xpath(".//*[@id='gwt-debug-endDateProvided']//select[contains(@class,'day hb-date-dropdown-novalue')]");
+			endDate_year_RespiteLocation = By.xpath(".//*[@id='gwt-debug-endDateProvided']//select[contains(@class,'year hb-date-dropdown-novalue')]");
+			
+			physicianInput_historyTab = By.xpath(".//*[@id='gwt-debug-physician-search-bar']/input");
+			facilitySug = By.xpath(".//*[@class='hb-simple-grid-dropdown']//td[@class='suggestPopupMiddleCenter']//td[1][contains(text(),'Autumn')]");
+			electionGrid_TickMark = By.xpath(".//*[@id='gwt-debug-data-modal-save-button']");
+			
+			//PatientHeader
+			patientHeader_firstName = By.xpath("//table[@class='hb-patient-info-header']/tbody/tr/td[1]/table/tbody/tr/td[3]/div");
+			patientHeader_lastName  = By.xpath("//table[@class='hb-patient-info-header']/tbody/tr/td[1]/table/tbody/tr/td[5]/div");
+			patientHeader_powerOfAtorney = By.xpath(" //div[text()='CG']/../following-sibling::td[1]/div");
+			patientHeader_physician = By.xpath("//div[text()='Phys']/../following-sibling::td[1]/div");
+			patientHeader_insurance = By.xpath("//div[text()='Insurance']/../following-sibling::td[1]/div");
+			attendingPhysicianVerify = By.xpath(".//*[@id='gwt-debug-transient.attPhysician']/div");
+			insuranceVerify = By.xpath("//div[@class='GKGO0M2BAM']/table/tbody/tr[2]//table/tbody/tr[1]/td[11]/div");
+			patientFirstNameVerify = By.xpath(".//*[@id='gwt-debug-Patient.firstName']");
+			patientLastNameVerify = By.xpath(".//*[@id='gwt-debug-Patient.lastName']");
+			searchGridFirstName = By.xpath("//td[@class='hb-flex-grid-data-cell']//div[@id='gwt-debug-firstName']");
+
+			
+			//sam block
 		}
-
-	}
-}
+	}}
