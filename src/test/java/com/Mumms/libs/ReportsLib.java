@@ -30,60 +30,12 @@ public class ReportsLib extends MummsLib {
 	public void generateVisitReport(Hashtable<String, String> data) throws Throwable {
 
 		sleep(2000);
-		String from_month = null;
-		String from_day = null;
-		String from_year = null;
-		String to_month = null;
-		String to_day = null;
-		String to_year = null;
-		if (data.get("fromDate_Month").contains(".")) {
-
-			from_month = data.get("fromDate_Month").substring(0, data.get("fromDate_Month").indexOf("."));
-
-		} else {
-			from_month = data.get("fromDate_Month");
-
-		}
-		if (data.get("fromDate_Day").contains(".")) {
-
-			from_day = data.get("fromDate_Day").substring(0, data.get("fromDate_Day").indexOf("."));
-
-		} else {
-			from_day = data.get("fromDate_Day");
-
-		}
-		if (data.get("fromDate_Year").contains(".")) {
-
-			from_year = data.get("fromDate_Year").substring(0, data.get("fromDate_Year").indexOf("."));
-
-		} else {
-			from_year = data.get("fromDate_year");
-
-		}
-		if (data.get("toDate_Month").contains(".")) {
-
-			to_month = data.get("toDate_Month").substring(0, data.get("toDate_Month").indexOf("."));
-
-		} else {
-			to_month = data.get("toDate_Month");
-
-		}
-		if (data.get("toDate_Day").contains(".")) {
-
-			to_day = data.get("toDate_Day").substring(0, data.get("toDate_Day").indexOf("."));
-
-		} else {
-			to_day = data.get("toDate_Day");
-
-		}
-		if (data.get("toDate_Year").contains(".")) {
-
-			to_year = data.get("toDate_Year").substring(0, data.get("toDate_Year").indexOf("."));
-
-		} else {
-			to_year = data.get("toDate_Year");
-
-		}
+		String from_month = data.get("fromDate_Month");
+		String from_day = data.get("fromDate_Day");
+		String from_year = data.get("fromDate_Year");
+		String to_month = data.get("toDate_Month");
+		String to_day = data.get("toDate_Day");
+		String to_year = data.get("toDate_Year");
 		new ReportsPage().Reports_Page();
 		click(ReportsPage.visitReport, "Visit report");
 		sleep(10000);
@@ -153,60 +105,13 @@ public class ReportsLib extends MummsLib {
 	public void generateMonthEndARReconciliationReport(Hashtable<String, String> data) throws Throwable {
 
 		sleep(2000);
-		String from_month = null;
-		String from_day = null;
-		String from_year = null;
-		String to_month = null;
-		String to_day = null;
-		String to_year = null;
-		if (data.get("fromDate_Month").contains(".")) {
+		String from_month = data.get("fromDate_Month");
+		String from_day = data.get("fromDate_Day");
+		String from_year = data.get("fromDate_Year");
+		String to_month = data.get("toDate_Month");
+		String to_day = data.get("toDate_Day");
+		String to_year = data.get("toDate_Year");
 
-			from_month = data.get("fromDate_Month").substring(0, data.get("fromDate_Month").indexOf("."));
-
-		} else {
-			from_month = data.get("fromDate_Month");
-
-		}
-		if (data.get("fromDate_Day").contains(".")) {
-
-			from_day = data.get("fromDate_Day").substring(0, data.get("fromDate_Day").indexOf("."));
-
-		} else {
-			from_day = data.get("fromDate_Day");
-
-		}
-		if (data.get("fromDate_Year").contains(".")) {
-
-			from_year = data.get("fromDate_Year").substring(0, data.get("fromDate_Year").indexOf("."));
-
-		} else {
-			from_year = data.get("fromDate_year");
-
-		}
-		if (data.get("toDate_Month").contains(".")) {
-
-			to_month = data.get("toDate_Month").substring(0, data.get("toDate_Month").indexOf("."));
-
-		} else {
-			to_month = data.get("toDate_Month");
-
-		}
-		if (data.get("toDate_Day").contains(".")) {
-
-			to_day = data.get("toDate_Day").substring(0, data.get("toDate_Day").indexOf("."));
-
-		} else {
-			to_day = data.get("toDate_Day");
-
-		}
-		if (data.get("toDate_Year").contains(".")) {
-
-			to_year = data.get("toDate_Year").substring(0, data.get("toDate_Year").indexOf("."));
-
-		} else {
-			to_year = data.get("toDate_Year");
-
-		}
 		new ReportsPage().Reports_Page();
 		click(ReportsPage.monthEndARReconciliation, "Month End AR Reconciliation report");
 		sleep(10000);
@@ -269,60 +174,12 @@ public class ReportsLib extends MummsLib {
 	public void generateMonthlyRevenueReport(Hashtable<String, String> data) throws Throwable {
 
 		sleep(2000);
-		String from_month = null;
-		String from_day = null;
-		String from_year = null;
-		String to_month = null;
-		String to_day = null;
-		String to_year = null;
-		if (data.get("fromDate_Month").contains(".")) {
-
-			from_month = data.get("fromDate_Month").substring(0, data.get("fromDate_Month").indexOf("."));
-
-		} else {
-			from_month = data.get("fromDate_Month");
-
-		}
-		if (data.get("fromDate_Day").contains(".")) {
-
-			from_day = data.get("fromDate_Day").substring(0, data.get("fromDate_Day").indexOf("."));
-
-		} else {
-			from_day = data.get("fromDate_Day");
-
-		}
-		if (data.get("fromDate_Year").contains(".")) {
-
-			from_year = data.get("fromDate_Year").substring(0, data.get("fromDate_Year").indexOf("."));
-
-		} else {
-			from_year = data.get("fromDate_year");
-
-		}
-		if (data.get("toDate_Month").contains(".")) {
-
-			to_month = data.get("toDate_Month").substring(0, data.get("toDate_Month").indexOf("."));
-
-		} else {
-			to_month = data.get("toDate_Month");
-
-		}
-		if (data.get("toDate_Day").contains(".")) {
-
-			to_day = data.get("toDate_Day").substring(0, data.get("toDate_Day").indexOf("."));
-
-		} else {
-			to_day = data.get("toDate_Day");
-
-		}
-		if (data.get("toDate_Year").contains(".")) {
-
-			to_year = data.get("toDate_Year").substring(0, data.get("toDate_Year").indexOf("."));
-
-		} else {
-			to_year = data.get("toDate_Year");
-
-		}
+		String from_month = data.get("fromDate_Month");
+		String from_day = data.get("fromDate_Day");
+		String from_year = data.get("fromDate_Year");
+		String to_month = data.get("toDate_Month");
+		String to_day = data.get("toDate_Day");
+		String to_year = data.get("toDate_Year");
 		new ReportsPage().Reports_Page();
 		click(ReportsPage.monthlyRevenue, "Monthly revenue report");
 		sleep(10000);
@@ -385,61 +242,14 @@ public class ReportsLib extends MummsLib {
 	public void generatePaymentsAdjustmentsReportByDateReport(Hashtable<String, String> data) throws Throwable {
 
 		sleep(2000);
-		String from_month = null;
-		String from_day = null;
-		String from_year = null;
-		String to_month = null;
-		String to_day = null;
-		String to_year = null;
-		if (data.get("fromDate_Month").contains(".")) {
-
-			from_month = data.get("fromDate_Month").substring(0, data.get("fromDate_Month").indexOf("."));
-
-		} else {
-			from_month = data.get("fromDate_Month");
-
-		}
-		if (data.get("fromDate_Day").contains(".")) {
-
-			from_day = data.get("fromDate_Day").substring(0, data.get("fromDate_Day").indexOf("."));
-
-		} else {
-			from_day = data.get("fromDate_Day");
-
-		}
-		if (data.get("fromDate_Year").contains(".")) {
-
-			from_year = data.get("fromDate_Year").substring(0, data.get("fromDate_Year").indexOf("."));
-
-		} else {
-			from_year = data.get("fromDate_year");
-
-		}
-		if (data.get("toDate_Month").contains(".")) {
-
-			to_month = data.get("toDate_Month").substring(0, data.get("toDate_Month").indexOf("."));
-
-		} else {
-			to_month = data.get("toDate_Month");
-
-		}
-		if (data.get("toDate_Day").contains(".")) {
-
-			to_day = data.get("toDate_Day").substring(0, data.get("toDate_Day").indexOf("."));
-
-		} else {
-			to_day = data.get("toDate_Day");
-
-		}
-		if (data.get("toDate_Year").contains(".")) {
-
-			to_year = data.get("toDate_Year").substring(0, data.get("toDate_Year").indexOf("."));
-
-		} else {
-			to_year = data.get("toDate_Year");
-
-		}
+		String from_month = data.get("fromDate_Month");
+		String from_day = data.get("fromDate_Day");
+		String from_year = data.get("fromDate_Year");
+		String to_month = data.get("toDate_Month");
+		String to_day = data.get("toDate_Day");
+		String to_year = data.get("toDate_Year");
 		new ReportsPage().Reports_Page();
+
 		click(ReportsPage.paymentAdjustmentsReportByDate, "Payments and Adjustments by date report");
 		sleep(10000);
 		if (VerifyElementPresent(ReportsPage.fromDate_day, "Day field from the From_date section", true)
@@ -501,60 +311,12 @@ public class ReportsLib extends MummsLib {
 	public void generateHISReportForAdmissionsReport(Hashtable<String, String> data) throws Throwable {
 
 		sleep(2000);
-		String from_month = null;
-		String from_day = null;
-		String from_year = null;
-		String to_month = null;
-		String to_day = null;
-		String to_year = null;
-		if (data.get("fromDate_Month").contains(".")) {
-
-			from_month = data.get("fromDate_Month").substring(0, data.get("fromDate_Month").indexOf("."));
-
-		} else {
-			from_month = data.get("fromDate_Month");
-
-		}
-		if (data.get("fromDate_Day").contains(".")) {
-
-			from_day = data.get("fromDate_Day").substring(0, data.get("fromDate_Day").indexOf("."));
-
-		} else {
-			from_day = data.get("fromDate_Day");
-
-		}
-		if (data.get("fromDate_Year").contains(".")) {
-
-			from_year = data.get("fromDate_Year").substring(0, data.get("fromDate_Year").indexOf("."));
-
-		} else {
-			from_year = data.get("fromDate_year");
-
-		}
-		if (data.get("toDate_Month").contains(".")) {
-
-			to_month = data.get("toDate_Month").substring(0, data.get("toDate_Month").indexOf("."));
-
-		} else {
-			to_month = data.get("toDate_Month");
-
-		}
-		if (data.get("toDate_Day").contains(".")) {
-
-			to_day = data.get("toDate_Day").substring(0, data.get("toDate_Day").indexOf("."));
-
-		} else {
-			to_day = data.get("toDate_Day");
-
-		}
-		if (data.get("toDate_Year").contains(".")) {
-
-			to_year = data.get("toDate_Year").substring(0, data.get("toDate_Year").indexOf("."));
-
-		} else {
-			to_year = data.get("toDate_Year");
-
-		}
+		String from_month = data.get("fromDate_Month");
+		String from_day = data.get("fromDate_Day");
+		String from_year = data.get("fromDate_Year");
+		String to_month = data.get("toDate_Month");
+		String to_day = data.get("toDate_Day");
+		String to_year = data.get("toDate_Year");
 		new ReportsPage().Reports_Page();
 		click(ReportsPage.hisReportForAdmission, "HIS report for Admission");
 		sleep(10000);
@@ -596,14 +358,13 @@ public class ReportsLib extends MummsLib {
 		// Variables declaration
 		String reportingPeriod = data.get("ReportingPeriod");
 		String reportName = data.get("ReportName");
-		String program = data.get("Program");
-		String site = data.get("Site");
+		String site = data.get("SiteInReport");
 
 		// This block of code will extract the text from each web element and
 		// then it vl compare it with the data coming from the excel sheet
 		assertTextMatching(ReportsPage.reportTitleInReport, reportName, "Report name");
 		assertTextMatching(ReportsPage.reportingPeriodInReport, reportingPeriod, "Reporting Period");
-		//assertTextMatching(ReportsPage.siteOrOfficeInReport, site, "Site/Office");
+		assertTextMatching(ReportsPage.siteOrOfficeInReport, site, "Site/Office");
 		click(ReportsPage.saveButton, "Save button");
 		reporter.SuccessReport("Report generation time", timeTaken + " secs");
 
@@ -618,60 +379,12 @@ public class ReportsLib extends MummsLib {
 	public void generateHISReportForDischargeReport(Hashtable<String, String> data) throws Throwable {
 
 		sleep(2000);
-		String from_month = null;
-		String from_day = null;
-		String from_year = null;
-		String to_month = null;
-		String to_day = null;
-		String to_year = null;
-		if (data.get("fromDate_Month").contains(".")) {
-
-			from_month = data.get("fromDate_Month").substring(0, data.get("fromDate_Month").indexOf("."));
-
-		} else {
-			from_month = data.get("fromDate_Month");
-
-		}
-		if (data.get("fromDate_Day").contains(".")) {
-
-			from_day = data.get("fromDate_Day").substring(0, data.get("fromDate_Day").indexOf("."));
-
-		} else {
-			from_day = data.get("fromDate_Day");
-
-		}
-		if (data.get("fromDate_Year").contains(".")) {
-
-			from_year = data.get("fromDate_Year").substring(0, data.get("fromDate_Year").indexOf("."));
-
-		} else {
-			from_year = data.get("fromDate_year");
-
-		}
-		if (data.get("toDate_Month").contains(".")) {
-
-			to_month = data.get("toDate_Month").substring(0, data.get("toDate_Month").indexOf("."));
-
-		} else {
-			to_month = data.get("toDate_Month");
-
-		}
-		if (data.get("toDate_Day").contains(".")) {
-
-			to_day = data.get("toDate_Day").substring(0, data.get("toDate_Day").indexOf("."));
-
-		} else {
-			to_day = data.get("toDate_Day");
-
-		}
-		if (data.get("toDate_Year").contains(".")) {
-
-			to_year = data.get("toDate_Year").substring(0, data.get("toDate_Year").indexOf("."));
-
-		} else {
-			to_year = data.get("toDate_Year");
-
-		}
+		String from_month = data.get("fromDate_Month");
+		String from_day = data.get("fromDate_Day");
+		String from_year = data.get("fromDate_Year");
+		String to_month = data.get("toDate_Month");
+		String to_day = data.get("toDate_Day");
+		String to_year = data.get("toDate_Year");
 		new ReportsPage().Reports_Page();
 		click(ReportsPage.hisReportForDischarge, "HIS report for Discharge");
 		sleep(10000);
@@ -707,14 +420,13 @@ public class ReportsLib extends MummsLib {
 	 *
 	 * @return nothing will be returned
 	 */
-	public void verifyHISReportForDischargeReport(Hashtable<String, String> data) throws Throwable {
+	public void verifyHISReportForDischargeReport(Hashtable<String, String> data, float timeTaken) throws Throwable {
 
 		sleep(2000);
 		// Variables declaration
 		String reportingPeriod = data.get("ReportingPeriod");
 		String reportName = data.get("ReportName");
-		String program = data.get("Program");
-		String site = data.get("Site");
+		String site = data.get("SiteInReport");
 
 		// This block of code will extract the text from each web element and
 		// then it vl compare it with the data coming from the excel sheet
@@ -722,6 +434,7 @@ public class ReportsLib extends MummsLib {
 		assertTextMatching(ReportsPage.reportingPeriodInReport, reportingPeriod, "Reporting Period");
 		assertTextMatching(ReportsPage.siteOrOfficeInReport, site, "Site/Office");
 		click(ReportsPage.saveButton, "Save button");
+		reporter.SuccessReport("Report generation time", timeTaken + " secs");
 
 	}
 
@@ -737,14 +450,14 @@ public class ReportsLib extends MummsLib {
 		click(ReportsPage.teamMeeting, "Team meeting report");
 		sleep(10000);
 		if (VerifyElementPresent(ReportsPage.teamMeetingReportingPeriod, "Reporting period in Team report", true)
-				&& VerifyElementPresent(ReportsPage.patientStatus, "Patient Status (Team)", true)
-				&& VerifyElementPresent(ReportsPage.teamMeetingReport, "Team", true)
+				&& VerifyElementPresent(ReportsPage.patientStatusTeamMeeting, "Patient Status (Team)", true)
+				&& VerifyElementPresent(ReportsPage.teamInTeamMeeting, "Team", true)
 				&& VerifyElementPresent(ReportsPage.site, "Site/Hospice", true)
 				&& VerifyElementPresent(ReportsPage.program, "Program", true)) {
 
 			selectByValue(ReportsPage.teamMeetingReportingPeriod, data.get("Reporting_Period"), "");
-			selectByValue(ReportsPage.patientStatus, data.get("PatientStatus"), "");
-			selectByValue(ReportsPage.teamInTeamMeetingReport, data.get("Team"), "");
+			selectByValue(ReportsPage.patientStatusTeamMeeting, data.get("PatientStatus"), "");
+			selectByValue(ReportsPage.teamInTeamMeeting, data.get("Team"), "");
 			selectByValue(ReportsPage.site, data.get("Site"), "");
 			selectByValue(ReportsPage.program, data.get("Program"), "");
 
@@ -770,11 +483,11 @@ public class ReportsLib extends MummsLib {
 		// This block of code will extract the text from each web element and
 		// then it vl compare it with the data coming from the excel sheet
 		assertTextMatching(ReportsPage.reportTitleInReport, data.get("ReportName"), "Report name");
-		/*assertTextMatching(ReportsPage.reportingPeriodInReport, data.get("ReportingPeriodInReport"),
-				"Reporting Period");*/
-		//assertTextMatching(ReportsPage.siteOrOfficeInReport, data.get("Site"), "Site/Office");
-		assertTextMatching(ReportsPage.program, data.get("Program"), "program");
-		//assertTextMatching(ReportsPage.selectedTeam, data.get("Team"), "Selected Team");
+		assertTextMatching(ReportsPage.reportingPeriodInReport, data.get("ReportingPeriodInReport"),
+				"Reporting Period");
+		assertTextMatching(ReportsPage.siteOrOfficeInReport, data.get("SiteInReport"), "Site/Office");
+		assertTextMatching(ReportsPage.program, data.get("Program"), "Site/Office");
+		assertTextMatching(ReportsPage.selectedTeam, data.get("Team"), "Selected Team");
 		assertTextMatching(ReportsPage.patientStatusInReport, data.get("PatientStatus"), "Patient status");
 		click(ReportsPage.saveButton, "Save button");
 		reporter.SuccessReport("Report generation time", timeTaken + " secs");
@@ -790,62 +503,115 @@ public class ReportsLib extends MummsLib {
 	public void generateUpcomingF2FCertificationsReport(Hashtable<String, String> data) throws Throwable {
 
 		sleep(2000);
-		String from_month = null;
-		String from_day = null;
-		String from_year = null;
-		String to_month = null;
-		String to_day = null;
-		String to_year = null;
-		if (data.get("fromDate_Month").contains(".")) {
-
-			from_month = data.get("fromDate_Month").substring(0, data.get("fromDate_Month").indexOf("."));
-
-		} else {
-			from_month = data.get("fromDate_Month");
-
-		}
-		if (data.get("fromDate_Day").contains(".")) {
-
-			from_day = data.get("fromDate_Day").substring(0, data.get("fromDate_Day").indexOf("."));
-
-		} else {
-			from_day = data.get("fromDate_Day");
-
-		}
-		if (data.get("fromDate_Year").contains(".")) {
-
-			from_year = data.get("fromDate_Year").substring(0, data.get("fromDate_Year").indexOf("."));
-
-		} else {
-			from_year = data.get("fromDate_year");
-
-		}
-		if (data.get("toDate_Month").contains(".")) {
-
-			to_month = data.get("toDate_Month").substring(0, data.get("toDate_Month").indexOf("."));
-
-		} else {
-			to_month = data.get("toDate_Month");
-
-		}
-		if (data.get("toDate_Day").contains(".")) {
-
-			to_day = data.get("toDate_Day").substring(0, data.get("toDate_Day").indexOf("."));
-
-		} else {
-			to_day = data.get("toDate_Day");
-
-		}
-		if (data.get("toDate_Year").contains(".")) {
-
-			to_year = data.get("toDate_Year").substring(0, data.get("toDate_Year").indexOf("."));
-
-		} else {
-			to_year = data.get("toDate_Year");
-
-		}
 		new ReportsPage().Reports_Page();
-		click(ReportsPage.hisReportForDischarge, "HIS report for Discharge");
+		click(ReportsPage.upcomingF2FCertifications, "Upcoming F2F and Certifications");
+		sleep(10000);
+		type(ReportsPage.warningDays, data.get("WarningDays"), "");
+		selectByValue(ReportsPage.warningType, data.get("WarningType"), "");
+		selectByValue(ReportsPage.site, data.get("Site"), "");
+		click(ReportsPage.generateReport, "Generate report");
+	}
+
+	/**
+	 * This method is to verify Upcoming F2F and Certifications report in
+	 * reports tab
+	 *
+	 * @return nothing will be returned
+	 */
+	public void verifyUpcomingF2FCertificationsReport(Hashtable<String, String> data, float timeTaken)
+			throws Throwable {
+
+		sleep(2000);
+		// Variables declaration
+		String reportTitle = data.get("ReportTitle");
+		String warningDays = data.get("WarningDays");
+		String warningType = data.get("WarningTypeInReport");
+		String site = data.get("Site");
+
+		// This block of code will extract the text from each web element and
+		// then it vl compare it with the data coming from the excel sheet
+		assertTextMatching(ReportsPage.reportTitleInReport, reportTitle, "Report title");
+		assertTextMatching(ReportsPage.warningDaysInReport, warningDays, "Warning days");
+		assertTextMatching(ReportsPage.warningTypeInReport, warningType, "Warning Type");
+		assertTextMatching(ReportsPage.siteOrOfficeInReport, site, "Site/Office");
+		click(ReportsPage.saveButton, "Save button");
+		reporter.SuccessReport("Report generation time", timeTaken + " secs");
+
+	}
+
+	/**
+	 * This method is to generate Contacts list report in reports tab
+	 *
+	 * @return nothing will be returned
+	 */
+	public void generateContactListReport(Hashtable<String, String> data) throws Throwable {
+
+		sleep(2000);
+		String role = data.get("Role");
+		String employeeAll = data.get("Employee-All");
+		String siteOffice = data.get("Site-Office");
+
+		new ReportsPage().Reports_Page();
+		click(ReportsPage.linkContactList, "Contacts list");
+		sleep(10000);
+		if (VerifyElementPresent(ReportsPage.roleContactsList, "Day field from the From_date section", true)
+				&& VerifyElementPresent(ReportsPage.includeContactList, "Month field from the From_date", true)
+				&& VerifyElementPresent(ReportsPage.site, "Year field from the From_date", true)) {
+
+			selectByValue(ReportsPage.roleContactsList, role, "");
+			selectByValue(ReportsPage.includeContactList, employeeAll, "");
+			selectByValue(ReportsPage.site, siteOffice, "");
+		} else {
+			System.out.println("The From date fields are not displayed");
+		}
+		sleep(3000);
+		click(ReportsPage.generateReport, "Generate report");
+	}
+
+	/**
+	 * This method is to verify contacts list report in reports tab
+	 *
+	 * @return nothing will be returned
+	 */
+	public void verifygenerateContactListReport(Hashtable<String, String> data, float timeTaken) throws Throwable {
+
+		sleep(2000);
+		// Variables declaration
+		String roleInReport = data.get("RoleInReport");
+		String siteInReport = data.get("Site");
+		String include = data.get("Include");
+		String reportTitle = data.get("ReportTitle");
+
+		// This block of code will extract the text from each web element and
+		// then it vl compare it with the data coming from the excel sheet
+		assertTextMatching(ReportsPage.roleInContactsListReport, roleInReport, "Role");
+		assertTextMatching(ReportsPage.includeInReport, include, "");
+		assertTextMatching(ReportsPage.siteOrOfficeInReport, siteInReport, "Site/Office");
+		assertTextMatching(ReportsPage.reportTitleInReport, reportTitle, "Report name");
+		click(ReportsPage.saveButton, "Save button");
+		reporter.SuccessReport("Report generation time", timeTaken + " secs");
+
+	}
+
+	/**
+	 * This method is to generate Bereaved person list report in reports tab
+	 *
+	 * @return nothing will be returned
+	 */
+	public void generateBereavedPersonsReport(Hashtable<String, String> data) throws Throwable {
+
+		sleep(2000);
+		String from_month = data.get("fromDate_Month");
+		String from_day = data.get("fromDate_Day");
+		String from_year = data.get("fromDate_Year");
+		String to_month = data.get("toDate_Month");
+		String to_day = data.get("toDate_Day");
+		String to_year = data.get("toDate_Year");
+		String site = data.get("Site");
+		String program = data.get("Program");
+
+		new ReportsPage().Reports_Page();
+		click(ReportsPage.linkBereavedPersons, "Bereaved Persons list");
 		sleep(10000);
 		if (VerifyElementPresent(ReportsPage.fromDate_day, "Day field from the From_date section", true)
 				&& VerifyElementPresent(ReportsPage.fromDate_month, "Month field from the From_date", true)
@@ -870,30 +636,238 @@ public class ReportsLib extends MummsLib {
 		}
 
 		sleep(3000);
+		selectByValue(ReportsPage.site, site, "");
+		selectByValue(ReportsPage.programInBereavedPerson, program, "");
 		click(ReportsPage.generateReport, "Generate report");
 	}
 
 	/**
-	 * This method is to verify Upcoming F2F and Certifications report in
+	 * This method is to verify Bereaved Persons report in reports tab
+	 *
+	 * @return nothing will be returned
+	 */
+	public void verifyBereavedPersonstReport(Hashtable<String, String> data, float timeTaken) throws Throwable {
+
+		sleep(2000);
+		// Variables declaration
+		String reportTitle = data.get("ReportTitle");
+		String programNameInReport = data.get("Program_Report");
+		String reportingPeriod = data.get("ReportingPeriod");
+		String siteInReport = data.get("SiteInReport");
+
+		// This block of code will extract the text from each web element and
+		// then it vl compare it with the data coming from the excel sheet
+		assertTextMatching(ReportsPage.reportingPeriodInReport, reportingPeriod, "reporting period");
+		assertTextMatching(ReportsPage.siteOrOfficeInReport, siteInReport, "Site/Office");
+		assertTextMatching(ReportsPage.reportTitleInReport, reportTitle, "Report name");
+		assertTextMatching(ReportsPage.programInReport, programNameInReport, "Program name");
+		click(ReportsPage.saveButton, "Save button");
+		reporter.SuccessReport("Report generation time", timeTaken + " secs");
+
+	}
+
+	/**
+	 * This method is to generate Referrals by Referral Source Report in reports
+	 * tab
+	 *
+	 * @return nothing will be returned
+	 */
+	public void generateReferralsbyReferralSourceReport(Hashtable<String, String> data) throws Throwable {
+
+		sleep(2000);
+		String from_month = data.get("fromDate_Month");
+		String from_day = data.get("fromDate_Day");
+		String from_year = data.get("fromDate_Year");
+		String to_month = data.get("toDate_Month");
+		String to_day = data.get("toDate_Day");
+		String to_year = data.get("toDate_Year");
+		String site = data.get("Site");
+		String program = data.get("Program");
+		String referrralSourceType = data.get("ReferrralSourceType");
+		String statusAfterReferral = data.get("StatusAfterReferral");
+
+		new ReportsPage().Reports_Page();
+		click(ReportsPage.linkReferralsbyReferralSource, "Referrals by referral source report");
+		sleep(10000);
+		if (VerifyElementPresent(ReportsPage.fromDate_day, "Day field from the From_date section", true)
+				&& VerifyElementPresent(ReportsPage.fromDate_month, "Month field from the From_date", true)
+				&& VerifyElementPresent(ReportsPage.fromDate_year, "Year field from the From_date", true)) {
+
+			selectByValue(ReportsPage.fromDate_month, from_month, "");
+			selectByValue(ReportsPage.fromDate_day, from_day, "");
+			selectByValue(ReportsPage.fromDate_year, from_year, "");
+		} else {
+			System.out.println("The From date fields are not displayed");
+		}
+
+		if (VerifyElementPresent(ReportsPage.toDate_day, "Day field from the To_date section", true)
+				&& VerifyElementPresent(ReportsPage.toDate_month, "Month field from the To_date section", true)
+				&& VerifyElementPresent(ReportsPage.toDate_year, "Year field from the To_date section", true)) {
+
+			selectByValue(ReportsPage.toDate_month, to_month, "");
+			selectByValue(ReportsPage.toDate_day, to_day, "");
+			selectByValue(ReportsPage.toDate_year, to_year, "");
+		} else {
+			System.out.println("The To date fields are not displayed");
+		}
+
+		sleep(3000);
+		selectByValue(ReportsPage.referralSourceType, referrralSourceType, "");
+		selectByValue(ReportsPage.statusAfterReferral, statusAfterReferral, "");
+		selectByValue(ReportsPage.site, site, "");
+		selectByValue(ReportsPage.programInReferral, program, "");
+		click(ReportsPage.generateReport, "Generate report");
+	}
+
+	/**
+	 * This method is to verify Referrals by Referral Source Report report in
 	 * reports tab
 	 *
 	 * @return nothing will be returned
 	 */
-	public void verifyUpcomingF2FCertificationsReport(Hashtable<String, String> data) throws Throwable {
+	public void verifyReferralsbyReferralSourceReport(Hashtable<String, String> data, float timeTaken)
+			throws Throwable {
 
 		sleep(2000);
 		// Variables declaration
+		String reportTitle = data.get("ReportTitle");
+		String programNameInReport = data.get("Program_Report");
 		String reportingPeriod = data.get("ReportingPeriod");
-		String reportName = data.get("ReportName");
-		String program = data.get("Program");
-		String site = data.get("Site");
+		String siteInReport = data.get("SiteInReport");
+		String referrralSourceType = data.get("ReferrralSourceType");
+		String statusAfterReferral = data.get("StatusAfterReferral");
 
 		// This block of code will extract the text from each web element and
 		// then it vl compare it with the data coming from the excel sheet
-		assertTextMatching(ReportsPage.reportTitleInReport, reportName, "Report name");
-		assertTextMatching(ReportsPage.reportingPeriodInReport, reportingPeriod, "Reporting Period");
-		assertTextMatching(ReportsPage.siteOrOfficeInReport, site, "Site/Office");
+		assertTextMatching(ReportsPage.reportingPeriodInReport, reportingPeriod, "reporting period");
+		assertTextMatching(ReportsPage.siteOrOfficeInReport, siteInReport, "Site/Office");
+		assertTextMatching(ReportsPage.reportTitleInReport, reportTitle, "Report name");
+		assertTextMatching(ReportsPage.referralSourceTypeInReport, referrralSourceType, "Referral source type");
+		assertTextMatching(ReportsPage.statusAfterReferralInReport, statusAfterReferral, "Status after referral");
+		assertTextMatching(ReportsPage.programInReport, programNameInReport, "Program name");
 		click(ReportsPage.saveButton, "Save button");
+		reporter.SuccessReport("Report generation time", timeTaken + " secs");
+
+	}
+
+	/**
+	 * This method is to generate Patient Days by Level of Care Report in
+	 * reports tab
+	 *
+	 * @return nothing will be returned
+	 */
+	public void generatePatientDaysbyLevelofCareReport(Hashtable<String, String> data) throws Throwable {
+
+		sleep(2000);
+		String from_month = data.get("fromDate_Month");
+		String from_day = data.get("fromDate_Day");
+		String from_year = data.get("fromDate_Year");
+		String to_month = data.get("toDate_Month");
+		String to_day = data.get("toDate_Day");
+		String to_year = data.get("toDate_Year");
+		String site = data.get("Site");
+		String patientStatus = data.get("PatientStatus");
+
+		new ReportsPage().Reports_Page();
+		click(ReportsPage.linkPatientDaysbyLevelofCare, "Patient Days by Level of Care Report");
+		sleep(10000);
+		if (VerifyElementPresent(ReportsPage.fromDate_day, "Day field from the From_date section", true)
+				&& VerifyElementPresent(ReportsPage.fromDate_month, "Month field from the From_date", true)
+				&& VerifyElementPresent(ReportsPage.fromDate_year, "Year field from the From_date", true)) {
+
+			selectByValue(ReportsPage.fromDate_month, from_month, "");
+			selectByValue(ReportsPage.fromDate_day, from_day, "");
+			selectByValue(ReportsPage.fromDate_year, from_year, "");
+		} else {
+			System.out.println("The From date fields are not displayed");
+		}
+
+		if (VerifyElementPresent(ReportsPage.toDate_day, "Day field from the To_date section", true)
+				&& VerifyElementPresent(ReportsPage.toDate_month, "Month field from the To_date section", true)
+				&& VerifyElementPresent(ReportsPage.toDate_year, "Year field from the To_date section", true)) {
+
+			selectByValue(ReportsPage.toDate_month, to_month, "");
+			selectByValue(ReportsPage.toDate_day, to_day, "");
+			selectByValue(ReportsPage.toDate_year, to_year, "");
+		} else {
+			System.out.println("The To date fields are not displayed");
+		}
+
+		sleep(3000);
+		selectByValue(ReportsPage.patientStatusPatientDaysByLevelOfCare, patientStatus, "");
+		selectByValue(ReportsPage.site, site, "");
+		click(ReportsPage.generateReport, "Generate report");
+	}
+
+	/**
+	 * This method is to verify Patient Days by Level of Care Report report in
+	 * reports tab
+	 *
+	 * @return nothing will be returned
+	 */
+	public void verifyPatientDaysbyLevelofCareReport(Hashtable<String, String> data, float timeTaken) throws Throwable {
+
+		sleep(2000);
+		// Variables declaration
+		String reportTitle = data.get("ReportTitle");
+		String patientStatus = data.get("PatientStatusInReport");
+		String reportingPeriod = data.get("ReportingPeriod");
+		String siteInReport = data.get("SiteInReport");
+
+		// This block of code will extract the text from each web element and
+		// then it vl compare it with the data coming from the excel sheet
+		assertTextMatching(ReportsPage.reportingPeriodInReport, reportingPeriod, "reporting period");
+		assertTextMatching(ReportsPage.siteOrOfficeInReport, siteInReport, "Site/Office");
+		assertTextMatching(ReportsPage.reportTitleInReport, reportTitle, "Report name");
+		assertTextMatching(ReportsPage.patientStatusInReport, patientStatus, "Patient status in report");
+
+		click(ReportsPage.saveButton, "Save button");
+		reporter.SuccessReport("Report generation time", timeTaken + " secs");
+
+	}
+
+	/**
+	 * This method is to generate Credit Claim Balance Report in reports tab
+	 *
+	 * @return nothing will be returned
+	 */
+	public void generateCreditClaimBalanceReport(Hashtable<String, String> data) throws Throwable {
+
+		sleep(2000);
+
+		new ReportsPage().Reports_Page();
+		click(ReportsPage.linkCreditClaimBalanceReport, "Credit claim balance report");
+		sleep(10000);
+
+		sleep(3000);
+		selectByValue(ReportsPage.site, data.get("Site"), "");
+		selectByValue(ReportsPage.program, data.get("Program"), "");
+		click(ReportsPage.generateReport, "Generate report");
+	}
+
+	/**
+	 * This method is to verify Credit Claim Balance Report report in reports
+	 * tab
+	 *
+	 * @return nothing will be returned
+	 */
+	public void verifyCreditClaimBalanceReport(Hashtable<String, String> data, float timeTaken) throws Throwable {
+
+		sleep(2000);
+		// Variables declaration
+		String reportTitle = data.get("ReportTitle");
+		String reportingDate = data.get("ReportingDate");
+		String program = data.get("Program");
+		String siteInReport = data.get("SiteInReport");
+
+		// This block of code will extract the text from each web element and
+		// then it vl compare it with the data coming from the excel sheet
+		assertTextMatching(ReportsPage.reportTitleInReport, reportTitle, "Report title");
+		assertTextMatching(ReportsPage.siteOrOfficeInReport, siteInReport, "Site/Office");
+		assertTextMatching(ReportsPage.programInReport, program, "Program");
+		assertTextMatching(ReportsPage.reportingDateInCreditClaimBalanceReport, reportingDate, "Reporting date");
+		click(ReportsPage.saveButton, "Save button");
+		reporter.SuccessReport("Report generation time", timeTaken + " secs");
 
 	}
 
