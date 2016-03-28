@@ -9,17 +9,24 @@
 	<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
 	<listener class-name="com.automation.utilities.AssignTestPriorityTransformer" />
 </listeners>
-	<test name="firefoxWindowsLocal" preserve-order='false'>
-			<parameter name="browser" value="firefox"></parameter>
+	<test name="chromeWindowsLocal" preserve-order='false'>
+			<parameter name="browser" value="chrome"></parameter>
 			<parameter name="automationName" value="selenium"></parameter>
-			<parameter name="browserVersion" value="43.0"></parameter>
+			<parameter name="browserVersion" value="46.0"></parameter>
 			<parameter name="platformName" value="windows 7"></parameter>
 			<parameter name="environment" value="local"></parameter>
 		 <classes>
+			<class name="com.Mumms.scripts.Admin">
+				<methods>
+			<parameter name="userrole" value="AdminUser"></parameter>
+					 <include name="addNewRole" />
+					 <include name="updateAdjustmentReasons" />
+				</methods>
+			 </class>
 			<class name="com.Mumms.scripts.Reports">
 				<methods>
-			<parameter name="userrole" value="AdminUser "></parameter>
-					 <include name="testGenerateVisitReport" />
+			<parameter name="userrole" value="HospiceUser"></parameter>
+					 <include name="verifyCAHPSReport" />
 				</methods>
 			 </class>
 		 </classes>

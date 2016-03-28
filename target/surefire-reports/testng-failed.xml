@@ -4,8 +4,8 @@
   <parameter name="environment" value="local"/>
   <parameter name="suiteExecuted" value="Regression"/>
   <parameter name="executionType" value="Sequential"/>
-  <parameter name="browser" value="firefox"/>
-  <parameter name="browserVersion" value="43.0"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="46.0"/>
   <parameter name="automationName" value="selenium"/>
   <parameter name="platformName" value="windows 7"/>
   <listeners>
@@ -13,22 +13,31 @@
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
     <listener class-name="com.automation.utilities.AssignTestPriorityTransformer"/>
   </listeners>
-  <test name="firefoxWindowsLocal(failed)" parallel="tests">
+  <test name="chromeWindowsLocal(failed)" parallel="tests">
     <parameter name="environment" value="local"/>
-    <parameter name="browser" value="firefox"/>
-    <parameter name="browserVersion" value="43.0"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="browserVersion" value="46.0"/>
     <parameter name="automationName" value="selenium"/>
     <parameter name="platformName" value="windows 7"/>
     <classes>
       <class name="com.Mumms.scripts.Reports">
-        <parameter name="userrole" value="AdminUser "/>
+        <parameter name="userrole" value="HospiceUser"/>
         <methods>
           <include name="afterTest"/>
-          <include name="beforeSuite"/>
-          <include name="testGenerateVisitReport"/>
+          <include name="verifyCAHPSReport"/>
           <include name="beforeTest"/>
         </methods>
       </class> <!-- com.Mumms.scripts.Reports -->
+      <class name="com.Mumms.scripts.Admin">
+        <parameter name="userrole" value="HospiceUser"/>
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="beforeTest"/>
+          <include name="addNewRole"/>
+          <include name="updateAdjustmentReasons"/>
+        </methods>
+      </class> <!-- com.Mumms.scripts.Admin -->
     </classes>
-  </test> <!-- firefoxWindowsLocal(failed) -->
+  </test> <!-- chromeWindowsLocal(failed) -->
 </suite> <!-- Failed suite [Mumms Automation test suite] -->

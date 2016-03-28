@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 
 import com.Mumms.libs.AdminLib;
 import com.Mumms.page.AdminPage;
+import com.Mumms.page.HomePage;
 import com.automation.utilities.TestUtil;
 
 public class Admin extends AdminLib {
@@ -18,32 +19,57 @@ public class Admin extends AdminLib {
 	@BeforeMethod
 	public void login(String userrole) throws Throwable {
 		loginAsUserRole(userrole);
+
 	}
 
 	@DataProvider
-	public Object[][] getTestDataFor_deleteCreatedRole() {
-		return TestUtil.getData("deleteCreatedRole", TestData, "Admin");
+	public Object[][] getTestDataFor_editCreatedRole() {
+		return TestUtil.getData("editCreatedRole", TestData, "Admin");
 	}
 
-	@Test(dataProvider = "getTestDataFor_deleteCreatedRole")
-	public void deleteCreatedRole(Hashtable<String, String> data) throws Throwable {
+	@Test(dataProvider = "getTestDataFor_editCreatedRole")
+	public void editCreatedRole(Hashtable<String, String> data) throws Throwable {
 
 		try {
 
-			if (data.get("RunMode").equals("Y")) {
-				this.reporter.initTestCaseDescription("TC-50");
+			if (data.get("RunMode").equals("Y"))
+			{
+				this.reporter.initTestCaseDescription("SQA-50");	
 				selectAgency("RUTH");
 				goToAdmin();
 
-				int randNum = generateRandonNumber();
-				String rollName = data.get("RolesGroup") + "_" + Integer.toString(randNum);
-				String role = data.get("Role") + "_" + Integer.toString(randNum);
+				int intRandNum = generateRandonNumber();
+				String strRollName = data.get("RolesGroup")+"_"+Integer.toString(intRandNum);
+				String strRole = data.get("Role")+"_"+Integer.toString(intRandNum);
 
-				createRole(data, rollName, role);
-				deleteRole(data, rollName);
+				/*createRole(data,strRollName,strRole);
+				deleteRole(data, strRollName);
+				verifydeleteRole(data, strRollName);*/
+				
+/*				createRoleWithAllDetails(data,strRollName,strRole);
+				editRole(data, strRollName);
+				verifyEditRole(data, strRollName);
+				deleteRole(data,data.get("RolesGroupChange"));
+				verifydeleteRole(data, data.get("RolesGroupChange"));*/
+				
+				createRoleWithAllDetails(data,strRollName,strRole);
+				verifyRole(data, strRollName,strRole);
+				
+				int intRandNumNew = generateRandonNumber();
+				String strRollNameNew = data.get("RolesGroup")+"_"+Integer.toString(intRandNumNew);
+				String strRoleNew = data.get("Role")+"_"+Integer.toString(intRandNumNew);
+				String strRoleNew1 = data.get("NewRole")+"_"+Integer.toString(intRandNumNew);
+				
+				editRole(data, strRollName,strRollNameNew,strRoleNew,strRoleNew1);
+				//03212016
+				verifyEditRole(data,strRollNameNew,strRoleNew,strRoleNew1);
+				//
+				deleteRole(data,strRollNameNew);
+				verifydeleteRole(data, strRollNameNew);
 
-			}
-		} catch (Exception e) {
+			} }
+		catch (Exception e) 
+		{
 			e.printStackTrace();
 		}
 	}
@@ -58,20 +84,22 @@ public class Admin extends AdminLib {
 
 		try {
 
-			if (data.get("RunMode").equals("Y")) {
-				this.reporter.initTestCaseDescription("SQA-51 -");
+			if (data.get("RunMode").equals("Y"))
+			{
+				this.reporter.initTestCaseDescription("SQA-51");	
 				selectAgency("RUTH");
 				goToAdmin();
 
-				int randNum = generateRandonNumber();
-				String roleName = data.get("RolesGroup") + "_" + Integer.toString(randNum);
-				String role = data.get("Role") + "_" + Integer.toString(randNum);
+				int intRandNum = generateRandonNumber();
+				String strRollName = data.get("RolesGroup")+"_"+Integer.toString(intRandNum);
+				String strRole = data.get("Role")+"_"+Integer.toString(intRandNum);
 
-				createRole(data, roleName, role);
-				// verifyRole(data, rollName);
+				createRole(data,strRollName,strRole);
+				verifyRole(data, strRollName,strRole);
 
-			}
-		} catch (Exception e) {
+			} }
+		catch (Exception e) 
+		{
 			e.printStackTrace();
 		}
 	}
@@ -86,21 +114,22 @@ public class Admin extends AdminLib {
 
 		try {
 
-			if (data.get("RunMode").equals("Y")) {
-				this.reporter.initTestCaseDescription("SQA-59");
+			if (data.get("RunMode").equals("Y"))
+			{
+				this.reporter.initTestCaseDescription("SQA-59");	
 				selectAgency("RUTH");
 				goToAdmin();
 
-				int randNum = generateRandonNumber();
-				String ProgramName = data.get("Name") + "_" + Integer.toString(randNum);
-				createProgram(data, ProgramName);
-				verifyProgram(data, ProgramName);
-
-			}
-		} catch (Exception e) {
+				int intRandNum = generateRandonNumber();
+				String strProgramName = data.get("Name")+"_"+Integer.toString(intRandNum);
+				String strCode = data.get("Code")+"_"+Integer.toString(intRandNum);
+				createProgram(data,strProgramName,strCode);
+				verifyProgram(data, strProgramName,strCode);
+			} }
+		catch (Exception e) 
+		{
 			e.printStackTrace();
-		}
-	}
+		}}
 
 	@DataProvider
 	public Object[][] getTestDataFor_deleteCreatedProgram() {
@@ -111,33 +140,41 @@ public class Admin extends AdminLib {
 	public void deleteCreatedProgram(Hashtable<String, String> data) throws Throwable {
 		try {
 
-			if (data.get("RunMode").equals("Y")) {
-				this.reporter.initTestCaseDescription("TC-60");
+			if (data.get("RunMode").equals("Y"))
+			{
+				this.reporter.initTestCaseDescription("SQA-60");	
 				selectAgency("RUTH");
 				goToAdmin();
 
-				int randNum = generateRandonNumber();
-				String ProgramName1 = data.get("Name") + "_" + Integer.toString(randNum);
-				createProgram(data, ProgramName1);
-				softDeleteProgram(data, ProgramName1);
+				int intRandNum = generateRandonNumber();
+				String strProgramName1 = data.get("Name")+"_"+Integer.toString(intRandNum);
+				String strCode1 = data.get("Code")+"_"+Integer.toString(intRandNum);
+				createProgram(data,strProgramName1,strCode1);
+				softDeleteProgram(data, strProgramName1);
+				verifydeleteProgram(data, strProgramName1);
 
-				int randNum2 = generateRandonNumber();
-				String ProgramName2 = data.get("Name") + "_" + Integer.toString(randNum2);
-				createProgram(data, ProgramName2);
+				int intRandNum2 = generateRandonNumber();
+				String strProgramName2 = data.get("Name")+"_"+Integer.toString(intRandNum2);
+				String strCode2 = data.get("Code")+"_"+Integer.toString(intRandNum2);
+				createProgram(data,strProgramName2,strCode2);
 
-				String patientFirstName = data.get("patientFirstName") + "_" + Integer.toString(randNum2);
-				String patientLastName = data.get("patientLastName") + "_" + Integer.toString(randNum2);
+				String strPatientFirstName = data.get("patientFirstName")+"_"+Integer.toString(intRandNum2);
+				String strPatientLastName = data.get("patientLastName")+"_"+Integer.toString(intRandNum2);
 
-				configureSiteForProgramHardDelete(data, ProgramName2);
-				createPatientInfo(patientFirstName, patientLastName);
-				assignProgramToPatient(ProgramName2);
-				hardDeleteProgram(data, ProgramName2);
+				configureSiteForProgramHardDelete(data, strProgramName2);
+				createPatientInfo(strPatientFirstName, strPatientLastName);
+				assignProgramToPatient(strProgramName2);
+				String strPopUpTexConfirmation=data.get("PopUpTexConfirmation");
+				String strPopUpTextDesc=data.get("PopUpText");
+				System.out.println("PopUpTexConfirmation is-->"+strPopUpTexConfirmation+"and PopUpTextDesc is"+strPopUpTextDesc);
+				hardDeleteProgram(strPopUpTexConfirmation,strPopUpTextDesc, strProgramName2);
+				verifydeleteProgram(data, strProgramName2);
 
-			}
-		} catch (Exception e) {
+			} }
+		catch (Exception e) 
+		{
 			e.printStackTrace();
-		}
-	}
+		}}
 
 	@DataProvider
 	public Object[][] getTestDataFor_addNewReligion() {
@@ -149,21 +186,22 @@ public class Admin extends AdminLib {
 
 		try {
 
-			if (data.get("RunMode").equals("Y")) {
-				this.reporter.initTestCaseDescription("TC-61");
+			if (data.get("RunMode").equals("Y"))
+			{
+				this.reporter.initTestCaseDescription("SQA-61");	
 				selectAgency("RUTH");
 				goToAdmin();
 
-				int randNum = generateRandonNumber();
-				String ReligionName = data.get("ReligionName") + "_" + Integer.toString(randNum);
-				createReligion(data, ReligionName);
-				verifyReligion(data, ReligionName);
+				int intRandNum = generateRandonNumber();
+				String strReligionName = data.get("ReligionName")+"_"+Integer.toString(intRandNum);
+				createReligion(data,strReligionName);
+				verifyReligion(data, strReligionName,true);
 
-			}
-		} catch (Exception e) {
+			} }
+		catch (Exception e) 
+		{
 			e.printStackTrace();
-		}
-	}
+		}}
 
 	@DataProvider
 	public Object[][] getTestDataFor_deleteCreatedReligion() {
@@ -175,21 +213,38 @@ public class Admin extends AdminLib {
 
 		try {
 
-			if (data.get("RunMode").equals("Y")) {
-				this.reporter.initTestCaseDescription("TC-62");
+			if (data.get("RunMode").equals("Y"))
+			{
+				this.reporter.initTestCaseDescription("SQA-62");	
 				selectAgency("RUTH");
 				goToAdmin();
 
-				int randNum = generateRandonNumber();
-				String ReligionName = data.get("ReligionName") + "_" + Integer.toString(randNum);
-				createReligion(data, ReligionName);
-				softDeleteReligion(data, ReligionName);
+				int intRandNum = generateRandonNumber();
+				String strReligionName = data.get("ReligionName")+"_"+Integer.toString(intRandNum);
+				createReligion(data,strReligionName);
+				softDeleteReligion(data, strReligionName);
+				verifydeleteReligion(data, strReligionName,false);
 
-			}
-		} catch (Exception e) {
+				int intRandNum2 = generateRandonNumber();
+				String strReligionName2 = data.get("ReligionName")+"_"+Integer.toString(intRandNum2);
+				createReligion(data,strReligionName2);
+
+				String strPatientFirstName = data.get("patientFirstName")+"_"+Integer.toString(intRandNum2);
+				String strPatientLastName = data.get("patientLastName")+"_"+Integer.toString(intRandNum2);
+
+				createPatientInfo(strPatientFirstName, strPatientLastName);
+				assignRelegionToPatient(strReligionName2);
+				String strPopUpTexConfirmation=data.get("PopUpTexConfirmation");
+				String strPopUpTextDesc=data.get("PopUpText");
+				System.out.println("PopUpTexConfirmation is-->"+strPopUpTexConfirmation+"and PopUpTextDesc is"+strPopUpTextDesc);
+				hardDeleteReligion(strPopUpTexConfirmation,strPopUpTextDesc, strReligionName2);
+				verifydeleteReligion(data, strReligionName2,false);
+
+			} }
+		catch (Exception e) 
+		{
 			e.printStackTrace();
-		}
-	}
+		}}
 
 	// SQA-39
 
@@ -203,22 +258,24 @@ public class Admin extends AdminLib {
 
 		try {
 
-			if (data.get("RunMode").equals("Y")) {
-				this.reporter.initTestCaseDescription("SQA-73");
+
+			if (data.get("RunMode").equals("Y"))
+			{
+				this.reporter.initTestCaseDescription("SQA-73");	
 				selectAgency("RUTH");
 				goToAdmin();
 
-				int randNum = generateRandonNumber();
-				String AdjustmentReasons = data.get("ShortDesc") + "_" + Integer.toString(randNum);
-				String xpath = "(.//*[@id='gwt-debug-shortDescription'])";
-				createAdjustmentReasons(data, AdjustmentReasons);
-				verifyAdjustmentReasons(xpath, AdjustmentReasons);
+				int intRandNum = generateRandonNumber();
+				String strAdjustmentReasons = data.get("ShortDesc")+"_"+Integer.toString(intRandNum);
+				String strXpath= "(.//*[@id='gwt-debug-shortDescription'])";
+				createAdjustmentReasons(data,strAdjustmentReasons);
+				verifyAdjustmentReasons(strXpath,strAdjustmentReasons);
 
-			}
-		} catch (Exception e) {
+			} }
+		catch (Exception e) 
+		{
 			e.printStackTrace();
-		}
-	}
+		}}
 
 	@DataProvider
 	public Object[][] getTestDataFor_updateAdjustmentReasons() {
@@ -230,29 +287,31 @@ public class Admin extends AdminLib {
 
 		try {
 
-			if (data.get("RunMode").equals("Y")) {
-				this.reporter.initTestCaseDescription("TC-74");
+
+			if (data.get("RunMode").equals("Y"))
+			{
+				this.reporter.initTestCaseDescription("SQA-74");	
 				selectAgency("RUTH");
 				goToAdmin();
 
-				int randNum = generateRandonNumber();
-				String AdjustmentReasons = data.get("ShortDesc") + "_" + Integer.toString(randNum);
-				createAdjustmentReasons(data, AdjustmentReasons);
+				int intRandNum = generateRandonNumber();
+				String strAdjustmentReasons = data.get("ShortDesc")+"_"+Integer.toString(intRandNum);
+				createAdjustmentReasons(data,strAdjustmentReasons);
 
-				String EditAdjustmentReasons = data.get("EditShortDesc") + "_" + Integer.toString(randNum);
-				String xpath = "(.//*[@id='gwt-debug-shortDescription'])";
-				editAdjustmentReasons1(EditAdjustmentReasons, AdjustmentReasons, xpath);
+				String strEditAdjustmentReasons = data.get("EditShortDesc")+"_"+Integer.toString(intRandNum);
+				String strXpath= "(.//*[@id='gwt-debug-shortDescription'])";
+				editAdjustmentReasons1(strEditAdjustmentReasons,strAdjustmentReasons,strXpath);
 				sleep(2000);
 				new AdminPage().Admin_Page();
 				click(AdminPage.AdjustmentReasons, "AdjustmentReasons link");
 
-				verifyAdjustmentReasons(xpath, EditAdjustmentReasons);
+				verifyAdjustmentReasons(strXpath,strEditAdjustmentReasons);
 
-			}
-		} catch (Exception e) {
+			} }
+		catch (Exception e) 
+		{
 			e.printStackTrace();
-		}
-	}
+		}}
 
 	@DataProvider
 	public Object[][] getTestDataFor_addIDGTeams() {
@@ -264,42 +323,47 @@ public class Admin extends AdminLib {
 
 		try {
 
-			if (data.get("RunMode").equals("Y")) {
-				this.reporter.initTestCaseDescription("TC-100");
+
+			if (data.get("RunMode").equals("Y"))
+			{
+				this.reporter.initTestCaseDescription("SQA-100");	
 				selectAgency("RUTH");
 				goToAdmin();
 
-				int randNum = generateRandonNumber();
-				String IGDTeamName = data.get("TeamName") + "_" + Integer.toString(randNum);
-				createIGDTeams(IGDTeamName);
-				String xpathDragAndDrop = "(.//div[contains(@class,'hb-draggable')])";
-				String xpathVerifyDragAndDrop = "(.//*[@id='gwt-debug-name'])";
-				String IDGDropTeam = "RUTH";
-				dropAndDragIGDTeams(IDGDropTeam, xpathDragAndDrop);
-				verifydropAndDragIGDTeams(IGDTeamName, IDGDropTeam, xpathVerifyDragAndDrop);
+				int intRandNum = generateRandonNumber();
+				String strIGDTeamName = data.get("TeamName")+"_"+Integer.toString(intRandNum);
+				createIGDTeams(strIGDTeamName);
+				String strXpathDragAndDrop= "(.//div[contains(@class,'hb-draggable')])";
+				String strXpathVerifyDragAndDrop= "(.//*[@id='gwt-debug-name'])";
+				String strIDGDropTeam = "RUTH";
+				dropAndDragIGDTeams(strIDGDropTeam,strXpathDragAndDrop);
+				verifyDropAndDragIGDTeams(strIGDTeamName, strIDGDropTeam, strXpathVerifyDragAndDrop);
 
-			}
-		} catch (Exception e) {
+
+			} }
+		catch (Exception e) 
+		{
 			e.printStackTrace();
-		}
-	}
+		}}
 
 	// Navya
 
+	//03172016
 	@DataProvider
 	public Object[][] getTestDataFor_verifyingPhysicianGrid() {
 		return TestUtil.getData("verifyingPhysicianGrid", TestData, "Admin");
 	}
-
+	
 	@Test(dataProvider = "getTestDataFor_verifyingPhysicianGrid")
-	public void verifyingPhysicianGrid(Hashtable<String, String> data) throws Throwable {
+	public void verifyingPhysicianGrid(Hashtable<String, String> data)
+			throws Throwable {
 
 		try {
 
 			if (data.get("RunMode").equals("Y")) {
 				this.reporter.initTestCaseDescription("SQA-43");
 				selectAgency("RUTH");
-				gotoPhysicains(data);
+				goToPhysicains(data);
 
 			}
 		} catch (Exception e) {
@@ -313,14 +377,15 @@ public class Admin extends AdminLib {
 	}
 
 	@Test(dataProvider = "getTestDataFor_searchPhysicianGrid")
-	public void searchPhysicianGrid(Hashtable<String, String> data) throws Throwable {
+	public void searchPhysicianGrid(Hashtable<String, String> data)
+			throws Throwable {
 
 		try {
 
 			if (data.get("RunMode").equals("Y")) {
 				this.reporter.initTestCaseDescription("SQA-44");
 				selectAgency("RUTH");
-				SearchRecord(data);
+				searchRecord(data);
 
 			}
 		} catch (Exception e) {
@@ -334,7 +399,8 @@ public class Admin extends AdminLib {
 	}
 
 	@Test(dataProvider = "getTestDataFor_verifyRoleAssignments")
-	public void verifyRoleAssignments(Hashtable<String, String> data) throws Throwable {
+	public void verifyRoleAssignments(Hashtable<String, String> data)
+			throws Throwable {
 
 		try {
 
@@ -342,7 +408,7 @@ public class Admin extends AdminLib {
 				this.reporter.initTestCaseDescription("SQA-45");
 				System.out.println("Executed");
 				selectAgency("RUTH");
-				gotoRoleAssignments(data);
+				goToRoleAssignments(data);
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -355,7 +421,8 @@ public class Admin extends AdminLib {
 	}
 
 	@Test(dataProvider = "getTestDataFor_roleAssignmentsDragVerify")
-	public void roleAssignmentsDragVerify(Hashtable<String, String> data) throws Throwable {
+	public void roleAssignmentsDragVerify(Hashtable<String, String> data)
+			throws Throwable {
 
 		try {
 
@@ -378,7 +445,8 @@ public class Admin extends AdminLib {
 	}
 
 	@Test(dataProvider = "getTestDataFor_verifyingFacilities")
-	public void verifyingFacilities(Hashtable<String, String> data) throws Throwable {
+	public void verifyingFacilities(Hashtable<String, String> data)
+			throws Throwable {
 
 		try {
 
@@ -386,7 +454,7 @@ public class Admin extends AdminLib {
 				this.reporter.initTestCaseDescription("SQA-47");
 				System.out.println("Executed");
 				selectAgency("RUTH");
-				gotoFacilities(data);
+				goToFacilities(data);
 
 			}
 		} catch (Exception e) {
@@ -395,12 +463,12 @@ public class Admin extends AdminLib {
 	}
 
 	@DataProvider
-	public Object[][] getTestDataFor_saveChurches() {
-		return TestUtil.getData("saveChurches", TestData, "Admin");
+	public Object[][] getTestDataFor_addNewChurch() {
+		return TestUtil.getData("addNewChurch", TestData, "Admin");
 	}
 
-	@Test(dataProvider = "getTestDataFor_saveChurches")
-	public void saveChurches(Hashtable<String, String> data) throws Throwable {
+	@Test(dataProvider = "getTestDataFor_addNewChurch")
+	public void addNewChurch(Hashtable<String, String> data) throws Throwable {
 
 		try {
 
@@ -408,7 +476,11 @@ public class Admin extends AdminLib {
 				this.reporter.initTestCaseDescription("SQA-48");
 				System.out.println("Executed");
 				selectAgency("RUTH");
-				gotoChurches(data);
+				goToChurch();
+				String strChurch = data.get("church")+ Integer.toString(generateRandonNumber());
+				addChurch(data, strChurch);
+				verifyChurch(strChurch);
+				closeChurchTab(strChurch);
 
 			}
 		} catch (Exception e) {
@@ -417,12 +489,13 @@ public class Admin extends AdminLib {
 	}
 
 	@DataProvider
-	public Object[][] getTestDataFor_addChurches() {
-		return TestUtil.getData("addChurches", TestData, "Admin");
+	public Object[][] getTestDataFor_updateExistingChurch() {
+		return TestUtil.getData("updateExistingChurch", TestData, "Admin");
 	}
 
-	@Test(dataProvider = "getTestDataFor_addChurches")
-	public void addChurches(Hashtable<String, String> data) throws Throwable {
+	@Test(dataProvider = "getTestDataFor_updateExistingChurch")
+	public void updateExistingChurch(Hashtable<String, String> data)
+			throws Throwable {
 
 		try {
 
@@ -430,20 +503,25 @@ public class Admin extends AdminLib {
 				this.reporter.initTestCaseDescription("SQA-49");
 				System.out.println("Executed");
 				selectAgency("RUTH");
-				modifyChurches(data);
+				String vstrChurch = data.get("church")+ Integer.toString(generateRandonNumber());
+				goToChurch();
+				addChurch(data, vstrChurch);
+				verifyChurch(vstrChurch);
+				updateChurch(data, vstrChurch);
+				closeChurchTab(vstrChurch);
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
-
 	@DataProvider
 	public Object[][] getTestDataFor_saveHospiceElection() {
 		return TestUtil.getData("saveHospiceElection", TestData, "Admin");
 	}
 
 	@Test(dataProvider = "getTestDataFor_saveHospiceElection")
-	public void saveHospiceElection(Hashtable<String, String> data) throws Throwable {
+	public void saveHospiceElection(Hashtable<String, String> data)
+			throws Throwable {
 
 		try {
 
@@ -451,7 +529,7 @@ public class Admin extends AdminLib {
 				this.reporter.initTestCaseDescription("SQA-75");
 				System.out.println("Executed");
 				selectAgency("RUTH");
-				gotoHospiceElection(data);
+				goToHospiceElection(data);
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -464,7 +542,8 @@ public class Admin extends AdminLib {
 	}
 
 	@Test(dataProvider = "getTestDataFor_addHospiceElection")
-	public void addHospiceElection(Hashtable<String, String> data) throws Throwable {
+	public void addHospiceElection(Hashtable<String, String> data)
+			throws Throwable {
 
 		try {
 
@@ -485,7 +564,8 @@ public class Admin extends AdminLib {
 	}
 
 	@Test(dataProvider = "getTestDataFor_addInsuranceCarrier")
-	public void addInsuranceCarrier(Hashtable<String, String> data) throws Throwable {
+	public void addInsuranceCarrier(Hashtable<String, String> data)
+			throws Throwable {
 
 		try {
 
@@ -506,7 +586,8 @@ public class Admin extends AdminLib {
 	}
 
 	@Test(dataProvider = "getTestDataFor_insuranceCarrierSearch")
-	public void insuranceCarrierSearch(Hashtable<String, String> data) throws Throwable {
+	public void insuranceCarrierSearch(Hashtable<String, String> data)
+			throws Throwable {
 
 		try {
 
@@ -527,7 +608,8 @@ public class Admin extends AdminLib {
 	}
 
 	@Test(dataProvider = "getTestDataFor_insuranceCarrierUpdate")
-	public void insuranceCarrierUpdate(Hashtable<String, String> data) throws Throwable {
+	public void insuranceCarrierUpdate(Hashtable<String, String> data)
+			throws Throwable {
 
 		try {
 
@@ -548,12 +630,13 @@ public class Admin extends AdminLib {
 	}
 
 	@Test(dataProvider = "getTestDataFor_addMedicareIntermediary")
-	public void addMedicareIntermediary(Hashtable<String, String> data) throws Throwable {
+	public void addMedicareIntermediary(Hashtable<String, String> data)
+			throws Throwable {
 
 		try {
 
 			if (data.get("RunMode").equals("Y")) {
-				this.reporter.initTestCaseDescription("SQA-78");
+				this.reporter.initTestCaseDescription("SQA-80");
 				System.out.println("Executed");
 				selectAgency("RUTH");
 				addMedicareIntermediaries(data);
@@ -574,9 +657,10 @@ public class Admin extends AdminLib {
 		try {
 
 			if (data.get("RunMode").equals("Y")) {
-				this.reporter.initTestCaseDescription("SQA-78");
+				this.reporter.initTestCaseDescription("SQA-81");
 				System.out.println("Executed");
 				selectAgency("RUTH");
+				addMedicareIntermediaries(data);
 				deleteMedicareIntermediaries(data);
 			}
 		} catch (Exception e) {
@@ -590,7 +674,8 @@ public class Admin extends AdminLib {
 	}
 
 	@Test(dataProvider = "getTestDataFor_wrongPasswordMedicare")
-	public void wrongPasswordMedicare(Hashtable<String, String> data) throws Throwable {
+	public void wrongPasswordMedicare(Hashtable<String, String> data)
+			throws Throwable {
 
 		try {
 
@@ -607,19 +692,29 @@ public class Admin extends AdminLib {
 
 	@DataProvider
 	public Object[][] getTestDataFor_addPhysicianServicesRecord() {
-		return TestUtil.getData("addPhysicianServicesRecord", TestData, "Admin");
+		return TestUtil
+				.getData("addPhysicianServicesRecord", TestData, "Admin");
 	}
 
 	@Test(dataProvider = "getTestDataFor_addPhysicianServicesRecord")
-	public void addPhysicianServicesRecord(Hashtable<String, String> data) throws Throwable {
+	public void addPhysicianServicesRecord(Hashtable<String, String> data)
+			throws Throwable {
 
 		try {
 
 			if (data.get("RunMode").equals("Y")) {
-				this.reporter.initTestCaseDescription("SQA-78");
+				this.reporter.initTestCaseDescription("SQA-83");
 				System.out.println("Executed");
+			
+				int intRandNum = generateRandonNumber();
+				String strProgramName = data.get("Name")+"_"+Integer.toString(intRandNum);
+				String strCode = data.get("Code")+"_"+Integer.toString(intRandNum);
 				selectAgency("RUTH");
-				addPhysicianServices(data);
+				createProgram(data,strProgramName,strCode);
+				PhysicianServices(data, strProgramName);
+				//verifyProgram(data, strProgramName, strCode);
+				//addPhysicianServices(data, strProgramName);
+				verifyPhysicianServices(data,strProgramName);
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -628,19 +723,23 @@ public class Admin extends AdminLib {
 
 	@DataProvider
 	public Object[][] getTestDataFor_updatePhysicianServicesRecord() {
-		return TestUtil.getData("updatePhysicianServicesRecord", TestData, "Admin");
+		return TestUtil.getData("updatePhysicianServicesRecord", TestData,
+				"Admin");
 	}
 
 	@Test(dataProvider = "getTestDataFor_updatePhysicianServicesRecord")
-	public void updatePhysicianServicesRecord(Hashtable<String, String> data) throws Throwable {
+	public void updatePhysicianServicesRecord(Hashtable<String, String> data)
+			throws Throwable {
 
 		try {
 
 			if (data.get("RunMode").equals("Y")) {
-				this.reporter.initTestCaseDescription("SQA-78");
+				this.reporter.initTestCaseDescription("SQA-84");
 				System.out.println("Executed");
 				selectAgency("RUTH");
+				//addPhysicianServices(data);
 				updatePhysicianServices(data);
+				verifyupdatedPhysicianServices(data);
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -649,32 +748,40 @@ public class Admin extends AdminLib {
 
 	@DataProvider
 	public Object[][] getTestDataFor_addRecordRoomBoardRateTiers() {
-		return TestUtil.getData("addRecordRoomBoardRateTiers", TestData, "Admin");
+		return TestUtil.getData("addRecordRoomBoardRateTiers", TestData,
+				"Admin");
 	}
 
 	@Test(dataProvider = "getTestDataFor_addRecordRoomBoardRateTiers")
-	public void addRoomBoardRateTiers(Hashtable<String, String> data) throws Throwable {
+	public void addRecordRoomBoardRateTiers(Hashtable<String, String> data)
+			throws Throwable {
 
 		try {
 
 			if (data.get("RunMode").equals("Y")) {
-				this.reporter.initTestCaseDescription("SQA-78");
+				this.reporter.initTestCaseDescription("SQA-85");
 				System.out.println("Executed");
-				selectAgency("RUTH");
-				addroomAndBorardRateTiers(data);
+					selectAgency("RUTH");
+				addRoomAndBorardRateTiers(data);
+				verifyaddRoomAndBorardRateTiers(data);
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
 
+	
+	
+
 	@DataProvider
 	public Object[][] getTestDataFor_deleteRecordRoomBoardRateTiers() {
-		return TestUtil.getData("deleteRecordRoomBoardRateTiers", TestData, "Admin");
+		return TestUtil.getData("deleteRecordRoomBoardRateTiers", TestData,
+				"Admin");
 	}
 
 	@Test(dataProvider = "getTestDataFor_deleteRecordRoomBoardRateTiers")
-	public void deleteRoomBoardRateTiers(Hashtable<String, String> data) throws Throwable {
+	public void deleteRecordRoomBoardRateTiers(Hashtable<String, String> data)
+			throws Throwable {
 
 		try {
 
@@ -682,7 +789,7 @@ public class Admin extends AdminLib {
 				this.reporter.initTestCaseDescription("SQA-78");
 				System.out.println("Executed");
 				selectAgency("RUTH");
-				deleteroomAndBorardRateTiers(data);
+				deleteRoomAndBorardRateTiers(data);
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -701,103 +808,364 @@ public class Admin extends AdminLib {
 
 		try {
 
-			if (data.get("RunMode").equals("Y")) {
-				this.reporter.initTestCaseDescription("TC-95");
+			if (data.get("RunMode").equals("Y"))
+			{
+				this.reporter.initTestCaseDescription("SQA-95");	
 				selectAgency("RUTH");
 				goToAdmin();
 
-				int randNum = generateRandonNumber();
-				String patientFirstName = data.get("patientFirstName") + "_" + Integer.toString(randNum);
-				String patientLastName = data.get("patientLastName") + "_" + Integer.toString(randNum);
+				int intRandNum = generateRandonNumber();
+				String strPatientFirstName = data.get("patientFirstName")+"_"+Integer.toString(intRandNum);
+				String strPatientLastName = data.get("patientLastName")+"_"+Integer.toString(intRandNum);
 
-				verifyconfigurationRequiredFields(data, patientFirstName, patientLastName);
+				verifyConfigurationRequiredFields(data, strPatientFirstName, strPatientLastName);
 
-			}
-		} catch (Exception e) {
+			} }
+		catch (Exception e) 
+		{
 			e.printStackTrace();
 		}
 	}
 
 	@DataProvider
-	public Object[][] getTestDataFor_addHospiceAgency() {
-		return TestUtil.getData("addHospiceAgency", TestData, "Admin");
+	public Object[][] getTestDataFor_testCreatePatientInAdminCreatedSite() {
+		return TestUtil.getData("testCreatePatientInAdminCreatedSite", TestData, "Admin");
 	}
 
-	@Test(dataProvider = "getTestDataFor_addHospiceAgency")
-	public void addHospiceAgency(Hashtable<String, String> data) throws Throwable {
+	@Test(dataProvider = "getTestDataFor_testCreatePatientInAdminCreatedSite")
+	public void testCreatePatientInAdminCreatedSite(Hashtable<String, String> data)	throws Throwable {
 
 		try {
 
 			if (data.get("RunMode").equals("Y")) {
-				this.reporter.initTestCaseDescription("TC-53 - create new Hospice Agencies");
+				this.reporter.initTestCaseDescription("SQA-95");
 				selectAgency("RUTH");
 				goToAdmin();
+				int intRandNum = generateRandonNumber();
+				String strSiteNickName = data.get("siteNickName") + "_"
+						+ Integer.toString(intRandNum);
+				String strPatientFirstName = data.get("patientFirstName") + "_"
+						+ Integer.toString(intRandNum);
+				String strPatientLastName = data.get("patientLastName") + "_"
+						+ Integer.toString(intRandNum);
+				goToSites();
+				createSite(data, strSiteNickName);
+				createPatientInAdminCreatedSite(data, strSiteNickName, strPatientFirstName, strPatientLastName);
 
-				int randNum = generateRandonNumber();
-				String hospiceName = data.get("Name") + "_" + Integer.toString(randNum);
-				String hospiceTenantID = data.get("TenantID") + "_" + Integer.toString(randNum);
-
-				createHospiceAgencies(data, hospiceName, hospiceTenantID);
 
 			}
 		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+
+	@DataProvider
+	public Object[][] getTestDataFor_testUpdateSite() {
+		return TestUtil.getData("testUpdateSite", TestData, "Admin");
+	}
+
+	@Test(dataProvider = "getTestDataFor_testUpdateSite")
+	public void testUpdateSite(Hashtable<String, String> data)	throws Throwable {
+
+		try {
+
+			if (data.get("RunMode").equals("Y")) {
+				this.reporter.initTestCaseDescription("SQA-96");
+				selectAgency("RUTH");
+				goToAdmin();
+				goToSites();
+				int intRandNum = generateRandonNumber();
+				String strSiteNickName = data.get("siteNickName") + "_"
+						+ Integer.toString(intRandNum);
+				System.out.println("site - > " + strSiteNickName);
+				createSite(data, strSiteNickName);
+				goToSites();
+				sleep(sleep);
+				updateSite(data, strSiteNickName);
+
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+
+	
+
+	@DataProvider
+	public Object[][] getTestDataFor_verifyOfficeDetails() {
+		return TestUtil.getData("verifyOfficeDetails", TestData, "Admin");
+	}
+
+	@Test(dataProvider = "getTestDataFor_verifyOfficeDetails")
+	public void verifyOfficeDetails(Hashtable<String, String> data) throws Throwable {
+
+		try {
+
+			if (data.get("RunMode").equals("Y"))
+			{
+				this.reporter.initTestCaseDescription("SQA-98");	
+				selectAgency("RUTH");
+				goToAdmin();
+
+				int intRandNum = generateRandonNumber();
+				String strOfficeName = data.get("officeName")+"_"+Integer.toString(intRandNum);
+				createOffice(data, strOfficeName);
+
+				String strXpath= "(.//*[@id='gwt-debug-name'])";
+				verifyOffice(strXpath, strOfficeName,true);
+
+				updateOffice(data, strOfficeName);
+				verifyUpdatedOffice(data, strOfficeName);
+
+				deleteOffice(data, strOfficeName);
+				verifyOffice(strXpath, strOfficeName,false);
+
+			} }
+		catch (Exception e) 
+		{
 			e.printStackTrace();
 		}
 	}
 
 	@DataProvider
-	public Object[][] getTestDataFor_addLanguage() {
-		return TestUtil.getData("addLanguage", TestData, "Admin");
+	public Object[][] getTestDataFor_verifyRegionsDetails() {
+		return TestUtil.getData("verifyRegionsDetails", TestData, "Admin");
 	}
 
-	@Test(dataProvider = "getTestDataFor_addLanguage")
-	public void addLanguage(Hashtable<String, String> data) throws Throwable {
+	@Test(dataProvider = "getTestDataFor_verifyRegionsDetails")
+	public void verifyRegionsDetails(Hashtable<String, String> data) throws Throwable {
 
 		try {
 
-			if (data.get("RunMode").equals("Y")) {
-				this.reporter.initTestCaseDescription("SQA-55 - Add new language");
+			if (data.get("RunMode").equals("Y"))
+			{
+				this.reporter.initTestCaseDescription("SQA-99");	
 				selectAgency("RUTH");
 				goToAdmin();
 
-				int randNum = generateRandonNumber();
-				String langName = data.get("LanguageName") + "_" + Integer.toString(randNum);
-				addNewLanguage(langName);
-				verifyLanguage(langName);
+				int intRandNum = generateRandonNumber();
+				String strRegionName = data.get("RegionsName")+"_"+Integer.toString(intRandNum);
+				createRegion(data, strRegionName);
 
-			}
-		} catch (Exception e) {
+				String strXpath= "(.//*[@id='gwt-debug-name'])";
+				verifyOffice(strXpath, strRegionName,true);
+
+				updateRegion(data, strRegionName);
+				verifyUpdatedRegions(data, strRegionName);
+
+				deleteOffice(data, strRegionName);
+				verifyOffice(strXpath, strRegionName,false);
+
+			} }
+		catch (Exception e) 
+		{
 			e.printStackTrace();
 		}
 	}
+	/*@DataProvider
+	public Object[][] getTestDataFor_verifyPersonsDetails() {
+		return TestUtil.getData("verifyPersonsDetails", TestData, "Admin");
+	}
+
+	@Test(dataProvider = "getTestDataFor_verifyPersonsDetails")
+	public void verifyPersonsDetails(Hashtable<String, String> data) throws Throwable {
+
+		try {
+
+			if (data.get("RunMode").equals("Y"))
+			{
+				this.reporter.initTestCaseDescription("SQA-101");	
+				selectAgency("RUTH");
+				goToAdmin();
+
+				int intRandNum = generateRandonNumber();
+				String strPersonName = data.get("PersonsFirstName")+"_"+Integer.toString(intRandNum);
+				createPerson(data, strPersonName);
+
+				String strXpath= "(.//*[@id='gwt-debug-firstName'])";
+				verifyPersons(strXpath, strPersonName,true);
+
+				updateRegion(data, strPersonName);
+				verifyUpdatedRegions(data, strPersonName);
+
+				deleteOffice(data, strPersonName);
+				verifyOffice(strXpath, strPersonName,false);
+
+			} }
+		catch (Exception e) 
+		{
+			e.printStackTrace();
+		}
+	}*/
+
+	
+	//shiney_09 march
+	
+	@DataProvider
+	public Object[][] getTestDataFor_verifyReferalSourceType() {
+		return TestUtil.getData("verifyReferalSourceType", TestData, "Admin");
+	}
+
+	@Test(dataProvider = "getTestDataFor_verifyReferalSourceType")
+	public void verifyReferalSourceType(Hashtable<String, String> data) throws Throwable {
+
+		try {
+
+			if (data.get("RunMode").equals("Y"))
+			{
+				this.reporter.initTestCaseDescription("SQA-130");	
+				selectAgency("RUTH");
+				goToAdmin();
+				referalSourceType(data);
+				verifyreferalSource(data);
+
+
+			} }
+		catch (Exception e) 
+		{
+			e.printStackTrace();
+		}
+	}
+	
+	
 
 	@DataProvider
-	public Object[][] getTestDataFor_delLanguage() {
-		return TestUtil.getData("addLanguage", TestData, "Admin");
+	public Object[][] getTestDataFor_verifyReferralRejectionReasons() {
+		return TestUtil.getData("verifyReferralRejectionReasons", TestData, "Admin");
 	}
 
-	@Test(dataProvider = "getTestDataFor_delLanguage")
-	public void delLanguage(Hashtable<String, String> data) throws Throwable {
+	@Test(dataProvider = "getTestDataFor_verifyReferralRejectionReasons")
+	public void verifyReferralRejectionReasons(Hashtable<String, String> data) throws Throwable {
 
 		try {
 
-			if (data.get("RunMode").equals("Y")) {
-				this.reporter.initTestCaseDescription("SQA-55 - Add new language");
+			if (data.get("RunMode").equals("Y"))
+			{
+				this.reporter.initTestCaseDescription("SQA-127");	
+				selectAgency("RUTH");
+				goToAdmin();
+				referralRejectionReasons(data);
+				verifyReferralRejection(data);
+				
+
+			} }
+		catch (Exception e) 
+		{
+			e.printStackTrace();
+		}
+	}
+	
+	@DataProvider
+	public Object[][] getTestDataFor_verifyDischargecodes() {
+		return TestUtil.getData("verifyDischargecodes", TestData, "Admin");
+	}
+
+	@Test(dataProvider = "getTestDataFor_verifyDischargecodes")
+	public void verifyDischargecodes(Hashtable<String, String> data) throws Throwable {
+
+		try {
+
+			if (data.get("RunMode").equals("Y"))
+			{
+				this.reporter.initTestCaseDescription("SQA-126");	
+				int randNum = generateRandonNumber();
+				String personName = data.get("patientFirstName")+"_"+Integer.toString(randNum);
+				selectAgency("RUTH");
+				goToAdmin();
+				dischargeCodes(data);
+				setPatientInfo(data, personName);
+				setDemographicsInfo(data);
+				setRefferalInfo(data);
+				admitPatient(data);
+				dischargePatient(data);
+				
+
+			} }
+		catch (Exception e) 
+		{
+			e.printStackTrace();
+		}
+	}
+	
+	
+	@DataProvider
+	public Object[][] getTestDataFor_verifyDiagnosisCodes() {
+		return TestUtil.getData("verifyDiagnosisCodes", TestData, "Admin");
+	}
+
+	@Test(dataProvider = "getTestDataFor_verifyDiagnosisCodes")
+	public void verifyDiagnosisCodes(Hashtable<String, String> data) throws Throwable {
+
+		try {
+
+			if (data.get("RunMode").equals("Y"))
+			{
+				this.reporter.initTestCaseDescription("SQA-125");	
+				int randNum = generateRandonNumber();
+				String personName = data.get("patientFirstName")+"_"+Integer.toString(randNum);
+
+				selectAgency("RUTH");
+				goToAdmin();
+				diagonsiscode(data);
+				
+				setPatientInfo(data, personName);
+//				setDemographicsInfo(data);
+//				setBasicInfo(data);
+//				setRefferalInfo(data);
+				goToDiagnosisTab();
+				setDiagnosisInfo(data, "C7A020", "001.0");
+				
+
+			} }
+		catch (Exception e) 
+		{
+			e.printStackTrace();
+		}
+	}
+	
+	@DataProvider
+	public Object[][] getTestDataFor_verifyNewPersonsDetails() {
+		return TestUtil.getData("verifyNewPersonsDetails", TestData, "Admin");
+	}
+
+	@Test(dataProvider = "getTestDataFor_verifyNewPersonsDetails")
+	public void verifyNewPersonsDetails(Hashtable<String, String> data) throws Throwable {
+
+		try {
+
+			if (data.get("RunMode").equals("Y"))
+			{
+				this.reporter.initTestCaseDescription("SQA-101");	
 				selectAgency("RUTH");
 				goToAdmin();
 
-				int randNum = generateRandonNumber();
-				String langName = data.get("LanguageName") + "_" + Integer.toString(randNum);
-				addNewLanguage(langName);
-				verifyLanguage(langName);
-				deleteLanguage(langName);
+			    int randNum = generateRandonNumber();
+				String personName = data.get("PersonsFirstName")+"_"+Integer.toString(randNum);
+				createPersonDetails(data, personName);
 
+				String xpath= "(.//input[@id='gwt-debug-firstName'])";
+				verifyNewPerson(xpath, personName);
+
+				String cxpath = "(.//input[@id='gwt-debug-company'])";
+				String CompanyName = data.get("CompanyName");
+				updatenewPersondetails(data);
+				verifyUpdatedDetails(data, cxpath, CompanyName, personName);
+
+
+				deletedetails();
+				verifydetails(xpath, personName);
+
+			} 
 			}
-		} catch (Exception e) {
+		catch (Exception e) 
+		{
 			e.printStackTrace();
 		}
 	}
 
+	
 	@DataProvider
 	public Object[][] getTestDataFor_sendActivationEmail() {
 		return TestUtil.getData("sendActivationEmail", TestData, "Admin");
@@ -808,71 +1176,35 @@ public class Admin extends AdminLib {
 
 		try {
 
-			if (data.get("RunMode").equals("Y")) {
-				this.reporter.initTestCaseDescription("SQA-102");
+			if (data.get("RunMode").equals("Y"))
+			{
+				this.reporter.initTestCaseDescription("SQA-138");	
 				selectAgency("RUTH");
+				//String userName = getUserName();
+				String strTime = getCurrentTime();
+				System.out.println("UserName is  "+userName);
 				goToAdmin();
+	
 
-				int randNum = generateRandonNumber();
-				String personName = data.get("PersonsFirstName") + "_" + Integer.toString(randNum);
-				createNewPerson(data, personName);
-
-				verifyEmail(data);
-				deleteEmail();
+			    int randNum = generateRandonNumber();
+				String personName = data.get("PersonsFirstName")+"_"+Integer.toString(randNum);
+				String Email = data.get("EmailId")+ "+" + strTime + "@mumms.com";
+				createNewPerson(data, personName, Email);
+				
+				String name = windowname();
+				System.out.println("window is" + name);
+				
+				verifyEmail(data,personName);
+				deleteEmail(name);
 			}
-
-		} catch (Exception e) {
+			
+		}catch(Exception e){
 			e.printStackTrace();
 		}
-
-	}
-	
-	@DataProvider
-	public Object[][] getTestDataFor_addWidgets() {
-		return TestUtil.getData("testaddWidgetPatientByFacilityType", TestData, "Admin");
-	}
-
-	@Test(dataProvider = "getTestDataFor_addWidgets")
-	public void testaddWidgetPatientByFacilityType(Hashtable<String, String> data) throws Throwable {
-
-		try {
-
-			if (data.get("RunMode").equals("Y")) {
-				this.reporter.initTestCaseDescription("Adding Widgets");
-				selectAgency("RUTH");
-				addWidgetPatientByFacilityType();
-			}
-
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-
-	}
-	
-	@DataProvider
-	public Object[][] getTestDataFor_addWidgetsname() {
-		return TestUtil.getData("testaddWidgetPatientByPayerType", TestData, "Admin");
-	}
-
-	@Test(dataProvider = "getTestDataFor_addWidgetsname")
-	public void testaddWidgetPatientByPayerType(Hashtable<String, String> data) throws Throwable {
-
-		try {
-
-			if (data.get("RunMode").equals("Y")) {
-				this.reporter.initTestCaseDescription("Adding Widgets");
-				selectAgency("RUTH");
-				addWidgetPatientByPayerType();
-			}
-
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-
-	}
+		
+	}	
 	
 	
-
 	@AfterMethod
 	public void logOut() throws Throwable {
 		doLogout();

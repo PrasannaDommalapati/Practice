@@ -18,7 +18,7 @@ public class LoginPage extends ActionEngine {
 			userName = By.xpath(".//*[@name='j_username']");
 			password = By.xpath("//*[@name='j_password']");
 			loginBtn = By.xpath("//*[@value='Log In']");
-			logOut = By.xpath("//img[@class='gwt-Image hb-top-toolbar-icon hb-mouse-over-clickable GKGO0M2BOK']");
+			logOut = By.xpath("//div[@class='hb-top-toolbar']/table/tbody/tr/td[6]/img");
 		}
 	}
 }
