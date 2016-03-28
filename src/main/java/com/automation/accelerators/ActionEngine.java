@@ -860,4 +860,50 @@ public class ActionEngine extends TestEngineWeb {
 		return status;
 
 	}
+	
+
+	public float appLoadingTime(By locator) throws Throwable {
+		boolean flag = false;
+		float timeTaken = 0;
+
+		try {
+
+			long start = System.currentTimeMillis();
+			
+			System.out.println("start " + start);
+			WebDriverWait wait = new WebDriverWait(Driver, 2400);
+			wait.until(ExpectedConditions.elementToBeClickable(locator));
+			//wait.until(ExpectedConditions.elementToBeClickable(locator));
+			long stop = System.currentTimeMillis();
+			
+			System.out.println("stop " + stop);
+			timeTaken = (stop - start);
+			System.out.println("The time taken for the page to load is " + timeTaken +" milli seconds");
+			flag = true;
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return timeTaken;
+	}
+
+	public void appLoadingTimeByElementVisible(By locator) throws Throwable {
+		boolean flag = false;
+		float timeTaken = 0;
+
+		try {
+
+			long start = System.currentTimeMillis();
+			WebDriverWait wait = new WebDriverWait(Driver, 100);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+			long stop = System.currentTimeMillis();
+			timeTaken = (stop - start) / 1000;
+			reporter.SuccessReport("Took", timeTaken + " secs to display the results");
+			flag = true;
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
 }
