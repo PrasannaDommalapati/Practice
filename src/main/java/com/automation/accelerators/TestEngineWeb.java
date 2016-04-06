@@ -213,7 +213,7 @@ public class TestEngineWeb {
 	public void setWebDriverForLocal(String browser) throws IOException, InterruptedException {
 		switch (browser) {
 		case "firefox":
-			Thread.sleep(13000);
+			/*Thread.sleep(13000);
 			// this.WebDriver = new FirefoxDriver();
 			DesiredCapabilities ffcapabilities = DesiredCapabilities.firefox();
 			// ChromeOptions options = new ChromeOptions();
@@ -223,7 +223,13 @@ public class TestEngineWeb {
 			// DesiredCapabilities capabillities=DesiredCapabilities.chrome();
 			this.WebDriver = new RemoteWebDriver(new URL(ffurl), ffcapabilities);
 			Thread.sleep(5000);
+			break;*/
+			
+			Thread.sleep(13000);
+			this.WebDriver = new FirefoxDriver();
+			Thread.sleep(5000);
 			break;
+			
 		/*
 		 * case "firefox": Thread.sleep(13000); this.WebDriver = new
 		 * FirefoxDriver(); //DesiredCapabilities ffcapabilities =
@@ -259,22 +265,35 @@ public class TestEngineWeb {
 			 */
 			Thread.sleep(8000);
 			break;
-		case "chrome":
+		/*case "chrome":
 			Thread.sleep(2000);
-			System.out.println("We are in Chrome browser");
-			/*
-			 * System.setProperty("webdriver.chrome.driver",
-			 * "/usr/bin/google-chrome");
-			 * 
-			 * DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-			 * ChromeOptions options = new ChromeOptions();
-			 * options.addArguments("test-type");
-			 * capabilities.setCapability(ChromeOptions.CAPABILITY, options);
-			 * this.WebDriver = new ChromeDriver(capabilities);
-			 * Thread.sleep(10000);
-			 */
+			System.out.println("iam in case Chrome");
+			System.setProperty("webdriver.chrome.driver",
+					"Drivers\\chromedriver.exe");
 
-			System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("test-type");
+			capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+			this.WebDriver = new ChromeDriver(capabilities);
+			Thread.sleep(10000);
+			break;*/
+			
+		case "chrome":
+			   
+			   Thread.sleep(2000);
+			   System.out.println("iam in case Chrome");
+			   System.setProperty("webdriver.chrome.driver",
+			     "Drivers\\chromedriver.exe");
+
+			   DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+			   ChromeOptions options = new ChromeOptions();
+			   options.addArguments("test-type");
+			   capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+			   this.WebDriver = new ChromeDriver(capabilities);
+			   Thread.sleep(10000);
+			   break;
+/*			System.setProperty("webdriver.chrome.driver", "C:\\Vamsi\\MummsFramework - 03282016\\GitHubServerDrivers\\chromedriver.exe");
 			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("test-type");
@@ -283,7 +302,7 @@ public class TestEngineWeb {
 			DesiredCapabilities capabillities = DesiredCapabilities.chrome();
 			this.WebDriver = new RemoteWebDriver(new URL(chromeurl), capabillities);
 			Thread.sleep(10000);
-			break;
+			break;*/
 		case "Safari":
 
 			for (int i = 1; i <= 10; i++) {

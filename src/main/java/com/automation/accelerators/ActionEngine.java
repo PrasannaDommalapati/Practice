@@ -26,7 +26,7 @@ public class ActionEngine extends TestEngineWeb {
 	private final String msgTypeFailure = "Unable To Type On ";
 	private final String msgIsElementFoundSuccess = "Successfully Found Element ";
 	private final String msgIsElementFoundFailure = "Unable To Found Element ";
-	public int sleep = 2000;
+	public int sleep = 3000;
 
 	/**
 	 * 
@@ -225,7 +225,7 @@ public class ActionEngine extends TestEngineWeb {
 		boolean flag = false;
 		try {
 			String ActualText = getText(by, text).trim();
-			System.out.println("ActualText is" + ActualText);
+			System.out.println("ActualText is " + ActualText);
 			if (ActualText.contains(text.trim())) {
 				flag = true;
 				return true;
@@ -758,13 +758,11 @@ public class ActionEngine extends TestEngineWeb {
 		try {
 
 			long start = System.currentTimeMillis();
-
 			System.out.println("start " + start);
 			WebDriverWait wait = new WebDriverWait(Driver, 2400);
 			wait.until(ExpectedConditions.elementToBeClickable(locator));
 			// wait.until(ExpectedConditions.elementToBeClickable(locator));
 			long stop = System.currentTimeMillis();
-
 			System.out.println("stop " + stop);
 			timeTaken = (stop - start);
 			System.out.println("The time taken for the page to load is " + timeTaken + " milli seconds");

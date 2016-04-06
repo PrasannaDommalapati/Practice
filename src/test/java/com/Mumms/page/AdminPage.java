@@ -405,7 +405,16 @@ public class AdminPage {
 	public static By RateDetailsrates2Assert;
 	public static By RateDetailsrates3Assert;
 	
+	
+	//29032016
+	
+	public static By addIconStage;
+	
 	public static By PhysicianServicesHCPCSrecord;
+	public static By RequiredFieldsAddressCriteriaStage;
+	public static By  zip1sigg;
+	public static By MaxDays;
+	public static By Desc;
 
 	public void Admin_Page()
 
@@ -420,8 +429,8 @@ public class AdminPage {
 		DirectRevCodeEdit = By.xpath(".//*[@id='gwt-debug-directCareRevCode']");
 		PhoneRevCodeEdit = By.xpath(".//*[@id='gwt-debug-phoneCallRevCode']");
 
-		//Role = By.xpath("(//input[@class='hb-grid-search-box-required'])[2]");
-		Role = By.xpath("//table[@class='hb-table-spacing']/tbody/tr[3]/td[7]/input");
+		Role = By.xpath("(//input[@class='hb-grid-search-box-required'])[2]");
+		//Role = By.xpath("//table[@class='hb-table-spacing']/tbody/tr[3]/td[7]/input");
 		addIcon = By.xpath("(//td[@class='hb-accordion-flex-table-cell'])[9]/img");
 		saveButton = By.xpath(".//*[@id='gwt-debug-float-save-button']");
 		topDisplayedRole = By.xpath("(//*[@id='gwt-debug-name'])[1]");
@@ -478,12 +487,12 @@ public class AdminPage {
 		FacilityModelSave=By.xpath("//img[@id='gwt-debug-data-modal-save-button']");
 		FacilityAdd = By.xpath("//div[@class='popupContent']//div[@id='gwt-debug-add-button-search-bar']/img");
 		FacilityAssert = By.xpath("//td[@class='hb-flex-grid-data-cell']/input[@id='gwt-debug-name']");
-		FacilityClose = By.xpath("//img[@id='gwt-debug-float-save-button']");
+		//FacilityClose = By.xpath("//img[@id='gwt-debug-float-save-button']");
 
 		RoleAssignmentsGearIcon = By.xpath("(//img[@class='hb-mouse-over-clickable'])[51]");
-		AssignedTabEast = By.xpath("(//div[@class='dragdrop-dropTarget'])[5]//div[text()='Ruth 2']");
+	//	AssignedTabEast = By.xpath("(//div[@class='dragdrop-dropTarget'])[5]//div[text()='Ruth 2']");
 		OfficesAvailable = By.xpath("(//div[@class='dragdrop-dropTarget'])[4]");
-		OfficesDrag = By.xpath("//div[contains(@class,'dragdrop-handle')][text()='Ruth 2']");
+	//	OfficesDrag = By.xpath("//div[contains(@class,'dragdrop-handle')][text()='Ruth 2']");
 		OfficesDrop = By.xpath("(//div[@class='dragdrop-dropTarget'])[5]");
 		SaveTickMark = By.xpath("//img[@id='gwt-debug-data-modal-save-button']");
 		AssignedOfficesTab = By.xpath("//table[@id='gwt-debug-offices']/tbody/tr/td[2]/select");
@@ -499,7 +508,7 @@ public class AdminPage {
 		//ChurchGearIcon=By.xpath("(//div[@class='hb-grid-button-column']/img)[1]");
 		ChurchPhoneNumberUpdate = By.xpath("//div[@class='gwt-TabLayoutPanelContent']//table[@id='gwt-debug-phones']//input[@class='hb-textbox-novalue']");
 		ChurchPhoneNumberAssert = By.xpath("(//table[@id='gwt-debug-phones']//input)[2]");
-		ChurchAddressUpdate = By.xpath("//div[@id='gwt-debug-primaryAddress']/table/tbody/tr[2]/td/input");
+		ChurchAddressUpdate = By.xpath("//div[@id='gwt-debug-primaryAddress']/table/tbody/tr[1]/td/input");
 		ChurchClose = By.xpath("//img[@id='gwt-debug-float-save-button']");
 
 		HospiceElection=By.xpath("//div[text()='Hospice Election Definition']");
@@ -537,7 +546,7 @@ public class AdminPage {
 		DDEPasswordConfirm=By.xpath("(//input[@class='password-incorrect'][@placeholder='Confirm'])[1]");
 		MedicareAddIcon=By.xpath("//div[@id='gwt-debug-add-button-search-bar']/img[contains(@class,'hb-flex-add-button')][contains(@class,'hb-mouse-over-clickable')]");
 		MedicareIntermediaryOption = By.xpath("//select[@id='gwt-debug-medicareIntermediary-search-bar']/option[2]");
-		MediacareIntermediaryOptionDelete = By.xpath("(//td[contains(@class,'hb-flex-grid-data-cell')]/div[@class='hb-grid-button-column']/img)[2]");
+		MediacareIntermediaryOptionDelete = By.xpath("(//td[contains(@class,'hb-flex-grid-data-cell')]/div[@class='hb-grid-button-column']/img)[1]");
 		MedicareSave = By.xpath("//img[@id='gwt-debug-float-save-button']");
 
 		PhysicianServices = By.xpath("//div[text()='Physician Services']");
@@ -585,7 +594,7 @@ public class AdminPage {
 
 		//24-02-2016
 
-		RequiredFieldsAddressCriteria = By.xpath("(.//*[@class='hb-dropdown hb-referral-required'])[3]");
+		
 		LeftSideGridBar = By.xpath("(.//*[@id='gwt-debug-vertical-drawer-grip-bar'])[1]");
 		patientInfoIcon = By.xpath(".//*[@id='gwt-debug-patient-module-button']/tbody/tr[1]/td/div/img");
 		patientLastName = By.xpath(".//*[@id='gwt-debug-lastName-search-bar']");
@@ -726,18 +735,18 @@ public class AdminPage {
 		rolesdrop=By.xpath("(//div[@class='dragdrop-dropTarget'])[7]");
 		rolesavailable=By.xpath("(//div[@class='dragdrop-dropTarget'])[6]");
 
-		AssignedTabsites=By.xpath("(//div[@class='dragdrop-dropTarget'])[3]//div[text()='RUTH']");
-		sitesdrag=By.xpath("//div[contains(@class,'dragdrop-handle')][text()='RUTH']");
+		//AssignedTabsites=By.xpath("(//div[@class='dragdrop-dropTarget'])[3]//div[text()='RUTH']");
+		//sitesdrag=By.xpath("//div[contains(@class,'dragdrop-handle')][text()='RUTH']");
 		sitesdrop=By.xpath("(//div[@class='dragdrop-dropTarget'])[3]");
 		sitesavailable=By.xpath("(//div[@class='dragdrop-dropTarget'])[2]");
 
 
 
-		ChurchReligionupdate=By.xpath("//*[text()='Religion:']/parent::td/following-sibling::td/select");
-		ChutchAddressUpdate=By.xpath("//*[text()='Address:']/parent::td/following-sibling::td/div//table[@class='GKGO0M2BBL']/tbody/tr[1]/td[1]//*[@class='hb-textbox-novalue']");
-		ChurchReligionAssert=By.xpath("(.//*[@id='gwt-debug-religion'])[2]");
-		ChutchAddressAssert=By.xpath("(.//*[@id='gwt-debug-primaryAddress']/input)[2]");
-		ChurchAssert = By.xpath("//td[@class='hb-flex-grid-data-cell']/input[@id='gwt-debug-name']");
+	//	ChurchReligionupdate=By.xpath("//*[text()='Religion:']/parent::td/following-sibling::td/select");
+		//ChutchAddressUpdate=By.xpath("//*[text()='Address:']/parent::td/following-sibling::td/div//table[@class='GKGO0M2BBL']/tbody/tr[1]/td[1]//*[@class='hb-textbox-novalue']");
+	//	ChurchReligionAssert=By.xpath("(.//*[@id='gwt-debug-religion'])[2]");
+	//	ChutchAddressAssert=By.xpath("(.//*[@id='gwt-debug-primaryAddress']/input)[2]");
+	//	ChurchAssert = By.xpath("//td[@class='hb-flex-grid-data-cell']/input[@id='gwt-debug-name']");
 
 
 		assignedsite=By.xpath("(.//*[@id='gwt-debug-sites']/tbody/tr/td[2]/select)[1]");
@@ -767,6 +776,34 @@ public class AdminPage {
 		RateDetailsrates3Assert=By.xpath("(//td[@class='rate-editor-amount']/input)[4]");
 
 		PhysicianServicesHCPCSrecord=By.xpath(".//div[@id='gwt-debug-hcpcscpt']");
+		
+		//29032016
+		
+		addIconStage = By.xpath("//td[@class='hb-accordion-flex-table-cell']//img[contains(@src,'MpgOcaaMBFDtkZyZiAQAYZwU18G7ApwAAAABJRU5ErkJggg')]");
+		RequiredFieldsAddressCriteriaStage = By.xpath("//div[text()='Address:']/parent::td/following-sibling::td//select");
+
+		
+
+		//29 march
+		AssignedTabsites = By.xpath("(//div[@class='dragdrop-dropTarget'])[3]//div[text()='Bronx_qa']");
+		sitesdrag = By.xpath("//div[contains(@class,'dragdrop-handle')][text()='Bronx_qa']");
+		OfficesDrag = By.xpath("//div[contains(@class,'dragdrop-handle')][text()='Gallop_Ofc_8556']");
+		AssignedTabEast = By.xpath("(//div[@class='dragdrop-dropTarget'])[5]//div[text()='Gallop_Ofc_8556']");
+		FacilityTypeAssert=By.xpath("//select[@class='hb-textbox']");
+		FacilityClose = By.xpath("//img[@id='gwt-debug-float-save-button']");
+		zip1sigg=By.xpath(".//*[@class='hb-simple-grid-dropdown']//td[@class='suggestPopupMiddleCenter']//td[1][contains(text(),'71112')]");
+		
+		ChurchReligionupdate=By.xpath("//*[text()='Religion:']/parent::td/following-sibling::td/select");
+		ChutchAddressUpdate=By.xpath("//*[text()='Address:']/parent::td/following-sibling::td/div//table[@class='GKGO0M2BBL']/tbody/tr[1]/td[1]//*[@class='hb-textbox-novalue']");
+		ChurchReligionAssert=By.xpath("(.//*[@id='gwt-debug-religion'])[2]");
+		ChutchAddressAssert=By.xpath("(.//*[@id='gwt-debug-primaryAddress']/input)[2]");
+		ChurchAssert = By.xpath("//td[@class='hb-flex-grid-data-cell']/input[@id='gwt-debug-name']");
+		
+		
+		//03/30/2016
+		PhysicianServicesPgmsupdate = By.xpath("//*[@id='gwt-debug-programs-search-bar']//*[@class='hb-grid-search-box-required']");
+		MaxDays = By.xpath("//div[text()='Max Days Coverage:']/../following-sibling::td/input");
+		Desc = By.xpath("//div[text()='Description:']/../following-sibling::td/input");
 
 	}
 

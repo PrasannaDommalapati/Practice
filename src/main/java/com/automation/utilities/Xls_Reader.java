@@ -7,7 +7,6 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Calendar;
-import java.io.*;
 
 import org.apache.poi.hssf.usermodel.HSSFCellStyle;
 import org.apache.poi.hssf.usermodel.HSSFDateUtil;
@@ -17,12 +16,10 @@ import org.apache.poi.ss.usermodel.CellStyle;
 import org.apache.poi.ss.usermodel.IndexedColors;
 import org.apache.poi.xssf.usermodel.*;
 
-import com.gargoylesoftware.htmlunit.javascript.host.file.File;
-
 
 public class Xls_Reader {
 	
-	public String filename = System.getProperty("user.dir")+"/TestData/TestData.xls";
+	public String filename = System.getProperty("user.dir")+"\\TestData\\TestData.xls";
 	public  String path;
 	public  FileInputStream fis = null;
 	public  FileOutputStream fileOut =null;

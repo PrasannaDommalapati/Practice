@@ -33,7 +33,7 @@ public class MummsLib extends ActionEngine {
 	public String gErrMsg = "";
 
 	/**
-	 * Launches the ESPN Web Application
+	 * Launches the Mumms Web Application
 	 * 
 	 * @return
 	 * @throws Throwable
@@ -63,7 +63,8 @@ public class MummsLib extends ActionEngine {
 	}
 	
 	public void checkPageIsReadyUsingJavaScript() 
-	{ JavascriptExecutor js = (JavascriptExecutor)Driver; 
+	{ 
+		JavascriptExecutor js = (JavascriptExecutor)Driver; 
 	//Initially bellow given if condition will check ready state of page.
 	if (js.executeScript("return document.readyState").toString().equals("complete"))
 	{
@@ -103,7 +104,7 @@ public class MummsLib extends ActionEngine {
 	}
 */
 	public void loginAsUserRole(String userrole) throws Throwable {
-
+		new LoginPage().Login_Page();
 		Hashtable<String, String> data = TestUtil.getDataSignUp(userrole,"login");
 		doLogin(data.get("username"), data.get("password"));
 	}
@@ -128,6 +129,7 @@ public class MummsLib extends ActionEngine {
 		sleep(3000);
 		new LoginPage().Login_Page();
 		click(LoginPage.logOut,"LogOut");
+		sleep(10000);
 
 	}
 
@@ -188,8 +190,13 @@ public class MummsLib extends ActionEngine {
 
 		new HomePage().Home_Page();
 
-		if(Driver.findElement(HomePage.homeIcon).isEnabled())
-			click(HomePage.homeIcon, "Home Icon");
+		try {
+			if(Driver.findElement(HomePage.homeIcon).isEnabled())
+				click(HomePage.homeIcon, "Home Icon");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	}
 
@@ -241,42 +248,49 @@ public class MummsLib extends ActionEngine {
 	public void setDemographicsInfo(Hashtable<String, String> data) throws Throwable{
 
 		PatientPage.Patient_Page();
-		selectByVisibleText(PatientPage.PatientTitle, data.get("PatientTitle"), "Miss from drop down");
-		type(PatientPage.PatientMiddleInitial, data.get("PatientMiddleInitial"), "Middle Initial field");
-		sleep(2000);
-		selectByVisibleText(PatientPage.PatientSuffix, data.get("PatientSuffix"), "IV from drop down");
-		type(PatientPage.PatientNickName, data.get("PatientNickName"), "Middle Initial field");
-		type(PatientPage.PatientAdressLine1, data.get("PatientAdressLine1"), "Patient AdressLine1 field");
-		type(PatientPage.PatientAdressLine2, data.get("PatientAdressLine2"), "Patient AdressLine2 field");
+		try {
+			selectByVisibleText(PatientPage.PatientTitle, data.get("PatientTitle"), "Miss from drop down");
+			type(PatientPage.PatientMiddleInitial, data.get("PatientMiddleInitial"), "Middle Initial field");
+			sleep(2000);
+			selectByVisibleText(PatientPage.PatientSuffix, data.get("PatientSuffix"), "IV from drop down");
+			type(PatientPage.PatientNickName, data.get("PatientNickName"), "Middle Initial field");
+			type(PatientPage.PatientAdressLine1, data.get("PatientAdressLine1"), "Patient AdressLine1 field");
+			type(PatientPage.PatientAdressLine2, data.get("PatientAdressLine2"), "Patient AdressLine2 field");
 
-		String strZip1 = data.get("PatientZip1");
-		String[] arrstr = strZip1.split("");
-		for(int i =0;i<arrstr.length;i++)
-		{
-			Driver.findElement(PatientPage.PatientZip1).sendKeys(arrstr[i]);
-			sleep(1000);
+			String strZip1 = data.get("PatientZip1");
+			String[] arrstr = strZip1.split("");
+			for(int i =0;i<arrstr.length;i++)
+			{
+				Driver.findElement(PatientPage.PatientZip1).sendKeys(arrstr[i]);
+				sleep(1000);
+			}
+
+			sleep(4000);
+			click(PatientPage.PatientZip1Sug, "Patient Zip1 Suggestion");
+			type(PatientPage.PatientZip2, data.get("PatientZip2"), "Patient Zip2 field");
+			type(PatientPage.phoneNumber, data.get("phoneNumber"), "phoneNumber field");
+			//here
+			//03162016
+			sleep(3000);
+			click(PatientPage.PatientOffice, "Phone Office icon");
+			//sleep(4000);
+			//click(PatientPage.PhoneAddicon, "Phone Add icon");
+			sleep(4000);
+			//type(PatientPage.NewPhoneNumber, data.get("newPhoneNumber"), "New phoneNumber field");
+
+			sleep(2000);
+			type(PatientPage.PatientOffice, data.get("PatientOffice"), "Patient Office field");
+			sleep(2000);
+			click(PatientPage.PatientOfficeSug1, "Patient Suggestions");
+			sleep(2000);
+			click(PatientPage.PatientIDGTeams, "Patient IDGTeams");
+			sleep(3000);
+			selectByVisibleText(PatientPage.PatientIDGTeams, data.get("PatientIDGTeams"), "PatientIDGTeams from drop down");
+			sleep(3000);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
-
-		sleep(4000);
-		click(PatientPage.PatientZip1Sug, "Patient Zip1 Suggestion");
-		type(PatientPage.PatientZip2, data.get("PatientZip2"), "Patient Zip2 field");
-		type(PatientPage.phoneNumber, data.get("phoneNumber"), "phoneNumber field");
-		//here
-		//03162016
-		sleep(3000);
-		click(PatientPage.PatientOffice, "Phone Office icon");
-		sleep(4000);
-		click(PatientPage.PhoneAddicon, "Phone Add icon");
-		sleep(4000);
-		type(PatientPage.NewPhoneNumber, data.get("newPhoneNumber"), "New phoneNumber field");
-
-		sleep(2000);
-		type(PatientPage.PatientOffice, data.get("PatientOffice"), "Patient Office field");
-		sleep(2000);
-		click(PatientPage.PatientOfficeSug1, "Patient Suggestions");
-		click(PatientPage.PatientIDGTeams, "Patient IDGTeams");
-		sleep(3000);
-		selectByVisibleText(PatientPage.PatientIDGTeams, data.get("PatientIDGTeams"), "month from drop down");
 	}
 	public void setRefferalInfo(Hashtable<String, String> data) throws Throwable{
 
@@ -327,7 +341,7 @@ public class MummsLib extends ActionEngine {
 
 		if(isElementPresent(PatientPage.topDisplayedChurch, "Verify Name"))
 		{
-			sleep(2000);
+			sleep(3000);
 			click(PatientPage.PatientChurchSelect, "Church name");
 		}
 		else{
@@ -390,11 +404,44 @@ public class MummsLib extends ActionEngine {
 		}
 
 		click(PatientPage.saveButton, "saveButton");
+		//------------  
+			click(PatientPage.PatientfuneralHome, "Patient funeralHome");
+			sleep(10000);
+		  checkPageIsReadyUsingJavaScript();
+		  String funeralHomeContact = data.get("funeralHomeFacilityName");
+		  String funeralHomeContactAddress = data.get("funeralHomeFacilityAddress");
+		   type(PatientPage.funeralHomeFaciltyName, funeralHomeContact, "funeral Home Facility Name");
+		   sleep(4000);
+		   type(PatientPage.funeralHomeFacilityAddress, funeralHomeContactAddress, "funeral Home Facility Address");
+		   sleep(4000);
+		   
+		   if (isElementPresent(PatientPage.topDisplayedFuneralFacilityHome, "Verify Funeral Facility Home")) {
+		    sleep(3000);
+		    click(PatientPage.topDisplayedFuneralFacilityHome, "Funeral Facility Contact");
+		    //page is refreshed, so clicking twice
+		    sleep(3000);
+		    click(PatientPage.topDisplayedFuneralFacilityHome, "Funeral Facility Contact");
+		    
+		   } else {
+		    
+		    sleep(3000);
+		    click(PatientPage.DMEAdd, "Add Icon");
+		    sleep(7000);
+		    type(PatientPage.funeralHomeFaciltyName, funeralHomeContact, "funeral Home Facility Name");
+		    sleep(4000);
+		    click(PatientPage.topDisplayedFuneralFacilityHome, "Funeral Facility Contact");
+		  //page is refreshed, so clicking twice
+		    sleep(3000);
+		    click(PatientPage.topDisplayedFuneralFacilityHome, "Funeral Facility Contact");
+		   }
 
+		   click(PatientPage.saveButton, "saveButton");
+		 //------------
 
+/*
 		click(PatientPage.PatientfuneralHome, "Patient funeralHome");
 		click(PatientPage.PatientfuneralHomeSelect, "Contact");
-		click(PatientPage.saveButton, "saveButton");
+		click(PatientPage.saveButton, "saveButton");*/
 		sleep(2000);
 		click(PatientPage.PatientVeteran, "PatientVeteran");
 		//click(PatientPage.PatientAtRisk, "PatientAtRisk");
@@ -402,39 +449,46 @@ public class MummsLib extends ActionEngine {
 	public void setPhysicianInfo(Hashtable<String, String> data) throws Throwable{
 
 		PatientPage.Patient_Page();
-		click(PatientPage.PatientRefPhysician, "RefPhysician Button");
-		sleep(4000);
-	//	click(PatientPage.personPhysician, "Jeff");
-		
-		Driver.findElement(By.xpath("(.//*[@id='gwt-debug-firstName-search-bar'])[2]")).click();
-		Driver.findElement(By.xpath("(.//*[@id='gwt-debug-firstName-search-bar'])[2]")).sendKeys(data.get("DoctorFN"));
-		sleep(3000);
-		Driver.findElement(By.xpath("(.//*[@id='gwt-debug-lastName-search-bar'])[2]")).click();
-		Driver.findElement(By.xpath("(.//*[@id='gwt-debug-lastName-search-bar'])[2]")).sendKeys(data.get("DoctorLN"));
-		sleep(3000);
-		Driver.findElement(By.xpath(".//*[text()='"+data.get("DoctorFN")+"']/parent::td/preceding-sibling::td[1]//input")).click();
-		sleep(3000);
-		
-		click(PatientPage.saveButton, "saveButton");
-		sleep(3000);
-		//type(PatientPage.personPhysicianPhone1,data.get("personPhysicianPhone1"), "personPhysicianPhone1 field");
-		click(PatientPage.attendingPhysicianButton, "Physician Button");
-		Thread.sleep(sleepTime_chrome+3000);
-		//click(PatientPage.firstDisplayedAttendingPhysician, "first Displayed AttendingPhysician checkbox");
-		Driver.findElement(By.xpath("(.//*[@id='gwt-debug-firstName-search-bar'])[2]")).click();
-		Driver.findElement(By.xpath("(.//*[@id='gwt-debug-firstName-search-bar'])[2]")).sendKeys(data.get("DoctorFN"));
-		sleep(3000);
-		Driver.findElement(By.xpath("(.//*[@id='gwt-debug-lastName-search-bar'])[2]")).click();
-		Driver.findElement(By.xpath("(.//*[@id='gwt-debug-lastName-search-bar'])[2]")).sendKeys(data.get("DoctorLN"));
-		sleep(3000);
-		Driver.findElement(By.xpath(".//*[text()='"+data.get("DoctorFN")+"']/parent::td/preceding-sibling::td[1]//input")).click();
-		
-		sleep(3000);		
-		
-		
-		click(PatientPage.saveButton, "save Button after selecting physician");
-		sleep(3000);
-		//type(PatientPage.personPhysicianPhone2,data.get("personPhysicianPhone2"), "personPhysicianPhone2 field");
+		try {
+			click(PatientPage.PatientRefPhysician, "RefPhysician Button");
+			sleep(8000);
+//	click(PatientPage.personPhysician, "Jeff");
+			
+			Driver.findElement(By.xpath("(.//*[@id='gwt-debug-firstName-search-bar'])[2]")).click();
+			String doctorFn = data.get("DoctorFN");
+			Driver.findElement(By.xpath("(.//*[@id='gwt-debug-firstName-search-bar'])[2]")).sendKeys(doctorFn);
+			sleep(3000);
+			Driver.findElement(By.xpath("(.//*[@id='gwt-debug-lastName-search-bar'])[2]")).click();
+			String doctorLn = data.get("DoctorLN");
+			Driver.findElement(By.xpath("(.//*[@id='gwt-debug-lastName-search-bar'])[2]")).sendKeys(doctorLn);
+			sleep(3000);
+			Driver.findElement(By.xpath(".//*[text()='"+doctorFn+"']/parent::td/preceding-sibling::td[1]//input")).click();
+			sleep(3000);
+			
+			click(PatientPage.saveButton, "saveButton");
+			sleep(3000);
+			//type(PatientPage.personPhysicianPhone1,data.get("personPhysicianPhone1"), "personPhysicianPhone1 field");
+			click(PatientPage.attendingPhysicianButton, "Physician Button");
+			sleep(8000);
+			//click(PatientPage.firstDisplayedAttendingPhysician, "first Displayed AttendingPhysician checkbox");
+			Driver.findElement(By.xpath("(.//*[@id='gwt-debug-firstName-search-bar'])[2]")).click();
+			Driver.findElement(By.xpath("(.//*[@id='gwt-debug-firstName-search-bar'])[2]")).sendKeys(doctorFn);
+			sleep(3000);
+			Driver.findElement(By.xpath("(.//*[@id='gwt-debug-lastName-search-bar'])[2]")).click();
+			Driver.findElement(By.xpath("(.//*[@id='gwt-debug-lastName-search-bar'])[2]")).sendKeys(doctorLn);
+			sleep(3000);
+			Driver.findElement(By.xpath(".//*[text()='"+doctorFn+"']/parent::td/preceding-sibling::td[1]//input")).click();
+			
+			sleep(3000);		
+			
+			
+			click(PatientPage.saveButton, "save Button after selecting physician");
+			sleep(3000);
+			//type(PatientPage.personPhysicianPhone2,data.get("personPhysicianPhone2"), "personPhysicianPhone2 field");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	public void setConcernsInfo(Hashtable<String, String> data) throws Throwable{
 
@@ -444,20 +498,21 @@ public class MummsLib extends ActionEngine {
 		sleep(2000);
 		//click(PatientPage.PatientResuscitate, "PatientResuscitate");
 		click(PatientPage.powerOfAttorney, "powerOfAttorney");
-		sleep(4000);
+		sleep(10000);
 		type(PatientPage.AttorneyFirstName,data.get("AttoneyFirstName"), "FirstName field");
-		sleep(2000);
+		sleep(5000);
 		if(isElementPresent(PatientPage.topDisplayedAttorneyFirstName, "Verify FirstName"))
 		{
 			click(PatientPage.personpowerOfAttorney, "GallopAttoney");
+			sleep(4000);
 		}
 		else{
 			type(PatientPage.AttorneyLastName,data.get("AttorneyLastName"), "FirstName field");
-			sleep(2000);
+			sleep(5000);
 			click(PatientPage.pharmacyAdd, "Add Icon");
 			sleep(5000);
 			click(PatientPage.personpowerOfAttorney, "GallopAttoney");
-
+			sleep(4000);
 		}
 		click(PatientPage.saveButton, "saveButton");
 	}
@@ -515,67 +570,77 @@ public class MummsLib extends ActionEngine {
 	public void setDiagnosisInfo(Hashtable<String, String> data,String strICD10Code,String strICD9Code) throws Throwable{
 
 		PatientPage.Patient_Page();
-		click(PatientPage.diagnosisPhysicalCondition,"Physical Condition");
-		selectByVisibleText(PatientPage.diagnosisPhysicalCondition, data.get("diagnosisPhysicalCondition"), "from drop down");
+		try {
+			click(PatientPage.diagnosisPhysicalCondition,"Physical Condition");
+			selectByVisibleText(PatientPage.diagnosisPhysicalCondition, data.get("diagnosisPhysicalCondition"), "from drop down");
 
-		click(PatientPage.diagnosisEmotionalCondition,"Emotional Condition");
-		selectByVisibleText(PatientPage.diagnosisEmotionalCondition, data.get("diagnosisEmotionalCondition"), "from drop down");
+			click(PatientPage.diagnosisEmotionalCondition,"Emotional Condition");
+			selectByVisibleText(PatientPage.diagnosisEmotionalCondition, data.get("diagnosisEmotionalCondition"), "from drop down");
 
-		click(PatientPage.diagnosisPatient,"diagnosis Patient Drop Down Button");
-		selectByVisibleText(PatientPage.diagnosisPatient, data.get("diagnosisPatient"), "from drop down");
+			click(PatientPage.diagnosisPatient,"diagnosis Patient Drop Down Button");
+			selectByVisibleText(PatientPage.diagnosisPatient, data.get("diagnosisPatient"), "from drop down");
 
-		click(PatientPage.diagnosisFamily,"diagnosis Family Condition");
-		selectByVisibleText(PatientPage.diagnosisFamily, data.get("diagnosisFamily"), "from drop down");
+			click(PatientPage.diagnosisFamily,"diagnosis Family Condition");
+			selectByVisibleText(PatientPage.diagnosisFamily, data.get("diagnosisFamily"), "from drop down");
 
-		click(PatientPage.PrognosisPatient,"Prognosis Patient Button");
-		selectByVisibleText(PatientPage.PrognosisPatient, data.get("PrognosisPatient"), "from drop down");
+			click(PatientPage.PrognosisPatient,"Prognosis Patient Button");
+			selectByVisibleText(PatientPage.PrognosisPatient, data.get("PrognosisPatient"), "from drop down");
 
-		click(PatientPage.PrognosisFamily,"Prognosis Family Button");
-		selectByVisibleText(PatientPage.PrognosisFamily, data.get("PrognosisFamily"), "from drop down");
-		sleep(sleep);
-		selectByVisibleText(PatientPage.historyTab_effectiveDate_month, data.get("effectiveDate_month"), "month from drop down");
-		selectByVisibleText(PatientPage.historyTab_effectiveDate_day, data.get("effectiveDate_day"), "day from drop down");
-		selectByVisibleText(PatientPage.historyTab_effectiveDate_year, data.get("effectiveDate_year"), "year from drop down");
-		sleep(sleep);
+			click(PatientPage.PrognosisFamily,"Prognosis Family Button");
+			selectByVisibleText(PatientPage.PrognosisFamily, data.get("PrognosisFamily"), "from drop down");
+			sleep(sleep);
+			selectByVisibleText(PatientPage.historyTab_effectiveDate_month, data.get("effectiveDate_month"), "month from drop down");
+			selectByVisibleText(PatientPage.historyTab_effectiveDate_day, data.get("effectiveDate_day"), "day from drop down");
+			selectByVisibleText(PatientPage.historyTab_effectiveDate_year, data.get("effectiveDate_year"), "year from drop down");
+			sleep(sleep);
 
-		type(PatientPage.ICD10Code, strICD10Code, "ICDCode field");
-		sleep(sleep);
-		//click(PatientPage.ICD10CodeSug1,"ICD10 Code Suggestion");
-		Driver.findElement(By.xpath("(.//*[@class='hb-simple-grid-dropdown']//td[@class='suggestPopupMiddleCenter']//td[1][contains(text(),'"+strICD10Code+"')])[1]")).click();
-		type(PatientPage.ICD9Code, strICD9Code, "ICDCode field");
-		sleep(sleep+1000);
-		Driver.findElement(By.xpath("(.//*[@class='hb-simple-grid-dropdown']//td[@class='suggestPopupMiddleCenter']//td[1][contains(text(),'"+strICD9Code+"')])[1]")).click();
-		sleep(sleep);
-		click(PatientPage.diagnosisAdd,"Add Button");
-		sleep(5000);
+			type(PatientPage.ICD10Code, strICD10Code, "ICDCode field");
+			sleep(sleep);
+			//click(PatientPage.ICD10CodeSug1,"ICD10 Code Suggestion");
+			Driver.findElement(By.xpath("(.//*[@class='hb-simple-grid-dropdown']//td[@class='suggestPopupMiddleCenter']//td[1][contains(text(),'"+strICD10Code+"')])[1]")).click();
+			type(PatientPage.ICD9Code, strICD9Code, "ICDCode field");
+			sleep(sleep+1000);
+			Driver.findElement(By.xpath("(.//*[@class='hb-simple-grid-dropdown']//td[@class='suggestPopupMiddleCenter']//td[1][contains(text(),'"+strICD9Code+"')])[1]")).click();
+			sleep(sleep);
+			click(PatientPage.diagnosisAdd,"Add Button");
+			sleep(5000);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	public void setPatientDemographicsInfo(Hashtable<String, String> data) throws Throwable{
 
 		PatientPage.Patient_Page();
-		selectByVisibleText(PatientPage.PatientTitle, data.get("PatientTitle"), "Miss from drop down");
+		try {
+			selectByVisibleText(PatientPage.PatientTitle, data.get("PatientTitle"), "Miss from drop down");
 
-		type(PatientPage.PatientMiddleInitial, data.get("PatientMiddleInitial"), "Middle Initial field");
-		sleep(2000);
-		selectByVisibleText(PatientPage.PatientSuffix, data.get("PatientSuffix"), "IV from drop down");
-		type(PatientPage.PatientNickName, data.get("PatientNickName"), "Middle Initial field");
-		type(PatientPage.PatientAdressLine1, data.get("PatientAdressLine1"), "Patient AdressLine1 field");
-		type(PatientPage.PatientAdressLine2, data.get("PatientAdressLine2"), "Patient AdressLine2 field");
+			type(PatientPage.PatientMiddleInitial, data.get("PatientMiddleInitial"), "Middle Initial field");
+			sleep(2000);
+			selectByVisibleText(PatientPage.PatientSuffix, data.get("PatientSuffix"), "IV from drop down");
+			type(PatientPage.PatientNickName, data.get("PatientNickName"), "Middle Initial field");
+			type(PatientPage.PatientAdressLine1, data.get("PatientAdressLine1"), "Patient AdressLine1 field");
+			type(PatientPage.PatientAdressLine2, data.get("PatientAdressLine2"), "Patient AdressLine2 field");
 
-		String strZip1 = data.get("PatientZip1");
-		String[] arrstr = strZip1.split("");
-		for(int i =0;i<arrstr.length;i++)
-		{
-			Driver.findElement(PatientPage.PatientZip1).sendKeys(arrstr[i]);
-			sleep(1000);
+			String strZip1 = data.get("PatientZip1");
+			String[] arrstr = strZip1.split("");
+			for(int i =0;i<arrstr.length;i++)
+			{
+				Driver.findElement(PatientPage.PatientZip1).sendKeys(arrstr[i]);
+				sleep(1000);
+			}
+
+
+			sleep(4000);
+			click(PatientPage.PatientZip1Sug, "Patient Zip1 Suggestion");
+			type(PatientPage.PatientZip2, data.get("PatientZip2"), "Patient Zip2 field");
+			type(PatientPage.phoneNumber, data.get("phoneNumber"), "phoneNumber field");
+			sleep(2000);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
-
-
-		sleep(4000);
-		click(PatientPage.PatientZip1Sug, "Patient Zip1 Suggestion");
-		type(PatientPage.PatientZip2, data.get("PatientZip2"), "Patient Zip2 field");
-		type(PatientPage.phoneNumber, data.get("phoneNumber"), "phoneNumber field");
-		sleep(2000);
 	}
 
 	public void setRefferalInfoUpdate(Hashtable<String, String> data) throws Throwable{
@@ -635,10 +700,15 @@ public class MummsLib extends ActionEngine {
 	public void clickOnLowerGrid() throws Throwable {
 
 		new AdminPage().Admin_Page();
-		WebElement mo = Driver.findElement(AdminPage.lowergrid);
+		try {
+			WebElement mo = Driver.findElement(AdminPage.lowergrid);
 
-		new Actions(Driver).moveToElement(mo).click().build().perform();
-		sleep(sleep);
+			new Actions(Driver).moveToElement(mo).click().build().perform();
+			sleep(sleep);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	//03162016
@@ -652,20 +722,29 @@ public class MummsLib extends ActionEngine {
 
 		PatientPage.Patient_Page();
 		click(PatientPage.AllergyConfirm,"Allergy Yes CheckBox");
+		sleep(3000);
 		type(PatientPage.DMEFirstName, vstrAllergyName, "Allergy Name field");
+		sleep(3000);
 		selectByVisibleText(PatientPage.AllergyType, data.get("AllergyType"), "from drop down");
+		sleep(3000);
 		type(PatientPage.AllergyReaction, data.get("AllergyReaction"), "Allergy Reaction field");
+		sleep(3000);
 		click(PatientPage.AllergyAdd,"Add Icon");
-		sleep(sleep);
+		sleep(sleep+2000);
 	}
 
 
 	public void appendLetterToPolicyNumber(String letter) throws Throwable{
 		PatientPage.Patient_Page();
-		String policyNumber = Driver.findElement(PatientPage.insurance_policyNumberInput).getAttribute("value");
-		String newPolicynumber = policyNumber + letter ;
-		type(PatientPage.insurance_policyNumberInput, newPolicynumber, " new policyNumber");
-		sleep(sleep);
+		try {
+			String policyNumber = Driver.findElement(PatientPage.insurance_policyNumberInput).getAttribute("value");
+			String newPolicynumber = policyNumber + letter ;
+			type(PatientPage.insurance_policyNumberInput, newPolicynumber, " new policyNumber");
+			sleep(sleep);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	public void clickOnAddInsuranceButton() throws Throwable{
@@ -679,22 +758,27 @@ public class MummsLib extends ActionEngine {
 
 		PatientPage.Patient_Page();
 
-		int size_rows = Driver.findElements(By.xpath("//div[@class='GKGO0M2BPL']/table/tbody/tr[2]//table/tbody/tr")).size();
-		for(int i = 1; i<= size_rows; i++){
+		try {
+			int size_rows = Driver.findElements(By.xpath("//div[@class='GKGO0M2BPL']/table/tbody/tr[2]//table/tbody/tr")).size();
+			for(int i = 1; i<= size_rows; i++){
 
-			String text = Driver.findElement(By.xpath("//div[@class='GKGO0M2BPL']/table/tbody/tr[2]//table/tbody/tr["+
-					i+"]/td/div/div")).getText();
-			System.out.println("insurere---> " + text);
+				String text = Driver.findElement(By.xpath("//div[@class='GKGO0M2BPL']/table/tbody/tr[2]//table/tbody/tr["+
+						i+"]/td/div/div")).getText();
+				System.out.println("insurere---> " + text);
 
-			if(text.equalsIgnoreCase(insurer))
-			{
+				if(text.equalsIgnoreCase(insurer))
+				{
 
-				Driver.findElement(By.xpath("//div[@class='GKGO0M2BPL']/table/tbody/tr[2]//table/tbody/tr["+
-						i+"]/td[7]/div/img")).click();
-				click(PatientPage.electionsMenu, "elections menu");
-				sleep(sleep+2000);
-			}	
+					Driver.findElement(By.xpath("//div[@class='GKGO0M2BPL']/table/tbody/tr[2]//table/tbody/tr["+
+							i+"]/td[7]/div/img")).click();
+					click(PatientPage.electionsMenu, "elections menu");
+					sleep(sleep+2000);
+				}	
 
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 
 
@@ -723,54 +807,69 @@ public class MummsLib extends ActionEngine {
 
 	public void selectHospicePhysicianForPriMaryInsurer_electionGrid(Hashtable<String, String> data) throws Throwable{
 		PatientPage.Patient_Page();
-		click(PatientPage.electionGrid_hospicePhysicianName, "hospice physician name input");
-		click(PatientPage.electionGrid_physicianName,"click on physician Name");
-	//	click(PatientPage.firstDisplayedAttendingPhysician,"select physician");
-		
-		Driver.findElement(By.xpath("(.//*[@id='gwt-debug-firstName-search-bar'])[2]")).click();
-		Driver.findElement(By.xpath("(.//*[@id='gwt-debug-firstName-search-bar'])[2]")).sendKeys(data.get("DoctorFN"));
-		sleep(3000);
-		Driver.findElement(By.xpath("(.//*[@id='gwt-debug-lastName-search-bar'])[2]")).click();
-		Driver.findElement(By.xpath("(.//*[@id='gwt-debug-lastName-search-bar'])[2]")).sendKeys(data.get("DoctorLN"));
-		sleep(3000);
-		Driver.findElement(By.xpath(".//*[text()='"+data.get("DoctorFN")+"']/parent::td/preceding-sibling::td[1]//input")).click();
-		
-		sleep(3000);
-		click(PatientPage.saveButton, "save tick on physician selection grid");
-		sleep(sleep);
+		try {
+			click(PatientPage.electionGrid_hospicePhysicianName, "hospice physician name input");
+			click(PatientPage.electionGrid_physicianName,"click on physician Name");
+//	click(PatientPage.firstDisplayedAttendingPhysician,"select physician");
+			
+			Driver.findElement(By.xpath("(.//*[@id='gwt-debug-firstName-search-bar'])[2]")).click();
+			Driver.findElement(By.xpath("(.//*[@id='gwt-debug-firstName-search-bar'])[2]")).sendKeys(data.get("DoctorFN"));
+			sleep(3000);
+			Driver.findElement(By.xpath("(.//*[@id='gwt-debug-lastName-search-bar'])[2]")).click();
+			Driver.findElement(By.xpath("(.//*[@id='gwt-debug-lastName-search-bar'])[2]")).sendKeys(data.get("DoctorLN"));
+			sleep(3000);
+			Driver.findElement(By.xpath(".//*[text()='"+data.get("DoctorFN")+"']/parent::td/preceding-sibling::td[1]//input")).click();
+			
+			sleep(3000);
+			click(PatientPage.saveButton, "save tick on physician selection grid");
+			sleep(sleep);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	public void fillVerbalAndSignatureDates_hospicePhysician(Hashtable<String, String> data) throws Throwable{
 		PatientPage.Patient_Page();
-		selectByVisibleText(PatientPage.electionGrid_verbalDate_month_hospicePhysician, data.get("admitMonth"), "month");
-		selectByVisibleText(PatientPage.electionGrid_verbalDate_day_hospicePhysician, data.get("admitDay"), "day");
-		selectByVisibleText(PatientPage.electionGrid_verbalDate_year_hospicePhysician, data.get("admitYear"), "Year");
-		selectByVisibleText(PatientPage.electionGrid_signatureDate_month_hospicePhysician, data.get("admitMonth"), "month");
-		selectByVisibleText(PatientPage.electionGrid_signatureDate_day_hospicePhysician, data.get("admitDay"), "day");
-		selectByVisibleText(PatientPage.electionGrid_signatureDate_year_hospicePhysician, data.get("admitYear"), "Year");
-		sleep(sleep);
-		//	Driver.findElement(PatientPage.electionGrid_signatureDate_year).sendKeys(Keys.TAB);
-		clickUsingJavascriptExecutor(PatientPage.okBtn_admitPopup, "ok buton on admit popup");
-		sleep(sleep+2000);
+		try {
+			selectByVisibleText(PatientPage.electionGrid_verbalDate_month_hospicePhysician, data.get("admitMonth"), "month");
+			selectByVisibleText(PatientPage.electionGrid_verbalDate_day_hospicePhysician, data.get("admitDay"), "day");
+			selectByVisibleText(PatientPage.electionGrid_verbalDate_year_hospicePhysician, data.get("admitYear"), "Year");
+			selectByVisibleText(PatientPage.electionGrid_signatureDate_month_hospicePhysician, data.get("admitMonth"), "month");
+			selectByVisibleText(PatientPage.electionGrid_signatureDate_day_hospicePhysician, data.get("admitDay"), "day");
+			selectByVisibleText(PatientPage.electionGrid_signatureDate_year_hospicePhysician, data.get("admitYear"), "Year");
+			sleep(sleep);
+			//	Driver.findElement(PatientPage.electionGrid_signatureDate_year).sendKeys(Keys.TAB);
+			clickUsingJavascriptExecutor(PatientPage.okBtn_admitPopup, "ok buton on admit popup");
+			sleep(sleep+2000);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	public void selectCertifyingPhysicianForPriMaryInsurer_electionGrid(Hashtable<String, String> data) throws Throwable{
 		PatientPage.Patient_Page();
-		click(PatientPage.electionGrid_certifyingPhysicianInput, "hospice physician name input");
-		click(PatientPage.electionGrid_physicianName,"click on physician Name");
-	//	click(PatientPage.firstDisplayedAttendingPhysician,"select physician");
-		Driver.findElement(By.xpath("(.//*[@id='gwt-debug-firstName-search-bar'])[2]")).click();
-		Driver.findElement(By.xpath("(.//*[@id='gwt-debug-firstName-search-bar'])[2]")).sendKeys(data.get("DoctorFN"));
-		sleep(3000);
-		Driver.findElement(By.xpath("(.//*[@id='gwt-debug-lastName-search-bar'])[2]")).click();
-		Driver.findElement(By.xpath("(.//*[@id='gwt-debug-lastName-search-bar'])[2]")).sendKeys(data.get("DoctorLN"));
-		
-		sleep(3000);
-		Driver.findElement(By.xpath(".//*[text()='"+data.get("DoctorFN")+"']/parent::td/preceding-sibling::td[1]//input")).click();
-		
-		sleep(3000);
-		click(PatientPage.saveButton, "save tick on physician selection grid");
-		sleep(sleep+2000);
+		try {
+			click(PatientPage.electionGrid_certifyingPhysicianInput, "hospice physician name input");
+			click(PatientPage.electionGrid_physicianName,"click on physician Name");
+//	click(PatientPage.firstDisplayedAttendingPhysician,"select physician");
+			Driver.findElement(By.xpath("(.//*[@id='gwt-debug-firstName-search-bar'])[2]")).click();
+			Driver.findElement(By.xpath("(.//*[@id='gwt-debug-firstName-search-bar'])[2]")).sendKeys(data.get("DoctorFN"));
+			sleep(3000);
+			Driver.findElement(By.xpath("(.//*[@id='gwt-debug-lastName-search-bar'])[2]")).click();
+			Driver.findElement(By.xpath("(.//*[@id='gwt-debug-lastName-search-bar'])[2]")).sendKeys(data.get("DoctorLN"));
+			
+			sleep(3000);
+			Driver.findElement(By.xpath(".//*[text()='"+data.get("DoctorFN")+"']/parent::td/preceding-sibling::td[1]//input")).click();
+			
+			sleep(3000);
+			click(PatientPage.saveButton, "save tick on physician selection grid");
+			sleep(sleep+2000);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	public void fillVerbalAndSignatureDates_certifyingPhysician(Hashtable<String, String> data) throws Throwable{
@@ -842,6 +941,13 @@ public class MummsLib extends ActionEngine {
 		selectByVisibleText(PatientPage.AllergyType, data.get("AllergyType"), "from drop down");
 		type(PatientPage.AllergyReaction, data.get("AllergyReaction"), "Allergy Reaction field");
 		click(PatientPage.AllergyAddNew,"Add Icon");
-		sleep(sleep);
+	}
+	
+	public String getSiteName() throws Throwable{
+
+		new HomePage().Home_Page();
+		String strSiteName = getText(HomePage.SiteName, "site name");
+		return strSiteName;
+
 	}
 }

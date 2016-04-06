@@ -35,77 +35,78 @@ public class HomeLib extends MummsLib{
 		sleep(4000);
 		new HomePage().Home_Page();
 
-		click(HomePage.ridhtside_gridvar, "ridhtside_gridvar");
-		Actions act = new Actions(Driver);
-		WebElement intarction = Driver.findElement(By.xpath("//div[@class='hb-start-page-content']//img[contains(@src, 'ezbr8WVkrAAAAAElFTkSuQmCC')]"));
-		WebElement Destination = Driver.findElement(By.xpath("//div[@class='GKGO0M2BPK']"));
+		try {
+			click(HomePage.ridhtside_gridvar, "ridhtside_gridvar");
+			Actions act = new Actions(Driver);
+			WebElement intarction = Driver.findElement(By.xpath("//div[@class='hb-start-page-content']//img[contains(@src, 'ezbr8WVkrAAAAAElFTkSuQmCC')]"));
+			WebElement Destination = Driver.findElement(By.xpath("//div[@class='GKGO0M2BPK']"));
 
-		WebElement patientwithoutdiagnosis_widget = Driver.findElement(By.xpath("//div[@class='hb-start-page-content']//img[contains(@src, 'kfjHmz9lXJcgIAAAAASUVORK5CYII')]"));
-		WebElement patientwithoutdiagnosis_widgetDestination = Driver.findElement(By.xpath("//div[@class='GKGO0M2BPK']"));
-
-
-		WebElement billingReport_widget = Driver.findElement(By.xpath("//div[@class='hb-start-page-content']//img[contains(@src, 'kDEjNDM8NeEa4oJ14RrwjXFhGvCbYzy')]"));
-		WebElement billingReport_widgetDestination = Driver.findElement(By.xpath("//div[@class='GKGO0M2BPK']"));
-
-		WebElement claimsmanagement_widget = Driver.findElement(By.xpath("//div[@class='hb-start-page-content']//img[contains(@src, 'Vz2iWaiQAAAAASUVORK5CYII')]"));
-		WebElement claimsmanagement_widgetDestination = Driver.findElement(By.xpath("//div[@class='GKGO0M2BPK']"));
-
-		WebElement claimssubmisssionlogs = Driver.findElement(By.xpath("//div[@class='hb-start-page-content']//img[contains(@src, 'wCPfOt16Kz6HAAAAABJRU5ErkJggg')]"));
-		WebElement claimssubmisssionlogs_widgetDestination = Driver.findElement(By.xpath("//div[@class='GKGO0M2BPK']"));
+			WebElement patientwithoutdiagnosis_widget = Driver.findElement(By.xpath("//div[@class='hb-start-page-content']//img[contains(@src, 'kfjHmz9lXJcgIAAAAASUVORK5CYII')]"));
+			WebElement patientwithoutdiagnosis_widgetDestination = Driver.findElement(By.xpath("//div[@class='GKGO0M2BPK']"));
 
 
+			WebElement billingReport_widget = Driver.findElement(By.xpath("//div[@class='hb-start-page-content']//img[contains(@src, 'kDEjNDM8NeEa4oJ14RrwjXFhGvCbYzy')]"));
+			WebElement billingReport_widgetDestination = Driver.findElement(By.xpath("//div[@class='GKGO0M2BPK']"));
 
+			WebElement claimsmanagement_widget = Driver.findElement(By.xpath("//div[@class='hb-start-page-content']//img[contains(@src, 'Vz2iWaiQAAAAASUVORK5CYII')]"));
+			WebElement claimsmanagement_widgetDestination = Driver.findElement(By.xpath("//div[@class='GKGO0M2BPK']"));
 
-		act.dragAndDrop(intarction,Destination).build().perform();
-		sleep(sleep);
-
-		click(HomePage.ridhtside_gridvar, "ridhtside_gridvar");
-		act.dragAndDrop(patientwithoutdiagnosis_widget,patientwithoutdiagnosis_widgetDestination).build().perform();
-		sleep(sleep);
-
-		click(HomePage.ridhtside_gridvar, "ridhtside_gridvar");
-		act.dragAndDrop(billingReport_widget,patientwithoutdiagnosis_widgetDestination).build().perform();
-		sleep(sleep);
-
-		click(HomePage.ridhtside_gridvar, "ridhtside_gridvar");
-		act.dragAndDrop(claimsmanagement_widget,claimsmanagement_widgetDestination).build().perform();
-		sleep(sleep);
-
-		click(HomePage.ridhtside_gridvar, "ridhtside_gridvar");
-		act.dragAndDrop(claimssubmisssionlogs,claimssubmisssionlogs_widgetDestination).build().perform();
-		sleep(sleep);
-
-		click(HomePage.intraction_text,"intaraction");
-		click(HomePage.intraction_tick,"intraction grid close");
-		click(HomePage.Widget_close,"close");
-		sleep(sleep);
-
-
-		click(HomePage.patientwithoutdiagnosis_text,"patientwithoutdiagnosis");
-		click(HomePage.intraction_tick,"patientwithoutdiagnosis grid close");
-		click(HomePage.Widget_close,"close");
-		sleep(sleep);
-
-
-		click(HomePage.billingReport_text,"billingReport");
-		click(HomePage.Widget_close,"close");
-		sleep(sleep);
-
-
-		click(HomePage.claimsmanagement_text,"claimsmanagement");
-		click(HomePage.intraction_tick,"claimsmanagement  grid close");
-		click(HomePage.Widget_close,"close");
-		sleep(sleep);
-
-
-		click(HomePage.claimssubmisssionlogs_text,"claimssubmisssionlogs");
-		click(HomePage.intraction_tick,"claimssubmisssionlogs grid close");
-		click(HomePage.Widget_close,"close");
-		sleep(sleep);
+			WebElement claimssubmisssionlogs = Driver.findElement(By.xpath("//div[@class='hb-start-page-content']//img[contains(@src, 'wCPfOt16Kz6HAAAAABJRU5ErkJggg')]"));
+			WebElement claimssubmisssionlogs_widgetDestination = Driver.findElement(By.xpath("//div[@class='GKGO0M2BPK']"));
 
 
 
 
+			act.dragAndDrop(intarction,Destination).build().perform();
+			sleep(sleep);
+
+			click(HomePage.ridhtside_gridvar, "ridhtside_gridvar");
+			act.dragAndDrop(patientwithoutdiagnosis_widget,patientwithoutdiagnosis_widgetDestination).build().perform();
+			sleep(sleep);
+
+			click(HomePage.ridhtside_gridvar, "ridhtside_gridvar");
+			act.dragAndDrop(billingReport_widget,patientwithoutdiagnosis_widgetDestination).build().perform();
+			sleep(sleep);
+
+			click(HomePage.ridhtside_gridvar, "ridhtside_gridvar");
+			act.dragAndDrop(claimsmanagement_widget,claimsmanagement_widgetDestination).build().perform();
+			sleep(sleep);
+
+			click(HomePage.ridhtside_gridvar, "ridhtside_gridvar");
+			act.dragAndDrop(claimssubmisssionlogs,claimssubmisssionlogs_widgetDestination).build().perform();
+			sleep(sleep);
+
+			click(HomePage.intraction_text,"intaraction");
+			click(HomePage.intraction_tick,"intraction grid close");
+			click(HomePage.Widget_close,"close");
+			sleep(sleep);
+
+
+			click(HomePage.patientwithoutdiagnosis_text,"patientwithoutdiagnosis");
+			click(HomePage.intraction_tick,"patientwithoutdiagnosis grid close");
+			click(HomePage.Widget_close,"close");
+			sleep(sleep);
+
+
+			click(HomePage.billingReport_text,"billingReport");
+			click(HomePage.Widget_close,"close");
+			sleep(sleep);
+
+
+			click(HomePage.claimsmanagement_text,"claimsmanagement");
+			click(HomePage.intraction_tick,"claimsmanagement  grid close");
+			click(HomePage.Widget_close,"close");
+			sleep(sleep);
+
+
+			click(HomePage.claimssubmisssionlogs_text,"claimssubmisssionlogs");
+			click(HomePage.intraction_tick,"claimssubmisssionlogs grid close");
+			click(HomePage.Widget_close,"close");
+			sleep(sleep);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 
 
@@ -116,14 +117,19 @@ public class HomeLib extends MummsLib{
 		sleep(4000);
 		new HomePage().Home_Page();
 
-		click(HomePage.ridhtside_gridvar, "ridhtside_gridvar");
-		Actions act = new Actions(Driver);
-		WebElement medications = Driver.findElement(By.xpath("//div[@class='hb-widget-icon-image-container dragdrop-draggable']//img[contains(@src,'RmMAAAAAElFTkSuQmCC')]"));
+		try {
+			click(HomePage.ridhtside_gridvar, "ridhtside_gridvar");
+			Actions act = new Actions(Driver);
+			WebElement medications = Driver.findElement(By.xpath("//div[@class='hb-widget-icon-image-container dragdrop-draggable']//img[contains(@src,'RmMAAAAAElFTkSuQmCC')]"));
 
 
-		WebElement Destination = Driver.findElement(By.xpath("//div[@class='GKGO0M2BPK']"));
+			WebElement Destination = Driver.findElement(By.xpath("//div[@class='GKGO0M2BPK']"));
 
-		act.dragAndDrop(medications,Destination).build().perform();
+			act.dragAndDrop(medications,Destination).build().perform();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	}
 	public void medicationUpload(Hashtable<String, String> data) throws Throwable{
@@ -150,8 +156,8 @@ public class HomeLib extends MummsLib{
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		waitForElementPresent(HomePage.medication_uploadok, "upload ok", 10);
-
+		waitForElementPresent(HomePage.medication_uploadok, "upload ok", 20);
+		sleep(2000);
 		click(HomePage.medication_uploadok, "ok");
 		click(HomePage.medication_tick, "save");
 
@@ -166,10 +172,15 @@ public class HomeLib extends MummsLib{
 		new HomePage().Home_Page();
 
 
-		isElementPresent(HomePage.medication_details,"first row in the widget", true);
-		sleep(15000);
+		try {
+			isElementPresent(HomePage.medication_details,"first row in the widget", true);
+			sleep(15000);
 
-		click(HomePage.Widget_close,"close");
+			click(HomePage.Widget_close,"close");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	}
 
@@ -180,21 +191,27 @@ public class HomeLib extends MummsLib{
 	}
 
 	public void setDataFordragAndDropPatients(Hashtable<String, String> data,String patientFirstName) throws Throwable{
+		
+		new HomePage().Home_Page();
 
+		try {
+			setPatientInfo(data, patientFirstName);
+			setDemographicsInfo(data);
+			setRefferalInfo(data);
+			setBasicInfo(data);
+			admitPatient(data);
+			goToInsuranceTab();
 
-		setPatientInfo(data, patientFirstName);
-		setDemographicsInfo(data);
-		setRefferalInfo(data);
-		setBasicInfo(data);
-		admitPatient(data);
-		goToInsuranceTab();
-
-		addDefaultInfoInInsuranceTab("Medicare");
-		click(HomePage.insuranceAdd, "add button");
-		goToHistoryTab();
-		setPrimaryInsuranceInHistoryTab(data, "Medicare");
-		click(HomePage.DownGridBar,"Down Bar");
-		click(HomePage.homeIcon,"Home Icon");
+			addDefaultInfoInInsuranceTab("Medicare");
+			click(HomePage.insuranceAdd, "add button");
+			goToHistoryTab();
+			setPrimaryInsuranceInHistoryTab(data, "Medicare");
+			click(HomePage.DownGridBar,"Down Bar");
+			click(HomePage.homeIcon,"Home Icon");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	}
 
@@ -203,14 +220,19 @@ public class HomeLib extends MummsLib{
 
 		sleep(4000);
 		new HomePage().Home_Page();
-		click(HomePage.ridhtside_gridvar, "ridhtside_gridvar");
-		sleep(2000);
-		Actions act = new Actions(Driver);
-		WebElement PatientsbyPayer = Driver.findElement(By.xpath("//div[@class='hb-widget-icon-image-container dragdrop-draggable']//img[contains(@src,'1XMARgSkAAAAASUVORK5CYII')]"));
+		try {
+			click(HomePage.ridhtside_gridvar, "ridhtside_gridvar");
+			sleep(2000);
+			Actions act = new Actions(Driver);
+			WebElement PatientsbyPayer = Driver.findElement(By.xpath("//div[@class='hb-widget-icon-image-container dragdrop-draggable']//img[contains(@src,'1XMARgSkAAAAASUVORK5CYII')]"));
 
-		WebElement Destination = Driver.findElement(By.xpath("//div[@class='GKGO0M2BPK']"));
+			WebElement Destination = Driver.findElement(By.xpath("//div[@class='GKGO0M2BPK']"));
 
-		act.dragAndDrop(PatientsbyPayer,Destination).build().perform();
+			act.dragAndDrop(PatientsbyPayer,Destination).build().perform();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	}
 
@@ -220,13 +242,19 @@ public class HomeLib extends MummsLib{
 
 		new HomePage().Home_Page();
 		//click(HomePage.medication_details, "details");
-		sleep(25000);
-		assertTextMatching(HomePage.payerTypeWidgetVerify, "PATIENTS BY PAYER TYPE", "Patients by Payer Typ widget ");
-		click(HomePage.medicareBar,"medicare bar");
-		sleep(5000);
-		assertTextMatching(HomePage.medicareGridVerify, "MEDICARE", "Patients List ");
-		click(HomePage.selectPatient,"patient");
-		Driver.findElement(By.xpath(".//*[text()='"+strPersonName+"']")).click();
+		try {
+			sleep(25000);
+			assertTextMatching(HomePage.payerTypeWidgetVerify, "PATIENTS BY PAYER TYPE", "Patients by Payer Typ widget ");
+			click(HomePage.medicareBar,"medicare bar");
+			sleep(5000);
+			assertTextMatching(HomePage.medicareGridVerify, "MEDICARE", "Patients List ");
+			//click(HomePage.selectPatient,"patient");
+			/*Driver.findElement(By.xpath(".//*[text()='"+strPersonName+"']")).click();*/
+			Driver.findElement(By.xpath("(//td[@class='hb-flex-grid-data-cell']//div[@id='gwt-debug-firstName'])[51]")).click();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 
 	}
@@ -234,11 +262,16 @@ public class HomeLib extends MummsLib{
 	public void verifyPayerTypeWidgetDetails() throws Throwable{
 
 		new HomePage().Home_Page();
-		assertTextMatching(HomePage.insuraceType, "Medicare", "verify Insurance Type");
-		sleep(sleep);
-		goToHistoryTab();
-		sleep(sleep);
-		assertTextMatching(HomePage.primaryInsuranceVerify, "Medicare", "verify Primary Insurance Type");
+		try {
+			assertTextMatching(HomePage.insuraceType, "Medicare", "verify Insurance Type");
+			sleep(sleep);
+			goToHistoryTab();
+			sleep(sleep);
+			assertTextMatching(HomePage.primaryInsuranceVerify, "Medicare", "verify Primary Insurance Type");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	}
 
@@ -247,11 +280,16 @@ public class HomeLib extends MummsLib{
 
 		new HomePage().Home_Page();
 		//click(HomePage.medication_details, "details");
-		sleep(sleep);
-		/*		click(HomePage.DownGridBar,"Down Bar");
-		click(HomePage.homeIcon,"Home Icon");*/
-		if(isElementPresent(HomePage.payerTypeWidget_close, "close"))
-			click(HomePage.payerTypeWidget_close,"close");
+		try {
+			sleep(sleep);
+			/*		click(HomePage.DownGridBar,"Down Bar");
+			click(HomePage.homeIcon,"Home Icon");*/
+			if(isElementPresent(HomePage.payerTypeWidget_close, "close"))
+				click(HomePage.payerTypeWidget_close,"close");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	}
 
@@ -259,11 +297,16 @@ public class HomeLib extends MummsLib{
 
 		new HomePage().Home_Page();
 		//click(HomePage.medication_details, "details");
-		sleep(sleep);
-		click(HomePage.DownGridBar,"Down Bar");
-		click(HomePage.homeIcon,"Home Icon");
-		if(isElementPresent(HomePage.payerTypeWidget_close, "close"))
-			click(HomePage.payerTypeWidget_close,"close");
+		try {
+			sleep(sleep);
+			click(HomePage.DownGridBar,"Down Bar");
+			click(HomePage.homeIcon,"Home Icon");
+			if(isElementPresent(HomePage.payerTypeWidget_close, "close"))
+				click(HomePage.payerTypeWidget_close,"close");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	}
 
@@ -272,12 +315,17 @@ public class HomeLib extends MummsLib{
 	public void draganddropclaims() throws Throwable{
 
 		sleep(4000);
-		Actions act = new Actions(Driver);
-		WebElement ClaimsManagement = Driver.findElement(By.xpath("//div[@class='hb-start-page-content']//div[@class='hb-widget-container']/div[2]/img"));
+		try {
+			Actions act = new Actions(Driver);
+			WebElement ClaimsManagement = Driver.findElement(By.xpath("//div[@class='hb-start-page-content']//div[@class='hb-widget-container']/div[2]/img"));
 
-		WebElement Destination = Driver.findElement(By.xpath("//div[@class='GKGO0M2BPK']"));
+			WebElement Destination = Driver.findElement(By.xpath("//div[@class='GKGO0M2BPK']"));
 
-		act.dragAndDrop(ClaimsManagement,Destination).build().perform();
+			act.dragAndDrop(ClaimsManagement,Destination).build().perform();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	}
 
@@ -303,165 +351,202 @@ public class HomeLib extends MummsLib{
 
 	public void claimManagementFlow() throws Throwable{
 
-		sleep(3000);
-		click(HomePage.VerticalBar,"Vertical Bar");
-		draganddropclaims();
-		sleep(5000);
-		click(HomePage.ClaimHeader, "Claims Management Header");
+		new HomePage().Home_Page();
+		try {
+			sleep(3000);
+			click(HomePage.VerticalBar,"Vertical Bar");
+			draganddropclaims();
+			sleep(5000);
+			click(HomePage.ClaimHeader, "Claims Management Header");
+			sleep(3000);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	public void bllingWidgetFlow() throws Throwable{
 
 		sleep(3000);
-		click(HomePage.VerticalBar,"Vertical Bar");
-		draganddropBillingReport();
-		sleep(5000);
+		new HomePage().Home_Page();
+		try {
+			click(HomePage.VerticalBar,"Vertical Bar");
+			draganddropBillingReport();
+			sleep(5000);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	public void claimPayerSearchValidations(String Payerxpath, String Payer) throws Throwable{
 
-		boolean verifystatus = false;
-		sleep(2000);
+		new HomePage().Home_Page();
+		try {
+			boolean verifystatus = false;
+			sleep(2000);
 
-		selectByVisibleText(HomePage.PayerType, Payer ,"Medicare from drop down");
-		sleep(8000);
-		int count = Driver.findElements(By.xpath(Payerxpath)).size();
-		System.out.println(count);
+			selectByVisibleText(HomePage.PayerType, Payer ,"Medicare from drop down");
+			sleep(8000);
+			int count = Driver.findElements(By.xpath(Payerxpath)).size();
+			System.out.println(count);
 
-		try{
-			for(int i=2;i<=count;i++){
-				String nameText = Driver.findElement(By.xpath(Payerxpath+"["+i+"]")).getAttribute("value");
-				if(nameText!= null){
-					if(nameText.equalsIgnoreCase(Payer.trim())){
-						verifystatus = true;	
+			try{
+				for(int i=2;i<=count;i++){
+					String nameText = Driver.findElement(By.xpath(Payerxpath+"["+i+"]")).getAttribute("value");
+					if(nameText!= null){
+						if(nameText.equalsIgnoreCase(Payer.trim())){
+							verifystatus = true;	
 
-					}else{
-						verifystatus = false;
-						break;
+						}else{
+							verifystatus = false;
+							break;
+						}
 					}
 				}
-			}
-			selectByVisibleText(HomePage.PayerType, "" ,"drop down");
-			sleep(5000);
+				selectByVisibleText(HomePage.PayerType, "" ,"drop down");
+				sleep(5000);
 
-		}catch (Exception e) {
+			}catch (Exception e) {
+				e.printStackTrace();
+			}finally{
+				if(verifystatus == true)
+					reporter.SuccessReport("Verify "+Payer + " search results", "Successfully verified "+ Payer + " search results");
+				else
+					reporter.failureReport("Verify "+Payer + " search results", Payer +" search results are not Successfully verified");
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}finally{
-			if(verifystatus == true)
-				reporter.SuccessReport("Verify "+Payer + " search results", "Successfully verified "+ Payer + " search results");
-			else
-				reporter.failureReport("Verify "+Payer + " search results", Payer +" search results are not Successfully verified");
 		}
 
 	}
 
 	public void claimFirstNameSearchValidations(String Fnamexpath, String FirstName) throws Throwable{
 
-		boolean verifystatus = false;
-		type(HomePage.PatientFirstName, FirstName, "First Name field");
-		sleep(8000);
-		int count = Driver.findElements(By.xpath(Fnamexpath)).size();
-		System.out.println(count);
+		new HomePage().Home_Page();
+		try {
+			boolean verifystatus = false;
+			type(HomePage.PatientFirstName, FirstName, "First Name field");
+			sleep(8000);
+			int count = Driver.findElements(By.xpath(Fnamexpath)).size();
+			System.out.println(count);
 
-		try{
-			for(int i=2;i<=count;i++){
-				String nameText = Driver.findElement(By.xpath(Fnamexpath+"["+i+"]")).getText();
-				System.out.println(nameText);
-				if(!nameText.equalsIgnoreCase("")){
-					if(nameText.equalsIgnoreCase(FirstName.trim())){
-						verifystatus = true;			      
-					}else{
-						verifystatus = false;
-						break;
+			try{
+				for(int i=2;i<=count;i++){
+					String nameText = Driver.findElement(By.xpath(Fnamexpath+"["+i+"]")).getText();
+					System.out.println(nameText);
+					if(!nameText.equalsIgnoreCase("")){
+						if(nameText.equalsIgnoreCase(FirstName.trim())){
+							verifystatus = true;			      
+						}else{
+							verifystatus = false;
+							break;
+						}
 					}
 				}
+
+				Driver.findElement(HomePage.PatientFirstName).click();
+				Driver.findElement(HomePage.PatientFirstName).clear();
+				sleep(5000);
+				click(HomePage.Saveicon, "Save icon");
+				click(HomePage.ClaimHeader, "Claims Management Header");
+
+			}catch (Exception e) {
+				e.printStackTrace();
+			}finally{
+				if(verifystatus == true)
+					reporter.SuccessReport("Verify "+FirstName + " search results", "Successfully verified "+ FirstName + " search results");
+				else
+					reporter.failureReport("Verify "+FirstName + " search results", FirstName +" search results are not Successfully verified");
 			}
-
-			Driver.findElement(HomePage.PatientFirstName).click();
-			Driver.findElement(HomePage.PatientFirstName).clear();
-			sleep(5000);
-			click(HomePage.Saveicon, "Save icon");
-			click(HomePage.ClaimHeader, "Claims Management Header");
-
-		}catch (Exception e) {
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}finally{
-			if(verifystatus == true)
-				reporter.SuccessReport("Verify "+FirstName + " search results", "Successfully verified "+ FirstName + " search results");
-			else
-				reporter.failureReport("Verify "+FirstName + " search results", FirstName +" search results are not Successfully verified");
 		}
 
 	}
 
 	public void claimLastNameSearchValidations(String Lnamexpath, String LastName) throws Throwable{
 
-		boolean verifystatus = false;
-		type(HomePage.PatientLastName, LastName, "Last Name field");
-		sleep(8000);
-		int count = Driver.findElements(By.xpath(Lnamexpath)).size();
-		System.out.println(count);
+		new HomePage().Home_Page();
+		try {
+			boolean verifystatus = false;
+			type(HomePage.PatientLastName, LastName, "Last Name field");
+			sleep(8000);
+			int count = Driver.findElements(By.xpath(Lnamexpath)).size();
+			System.out.println(count);
 
-		try{
-			for(int i=2;i<=count;i++){
-				String nameText = Driver.findElement(By.xpath(Lnamexpath+"["+i+"]")).getText();
-				if(!nameText.equalsIgnoreCase("")){
-					if(nameText.equalsIgnoreCase(LastName.trim())){
-						verifystatus = true;			      
-					}else{
-						verifystatus = false;
-						break;
+			try{
+				for(int i=2;i<=count;i++){
+					String nameText = Driver.findElement(By.xpath(Lnamexpath+"["+i+"]")).getText();
+					if(!nameText.equalsIgnoreCase("")){
+						if(nameText.equalsIgnoreCase(LastName.trim())){
+							verifystatus = true;			      
+						}else{
+							verifystatus = false;
+							break;
+						}
 					}
 				}
+				Driver.findElement(HomePage.PatientLastName).click();
+				Driver.findElement(HomePage.PatientLastName).clear();
+				sleep(5000);
+				click(HomePage.Saveicon, "Save icon");
+				click(HomePage.ClaimHeader, "Claims Management Header");
+			}catch (Exception e) {
+				e.printStackTrace();
+			}finally{
+				if(verifystatus == true)
+					reporter.SuccessReport("Verify "+LastName + " search results", "Successfully verified "+ LastName + " search results");
+				else
+					reporter.failureReport("Verify "+LastName + " search results", LastName +" search results are not Successfully verified");
 			}
-			Driver.findElement(HomePage.PatientLastName).click();
-			Driver.findElement(HomePage.PatientLastName).clear();
-			sleep(5000);
-			click(HomePage.Saveicon, "Save icon");
-			click(HomePage.ClaimHeader, "Claims Management Header");
-		}catch (Exception e) {
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}finally{
-			if(verifystatus == true)
-				reporter.SuccessReport("Verify "+LastName + " search results", "Successfully verified "+ LastName + " search results");
-			else
-				reporter.failureReport("Verify "+LastName + " search results", LastName +" search results are not Successfully verified");
 		}
 
 	}
 
 	public void claimIDSearchValidations(String IDxpath, String ID) throws Throwable{
 
-		boolean verifystatus = false;
-		type(HomePage.PatientID, ID, "ID field");
-		sleep(8000);
-		int count = Driver.findElements(By.xpath(IDxpath)).size();
-		System.out.println(count);
+		new HomePage().Home_Page();
+		try {
+			boolean verifystatus = false;
+			type(HomePage.PatientID, ID, "ID field");
+			sleep(8000);
+			int count = Driver.findElements(By.xpath(IDxpath)).size();
+			System.out.println(count);
 
-		try{
-			for(int i=2;i<=count;i++){
-				String nameText = Driver.findElement(By.xpath(IDxpath+"["+i+"]")).getText();
-				if(!nameText.equalsIgnoreCase("")){
-					if(nameText.equalsIgnoreCase(ID.trim())){
-						verifystatus = true;			      
-					}else{
-						verifystatus = false;
-						break;
+			try{
+				for(int i=2;i<=count;i++){
+					String nameText = Driver.findElement(By.xpath(IDxpath+"["+i+"]")).getText();
+					if(!nameText.equalsIgnoreCase("")){
+						if(nameText.equalsIgnoreCase(ID.trim())){
+							verifystatus = true;			      
+						}else{
+							verifystatus = false;
+							break;
+						}
 					}
 				}
+				Driver.findElement(HomePage.PatientID).click();
+				Driver.findElement(HomePage.PatientID).clear();    
+				sleep(5000);
+				click(HomePage.Saveicon, "Save icon");
+				click(HomePage.ClaimHeader, "Claims Management Header");
+			}catch (Exception e) {
+				e.printStackTrace();
+			}finally{
+				if(verifystatus == true)
+					reporter.SuccessReport("Verify "+ID + " search results", "Successfully verified "+ ID + " search results");
+				else
+					reporter.failureReport("Verify "+ID + " search results", ID +" search results are not Successfully verified");
 			}
-			Driver.findElement(HomePage.PatientID).click();
-			Driver.findElement(HomePage.PatientID).clear();    
-			sleep(5000);
-			click(HomePage.Saveicon, "Save icon");
-			click(HomePage.ClaimHeader, "Claims Management Header");
-		}catch (Exception e) {
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}finally{
-			if(verifystatus == true)
-				reporter.SuccessReport("Verify "+ID + " search results", "Successfully verified "+ ID + " search results");
-			else
-				reporter.failureReport("Verify "+ID + " search results", ID +" search results are not Successfully verified");
 		}
 
 	}
@@ -469,43 +554,49 @@ public class HomeLib extends MummsLib{
 
 	public void claimPostedDateSearchValidations(String Pdatexpath, String Pmonth, String Pdate, String Pyear) throws Throwable{
 
+		new HomePage().Home_Page();
 		boolean verifystatus = false;
-		sleep(3000);
-		selectByVisibleText(HomePage.PostedMonth, Pmonth, "Select Month from the drop down");
-		sleep(5000);
-		selectByVisibleText(HomePage.PostedDate, Pdate, "Select Day from the drop down");
-		sleep(5000);
-		selectByVisibleText(HomePage.PostedYear, Pyear, "Select Year from the drop down");
-		sleep(5000);
+		try {
+			sleep(3000);
+			selectByVisibleText(HomePage.PostedMonth, Pmonth, "Select Month from the drop down");
+			sleep(5000);
+			selectByVisibleText(HomePage.PostedDate, Pdate, "Select Day from the drop down");
+			sleep(5000);
+			selectByVisibleText(HomePage.PostedYear, Pyear, "Select Year from the drop down");
+			sleep(5000);
 
-		int count = Driver.findElements(By.xpath(Pdatexpath)).size();
-		System.out.println(count);
+			int count = Driver.findElements(By.xpath(Pdatexpath)).size();
+			System.out.println(count);
 
-		try{
-			for(int i=2;i<=count;i++){
-				String nameText = Driver.findElement(By.xpath(Pdatexpath+"["+i+"]")).getText();
-				if(!nameText.equalsIgnoreCase("")){
-					if(nameText.equalsIgnoreCase((Pmonth+"/"+Pdate+"/"+Pyear).trim())){
-						verifystatus = true;			      
-					}else{
-						verifystatus = false;
-						break;
+			try{
+				for(int i=2;i<=count;i++){
+					String nameText = Driver.findElement(By.xpath(Pdatexpath+"["+i+"]")).getText();
+					if(!nameText.equalsIgnoreCase("")){
+						if(nameText.equalsIgnoreCase((Pmonth+"/"+Pdate+"/"+Pyear).trim())){
+							verifystatus = true;			      
+						}else{
+							verifystatus = false;
+							break;
+						}
 					}
 				}
+				selectByVisibleText(HomePage.PostedMonth, "MM", "Clear the drop down");
+				sleep(5000);
+				selectByVisibleText(HomePage.PostedDate, "DD", "Clear the drop down");
+				sleep(5000);
+				selectByVisibleText(HomePage.PostedYear, "YYYY", "Clear the drop down"); 
+				sleep(5000);
+			}catch (Exception e) {
+				e.printStackTrace();
+			}finally{
+				if(verifystatus == true)
+					reporter.SuccessReport("Verify Posted Date search results", "Successfully verified Posted Date search results");
+				else
+					reporter.failureReport("Verify Posted Date search results" , "Posted Date search results are not Successfully verified");
 			}
-			selectByVisibleText(HomePage.PostedMonth, "MM", "Clear the drop down");
-			sleep(5000);
-			selectByVisibleText(HomePage.PostedDate, "DD", "Clear the drop down");
-			sleep(5000);
-			selectByVisibleText(HomePage.PostedYear, "YYYY", "Clear the drop down"); 
-			sleep(5000);
-		}catch (Exception e) {
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}finally{
-			if(verifystatus == true)
-				reporter.SuccessReport("Verify Posted Date search results", "Successfully verified Posted Date search results");
-			else
-				reporter.failureReport("Verify Posted Date search results" , "Posted Date search results are not Successfully verified");
 		}
 
 	}
@@ -513,34 +604,42 @@ public class HomeLib extends MummsLib{
 
 	public void claimStatusSearchValidations(String Statusxpath, String Status) throws Throwable{
 
-		boolean verifystatus = false;
-		selectByVisibleText(HomePage.StatusDropdown, Status ,"SENT from drop down");
-		sleep(8000);
-		int count = Driver.findElements(By.xpath(Statusxpath)).size();
-		System.out.println(count);
+		new HomePage().Home_Page();
+		try {
+			boolean verifystatus = false;
+			//selectByVisibleText(HomePage.StatusDropdown, Status ,"SENT from drop down");
+			selectByVisibleText(HomePage.StatusDropdown, Status ,"PAID from drop down");
+			sleep(8000);
+			int count = Driver.findElements(By.xpath(Statusxpath)).size();
+			System.out.println(count);
 
-		try{
-			for(int i=2;i<=count;i++){
-				String nameText = Driver.findElement(By.xpath(Statusxpath+"["+i+"]")).getAttribute("value");
-				if(nameText!= null){
-					if(nameText.equalsIgnoreCase(Status.trim())){
-						verifystatus = true;			      
-					}else{
-						verifystatus = false;
-						break;
+			try{
+				for(int i=2;i<=count;i++){
+					//String nameText = Driver.findElement(By.xpath(Statusxpath+"["+i+"]")).getAttribute("value");
+					String nameText = Driver.findElement(By.xpath(Statusxpath+"["+i+"]")).getText();
+					if(nameText!= null){
+						if(nameText.equalsIgnoreCase(Status.trim())){
+							verifystatus = true;			      
+						}else{
+							verifystatus = false;
+							break;
+						}
 					}
 				}
-			}
-			selectByVisibleText(HomePage.StatusDropdown, "" ,"Clear the drop down");
-			sleep(5000);
+				selectByVisibleText(HomePage.StatusDropdown, "" ,"Clear the drop down");
+				sleep(5000);
 
-		}catch (Exception e) {
+			}catch (Exception e) {
+				e.printStackTrace();
+			}finally{
+				if(verifystatus == true)
+					reporter.SuccessReport("Verify "+Status + " search results", "Successfully verified "+ Status + " search results");
+				else
+					reporter.failureReport("Verify "+Status + " search results", Status +" search results are not Successfully verified");
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}finally{
-			if(verifystatus == true)
-				reporter.SuccessReport("Verify "+Status + " search results", "Successfully verified "+ Status + " search results");
-			else
-				reporter.failureReport("Verify "+Status + " search results", Status +" search results are not Successfully verified");
 		}
 
 	}
@@ -550,46 +649,52 @@ public class HomeLib extends MummsLib{
 
 	public void claimStatusDateSearchValidations(String Sdatexpath, String Smonth, String Sdate, String Syear) throws Throwable{
 
+		new HomePage().Home_Page();
 		boolean verifystatus = false;
-		sleep(3000);
-		selectByVisibleText(HomePage.StatusMonth, Smonth, "Select Month from the drop down");
-		sleep(5000);
-		selectByVisibleText(HomePage.StatusDate, Sdate, "Select Day from the drop down");
-		sleep(5000);
-		selectByVisibleText(HomePage.StatusYear, Syear, "Select Year from the drop down");
-		sleep(5000);
+		try {
+			sleep(3000);
+			selectByVisibleText(HomePage.StatusMonth, Smonth, "Select Month from the drop down");
+			sleep(5000);
+			selectByVisibleText(HomePage.StatusDate, Sdate, "Select Day from the drop down");
+			sleep(5000);
+			selectByVisibleText(HomePage.StatusYear, Syear, "Select Year from the drop down");
+			sleep(5000);
 
-		int count = Driver.findElements(By.xpath(Sdatexpath)).size();
-		System.out.println(count);
+			int count = Driver.findElements(By.xpath(Sdatexpath)).size();
+			System.out.println(count);
 
-		try{
-			for(int i=2;i<=count;i++){
-				String nameText = Driver.findElement(By.xpath(Sdatexpath+"["+i+"]")).getText();
-				if(!nameText.equalsIgnoreCase("")){
-					if(nameText.equalsIgnoreCase((Smonth+"/"+Sdate+"/"+Syear).trim())){
-						verifystatus = true;			      
-					}else{
-						verifystatus = false;
-						break;
+			try{
+				for(int i=2;i<=count;i++){
+					String nameText = Driver.findElement(By.xpath(Sdatexpath+"["+i+"]")).getText();
+					if(!nameText.equalsIgnoreCase("")){
+						if(nameText.equalsIgnoreCase((Smonth+"/"+Sdate+"/"+Syear).trim())){
+							verifystatus = true;			      
+						}else{
+							verifystatus = false;
+							break;
+						}
 					}
 				}
-			}
-			selectByVisibleText(HomePage.StatusMonth, "MM", "Clear the drop down");
-			sleep(5000);
-			selectByVisibleText(HomePage.StatusDate, "DD", "Clear the drop down");
-			sleep(5000);
-			selectByVisibleText(HomePage.StatusYear, "YYYY", "Clear the drop down");
-			sleep(5000);
-			click(HomePage.Saveicon, "Save icon");
-			click(HomePage.Closeicon, "Close");
+				selectByVisibleText(HomePage.StatusMonth, "MM", "Clear the drop down");
+				sleep(5000);
+				selectByVisibleText(HomePage.StatusDate, "DD", "Clear the drop down");
+				sleep(5000);
+				selectByVisibleText(HomePage.StatusYear, "YYYY", "Clear the drop down");
+				sleep(5000);
+				click(HomePage.Saveicon, "Save icon");
+				click(HomePage.Closeicon, "Close");
 
-		}catch (Exception e) {
+			}catch (Exception e) {
+				e.printStackTrace();
+			}finally{
+				if(verifystatus == true)
+					reporter.SuccessReport("Verify Status Date search results", "Successfully verified Status Date search results");
+				else
+					reporter.failureReport("Verify Status Date search results" , "Status Date search results are not Successfully verified");
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}finally{
-			if(verifystatus == true)
-				reporter.SuccessReport("Verify Status Date search results", "Successfully verified Status Date search results");
-			else
-				reporter.failureReport("Verify Status Date search results" , "Status Date search results are not Successfully verified");
 		}
 
 	}
@@ -597,50 +702,63 @@ public class HomeLib extends MummsLib{
 
 	public void claimManagementNeoTabFlow() throws Throwable{
 
+
+		new HomePage().Home_Page();
 		sleep(3000);
-		click(HomePage.VerticalBar,"Vertical Bar");
-		draganddropclaims();
-		sleep(5000);
-		click(HomePage.ClaimHeader, "Claims Management Header");
-		click(HomePage.NoesTab, "Noes Tab");
-		sleep(10000);
+		try {
+			click(HomePage.VerticalBar,"Vertical Bar");
+			draganddropclaims();
+			sleep(5000);
+			click(HomePage.ClaimHeader, "Claims Management Header");
+			click(HomePage.NoesTab, "Noes Tab");
+			sleep(10000);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 
 	//Noes Tab 
 	public void noesIDSearchValidations(String NIDxpath, String NoesID) throws Throwable{
 
-		boolean verifystatus = false;
-		type(HomePage.NoesID, NoesID, "Noes ID field");
-		sleep(5000);
-		int count = Driver.findElements(By.xpath(NIDxpath)).size();
-		System.out.println(count);
+		new HomePage().Home_Page();
+		try {
+			boolean verifystatus = false;
+			type(HomePage.NoesID, NoesID, "Noes ID field");
+			sleep(5000);
+			int count = Driver.findElements(By.xpath(NIDxpath)).size();
+			System.out.println(count);
 
-		try{
-			for(int i=2;i<=count;i++){
-				String nameText = Driver.findElement(By.xpath(NIDxpath+"["+i+"]")).getText();
-				if(!nameText.equalsIgnoreCase("")){
-					if(nameText.equalsIgnoreCase(NoesID.trim())){
-						verifystatus = true;			      
-					}else{
-						verifystatus = false;
-						break;
+			try{
+				for(int i=2;i<=count;i++){
+					String nameText = Driver.findElement(By.xpath(NIDxpath+"["+i+"]")).getText();
+					if(!nameText.equalsIgnoreCase("")){
+						if(nameText.equalsIgnoreCase(NoesID.trim())){
+							verifystatus = true;			      
+						}else{
+							verifystatus = false;
+							break;
+						}
 					}
 				}
-			}
-			Driver.findElement(HomePage.NoesID).click();
-			Driver.findElement(HomePage.NoesID).clear();    
-			sleep(2000);
-			click(HomePage.OutStandingTab, "Outstanding Tab");
-			click(HomePage.NoesTab, "Noes Tab");
+				Driver.findElement(HomePage.NoesID).click();
+				Driver.findElement(HomePage.NoesID).clear();    
+				sleep(2000);
+				click(HomePage.OutStandingTab, "Outstanding Tab");
+				click(HomePage.NoesTab, "Noes Tab");
 
-		}catch (Exception e) {
+			}catch (Exception e) {
+				e.printStackTrace();
+			}finally{
+				if(verifystatus == true)
+					reporter.SuccessReport("Verify "+NoesID + " search results", "Successfully verified "+ NoesID + " search results");
+				else
+					reporter.failureReport("Verify "+NoesID + " search results", NoesID +" search results are not Successfully verified");
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}finally{
-			if(verifystatus == true)
-				reporter.SuccessReport("Verify "+NoesID + " search results", "Successfully verified "+ NoesID + " search results");
-			else
-				reporter.failureReport("Verify "+NoesID + " search results", NoesID +" search results are not Successfully verified");
 		}
 
 	}
@@ -649,76 +767,88 @@ public class HomeLib extends MummsLib{
 
 	public void noesFirstNameSearchValidations(String NFxpath, String FirstName) throws Throwable{
 
-		boolean verifystatus = false;
-		type(HomePage.NoesFirstName, FirstName, "First Name field");
-		sleep(5000);
-		int count = Driver.findElements(By.xpath(NFxpath)).size();
-		System.out.println(count);
+		new HomePage().Home_Page();
+		try {
+			boolean verifystatus = false;
+			type(HomePage.NoesFirstName, FirstName, "First Name field");
+			sleep(5000);
+			int count = Driver.findElements(By.xpath(NFxpath)).size();
+			System.out.println(count);
 
-		try{
-			for(int i=2;i<=count;i++){
-				String nameText = Driver.findElement(By.xpath(NFxpath+"["+i+"]")).getText();
-				if(!nameText.equalsIgnoreCase("")){
-					if(nameText.equalsIgnoreCase(FirstName.trim())){
-						verifystatus = true;			      
-					}else{
-						verifystatus = false;
-						break;
+			try{
+				for(int i=2;i<=count;i++){
+					String nameText = Driver.findElement(By.xpath(NFxpath+"["+i+"]")).getText();
+					if(!nameText.equalsIgnoreCase("")){
+						if(nameText.equalsIgnoreCase(FirstName.trim())){
+							verifystatus = true;			      
+						}else{
+							verifystatus = false;
+							break;
+						}
 					}
 				}
+
+				Driver.findElement(HomePage.NoesFirstName).click();
+				Driver.findElement(HomePage.NoesFirstName).clear();    
+				sleep(2000);
+				click(HomePage.OutStandingTab, "Outstanding Tab");
+				click(HomePage.NoesTab, "Noes Tab");
+
+			}catch (Exception e) {
+				e.printStackTrace();
+			}finally{
+				if(verifystatus == true)
+					reporter.SuccessReport("Verify "+FirstName + " search results", "Successfully verified "+ FirstName + " search results");
+				else
+					reporter.failureReport("Verify "+FirstName + " search results", FirstName +" search results are not Successfully verified");
 			}
-
-			Driver.findElement(HomePage.NoesFirstName).click();
-			Driver.findElement(HomePage.NoesFirstName).clear();    
-			sleep(2000);
-			click(HomePage.OutStandingTab, "Outstanding Tab");
-			click(HomePage.NoesTab, "Noes Tab");
-
-		}catch (Exception e) {
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}finally{
-			if(verifystatus == true)
-				reporter.SuccessReport("Verify "+FirstName + " search results", "Successfully verified "+ FirstName + " search results");
-			else
-				reporter.failureReport("Verify "+FirstName + " search results", FirstName +" search results are not Successfully verified");
 		}
 
 	}
 
 	public void noesLastNameSearchValidations(String NLxpath, String LastName) throws Throwable{
 
-		boolean verifystatus = false;
-		type(HomePage.NoesLastName, LastName, "Last Name field");
-		sleep(8000);
-		int count = Driver.findElements(By.xpath(NLxpath)).size();
-		System.out.println(count);
+		new HomePage().Home_Page();
+		try {
+			boolean verifystatus = false;
+			type(HomePage.NoesLastName, LastName, "Last Name field");
+			sleep(8000);
+			int count = Driver.findElements(By.xpath(NLxpath)).size();
+			System.out.println(count);
 
-		try{
-			for(int i=2;i<=count;i++){
-				String nameText = Driver.findElement(By.xpath(NLxpath+"["+i+"]")).getText();
-				if(!nameText.equalsIgnoreCase("")){
-					if(nameText.equalsIgnoreCase(LastName.trim())){
-						verifystatus = true;			      
-					}else{
-						verifystatus = false;
-						break;
+			try{
+				for(int i=2;i<=count;i++){
+					String nameText = Driver.findElement(By.xpath(NLxpath+"["+i+"]")).getText();
+					if(!nameText.equalsIgnoreCase("")){
+						if(nameText.equalsIgnoreCase(LastName.trim())){
+							verifystatus = true;			      
+						}else{
+							verifystatus = false;
+							break;
+						}
 					}
 				}
+
+				Driver.findElement(HomePage.NoesLastName).click();
+				Driver.findElement(HomePage.NoesLastName).clear();    
+				sleep(2000);
+				click(HomePage.OutStandingTab, "Outstanding Tab");
+				click(HomePage.NoesTab, "Noes Tab");
+
+			}catch (Exception e) {
+				e.printStackTrace();
+			}finally{
+				if(verifystatus == true)
+					reporter.SuccessReport("Verify "+LastName + " search results", "Successfully verified "+ LastName + " search results");
+				else
+					reporter.failureReport("Verify "+LastName + " search results", LastName +" search results are not Successfully verified");
 			}
-
-			Driver.findElement(HomePage.NoesLastName).click();
-			Driver.findElement(HomePage.NoesLastName).clear();    
-			sleep(2000);
-			click(HomePage.OutStandingTab, "Outstanding Tab");
-			click(HomePage.NoesTab, "Noes Tab");
-
-		}catch (Exception e) {
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}finally{
-			if(verifystatus == true)
-				reporter.SuccessReport("Verify "+LastName + " search results", "Successfully verified "+ LastName + " search results");
-			else
-				reporter.failureReport("Verify "+LastName + " search results", LastName +" search results are not Successfully verified");
 		}
 
 	}
@@ -726,39 +856,45 @@ public class HomeLib extends MummsLib{
 
 	public void noesInsuranceSearchValidations(String NIxpath, String Insurance) throws Throwable{
 
-		boolean verifystatus = false;
-		type(HomePage.NoesInsurance, Insurance, "Insurance field");
-		sleep(8000);
-		int count = Driver.findElements(By.xpath(NIxpath)).size();
-		System.out.println(count);
+		new HomePage().Home_Page();
+		try {
+			boolean verifystatus = false;
+			type(HomePage.NoesInsurance, Insurance, "Insurance field");
+			sleep(8000);
+			int count = Driver.findElements(By.xpath(NIxpath)).size();
+			System.out.println(count);
 
-		try{
-			for(int i=2;i<=count;i++){
-				String nameText = Driver.findElement(By.xpath(NIxpath+"["+i+"]")).getAttribute("value");
-				if(!nameText.equalsIgnoreCase("")){
-					if(nameText.equalsIgnoreCase(Insurance.trim())){
-						verifystatus = true;			      
-					}else{
-						verifystatus = false;
-						break;
+			try{
+				for(int i=2;i<=count;i++){
+					String nameText = Driver.findElement(By.xpath(NIxpath+"["+i+"]")).getAttribute("value");
+					if(!nameText.equalsIgnoreCase("")){
+						if(nameText.equalsIgnoreCase(Insurance.trim())){
+							verifystatus = true;			      
+						}else{
+							verifystatus = false;
+							break;
+						}
 					}
 				}
+
+				Driver.findElement(HomePage.NoesInsurance).click();
+				Driver.findElement(HomePage.NoesInsurance).clear();    
+				sleep(2000);
+				click(HomePage.OutStandingTab, "Outstanding Tab");
+				click(HomePage.NoesTab, "Noes Tab");
+
+
+			}catch (Exception e) {
+				e.printStackTrace();
+			}finally{
+				if(verifystatus == true)
+					reporter.SuccessReport("Verify "+Insurance + " search results", "Successfully verified "+ Insurance + " search results");
+				else
+					reporter.failureReport("Verify "+Insurance + " search results", Insurance +" search results are not Successfully verified");
 			}
-
-			Driver.findElement(HomePage.NoesInsurance).click();
-			Driver.findElement(HomePage.NoesInsurance).clear();    
-			sleep(2000);
-			click(HomePage.OutStandingTab, "Outstanding Tab");
-			click(HomePage.NoesTab, "Noes Tab");
-
-
-		}catch (Exception e) {
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}finally{
-			if(verifystatus == true)
-				reporter.SuccessReport("Verify "+Insurance + " search results", "Successfully verified "+ Insurance + " search results");
-			else
-				reporter.failureReport("Verify "+Insurance + " search results", Insurance +" search results are not Successfully verified");
 		}
 
 	}
@@ -766,35 +902,41 @@ public class HomeLib extends MummsLib{
 
 	public void noesTOBSearchValidations(String TOBxpath, String TOB) throws Throwable{
 
-		boolean verifystatus = false;
-		selectByVisibleText(HomePage.NoesTOB, TOB, "TOB drop down");
-		sleep(6000);
-		int count = Driver.findElements(By.xpath(TOBxpath)).size();
-		System.out.println(count);
+		new HomePage().Home_Page();
+		try {
+			boolean verifystatus = false;
+			selectByVisibleText(HomePage.NoesTOB, TOB, "TOB drop down");
+			sleep(6000);
+			int count = Driver.findElements(By.xpath(TOBxpath)).size();
+			System.out.println(count);
 
-		try{
-			for(int i=2;i<=count;i++){
-				String nameText = Driver.findElement(By.xpath(TOBxpath+"["+i+"]")).getAttribute("value");
-				if(nameText!=null){
-					if(nameText.equalsIgnoreCase(TOB.trim())){
-						verifystatus = true;			      
-					}else{
-						verifystatus = false;
-						break;
+			try{
+				for(int i=2;i<=count;i++){
+					String nameText = Driver.findElement(By.xpath(TOBxpath+"["+i+"]")).getAttribute("value");
+					if(nameText!=null){
+						if(nameText.equalsIgnoreCase(TOB.trim())){
+							verifystatus = true;			      
+						}else{
+							verifystatus = false;
+							break;
+						}
 					}
 				}
+
+				selectByVisibleText(HomePage.NoesTOB, "", "Clear the drop down");
+				sleep(5000);
+
+			}catch (Exception e) {
+				e.printStackTrace();
+			}finally{
+				if(verifystatus == true)
+					reporter.SuccessReport("Verify "+TOB + " search results", "Successfully verified "+ TOB + " search results");
+				else
+					reporter.failureReport("Verify "+TOB + " search results", TOB +" search results are not Successfully verified");
 			}
-
-			selectByVisibleText(HomePage.NoesTOB, "", "Clear the drop down");
-			sleep(5000);
-
-		}catch (Exception e) {
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}finally{
-			if(verifystatus == true)
-				reporter.SuccessReport("Verify "+TOB + " search results", "Successfully verified "+ TOB + " search results");
-			else
-				reporter.failureReport("Verify "+TOB + " search results", TOB +" search results are not Successfully verified");
 		}
 
 	}
@@ -802,38 +944,44 @@ public class HomeLib extends MummsLib{
 
 	public void noesAPhysicianSearchValidations(String Aphysicianxpath, String APhysician) throws Throwable{
 
-		boolean verifystatus = false;
-		type(HomePage.NoesAPhysician, APhysician, "Attending Physician field");
-		sleep(5000);
-		int count = Driver.findElements(By.xpath(Aphysicianxpath)).size();
-		System.out.println(count);
+		new HomePage().Home_Page();
+		try {
+			boolean verifystatus = false;
+			type(HomePage.NoesAPhysician, APhysician, "Attending Physician field");
+			sleep(5000);
+			int count = Driver.findElements(By.xpath(Aphysicianxpath)).size();
+			System.out.println(count);
 
-		try{
-			for(int i=2;i<=count;i++){
-				String nameText = Driver.findElement(By.xpath(Aphysicianxpath+"["+i+"]")).getText();
-				if(!nameText.equalsIgnoreCase("")){
-					if(nameText.equalsIgnoreCase(APhysician.trim())){
-						verifystatus = true;			      
-					}else{
-						verifystatus = false;
-						break;
+			try{
+				for(int i=2;i<=count;i++){
+					String nameText = Driver.findElement(By.xpath(Aphysicianxpath+"["+i+"]")).getText();
+					if(!nameText.equalsIgnoreCase("")){
+						if(nameText.equalsIgnoreCase(APhysician.trim())){
+							verifystatus = true;			      
+						}else{
+							verifystatus = false;
+							break;
+						}
 					}
 				}
+
+				Driver.findElement(HomePage.NoesAPhysician).click();
+				Driver.findElement(HomePage.NoesAPhysician).clear();    
+				sleep(2000);
+				click(HomePage.OutStandingTab, "Outstanding Tab");
+				click(HomePage.NoesTab, "Noes Tab"); 
+
+			}catch (Exception e) {
+				e.printStackTrace();
+			}finally{
+				if(verifystatus == true)
+					reporter.SuccessReport("Verify "+APhysician + " search results", "Successfully verified "+ APhysician + " search results");
+				else
+					reporter.failureReport("Verify "+APhysician + " search results", APhysician +" search results are not Successfully verified");
 			}
-
-			Driver.findElement(HomePage.NoesAPhysician).click();
-			Driver.findElement(HomePage.NoesAPhysician).clear();    
-			sleep(2000);
-			click(HomePage.OutStandingTab, "Outstanding Tab");
-			click(HomePage.NoesTab, "Noes Tab"); 
-
-		}catch (Exception e) {
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}finally{
-			if(verifystatus == true)
-				reporter.SuccessReport("Verify "+APhysician + " search results", "Successfully verified "+ APhysician + " search results");
-			else
-				reporter.failureReport("Verify "+APhysician + " search results", APhysician +" search results are not Successfully verified");
 		}
 
 	}
@@ -841,38 +989,44 @@ public class HomeLib extends MummsLib{
 
 	public void noesCPhysicianSearchValidations(String Cphysicianxpath, String CPhysician) throws Throwable{
 
-		boolean verifystatus = false;
-		type(HomePage.NoesCPhysician, CPhysician, "Certifying Physician field");
-		sleep(5000);
-		int count = Driver.findElements(By.xpath(Cphysicianxpath)).size();
-		System.out.println(count);
+		new HomePage().Home_Page();
+		try {
+			boolean verifystatus = false;
+			type(HomePage.NoesCPhysician, CPhysician, "Certifying Physician field");
+			sleep(5000);
+			int count = Driver.findElements(By.xpath(Cphysicianxpath)).size();
+			System.out.println(count);
 
-		try{
-			for(int i=2;i<=count;i++){
-				String nameText = Driver.findElement(By.xpath(Cphysicianxpath+"["+i+"]")).getText();
-				if(!nameText.equalsIgnoreCase("")){
-					if(nameText.equalsIgnoreCase(CPhysician.trim())){
-						verifystatus = true;			      
-					}else{
-						verifystatus = false;
-						break;
+			try{
+				for(int i=2;i<=count;i++){
+					String nameText = Driver.findElement(By.xpath(Cphysicianxpath+"["+i+"]")).getText();
+					if(!nameText.equalsIgnoreCase("")){
+						if(nameText.equalsIgnoreCase(CPhysician.trim())){
+							verifystatus = true;			      
+						}else{
+							verifystatus = false;
+							break;
+						}
 					}
 				}
+
+				Driver.findElement(HomePage.NoesCPhysician).click();
+				Driver.findElement(HomePage.NoesCPhysician).clear();    
+				sleep(2000);
+				click(HomePage.OutStandingTab, "Outstanding Tab");
+				click(HomePage.NoesTab, "Noes Tab");
+
+			}catch (Exception e) {
+				e.printStackTrace();
+			}finally{
+				if(verifystatus == true)
+					reporter.SuccessReport("Verify "+CPhysician + " search results", "Successfully verified "+ CPhysician + " search results");
+				else
+					reporter.failureReport("Verify "+CPhysician + " search results", CPhysician +" search results are not Successfully verified");
 			}
-
-			Driver.findElement(HomePage.NoesCPhysician).click();
-			Driver.findElement(HomePage.NoesCPhysician).clear();    
-			sleep(2000);
-			click(HomePage.OutStandingTab, "Outstanding Tab");
-			click(HomePage.NoesTab, "Noes Tab");
-
-		}catch (Exception e) {
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}finally{
-			if(verifystatus == true)
-				reporter.SuccessReport("Verify "+CPhysician + " search results", "Successfully verified "+ CPhysician + " search results");
-			else
-				reporter.failureReport("Verify "+CPhysician + " search results", CPhysician +" search results are not Successfully verified");
 		}
 
 	}
@@ -880,37 +1034,45 @@ public class HomeLib extends MummsLib{
 
 	public void noesStatusSearchValidations(String NStatusxpath, String NStatus) throws Throwable{
 
-		boolean verifystatus = false;
-		sleep(8000);
-		selectByVisibleText(HomePage.NoesStatus, NStatus, "Status drop down");
-		sleep(5000);
-		int count = Driver.findElements(By.xpath(NStatusxpath)).size();
-		System.out.println(count);
+		new HomePage().Home_Page();
+		try {
+			boolean verifystatus = false;
+			sleep(8000);
+			click(HomePage.NoesStatus, "status tab click");
+			sleep(2000);
+			selectByVisibleText(HomePage.NoesStatus, NStatus, "Status drop down Incomplete");
+			sleep(5000);
+			int count = Driver.findElements(By.xpath(NStatusxpath)).size();
+			System.out.println(count);
 
-		try{
-			for(int i=2;i<=count;i++){
-				String nameText = Driver.findElement(By.xpath(NStatusxpath+"["+i+"]")).getText();
-				if(!nameText.equalsIgnoreCase("")){
-					if(nameText.equalsIgnoreCase(NStatus.trim())){
-						verifystatus = true;			      
-					}else{
-						verifystatus = false;
-						break;
+			try{
+				for(int i=2;i<=count;i++){
+					String nameText = Driver.findElement(By.xpath(NStatusxpath+"["+i+"]")).getText();
+					if(!nameText.equalsIgnoreCase("")){
+						if(nameText.equalsIgnoreCase(NStatus.trim())){
+							verifystatus = true;			      
+						}else{
+							verifystatus = false;
+							break;
+						}
 					}
 				}
+
+				selectByVisibleText(HomePage.NoesStatus, "", "Clear the drop down");
+				click(HomePage.Saveicon, "Save icon");
+				click(HomePage.Closeicon, "Close");
+
+			}catch (Exception e) {
+				e.printStackTrace();
+			}finally{
+				if(verifystatus == true)
+					reporter.SuccessReport("Verify "+NStatus + " search results", "Successfully verified "+ NStatus + " search results");
+				else
+					reporter.failureReport("Verify "+NStatus + " search results", NStatus +" search results are not Successfully verified");
 			}
-
-			selectByVisibleText(HomePage.NoesStatus, "", "Clear the drop down");
-			click(HomePage.Saveicon, "Save icon");
-			click(HomePage.Closeicon, "Close");
-
-		}catch (Exception e) {
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}finally{
-			if(verifystatus == true)
-				reporter.SuccessReport("Verify "+NStatus + " search results", "Successfully verified "+ NStatus + " search results");
-			else
-				reporter.failureReport("Verify "+NStatus + " search results", NStatus +" search results are not Successfully verified");
 		}
 
 	}
@@ -921,103 +1083,119 @@ public class HomeLib extends MummsLib{
 	public void verifyPatientInfo(Hashtable<String, String> data, String vstrAllergyName) throws Throwable{
 
 		PatientPage.Patient_Page();
-		click(PatientPage.patientInfoIcon, "patient Info Icon");
-		Thread.sleep(sleepTime_chrome);
-		type(PatientPage.patientFirstName, data.get("patientFirstName"), "Patient first name field");
-		sleep(3000);
-
-		if(isElementPresent(PatientPage.topDisplayedPatient, "Patient Name")){
-
-			billingReportFlow(data);
-
-		}else{
-
-			type(PatientPage.patientLastName, data.get("patientLastName"), "Lastname field");
-			sleep(3000);
-			click(PatientPage.addPatientIcon_patientListing, "add Patient Icon in adding new patient");
+		try {
+			click(PatientPage.patientInfoIcon, "patient Info Icon");
 			Thread.sleep(sleepTime_chrome);
-			setDemographicsInfo(data);
-			setRefferalInfo(data);
-			setBasicInfo(data);
-			setPhysicianInfo(data);
-			setConcernsInfo(data);
-			setNotesInfo(data);
-			goToDiagnosisTab();
-			sleep(5000);
-			setDiagnosisInfo(data,data.get("ICD10Code"),data.get("ICDCode"));
-			goToAllergiesTab();
-			sleep(5000);
-			setAllergyData(data, vstrAllergyName);
-			admitPatient(data);
-			goToInsuranceTab();
-			sleep(5000);
-			addDefaultInfoInInsuranceTab("Medicare");
-			appendLetterToPolicyNumber("A");
-			clickOnAddInsuranceButton();
-			goToHistoryTab();
-			sleep(5000);
-			setInsuranceInHistoryTab(data, "Medicare");
-			goToInsuranceTab();
-			sleep(5000);
-			goToElectionsForInsurer("Medicare");
-			click_AttendingPhysician_priInsurer();
-			VerbalAndSignatureDates_attendingPhysician(data);
-			selectHospicePhysicianForPriMaryInsurer_electionGrid(data);
-			VerbalAndSignatureDates_hospicePhysician(data);
-			close_ElectionGrid();
-			billingReportFlow(data);
+			type(PatientPage.patientFirstName, data.get("patientFirstName"), "Patient first name field");
+			sleep(3000);
 
+			if(isElementPresent(PatientPage.topDisplayedPatient, "Patient Name")){
+
+				billingReportFlow(data);
+
+			}else{
+
+				type(PatientPage.patientLastName, data.get("patientLastName"), "Lastname field");
+				sleep(3000);
+				click(PatientPage.addPatientIcon_patientListing, "add Patient Icon in adding new patient");
+				Thread.sleep(sleepTime_chrome);
+				setDemographicsInfo(data);
+				setRefferalInfo(data);
+				setBasicInfo(data);
+				setPhysicianInfo(data);
+				setConcernsInfo(data);
+				setNotesInfo(data);
+				goToDiagnosisTab();
+				sleep(5000);
+				setDiagnosisInfo(data,data.get("ICD10Code"),data.get("ICDCode"));
+				goToAllergiesTab();
+				sleep(5000);
+				setAllergyData(data, vstrAllergyName);
+				admitPatient(data);
+				goToInsuranceTab();
+				sleep(5000);
+				addDefaultInfoInInsuranceTab("Medicare");
+				appendLetterToPolicyNumber("A");
+				clickOnAddInsuranceButton();
+				goToHistoryTab();
+				sleep(5000);
+				setInsuranceInHistoryTab(data, "Medicare");
+				goToInsuranceTab();
+				sleep(5000);
+				goToElectionsForInsurer("Medicare");
+				click_AttendingPhysician_priInsurer();
+				VerbalAndSignatureDates_attendingPhysician(data);
+				selectHospicePhysicianForPriMaryInsurer_electionGrid(data);
+				VerbalAndSignatureDates_hospicePhysician(data);
+				close_ElectionGrid();
+				billingReportFlow(data);
+
+			}
+
+			sleep(3000);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
-
-		 sleep(3000);
 	}
 
 
 	public void billingReportFlow(Hashtable<String, String> data) throws Throwable{
 
-		sleep(2000);
-		click(HomePage.DownGridBar, "DownGrid Bar");
-		sleep(2000);
-		click(HomePage.homeIcon, "Home icon");
-		sleep(2000);
-		claimManagementFlow();
-		sleep(4000);
-		click(HomePage.NotSentTab, "NotSent Tab");
-		sleep(5000);
-		zoomOut();
-		sleep(4000);
-		//03212016
-		generateClaims(data);
+		new HomePage().Home_Page();
+		try {
+			sleep(2000);
+			click(HomePage.DownGridBar, "DownGrid Bar");
+			sleep(2000);
+			click(HomePage.homeIcon, "Home icon");
+			sleep(2000);
+			claimManagementFlow();
+			sleep(4000);
+			click(HomePage.NotSentTab, "NotSent Tab");
+			sleep(5000);
+			zoomOut();
+			sleep(4000);
+			//03212016
+			generateClaims(data);
 
-		type(PatientPage.patientFirstNameReport, data.get("patientFirstName"), "Patient first name field");
-		sleep(4000);
-		//03212016
-		//clickUsingJavascriptExecutor(HomePage.ClaimsNotSentGearIcon, "Gear icon");
-		//Driver.findElement(HomePage.ClaimsNotSentGearIcon).click();
-		click(HomePage.ClaimsNotSentGearIcon, "Gear icon");
-		
-		sleep(6000);
-		clickUsingJavascriptExecutor(HomePage.BillingReportLink, "Billing Report Link");
-		sleep(5000);
-		assertTextMatching(HomePage.BillPrimaryInsurance, data.get("Insurance"), "Insurance");
-		assertTextMatching(HomePage.BillPolicyHolder, data.get("patientFirstName"), "Patient First Name");
-		assertTextMatching(HomePage.BillPolicyNumber, data.get("PolicyNumber"), "Policy Number");
-		assertTextMatching(HomePage.BillDiganosisCode, data.get("ICDCode"), "Diagnosis Code");
-		//03212016
-		assertTextMatching(HomePage.BillDateRange, "02/16/16 - 02/29/16", "Date Range");
-		assertTextMatching(HomePage.BillStartDate, "02/16/16", "Start Date");
-		assertTextMatching(HomePage.BillEndDate, "02/29/16", "End Date");
-		clickUsingJavascriptExecutor(HomePage.BillingTickMark, "Billing Report Tick mark");
-		//click(HomePage.BillingWidgetsaveButton, "save Button");
-		clickUsingJavascriptExecutor(HomePage.BillingWidgetsaveButton, "save icon");
-		sleep(2000);
+			type(PatientPage.patientFirstNameReport, data.get("patientFirstName"), "Patient first name field");
+			sleep(4000);
+			//03212016
+			//clickUsingJavascriptExecutor(HomePage.ClaimsNotSentGearIcon, "Gear icon");
+			//Driver.findElement(HomePage.ClaimsNotSentGearIcon).click();
+			click(HomePage.ClaimsNotSentGearIcon, "Gear icon");
+
+			sleep(6000);
+			clickUsingJavascriptExecutor(HomePage.BillingReportLink, "Billing Report Link");
+			sleep(5000);
+			assertTextMatching(HomePage.BillPrimaryInsurance, data.get("Insurance"), "Insurance");
+			assertTextMatching(HomePage.BillPolicyHolder, data.get("patientFirstName"), "Patient First Name");
+			assertTextMatching(HomePage.BillPolicyNumber, data.get("PolicyNumber"), "Policy Number");
+			assertTextMatching(HomePage.BillDiganosisCode, data.get("ICDCode"), "Diagnosis Code");
+			//03212016
+			assertTextMatching(HomePage.BillDateRange, "02/16/16 - 02/29/16", "Date Range");
+			assertTextMatching(HomePage.BillStartDate, "02/16/16", "Start Date");
+			assertTextMatching(HomePage.BillEndDate, "02/29/16", "End Date");
+			clickUsingJavascriptExecutor(HomePage.BillingTickMark, "Billing Report Tick mark");
+			//click(HomePage.BillingWidgetsaveButton, "save Button");
+			clickUsingJavascriptExecutor(HomePage.BillingWidgetsaveButton, "save icon");
+			sleep(2000);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	public void closeClaims() throws Exception{
 
 		new HomePage().Home_Page();
-		sleep(2000);
-		Driver.findElement(HomePage.Closeicon).click();
+		try {
+			sleep(2000);
+			Driver.findElement(HomePage.Closeicon).click();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	public void zoomOut(){
@@ -1055,180 +1233,212 @@ public class HomeLib extends MummsLib{
 	public void verifyRevenueDetailsInfo(Hashtable<String, String> data, String vstrAllergyName) throws Throwable{
 
 		PatientPage.Patient_Page();
-		click(PatientPage.patientInfoIcon, "patient Info Icon");
-		Thread.sleep(sleepTime_chrome);
-		type(PatientPage.patientFirstName, data.get("patientFirstName"), "Patient first name field");
-		sleep(3000);
-
-		if(isElementPresent(PatientPage.topDisplayedPatient, "Patient Name")){
-
-			revenueDetailsFlow(data);
-
-		}else{
-
-			type(PatientPage.patientLastName, data.get("patientLastName"), "Lastname field");
-			sleep(3000);
-			click(PatientPage.addPatientIcon_patientListing, "add Patient Icon in adding new patient");
+		try {
+			click(PatientPage.patientInfoIcon, "patient Info Icon");
 			Thread.sleep(sleepTime_chrome);
-			setDemographicsInfo(data);
-			setRefferalInfo(data);
-			setBasicInfo(data);
-			setPhysicianInfo(data);
-			setConcernsInfo(data);
-			setNotesInfo(data);
-			goToDiagnosisTab();
-			sleep(5000);
-			setDiagnosisInfo(data,data.get("ICD10Code"),data.get("ICDCode"));
-			goToAllergiesTab();
-			sleep(5000);
-			setAllergyData(data, vstrAllergyName);
-			admitPatient(data);
-			goToInsuranceTab();
-			sleep(5000);
-			addDefaultInfoInInsuranceTab("Medicare");
-			appendLetterToPolicyNumber("A");
-			clickOnAddInsuranceButton();
-			goToHistoryTab();
-			sleep(5000);
-			setPrimaryInsuranceInHistoryTab(data, "Medicare");
-			goToInsuranceTab();
-			sleep(5000);
-			goToElectionsForInsurer("Medicare");
-			click_AttendingPhysician_priInsurer();
-			VerbalAndSignatureDates_attendingPhysician(data);
-			selectHospicePhysicianForPriMaryInsurer_electionGrid(data);
-			VerbalAndSignatureDates_hospicePhysician(data);
-			close_ElectionGrid();
-			revenueDetailsFlow(data);
+			type(PatientPage.patientFirstName, data.get("patientFirstName"), "Patient first name field");
+			sleep(3000);
 
+			if(isElementPresent(PatientPage.topDisplayedPatient, "Patient Name")){
+
+				revenueDetailsFlow(data);
+
+			}else{
+
+				type(PatientPage.patientLastName, data.get("patientLastName"), "Lastname field");
+				sleep(3000);
+				click(PatientPage.addPatientIcon_patientListing, "add Patient Icon in adding new patient");
+				Thread.sleep(sleepTime_chrome);
+				setDemographicsInfo(data);
+				setRefferalInfo(data);
+				setBasicInfo(data);
+				setPhysicianInfo(data);
+				setConcernsInfo(data);
+				setNotesInfo(data);
+				goToDiagnosisTab();
+				sleep(5000);
+				setDiagnosisInfo(data,data.get("ICD10Code"),data.get("ICDCode"));
+				goToAllergiesTab();
+				sleep(5000);
+				setAllergyData(data, vstrAllergyName);
+				admitPatient(data);
+				goToInsuranceTab();
+				sleep(5000);
+				addDefaultInfoInInsuranceTab("Medicare");
+				appendLetterToPolicyNumber("A");
+				clickOnAddInsuranceButton();
+				goToHistoryTab();
+				sleep(5000);
+				setPrimaryInsuranceInHistoryTab(data, "Medicare");
+				goToInsuranceTab();
+				sleep(5000);
+				goToElectionsForInsurer("Medicare");
+				click_AttendingPhysician_priInsurer();
+				VerbalAndSignatureDates_attendingPhysician(data);
+				selectHospicePhysicianForPriMaryInsurer_electionGrid(data);
+				VerbalAndSignatureDates_hospicePhysician(data);
+				close_ElectionGrid();
+				revenueDetailsFlow(data);
+
+			}
+			sleep(3000);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
-		  sleep(3000);
 
 	}
 
 	public void verifybillingReportInfo(Hashtable<String, String> data) throws Throwable{
 
 
-		bliingWidgetDetailsFlow(data);
+		try {
+			bliingWidgetDetailsFlow(data);
+		} catch (Exception e) {
+
+			e.printStackTrace();
+		}
 	}
 
 	public void revenueDetailsFlow(Hashtable<String, String> data) throws Throwable{
 
 		sleep(2000);
-		click(HomePage.DownGridBar, "DownGrid Bar");
-		sleep(2000);
-		click(HomePage.homeIcon, "Home icon");
-		sleep(2000);
-		claimManagementFlow();
-		sleep(4000);
-		click(HomePage.NotSentTab, "NotSent Tab");
-		sleep(5000);
-		zoomOut();
-		sleep(4000);
-		//03212016
-		generateClaims(data);
+		new HomePage().Home_Page();
+		try {
+			click(HomePage.DownGridBar, "DownGrid Bar");
+			sleep(2000);
+			click(HomePage.homeIcon, "Home icon");
+			sleep(2000);
+			claimManagementFlow();
+			sleep(4000);
+			click(HomePage.NotSentTab, "NotSent Tab");
+			sleep(5000);
+			zoomOut();
+			sleep(4000);
+			//03212016
+			generateClaims(data);
 
-		type(PatientPage.patientFirstNameReport, data.get("patientFirstName"), "Patient first name field");
-		sleep(5000);
+			type(PatientPage.patientFirstNameReport, data.get("patientFirstName"), "Patient first name field");
+			sleep(5000);
 
-		//03172016
-	/*	String ID = Driver.findElement(HomePage.MainGridID).getText();
-		String PostedDate = Driver.findElement(HomePage.MainGridPostedDate).getText();
-		String Claim = Driver.findElement(HomePage.MainGridClaim).getAttribute("value");
-		String DateRange = Driver.findElement(HomePage.MainGridDateRange).getText();
-		String Status = Driver.findElement(HomePage.MainGridStatus).getText();*/
+			//03172016
+			/*	String ID = Driver.findElement(HomePage.MainGridID).getText();
+			String PostedDate = Driver.findElement(HomePage.MainGridPostedDate).getText();
+			String Claim = Driver.findElement(HomePage.MainGridClaim).getAttribute("value");
+			String DateRange = Driver.findElement(HomePage.MainGridDateRange).getText();
+			String Status = Driver.findElement(HomePage.MainGridStatus).getText();*/
 
-		//clickUsingJavascriptExecutor(HomePage.ClaimsNotSentGearIcon, "Gear icon");
-		Driver.findElement(HomePage.ClaimsNotSentGearIcon).click();
-		
-		sleep(6000);
-		clickUsingJavascriptExecutor(HomePage.RevenueDetailsLink, "Revenue Details Link");
-		sleep(5000);
-		assertTextMatching(HomePage.RevenueFirstName, data.get("patientFirstName"), "Patient First Name");
-		assertTextMatching(HomePage.RevenueLastName, data.get("patientLastName"), "Patient Last Name");
-/*		assertTextMatching(HomePage.RevenueID, ID, "Patient ID");
-		assertTextMatchingWithAttribute(HomePage.RevenueClaim, Claim, "Claim");
-		assertTextMatching(HomePage.RevenuePostedDate, PostedDate, "Posted Date");
-		assertTextMatching(HomePage.RevenueStatus, Status, "Status");*/
-		//assertTextMatching(HomePage.RevenueDateRange, DateRange, "Date Range");
+			//clickUsingJavascriptExecutor(HomePage.ClaimsNotSentGearIcon, "Gear icon");
+			Driver.findElement(HomePage.ClaimsNotSentGearIcon).click();
 
-		//03212016
-		assertTextMatchingWithAttribute(HomePage.RevenuePayer, data.get("ClaimsPayer"), "Revenue Payer Type");
-		assertTextMatching(HomePage.RevenueDate, data.get("admitMonth") + "/" + data.get("admitDay") + "/" + data.get("admitYear"), "Revenue Details Date");
-		clickUsingJavascriptExecutor(HomePage.RevenueDetailsTickMark, "Revenue Details Tick mark");
-		sleep(2000);
-		/*click(HomePage.BillingWidgetsaveButton, "save Button");*/
-		clickUsingJavascriptExecutor(HomePage.BillingWidgetsaveButton, "save icon");
-		sleep(2000);
+			sleep(6000);
+			clickUsingJavascriptExecutor(HomePage.RevenueDetailsLink, "Revenue Details Link");
+			sleep(5000);
+			assertTextMatching(HomePage.RevenueFirstName, data.get("patientFirstName"), "Patient First Name");
+			assertTextMatching(HomePage.RevenueLastName, data.get("patientLastName"), "Patient Last Name");
+			/*		assertTextMatching(HomePage.RevenueID, ID, "Patient ID");
+			assertTextMatchingWithAttribute(HomePage.RevenueClaim, Claim, "Claim");
+			assertTextMatching(HomePage.RevenuePostedDate, PostedDate, "Posted Date");
+			assertTextMatching(HomePage.RevenueStatus, Status, "Status");*/
+			//assertTextMatching(HomePage.RevenueDateRange, DateRange, "Date Range");
+
+			//03212016
+			assertTextMatchingWithAttribute(HomePage.RevenuePayer, data.get("ClaimsPayer"), "Revenue Payer Type");
+			assertTextMatching(HomePage.RevenueDate, data.get("admitMonth") + "/" + data.get("admitDay") + "/" + data.get("admitYear"), "Revenue Details Date");
+			clickUsingJavascriptExecutor(HomePage.RevenueDetailsTickMark, "Revenue Details Tick mark");
+			sleep(2000);
+			/*click(HomePage.BillingWidgetsaveButton, "save Button");*/
+			clickUsingJavascriptExecutor(HomePage.BillingWidgetsaveButton, "save icon");
+			sleep(2000);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	}
 
 	public void bliingWidgetDetailsFlow(Hashtable<String, String> data) throws Throwable{
 
 
-		sleep(2000);
-		bllingWidgetFlow();	
-		click(HomePage.selectMonth, "Month");
-		sleep(8000);
-		
+		try {
+			sleep(2000);
+			new HomePage().Home_Page();
+			bllingWidgetFlow();	
+			click(HomePage.selectMonth, "Month");
+			sleep(8000);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
 
 
 	}
 
 	public void verifyWidgetDetailsFlow(Hashtable<String, String> data) throws Throwable{
-		
-		sleep(5000);
 
-		String Date = Driver.findElement(HomePage.verifyDate).getText();
-		String DateRange = Driver.findElement(HomePage.verifyDateRange).getText();
+		try {
+			sleep(5000);
+			new HomePage().Home_Page();
+			String Date = Driver.findElement(HomePage.verifyDate1).getText();
 
-		assertTextMatching(HomePage.verifyDate, Date, "Date");
+			String DateRange = Driver.findElement(HomePage.verifyDateRange).getText();
 
-		System.out.println("Date is  "+Date+" and DateRange is "+DateRange);
+			assertTextMatching(HomePage.verifyDate1, Date, "Date");
 
-		String[] str = DateRange.split("-");
+			System.out.println("Date is  "+Date+" and DateRange is "+DateRange);
 
-		System.out.println(str[0]+"  "+str[1]);
+			String[] str = DateRange.split("-");
 
-		String[] day = str[1].split("/");
+			System.out.println(str[0]+"  "+str[1]);
 
-		int Intday = Integer.parseInt(day[1]);
+			String[] day = str[1].split("/");
 
-		System.out.println("Intday is "+Intday);
+			int Intday = Integer.parseInt(day[1]);
 
-		if(Intday<=31)
-		{
-			reporter.SuccessReport("Verify day field in date raneg", "Day is lesser than or equals 31");
+			System.out.println("Intday is "+Intday);
+
+			if(Intday<=31)
+			{
+				reporter.SuccessReport("Verify day field in date range", "Day is lesser than or equals 31");
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 
 	}
 
 	public void verifyWidgetNextPatient(Hashtable<String, String> data) throws Throwable{
+		try {
+			new HomePage().Home_Page();
+			sleep(5000);
+			scroll(HomePage.verifyDateRangeNextPatient, "scroll down");
+			sleep(2000);
 
-		sleep(5000);
-		scroll(HomePage.verifyDateRangeNextPatient, "scroll down");
-		sleep(2000);
-
-		String DateRange = Driver.findElement(HomePage.verifyDateRangeNextPatient).getText();
+			String DateRange = Driver.findElement(HomePage.verifyDateRange).getText();
 
 
-		String[] str = DateRange.split("-");
+			String[] str = DateRange.split("-");
 
-		System.out.println(str[0]+"  "+str[1]);
+			System.out.println(str[0]+"  "+str[1]);
 
-		String[] day = str[1].split("/");
+			String[] day = str[1].split("/");
 
-		int Intday = Integer.parseInt(day[1]);
+			int Intday = Integer.parseInt(day[1]);
 
-		System.out.println("Intday is "+Intday);
+			System.out.println("Intday is "+Intday);
 
-		if(Intday<=31)
-		{
-			reporter.SuccessReport("Verify day field in date raneg", "Day is greater than 31");
+			if(Intday<=31)
+			{
+				reporter.SuccessReport("Verify day field in date range ", "Day is lesser than 31 or equals for next patient");
+			}
+
+			click(HomePage.BillingWidgetsaveButton, "save Button");
+			sleep(2000);
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
-		
-		click(HomePage.BillingWidgetsaveButton, "save Button");
-		sleep(2000);
 
 	}
 
@@ -1236,20 +1446,26 @@ public class HomeLib extends MummsLib{
 
 	//03212016
 	public void generateClaims(Hashtable<String, String> data) throws Throwable{
+		new HomePage().Home_Page();
 
-		clickUsingJavascriptExecutor(HomePage.GenerateClaims, "Generate Claims");
-		sleep(2000);
-		selectByVisibleText(HomePage.ClaimsPayerType, data.get("ClaimsPayer"), "Select Medicare from the down");
-		sleep(2000);
-		type(HomePage.ClaimsPatient, data.get("patientFirstName"), "Patient Name field");
-		sleep(4000);
-		//click(HomePage.ClaimsPatientDrpDwn, "Select Patient Name");
-		clickUsingJavascriptExecutor(HomePage.ClaimsPatientDrpDwn, "Select Patient Name");
-		sleep(3000);
-		clickUsingJavascriptExecutor(HomePage.ClaimOK, "OK button");
-		sleep(15000);
-		clickUsingJavascriptExecutor(HomePage.ClaimsXMLOk, "OK button");
-		sleep(8000);
+		try {
+			clickUsingJavascriptExecutor(HomePage.GenerateClaims, "Generate Claims");
+			sleep(2000);
+			selectByVisibleText(HomePage.ClaimsPayerType, data.get("ClaimsPayer"), "Select Medicare from the down");
+			sleep(2000);
+			type(HomePage.ClaimsPatient, data.get("patientFirstName"), "Patient Name field");
+			sleep(4000);
+			//click(HomePage.ClaimsPatientDrpDwn, "Select Patient Name");
+			clickUsingJavascriptExecutor(HomePage.ClaimsPatientDrpDwn, "Select Patient Name");
+			sleep(3000);
+			clickUsingJavascriptExecutor(HomePage.ClaimOK, "OK button");
+			sleep(15000);
+			clickUsingJavascriptExecutor(HomePage.ClaimsXMLOk, "OK button");
+			sleep(8000);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 }

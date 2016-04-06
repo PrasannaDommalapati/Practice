@@ -31,7 +31,7 @@ public class Reports extends ReportsLib {
 		try {
 
 			this.reporter.initTestCaseDescription("SQA-166");
-			selectAgency("RUTH");
+			// selectAgency("RUTH");
 			goToReports();
 			cahpsReportFlow(data);
 			verifyCAHPSdata();
@@ -63,7 +63,7 @@ public class Reports extends ReportsLib {
 
 	@DataProvider
 	public Object[][] getTestDataFor_visitReport() {
-		return TestUtil.getData("testGenerateVisitReport", TestData, "Admin");
+		return TestUtil.getData("testGenerateVisitReport", TestData, "Reports");
 	}
 
 	@Test(dataProvider = "getTestDataFor_visitReport")
@@ -74,7 +74,7 @@ public class Reports extends ReportsLib {
 
 				this.reporter.initTestCaseDescription("SQA-120 - To Validate the visit report");
 				System.out.println("In the testVisitReport method");
-				// selectAgency("RUTH");
+				// //selectAgency("RUTH");
 				goToReports();
 				generateVisitReport(data);
 				float pageLoadTime = appLoadingTime(ReportsPage.exportButton);
@@ -88,7 +88,7 @@ public class Reports extends ReportsLib {
 
 	@DataProvider
 	public Object[][] getTestDataFor_monthEndARReconciliationReport() {
-		return TestUtil.getData("testGenerateMonthEndARReconciliationReport", TestData, "Admin");
+		return TestUtil.getData("testGenerateMonthEndARReconciliationReport", TestData, "Reports");
 	}
 
 	@Test(dataProvider = "getTestDataFor_monthEndARReconciliationReport")
@@ -99,7 +99,7 @@ public class Reports extends ReportsLib {
 
 				this.reporter.initTestCaseDescription("SQA-104 - To validation of the Month End AR Reconciliation");
 				System.out.println("In the testGenerateMonthEndARReconciliationReport method");
-				selectAgency("RUTH");
+				// selectAgency("RUTH");
 				goToReports();
 				generateMonthEndARReconciliationReport(data);
 				verifyMonthEndARReconciliationReport(data);
@@ -112,7 +112,7 @@ public class Reports extends ReportsLib {
 
 	@DataProvider
 	public Object[][] getTestDataFor_monthlyRevenueReport() {
-		return TestUtil.getData("testGenerateMonthlyRevenueReport", TestData, "Admin");
+		return TestUtil.getData("testGenerateMonthlyRevenueReport", TestData, "Reports");
 	}
 
 	@Test(dataProvider = "getTestDataFor_monthlyRevenueReport")
@@ -123,7 +123,7 @@ public class Reports extends ReportsLib {
 
 				this.reporter.initTestCaseDescription("SQA-105 - To validation of the Monthly Revenue");
 				System.out.println("In the testGenerateMonthlyRevenueReport method");
-				selectAgency("RUTH");
+				// selectAgency("RUTH");
 				goToReports();
 				generateMonthlyRevenueReport(data);
 				verifyMonthlyRevenueReport(data);
@@ -136,7 +136,7 @@ public class Reports extends ReportsLib {
 
 	@DataProvider
 	public Object[][] getTestDataFor_PaymentsAndAdjustmentsReport() {
-		return TestUtil.getData("testGeneratePaymentsAndAdjustmentsReport", TestData, "Admin");
+		return TestUtil.getData("testGeneratePaymentsAndAdjustmentsReport", TestData, "Reports");
 	}
 
 	@Test(dataProvider = "getTestDataFor_PaymentsAndAdjustmentsReport")
@@ -148,7 +148,7 @@ public class Reports extends ReportsLib {
 				this.reporter.initTestCaseDescription(
 						"SQA-115 - To validation of the Payments and Adjustments Report by date.");
 				System.out.println("In the testGeneratePaymentsAndAdjustmentsReport method");
-				selectAgency("RUTH");
+				// selectAgency("RUTH");
 				goToReports();
 				generatePaymentsAdjustmentsReportByDateReport(data);
 				verifyPaymentsAdjustmentsReportByDateReport(data);
@@ -161,7 +161,7 @@ public class Reports extends ReportsLib {
 
 	@DataProvider
 	public Object[][] getTestDataFor_HISForAdmissionReport() {
-		return TestUtil.getData("testGenerateHISForAdmissionReport", TestData, "Admin");
+		return TestUtil.getData("testGenerateHISForAdmissionReport", TestData, "Reports");
 	}
 
 	@Test(dataProvider = "getTestDataFor_HISForAdmissionReport")
@@ -173,7 +173,7 @@ public class Reports extends ReportsLib {
 				this.reporter
 						.initTestCaseDescription("SQA-116 - To validation of the HIS Report For Admission. report");
 				System.out.println("In the testGenerateHISForAdmissionReport method");
-				selectAgency("RUTH");
+				// selectAgency("RUTH");
 				goToReports();
 				generateHISReportForAdmissionsReport(data);
 				float pageLoadTime = appLoadingTime(ReportsPage.exportButton);
@@ -188,7 +188,7 @@ public class Reports extends ReportsLib {
 
 	@DataProvider
 	public Object[][] getTestDataFor_HISForDischargeReport() {
-		return TestUtil.getData("testGenerateHISForDischargeReport", TestData, "Admin");
+		return TestUtil.getData("testGenerateHISForDischargeReport", TestData, "Reports");
 	}
 
 	@Test(dataProvider = "getTestDataFor_HISForDischargeReport")
@@ -199,7 +199,7 @@ public class Reports extends ReportsLib {
 
 				this.reporter.initTestCaseDescription("SQA-117 - To validation of the HIS Report For Discharge report");
 				System.out.println("In the testGenerateHISForDischargeReport method");
-				selectAgency("RUTH");
+				// selectAgency("RUTH");
 				goToReports();
 				generateHISReportForDischargeReport(data);
 				float pageLoadTime = appLoadingTime(ReportsPage.exportButton);
@@ -213,7 +213,7 @@ public class Reports extends ReportsLib {
 
 	@DataProvider
 	public Object[][] getTestDataFor_TeamMeetingReport() {
-		return TestUtil.getData("testGenerateTeamMeetingReport", TestData, "Admin");
+		return TestUtil.getData("testGenerateTeamMeetingReport", TestData, "Reports");
 	}
 
 	@Test(dataProvider = "getTestDataFor_TeamMeetingReport")
@@ -224,7 +224,7 @@ public class Reports extends ReportsLib {
 
 				this.reporter.initTestCaseDescription("SQA-118 - To validation of the Team Meeting report report");
 				System.out.println("In the testGenerateTeamMeetingReport method");
-				selectAgency("RUTH");
+				// selectAgency("RUTH");
 				goToReports();
 				generateTeamMeetingReport(data);
 				float pageLoadTime = appLoadingTime(ReportsPage.exportButton);
@@ -238,7 +238,7 @@ public class Reports extends ReportsLib {
 
 	@DataProvider
 	public Object[][] getTestDataFor_ContactListReport() {
-		return TestUtil.getData("testGenerateContactsListReport", TestData, "Admin");
+		return TestUtil.getData("testGenerateContactsListReport", TestData, "Reports");
 	}
 
 	@Test(dataProvider = "getTestDataFor_ContactListReport")
@@ -249,7 +249,7 @@ public class Reports extends ReportsLib {
 
 				this.reporter.initTestCaseDescription("SQA-124 - To validate the operation of the Contact List report");
 				System.out.println("In the testGenerateContactsListReport method");
-				selectAgency("RUTH");
+				// selectAgency("RUTH");
 				goToReports();
 				generateContactListReport(data);
 				float pageLoadTime = appLoadingTime(ReportsPage.exportButton);
@@ -263,7 +263,7 @@ public class Reports extends ReportsLib {
 
 	@DataProvider
 	public Object[][] getTestDataFor_BereavedPersonsReport() {
-		return TestUtil.getData("testGenerateBereavedPersonsReport", TestData, "Admin");
+		return TestUtil.getData("testGenerateBereavedPersonsReport", TestData, "Reports");
 	}
 
 	@Test(dataProvider = "getTestDataFor_BereavedPersonsReport")
@@ -274,7 +274,7 @@ public class Reports extends ReportsLib {
 
 				this.reporter.initTestCaseDescription("SQA-123 - To validation of the Bereaved Person report report");
 				System.out.println("In the testGenerateBereavedPersonsReport method");
-				selectAgency("RUTH");
+				// selectAgency("RUTH");
 				goToReports();
 				generateBereavedPersonsReport(data);
 				float pageLoadTime = appLoadingTime(ReportsPage.exportButton);
@@ -287,11 +287,11 @@ public class Reports extends ReportsLib {
 
 	@DataProvider
 	public Object[][] getTestDataFor_ReferralsbyReferralSourceReport() {
-		return TestUtil.getData("testGenerateReferralsbyReferralSourceReportReport", TestData, "Admin");
+		return TestUtil.getData("testGenerateReferralsbyReferralSourceReport", TestData, "Reports");
 	}
 
 	@Test(dataProvider = "getTestDataFor_ReferralsbyReferralSourceReport")
-	public void testGenerateReferralsbyReferralSourceReportReport(Hashtable<String, String> data) throws Throwable {
+	public void testGenerateReferralsbyReferralSourceReport(Hashtable<String, String> data) throws Throwable {
 
 		try {
 			if (data.get("RunMode").equals("Y")) {
@@ -299,7 +299,7 @@ public class Reports extends ReportsLib {
 				this.reporter
 						.initTestCaseDescription("SQA-122 - To validation of the Referrals by Referral Source report");
 				System.out.println("In the testGenerateReferralsbyReferralSourceReportReport method");
-				selectAgency("RUTH");
+				// selectAgency("RUTH");
 				goToReports();
 				generateReferralsbyReferralSourceReport(data);
 				float pageLoadTime = appLoadingTime(ReportsPage.exportButton);
@@ -312,7 +312,7 @@ public class Reports extends ReportsLib {
 
 	@DataProvider
 	public Object[][] getTestDataFor_PatientDaysbyLevelofCareReport() {
-		return TestUtil.getData("testGeneratePatientDaysbyLevelofCareReport", TestData, "Admin");
+		return TestUtil.getData("testGeneratePatientDaysbyLevelofCareReport", TestData, "Reports");
 	}
 
 	@Test(dataProvider = "getTestDataFor_PatientDaysbyLevelofCareReport")
@@ -324,7 +324,7 @@ public class Reports extends ReportsLib {
 				this.reporter
 						.initTestCaseDescription("SQA-121 - To validation of the Patient Days by Level of Care report");
 				System.out.println("In the testGeneratePatientDaysbyLevelofCareReport method");
-				selectAgency("RUTH");
+				// selectAgency("RUTH");
 				goToReports();
 				generatePatientDaysbyLevelofCareReport(data);
 				float pageLoadTime = appLoadingTime(ReportsPage.exportButton);
@@ -337,7 +337,7 @@ public class Reports extends ReportsLib {
 
 	@DataProvider
 	public Object[][] getTestDataFor_generateUpcomingF2FCertificationsReport() {
-		return TestUtil.getData("testGenerateUpcomingF2FCertificationsReport", TestData, "Admin");
+		return TestUtil.getData("testGenerateUpcomingF2FCertificationsReport", TestData, "Reports");
 	}
 
 	@Test(dataProvider = "getTestDataFor_generateUpcomingF2FCertificationsReport")
@@ -349,7 +349,7 @@ public class Reports extends ReportsLib {
 				this.reporter.initTestCaseDescription(
 						"SQA-119 - To validation of the Upcoming F2F and Certifications report");
 				System.out.println("In the testGeneratePatientDaysbyLevelofCareReport method");
-				selectAgency("RUTH");
+				// selectAgency("RUTH");
 				goToReports();
 				generateUpcomingF2FCertificationsReport(data);
 				float pageLoadTime = appLoadingTime(ReportsPage.exportButton);
@@ -362,7 +362,7 @@ public class Reports extends ReportsLib {
 
 	@DataProvider
 	public Object[][] getTestDataFor_generateCreditClaimBalanceReport() {
-		return TestUtil.getData("testGenerateCreditClaimBalanceReport", TestData, "Admin");
+		return TestUtil.getData("testGenerateCreditClaimBalanceReport", TestData, "Reports");
 	}
 
 	@Test(dataProvider = "getTestDataFor_generateCreditClaimBalanceReport")
@@ -373,7 +373,7 @@ public class Reports extends ReportsLib {
 
 				this.reporter.initTestCaseDescription("SQA-103 - To validation of the Credit Claim Balance Report.");
 				System.out.println("In the testGenerateCreditClaimBalanceReport method");
-				selectAgency("ORLANDO");
+				// selectAgency("ORLANDO");
 				goToReports();
 				generateCreditClaimBalanceReport(data);
 				float pageLoadTime = appLoadingTime(ReportsPage.exportButton);
@@ -386,6 +386,7 @@ public class Reports extends ReportsLib {
 
 	@AfterMethod
 	public void logOut() throws Throwable {
+		sleep(15000);
 		doLogout();
 	}
 

@@ -324,6 +324,11 @@ public class PatientPage {
 		public static By existingFirstRowInCareGiversTab;
 		public static By firstRowDisplayedInCareGiversTab;
 		public static By patientHeader_CareGiverDisplayed;
+		
+		public static By funeralHomeFaciltyName;
+		public static By funeralHomeFacilityAddress;
+		public static By topDisplayedFuneralFacilityHome;
+		
 	//public static ConfiguratorSupport configProps = new ConfiguratorSupport("config.properties");
 
 	public static void Patient_Page()
@@ -492,7 +497,7 @@ public class PatientPage {
 
 
 			//4Th Mar
-			PatientOfficeSug1 = By.xpath(".//*[@class='hb-simple-grid-dropdown']//td[@class='suggestPopupMiddleCenter']//td[1][contains(text(),'Mumms')]");
+			PatientOfficeSug1 = By.xpath(".//*[@class='hb-simple-grid-dropdown']//td[@class='suggestPopupMiddleCenter']//td[1][contains(text(),'Gallop_Ofc_8556')]");
 			AttorneyFirstName = By.xpath(".//*[@id='gwt-debug-person.firstName-search-bar']");
 			AttorneyLastName = By.xpath(".//*[@id='gwt-debug-person.lastName-search-bar']");
 			topDisplayedAttorneyFirstName = By.xpath(".//td[@class='hb-flex-grid-data-cell']//div[@id='gwt-debug-person.firstName']");
@@ -583,7 +588,7 @@ public class PatientPage {
 			endDate_year_RespiteLocation = By.xpath(".//*[@id='gwt-debug-endDateProvided']//select[contains(@class,'year hb-date-dropdown-novalue')]");
 
 			physicianInput_historyTab = By.xpath(".//*[@id='gwt-debug-physician-search-bar']/input");
-			facilitySug = By.xpath(".//*[@class='hb-simple-grid-dropdown']//td[@class='suggestPopupMiddleCenter']//td[1][contains(text(),'Autumn')]");
+			facilitySug = By.xpath(".//*[@class='hb-simple-grid-dropdown']//td[@class='suggestPopupMiddleCenter']//td[1][contains(text(),'Aklohano Jiolthsori Salwteamc')]");
 			electionGrid_TickMark = By.xpath(".//*[@id='gwt-debug-data-modal-save-button']");
 
 			//PatientHeader
@@ -676,5 +681,11 @@ public class PatientPage {
 			existingFirstRowInCareGiversTab = By.xpath("//div[@class='popupContent']//table/tbody/tr[2]/td/div/div/table/tbody/tr[1]");
 			firstRowDisplayedInCareGiversTab = By.xpath("(.//*[@id='gwt-debug-person.firstName'])[2]");
 			patientHeader_CareGiverDisplayed = By.xpath("//div[text()='CG']/parent::td/following-sibling::td[1]/div");
+			
+			//march 29
+			   funeralHomeFaciltyName = By.xpath(".//*[@id='gwt-debug-name-search-bar']");
+			   funeralHomeFacilityAddress = By.xpath(".//*[@id='gwt-debug-primaryAddress-search-bar']/input");
+			   topDisplayedFuneralFacilityHome = By.xpath(".//*[text()='Funeral Facility Contact']/parent::td/preceding-sibling::td[1]/span/input");
+			  
 		}
 	}}

@@ -36,7 +36,7 @@ public class Patient extends PatientLib {
 		try {
 
 			this.reporter.initTestCaseDescription("SQA-87");	
-			selectAgency("RUTH");
+			//selectAgency("RUTH");
 
 			int intrandNum = generateRandonNumber();
 			String strPersonName = data.get("patientFirstName")+"_"+Integer.toString(intrandNum);
@@ -59,7 +59,7 @@ public class Patient extends PatientLib {
 		try {
 
 			this.reporter.initTestCaseDescription("SQA-88");	
-			selectAgency("RUTH");
+			//selectAgency("RUTH");
 
 			int intrandNum = generateRandonNumber();
 			String personName = data.get("patientFirstName")+"_"+Integer.toString(intrandNum);
@@ -83,7 +83,7 @@ public class Patient extends PatientLib {
 		try {
 
 			this.reporter.initTestCaseDescription("SQA-89");	
-			selectAgency("RUTH");
+			//selectAgency("RUTH");
 
 			int intrandNum = generateRandonNumber();
 			String personName = data.get("patientFirstName")+"_"+Integer.toString(intrandNum);
@@ -107,7 +107,7 @@ public class Patient extends PatientLib {
 		try {
 
 			this.reporter.initTestCaseDescription("SQA-90");	
-			selectAgency("RUTH");
+			//selectAgency("RUTH");
 
 			int intrandNum = generateRandonNumber();
 			String personName = data.get("patientFirstName")+"_"+Integer.toString(intrandNum);
@@ -131,16 +131,14 @@ public class Patient extends PatientLib {
 
 			if (data.get("RunMode").equals("Y")) {
 				this.reporter.initTestCaseDescription("TC-65");
-				selectAgency("RUTH");
+			//	selectAgency("RUTH");
 				//gotoPatientGrid();
 			//	addPatientinPatientGrid(data);
 				int intrandNum = generateRandonNumber();
-				String siteNickName = data.get("siteNickName") + "_"
-						+ Integer.toString(intrandNum);
+			
 				String patientFirstName = data.get("patientFirstName") + "_"
 						+ Integer.toString(intrandNum);
-				String patientLastName = data.get("patientLastName") + "_"
-						+ Integer.toString(intrandNum);
+			
 				setPatientInfo(data, patientFirstName);
 				setPatientDemographicsInfo(data);
 				setRefferalInfo(data);
@@ -154,7 +152,6 @@ public class Patient extends PatientLib {
 			e.printStackTrace();
 		}
 	}
-	
 	@DataProvider
 	public Object[][] getTestDataFor_TestUpdatePatient() {
 		return TestUtil.getData("TestUpdatePatient", TestData, "Patient");
@@ -167,12 +164,10 @@ public class Patient extends PatientLib {
 
 			if (data.get("RunMode").equals("Y")) {
 				this.reporter.initTestCaseDescription("TC-66");
-				selectAgency("RUTH");
+				//selectAgency("RUTH");
 			int intrandNum = generateRandonNumber();
 				
 				String patientFirstName = data.get("patientFirstName") + "_"
-						+ Integer.toString(intrandNum);
-				String patientLastName = data.get("patientLastName") + "_"
 						+ Integer.toString(intrandNum);
 				
 				setPatientInfo(data, patientFirstName);
@@ -221,7 +216,7 @@ public class Patient extends PatientLib {
 				try {
 
 					this.reporter.initTestCaseDescription("SQA-91");	
-				//	selectAgency("RUTH");
+				//	//selectAgency("RUTH");
 
 					int randNum = generateRandonNumber();
 					String strPatientFirstName = data.get("patientFirstName")+"_"+Integer.toString(randNum);
@@ -230,6 +225,10 @@ public class Patient extends PatientLib {
 					setDemographicsInfo(data);
 					setRefferalInfo(data);
 					setBasicInfo(data);
+					
+					/*clickOnPatientInfoIcon();
+					openPatientInfo(data, "Gallop_FN_6654");
+					*/
 					setPhysicianInfo(data);
 					setConcernsInfo(data);
 					setNotesInfo(data);
@@ -275,7 +274,7 @@ public class Patient extends PatientLib {
 				try {
 
 					this.reporter.initTestCaseDescription("SQA-92");	
-					//selectAgency("RUTH");
+					////selectAgency("RUTH");
 
 					int randNum = generateRandonNumber();
 					String strPatientFirstName = data.get("patientFirstName")+"_"+Integer.toString(randNum);
@@ -316,7 +315,7 @@ public class Patient extends PatientLib {
 				try {
 
 					this.reporter.initTestCaseDescription("SQA-93");	
-					//selectAgency("RUTH");
+					////selectAgency("RUTH");
 
 					int randNum = generateRandonNumber();
 					String strPatientFirstName = data.get("patientFirstName")+"_"+Integer.toString(randNum);
@@ -341,8 +340,10 @@ public class Patient extends PatientLib {
 					goToHistoryTab();
 					setPrimaryInsuranceInHistoryTab(data, data.get("priInsurance"));
 					setSecondaryInsuranceInHistoryTab(data, data.get("secInsurance"));
-				
-				//	openPatientInfo(data, "Gallop_FN_7503");
+					
+					/*clickOnPatientInfoIcon();
+					openPatientInfo(data, "Gallop_FN_10252");*/
+					
 					goToInsuranceTab();
 					goToElectionsForInsurer(data.get("priInsurance"));
 					click_AttendingPhysician_priInsurer();
@@ -378,7 +379,7 @@ public class Patient extends PatientLib {
 				try {
 
 					this.reporter.initTestCaseDescription("SQA-94");	
-					//selectAgency("RUTH");
+					////selectAgency("RUTH");
 
 					int randNum = generateRandonNumber();
 					String strPatientFirstName = data.get("patientFirstName")+"_"+Integer.toString(randNum);
@@ -421,7 +422,7 @@ public class Patient extends PatientLib {
 				try {
 
 					this.reporter.initTestCaseDescription("SQA-70");	
-					//selectAgency("RUTH");
+					////selectAgency("RUTH");
 
 					int randNum = generateRandonNumber();
 					String strPatientFirstName = data.get("patientFirstName")+"_"+Integer.toString(randNum);
@@ -430,6 +431,10 @@ public class Patient extends PatientLib {
 					setDemographicsInfo(data);
 					setRefferalInfo(data);
 					setBasicInfo(data);
+					
+					//clickOnPatientInfoIcon();
+					//openPatientInfo(data, "Gallop_FN_2806");
+				
 					setPhysicianInfo(data);
 					setConcernsInfo(data);
 					setNotesInfo(data);
@@ -462,13 +467,13 @@ public class Patient extends PatientLib {
 					{
 
 						this.reporter.initTestCaseDescription("SQA-67");	
-						//selectAgency("RUTH");
+						////selectAgency("RUTH");
 						int randNum = generateRandonNumber();
 
 						String strPatientFirstName = data.get("patientFirstName") + "_"
 								+ Integer.toString(randNum);
 						//clickOnPatientInfoIcon();
-						//openPatientInfo(data, "Gallop_FN_2527");
+						//openPatientInfo(data, "Gallop_FN_10285");
 						setPatientInfo(data, strPatientFirstName);
 						setDemographicsInfo(data);
 						setRefferalInfo(data);
@@ -482,7 +487,9 @@ public class Patient extends PatientLib {
 						clickOnAddInsuranceButton();
 						goToHistoryTab();
 						setPrimaryInsuranceInHistoryTab(data, data.get("priInsurance"));				
+						
 						goToInsuranceTab();
+						
 						goToElectionsForInsurer(data.get("priInsurance"));
 						click_AttendingPhysician_priInsurer();
 						fillVerbalAndSignatureDates_attendingPhysician(data);
@@ -554,7 +561,7 @@ public class Patient extends PatientLib {
 			try {
 
 				this.reporter.initTestCaseDescription("SQA-172");	
-				selectAgency("RUTH");
+				//selectAgency("RUTH");
 
 				int randNum = generateRandonNumber();
 				String patientFirstName = data.get("patientFirstName")+"_"+Integer.toString(randNum);
@@ -603,7 +610,7 @@ public class Patient extends PatientLib {
 		   try {
 
 		    this.reporter.initTestCaseDescription("SQA-64"); 
-		    selectAgency("RUTH");
+		    //selectAgency("RUTH");
 		    clickOnleftHandBar();
 		    OpenAndVerifyPatientDrawer();
 		    closePatientDrawer();

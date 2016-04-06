@@ -40,7 +40,7 @@ public class Home extends HomeLib {
 			{
 
 				this.reporter.initTestCaseDescription("SQA-67");	
-				selectAgency("Sam_3881");
+				//selectAgency("Sam_3881");
 				int intRandNum = generateRandonNumber();
 				String strSiteNickName = data.get("siteNickName") + "_"
 						+ Integer.toString(intRandNum);
@@ -70,7 +70,7 @@ public class Home extends HomeLib {
 			if (data.get("RunMode").equals("Y"))
 			{
 				this.reporter.initTestCaseDescription("SQA-68");	
-				selectAgency("RUTH");
+				//selectAgency("RUTH");
 				dragAndDropWigets();
 
 			} }
@@ -94,12 +94,12 @@ public class Home extends HomeLib {
 			if (data.get("RunMode").equals("Y"))
 			{
 				this.reporter.initTestCaseDescription("SQA-69");	
-				selectAgency("RUTH");
+				//selectAgency("RUTH");
 				dragAndDropMedicationsWidget();
 				medicationUpload(data);
 				logOut();
-				login("AdminUser ");
-				selectAgency("RUTH");
+				login("AdminUser");
+				////selectAgency("RUTH");
 				dragAndDropMedicationsWidget();
 				medicationsWidgetDetails();
 
@@ -125,12 +125,12 @@ public class Home extends HomeLib {
 			if (data.get("RunMode").equals("Y"))
 			{
 				this.reporter.initTestCaseDescription("SQA-168");	
-				selectAgency("RUTH");
+				//selectAgency("RUTH");
 				closePayerTypeWidgetStart();
 
 				int intRandNum = generateRandonNumber();
 				String personName = data.get("patientFirstName")+"_"+Integer.toString(intRandNum);
-				setDataFordragAndDropPatients(data, personName);
+				//setDataFordragAndDropPatients(data, personName);
 				dragAndDropPatientsbyPayerTypeWidget();
 				PatientsbyPayerTypeWidgetDetails(personName);
 				verifyPayerTypeWidgetDetails();
@@ -157,7 +157,7 @@ public class Home extends HomeLib {
 			if (data.get("RunMode").equals("Y"))
 			{
 				this.reporter.initTestCaseDescription("SQA-131");	
-				selectAgency("RUTH");
+				//selectAgency("RUTH");
 				System.out.println(data.get("ID"));
 
 				claimManagementFlow();
@@ -184,7 +184,8 @@ public class Home extends HomeLib {
 				String Pyear = data.get("year");
 				claimPostedDateSearchValidations(Pdatexpath, Pmonth, Pdate, Pyear);
 
-				String Statusxpath = "(.//div[@class='gwt-TabLayoutPanelContentContainer']/div[2]//table[@class='hb-flex-grid-top-level-table hb-table-spacing']//tr[2]//*[@id='gwt-debug-claimStatus']/option[1])";
+				//String Statusxpath = "(.//div[@class='gwt-TabLayoutPanelContentContainer']/div[2]//table[@class='hb-flex-grid-top-level-table hb-table-spacing']//tr[2]//*[@id='gwt-debug-claimStatus']/option[1])";
+				String Statusxpath = "(.//*[@class='hb-uneditable-text hb-patient-hdr-info-header-data-underline'])";
 				String Status = data.get("Status");				
 				claimStatusSearchValidations(Statusxpath, Status);
 
@@ -214,7 +215,7 @@ public class Home extends HomeLib {
 			if (data.get("RunMode").equals("Y"))
 			{
 				this.reporter.initTestCaseDescription("SQA-132");	
-				selectAgency("RUTH");
+				//selectAgency("RUTH");
 
 				claimManagementNeoTabFlow();
 
@@ -271,7 +272,7 @@ public class Home extends HomeLib {
 			if (data.get("RunMode").equals("Y"))
 			{
 				this.reporter.initTestCaseDescription("SQA-173");	
-				selectAgency("RUTH");
+				//selectAgency("RUTH");
 
 				String AllergyName = data.get("AllergyName");
 				verifyPatientInfo(data, AllergyName);
@@ -300,7 +301,7 @@ public class Home extends HomeLib {
 			if (data.get("RunMode").equals("Y"))
 			{
 				this.reporter.initTestCaseDescription("SQA-174");	
-				selectAgency("RUTH");
+				//selectAgency("RUTH");
 
 				String AllergyName = data.get("AllergyName");
 				verifyRevenueDetailsInfo(data, AllergyName);
@@ -327,8 +328,8 @@ public class Home extends HomeLib {
 
 			if (data.get("RunMode").equals("Y"))
 			{
-				this.reporter.initTestCaseDescription("SQA-174");	
-				selectAgency("RUTH");
+				this.reporter.initTestCaseDescription("SQA-175");	
+				//selectAgency("RUTH");
 
 				verifybillingReportInfo(data);
 				verifyWidgetDetailsFlow(data);

@@ -178,6 +178,9 @@ public class HomePage extends ActionEngine {
 	public static By RevenueDetailsTickMark;
 	public static By BillingTickMark;
 	public static By UserName;
+	public static By verifyDate1;
+	public static By verifyDate2;
+	public static By SiteName;
 
 	//public static ConfiguratorSupport configProps = new ConfiguratorSupport("config.properties");
 
@@ -327,13 +330,12 @@ public class HomePage extends ActionEngine {
 		MainGridClaim = By.xpath("//div[@class='gwt-TabLayoutPanelContentContainer']/div[3]//table[@class='hb-flex-grid-top-level-table hb-table-spacing']/tbody/tr[2]//table//tr[1]/td[8]/input");
 		MainGridDateRange = By.xpath("//div[@class='gwt-TabLayoutPanelContentContainer']/div[3]//table[@class='hb-flex-grid-top-level-table hb-table-spacing']/tbody/tr[2]//table//tr[1]/td[6]/div");
 		MainGridStatus = By.xpath("//div[@class='gwt-TabLayoutPanelContentContainer']/div[3]//table[@class='hb-flex-grid-top-level-table hb-table-spacing']/tbody/tr[2]//table//tr[1]/td[13]/div");
-		selectMonth = By.xpath("//*[text()='Dec - 2015']");
-		verifyDate = By.xpath("//*[text()='(12/01/15 - 12/31/15)']");
-		verifyDateRange = By.xpath("(//*[text()='12/01/15 - 12/31/15'])[1]");
-		verifyDateRangeNextPatient = By.xpath("(//*[text()='12/01/15 - 12/31/15'])[2]");
+		selectMonth = By.xpath("//*[text()='Jan - 2015']");
+		verifyDate1 = By.xpath("(//tr[@class='prebill-detail-grid-header-row']/following-sibling::tr[2]/td[2])[1]");
+		//verifyDate2 = By.xpath("//div[text()='DOB:']/../following-sibling::td[2]/div")[2];
+		verifyDateRange = By.xpath("//div[@class='hb-float-title hb-center-align']");
+		verifyDateRangeNextPatient = By.xpath("(//div[text()='Claim Status:'])[2]");
 		BillingWidgetsaveButton = By.xpath("//table[@class='hb-float-icons hb-float-btn-z']//tr/td[6]//img[@class='gwt-Image hb-widget-header-btns']"); 
-
-
 
 		//03212016
 		GenerateClaims = By.xpath("//button[text()='Generate Claims']");
@@ -351,13 +353,7 @@ public class HomePage extends ActionEngine {
 		BillingTickMark = By.xpath("(//*[@id='gwt-debug-float-save-button'])[2]");
 		
 		UserName = By.xpath("//div[@class='hb-top-toolbar-login-info-username']");
-
-
-
-
-
-
-
+		SiteName = By.xpath("//div[@class='hb-top-toolbar-login-info-currentSite']");
 
 
 	}

@@ -34,14 +34,14 @@ public class Login extends MummsLib {
 						"Whether Landing page is homePage");
 				doLogout();
 
-				System.out.println("hospice user login ....");
+				/*System.out.println("hospice user login ....");
 				//doLogin("a.muchakhandi-anilgallop@mumms.com", "1!Qa1!Qa");
 				loginAsUserRole("HospiceUser");
 				checkPageIsReadyUsingJavaScript();
 				System.out.println("Url - " + Driver.getCurrentUrl());	
 				assertTrue(StringUtils.containsIgnoreCase(Driver.getCurrentUrl(), "HomePage"),
 						"Whether Landing page is homePage");
-				doLogout();
+				doLogout();*/
 
 			}
 		} catch (Exception e) {

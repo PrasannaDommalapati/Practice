@@ -16,7 +16,7 @@ public class ReportsPage extends ActionEngine {
 	public static By EndDateYear;
 	public static By GenerateReport;
 	public static By MedlineReportHeader;
-	
+
 	public static By MedlineFileType;
 	public static By MedlineFileDownload;
 	public static By MedlineFirstName;
@@ -42,8 +42,8 @@ public class ReportsPage extends ActionEngine {
 	public static By CAHPSLink;
 	public static By CAHPSMonth;
 	public static By CAHPSYear;
-	
-	//03222016
+
+	// 03222016
 	public static By CAHPHeader;
 	public static By CAHPProvideName;
 	public static By CAHPBranch;
@@ -53,7 +53,7 @@ public class ReportsPage extends ActionEngine {
 	public static By CAHPSampleMonth;
 	public static By CAHPSampleYear;
 	public static By CAHPTotalCharges;
-	
+
 	public static By newReportButton;
 	public static By accountsAndContactsNode;
 	public static By accountsChildNode;
@@ -125,12 +125,10 @@ public class ReportsPage extends ActionEngine {
 	public static By reportingDateInCreditClaimBalanceReport;
 	public static By teamInTeamMeeting;
 
-	
-	
 	public void Reports_Page()
 
 	{
-		 
+
 		ReportIcon = By.xpath(".//*[@id='gwt-debug-reports-module-button']/tbody/tr[1]/td/div/img");
 		ReportTab = By.xpath(".//*[@value='New Report...']");
 		MedlineReport = By.xpath("//div[text()='Medline Report']");
@@ -141,7 +139,8 @@ public class ReportsPage extends ActionEngine {
 		EndDateDay = By.xpath(".//*[@id='gwt-debug-p_to_date']//select[contains(@class,'day')]");
 		EndDateYear = By.xpath(".//*[@id='gwt-debug-p_to_date']//select[contains(@class,'year')]");
 		GenerateReport = By.xpath("//button[text()='GENERATE REPORT']");
-		MedlineReportHeader = By.xpath("//div[@class='draggable-label hb-mouse-over-dragable']//div[text()='Medline Report']");
+		MedlineReportHeader = By
+				.xpath("//div[@class='draggable-label hb-mouse-over-dragable']//div[text()='Medline Report']");
 		MedlineFileType = By.xpath("//label[text()='Export As:']");
 		MedlineFileDownload = By.xpath("//button[text()='Download']");
 		MedlineFirstName = By.xpath("//span[text()='First Name']");
@@ -165,29 +164,29 @@ public class ReportsPage extends ActionEngine {
 		MedlinePhone = By.xpath("//span[text()='Phone']");
 		MedlineNotes = By.xpath("//span[text()='Notes']");
 		CAHPSLink = By.xpath("//div[@class='GKGO0M2BPK']//div[text()='CAHPS (DSS)']");
-		CAHPSMonth = By.xpath("//div[@class='hb-formbox-header hb-vertically-aligned']/following-sibling::table//tr[1]/td[2]/select");
-		CAHPSYear = By.xpath("//div[@class='hb-formbox-header hb-vertically-aligned']/following-sibling::table//tr[2]/td[2]/select");
-		//GenerateReport = By.xpath("//button[text()='GENERATE REPORT']");
-		
-		
+		CAHPSMonth = By.xpath(
+				"//div[@class='hb-formbox-header hb-vertically-aligned']/following-sibling::table//tr[1]/td[2]/select");
+		CAHPSYear = By.xpath(
+				"//div[@class='hb-formbox-header hb-vertically-aligned']/following-sibling::table//tr[2]/td[2]/select");
+		// GenerateReport = By.xpath("//button[text()='GENERATE REPORT']");
+
 		CAHPHeader = By.xpath("//div[@class='draggable-label hb-mouse-over-dragable']//div[text()='CAHPS (DSS)']");
 		CAHPProvideName = By.xpath("//span[text()='ProviderName']");
 		CAHPBranch = By.xpath("//span[text()='Branch']");
 		CAHPProvideID = By.xpath("//span[text()='ProviderID']");
 		CAHPNPI = By.xpath("//span[text()='NPI']");
 		CAHPFacilityName = By.xpath("//span[text()='FacilityName']");
-		CAHPSampleMonth= By.xpath("//span[text()='SampleMonth']");
+		CAHPSampleMonth = By.xpath("//span[text()='SampleMonth']");
 		CAHPSampleYear = By.xpath("//span[text()='SampleYear']");
-		CAHPTotalCharges=  By.xpath("//span[text()='TotalLiveDischarges']");
-		
-		
+		CAHPTotalCharges = By.xpath("//span[text()='TotalLiveDischarges']");
+
 		newReportButton = By.xpath(".//*[@value='New Report...']");
 		accountsAndContactsNode = By.xpath(".//span[text()='Accounts & Contacts']");
 		accountsChildNode = By.xpath(".//span[text()='Accounts']");
 		createButton = By.xpath(".//input[@value='Create']");
 		/*
-		 * showDropDown = By.xpath(".//*[@name='scope']"); dateFieldDropDown
-		 * = By.xpath(".//*[@name='dateColumn']");
+		 * showDropDown = By.xpath(".//*[@name='scope']"); dateFieldDropDown =
+		 * By.xpath(".//*[@name='dateColumn']");
 		 */
 		fromDate = By.xpath(".//*[@name='startDate']");
 		addButton = By.xpath(".//button[text()='Add']");
@@ -200,8 +199,6 @@ public class ReportsPage extends ActionEngine {
 		allAccountsXpath = By.xpath(".//*[text()='All accounts']");
 		add_FilterOk = By.xpath(".//button[text()='OK']");
 		runReport = By.xpath(".//button[text()='Run Report']");
-
-		// 01-03-2016
 
 		visitReport = By.xpath("//div[text()='Visit Report']");
 		monthEndARReconciliation = By.xpath(
@@ -223,12 +220,9 @@ public class ReportsPage extends ActionEngine {
 
 		fromDate_month = By
 				.xpath("//div[@id='gwt-debug-p_from_date']//select[@class='month hb-date-dropdown-novalue']");
-		fromDate_day = By
-				.xpath("//div[@id='gwt-debug-p_from_date']//select[@class='day hb-date-dropdown-novalue']");
-		fromDate_year = By
-				.xpath("//div[@id='gwt-debug-p_from_date']//select[@class='year hb-date-dropdown-novalue']");
-		toDate_month = By
-				.xpath("//div[@id='gwt-debug-p_to_date']//select[@class='month hb-date-dropdown-novalue']");
+		fromDate_day = By.xpath("//div[@id='gwt-debug-p_from_date']//select[@class='day hb-date-dropdown-novalue']");
+		fromDate_year = By.xpath("//div[@id='gwt-debug-p_from_date']//select[@class='year hb-date-dropdown-novalue']");
+		toDate_month = By.xpath("//div[@id='gwt-debug-p_to_date']//select[@class='month hb-date-dropdown-novalue']");
 		toDate_day = By.xpath("//div[@id='gwt-debug-p_to_date']//select[@class='day hb-date-dropdown-novalue']");
 		toDate_year = By.xpath("//div[@id='gwt-debug-p_to_date']//select[@class='year hb-date-dropdown-novalue']");
 		visitType = By.xpath("//select[@id='gwt-debug-p_visit_type']");
@@ -274,8 +268,6 @@ public class ReportsPage extends ActionEngine {
 
 		reportingDateInCreditClaimBalanceReport = By.xpath("//span[contains(text(),'REPORTING DATE')]");
 		teamInTeamMeeting = By.xpath("//select[@id='gwt-debug-p_teampersonlist_id']");
-		
-		
-		
+
 	}
 }
