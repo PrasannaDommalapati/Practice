@@ -416,6 +416,8 @@ public class AdminPage {
 	public static By MaxDays;
 	public static By Desc;
 
+	public static By RoomBoardAdd;
+	
 	public void Admin_Page()
 
 	{
@@ -805,6 +807,11 @@ public class AdminPage {
 		MaxDays = By.xpath("//div[text()='Max Days Coverage:']/../following-sibling::td/input");
 		Desc = By.xpath("//div[text()='Description:']/../following-sibling::td/input");
 
+		
+		//04062016
+		RoomBoardAdd = By.xpath("//img[@class='gwt-Image hb-flex-add-button hb-mouse-over-clickable']");
+		MedicareAddIcon = By.xpath("//div[@id='gwt-debug-add-button-search-bar']//img[contains(@class,'hb-flex-add-button')][contains(@class,'hb-mouse-over-clickable')]");
+		
 	}
 
 }

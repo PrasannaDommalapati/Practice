@@ -1648,7 +1648,10 @@ public class AdminLib extends MummsLib {
 			selectByValue(AdminPage.RatesDetailsDay, "20", "Rate Details Day");
 			selectByValue(AdminPage.RatesDetailsYear, "2015", "Rate Details Year");
 			sleep(sleep);
-			click(AdminPage.RatesDetailsAdd, "Add Record in Rate Details");
+			//click(AdminPage.RatesDetailsAdd, "Add Record in Rate Details");
+			
+			click(AdminPage.RoomBoardAdd, "Add Record in Rate Details");
+			sleep(2000);
 			type(AdminPage.RatesDetailsGroup,gstrGroupName , "Group Field in Rate Details");
 			isElementPresent(AdminPage.RateDetailsRecordAssert, "Rate Details Record", true);
 			sleep(sleep);
@@ -1716,7 +1719,9 @@ public class AdminLib extends MummsLib {
 			sleep(sleep);
 			type(AdminPage.RatesDetailsTierName,TierName,"Tier Name in Rate Details");
 			sleep(sleep);
-			click(AdminPage.RatesDetailsAdd, "Add Record in Rate Details");
+			//click(AdminPage.RatesDetailsAdd, "Add Record in Rate Details");
+			
+			click(AdminPage.RoomBoardAdd, "Add Record in Rate Details");
 			sleep(sleep);
 			type(AdminPage.RatesDetailsGroup,gstrGroupName , "Group Field in Rate Details");
 			sleep(sleep);

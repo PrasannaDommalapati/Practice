@@ -1112,7 +1112,7 @@ public class Admin extends AdminLib {
 				setPatientInfo(data, personName);
 //				setDemographicsInfo(data);
 //				setBasicInfo(data);
-//				setRefferalInfo(data);
+				setRefferalInfo(data);
 				goToDiagnosisTab();
 				setDiagnosisInfo(data, "C7A020", "001.0");
 				
@@ -1187,7 +1187,7 @@ public class Admin extends AdminLib {
 
 			    int randNum = generateRandonNumber();
 				String personName = data.get("PersonsFirstName")+"_"+Integer.toString(randNum);
-				String Email = data.get("EmailId")+ "+" + strTime + "@mumms.com";
+				String Email = data.get("EmailId")+strTime+"@mumms.com";
 				createNewPerson(data, personName, Email);
 				
 				String name = windowname();

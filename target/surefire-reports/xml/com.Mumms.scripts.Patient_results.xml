@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="firefoxWindowsLocal"
-           tests="1"
+<testsuite name="chromeWindowsLocal"
+           tests="2"
            failures="0"
            errors="0"
            skipped="0"
-           time="38.541">
+           time="1150.801">
   <properties />
   
   
-            <testcase name="testSearchPatientInfo" time="38.541" classname="com.Mumms.scripts.Patient" />
+            <testcase name="verifyintractiongrid" time="668.186" classname="com.Mumms.scripts.Patient" />
+                <testcase name="verifyUnadmitFunctionality" time="482.615" classname="com.Mumms.scripts.Patient" />
       
 </testsuite>

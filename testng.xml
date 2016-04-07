@@ -1,31 +1,57 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE suite SYSTEM 'http://testng.org/testng-1.0.dtd'>
-<suite name='Mumms Automation test suite' parallel='tests' thread-count='15'>
+<suite name='Mumms Automation test suite' parallel='tests'
+	thread-count='15'>
 
-<parameter name='suiteExecuted' value='Regression' />
-<parameter name='executionType' value='Sequential' />
-<listeners>
-	<listener class-name="org.uncommons.reportng.HTMLReporter" />
-	<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
-	<listener class-name="com.automation.utilities.AssignTestPriorityTransformer" />
-</listeners>
-	<test name="firefoxWindowsLocal" preserve-order='false'>
-			<parameter name="browser" value="firefox"></parameter>
-			<parameter name="automationName" value="selenium"></parameter>
-			<parameter name="browserVersion" value="36.0"></parameter>
-			<parameter name="platformName" value="windows 7"></parameter>
-			<parameter name="environment" value="local"></parameter>
-		 <classes>
+	<parameter name='suiteExecuted' value='Regression' />
+	<parameter name='executionType' value='Sequential' />
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="com.automation.utilities.AssignTestPriorityTransformer" />
+	</listeners>
+	<test name="chromeWindowsLocal" preserve-order='false'>
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="automationName" value="selenium"></parameter>
+		<parameter name="browserVersion" value="46.0"></parameter>
+		<parameter name="platformName" value="windows 7"></parameter>
+		<parameter name="environment" value="local"></parameter>
+		<classes>
+			<class name="com.Mumms.scripts.Admin">
+				<methods>
+					<parameter name="userrole" value="AdminUser"></parameter>
+					<include name="verifyingFacilities" />
+					<include name="addRecordRoomBoardRateTiers" />
+					<include name="deleteRecordRoomBoardRateTiers" />
+					<include name="verifyNewPersonsDetails" />
+
+				</methods>
+			</class>
+			<!-- <class name="com.Mumms.scripts.Patient"> <methods> <parameter name="userrole" 
+				value="AdminUser"></parameter> <include name="verifyDemographicsTab" /> <include 
+				name="TestAddPatient" /> <include name="TestUpdatePatient" /> <include name="verifyDiagnosisTab" 
+				/> <include name="verifyAllergiesTab" /> <include name="TestValidateElectionGrid" 
+				/> <include name="TestCareGiversTab" /> <include name="TestValidateInsuranceTab" 
+				/> <include name="TestValidateHistoryTab" /> <include name="TestValidatePatientHeader" 
+				/> <include name="verifyUnadmitFunctionality" /> <include name="verifyintractiongrid" 
+				/> <include name="verifyPatientDrawerFunctionality" /> </methods> </class> -->
+			<!-- <class name="com.Mumms.scripts.Home"> <methods> <parameter name="userrole" 
+				value="AdminUser"></parameter> <include name="verifyWidgetsfunctionslity" 
+				/> <include name="verifyMedicationsWidget" /> <include name="verifyPatientsbyPayerType" 
+				/> <include name="claimsManagement" /> <include name="claimsManagementNoesTab" 
+				/> <include name="verifyBillingWidget" /> </methods> </class> -->
 			<class name="com.Mumms.scripts.Reports">
 				<methods>
-			<parameter name="userrole" value="ReportsUser"></parameter>
-					 <include name="medlineReport" />
-					 <include name="testGenerateMonthlyRevenueReport" />
-					 <include name="testGenerateMonthEndARReconciliationReport" />
-					 <include name="testGenerateVisitReport" />
+					<parameter name="userrole" value="ReportsUser"></parameter>
+					<include name="testGenerateCreditClaimBalanceReport" />
+					<include name="testGenerateReferralsbyReferralSourceReport" />
+					<include name="medlineReport" />
+					<include name="testGenerateTeamMeetingReport" />
+					<include name="testGeneratePaymentsAndAdjustmentsReport" />
+					<include name="testGenerateMonthlyRevenueReport" />
 				</methods>
-			 </class>
-		 </classes>
+			</class>
+		</classes>
 	</test>
 
 </suite>

@@ -1,43 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="15" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Mumms Automation test suite]" parallel="tests">
-  <parameter name="environment" value="local"/>
-  <parameter name="suiteExecuted" value="Regression"/>
-  <parameter name="executionType" value="Sequential"/>
-  <parameter name="browser" value="chrome"/>
-  <parameter name="browserVersion" value="46.0"/>
   <parameter name="automationName" value="selenium"/>
+  <parameter name="browserVersion" value="46.0"/>
+  <parameter name="environment" value="local"/>
   <parameter name="platformName" value="windows 7"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="executionType" value="Sequential"/>
+  <parameter name="suiteExecuted" value="Regression"/>
   <listeners>
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
     <listener class-name="com.automation.utilities.AssignTestPriorityTransformer"/>
   </listeners>
   <test name="chromeWindowsLocal(failed)" parallel="tests">
-    <parameter name="environment" value="local"/>
-    <parameter name="browser" value="chrome"/>
-    <parameter name="browserVersion" value="46.0"/>
     <parameter name="automationName" value="selenium"/>
+    <parameter name="environment" value="local"/>
+    <parameter name="browserVersion" value="46.0"/>
     <parameter name="platformName" value="windows 7"/>
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.Mumms.scripts.Reports">
-        <parameter name="userrole" value="HospiceUser"/>
-        <methods>
-          <include name="afterTest"/>
-          <include name="verifyCAHPSReport"/>
-          <include name="beforeTest"/>
-        </methods>
-      </class> <!-- com.Mumms.scripts.Reports -->
       <class name="com.Mumms.scripts.Admin">
-        <parameter name="userrole" value="HospiceUser"/>
+        <parameter name="userrole" value="AdminUser "/>
         <methods>
-          <include name="afterTest"/>
+          <include name="sendActivationEmail"/>
+          <include name="beforeMethod"/>
+          <include name="verifyNewPersonsDetails"/>
+          <include name="verifyDiagnosisCodes"/>
+          <include name="login"/>
           <include name="beforeSuite"/>
           <include name="beforeTest"/>
-          <include name="addNewRole"/>
-          <include name="updateAdjustmentReasons"/>
+          <include name="afterTest"/>
         </methods>
       </class> <!-- com.Mumms.scripts.Admin -->
+      <class name="com.Mumms.scripts.Patient">
+        <parameter name="userrole" value="AdminUser "/>
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="login"/>
+          <include name="logOut"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- com.Mumms.scripts.Patient -->
     </classes>
   </test> <!-- chromeWindowsLocal(failed) -->
 </suite> <!-- Failed suite [Mumms Automation test suite] -->

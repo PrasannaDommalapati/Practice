@@ -31,7 +31,7 @@ public class ReportsLib extends MummsLib {
 			 * wait.until(ExpectedConditions.elementToBeClickable(ReportsPage.
 			 * BeginDateDay)); } catch (Exception e) { e.printStackTrace(); }
 			 */
-			// sleep(60000);
+			sleep(10000);
 
 			selectByVisibleText(ReportsPage.BeginDateMonth, data.get("BeginDateMonth"), "from drop down");
 			selectByVisibleText(ReportsPage.BeginDateDay, data.get("BeginDateDay"), "from drop down");

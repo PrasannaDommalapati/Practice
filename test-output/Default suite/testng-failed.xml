@@ -3,11 +3,50 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.Mumms.scripts.Reports">
+      <class name="com.Mumms.scripts.Admin">
         <methods>
-          <include name="testVisitReport"/>
+          <include name="addIDGTeams"/>
+          <include name="sendActivationEmail"/>
+          <include name="addInsuranceCarrier"/>
+          <include name="addHospiceElection"/>
+          <include name="saveHospiceElection"/>
+          <include name="configureRequiredFields"/>
+          <include name="insuranceCarrierSearch"/>
+          <include name="addRecordRoomBoardRateTiers"/>
+          <include name="addNewReligion"/>
+          <include name="verifyDiagnosisCodes"/>
+          <include name="wrongPasswordMedicare"/>
+          <include name="addNewChurch"/>
+          <include name="deleteCreatedProgram"/>
+          <include name="searchPhysicianGrid"/>
+          <include name="verifyReferalSourceType"/>
+          <include name="deleteMedicare"/>
+          <include name="verifyRoleAssignments"/>
+          <include name="updateAdjustmentReasons"/>
+          <include name="verifyingFacilities"/>
+          <include name="addPhysicianServicesRecord"/>
+          <include name="addNewReasons"/>
+          <include name="updateExistingChurch"/>
+          <include name="updatePhysicianServicesRecord"/>
+          <include name="addNewProgram"/>
+          <include name="addMedicareIntermediary"/>
+          <include name="roleAssignmentsDragVerify"/>
+          <include name="verifyPersonsDetails"/>
+          <include name="editCreatedRole"/>
+          <include name="verifyRegionsDetails"/>
+          <include name="insuranceCarrierUpdate"/>
+          <include name="testCreatePatientInAdminCreatedSite"/>
+          <include name="verifyDischargecodes"/>
+          <include name="verifyNewPersonsDetails"/>
+          <include name="deleteRecordRoomBoardRateTiers"/>
+          <include name="verifyOfficeDetails"/>
+          <include name="verifyingPhysicianGrid"/>
+          <include name="deleteCreatedReligion"/>
+          <include name="testUpdateSite"/>
+          <include name="verifyReferralRejectionReasons"/>
+          <include name="addNewRole"/>
         </methods>
-      </class> <!-- com.Mumms.scripts.Reports -->
+      </class> <!-- com.Mumms.scripts.Admin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

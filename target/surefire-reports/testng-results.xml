@@ -1,17 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="3" failed="0" total="3" passed="0">
+<testng-results skipped="0" failed="0" total="9" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="Mumms Automation test suite" duration-ms="47793" started-at="2016-03-28T06:13:07Z" finished-at="2016-03-28T06:13:55Z">
+  <suite name="Mumms Automation test suite" duration-ms="2174985" started-at="2016-04-01T07:20:26Z" finished-at="2016-04-01T07:56:41Z">
     <groups>
     </groups>
-    <test name="chromeWindowsLocal" duration-ms="47793" started-at="2016-03-28T06:13:07Z" finished-at="2016-03-28T06:13:55Z">
-      <class name="com.Mumms.scripts.Admin">
-        <test-method status="PASS" signature="beforeSuite(org.testng.ITestContext, java.lang.String, java.lang.String)[pri:0, instance:com.Mumms.scripts.Admin@49c7b90e]" name="beforeSuite" is-config="true" duration-ms="103" started-at="2016-03-28T11:43:07Z" finished-at="2016-03-28T11:43:07Z">
+    <test name="firefoxWindowsLocal" duration-ms="2174985" started-at="2016-04-01T07:20:26Z" finished-at="2016-04-01T07:56:41Z">
+      <class name="com.Mumms.scripts.Login">
+        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.Mumms.scripts.Login@30054e85]" name="beforeTest" is-config="true" duration-ms="33308" started-at="2016-04-01T12:50:26Z" finished-at="2016-04-01T12:50:59Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@4659191b]]>
+                <![CDATA[selenium]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[36.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[windows 7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Mumms.scripts.Login@30054e85]" name="beforeMethod" is-config="true" duration-ms="12" started-at="2016-04-01T12:50:59Z" finished-at="2016-04-01T12:50:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.Mumms.scripts.Login.loginWithDiffferentCredentials(java.util.Hashtable) throws java.lang.Throwable]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="loginWithDiffferentCredentials(java.util.Hashtable)[pri:0, instance:com.Mumms.scripts.Login@30054e85]" name="loginWithDiffferentCredentials" duration-ms="100914" started-at="2016-04-01T12:50:59Z" data-provider="getTestDataFor_loginWithDiffferentCredentials" finished-at="2016-04-01T12:52:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{RunMode=Y}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithDiffferentCredentials -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Mumms.scripts.Login@30054e85]" name="afterMethod" is-config="true" duration-ms="18" started-at="2016-04-01T12:52:40Z" finished-at="2016-04-01T12:52:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest(java.lang.String)[pri:0, instance:com.Mumms.scripts.Login@30054e85]" name="afterTest" is-config="true" duration-ms="1039" started-at="2016-04-01T12:52:40Z" finished-at="2016-04-01T12:52:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.Mumms.scripts.Login -->
+      <class name="com.Mumms.scripts.Home">
+        <test-method status="PASS" signature="beforeSuite(org.testng.ITestContext, java.lang.String, java.lang.String)[pri:0, instance:com.Mumms.scripts.Home@4e42d390]" name="beforeSuite" is-config="true" duration-ms="20" started-at="2016-04-01T12:50:26Z" finished-at="2016-04-01T12:50:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2d82bda8]]>
               </value>
             </param>
             <param index="1">
@@ -28,7 +98,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="FAIL" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.Mumms.scripts.Admin@49c7b90e]" name="beforeTest" is-config="true" duration-ms="0" started-at="2016-03-28T11:43:32Z" finished-at="2016-03-28T11:43:32Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.Mumms.scripts.Home@4e42d390]" name="beforeTest" is-config="true" duration-ms="29726" started-at="2016-04-01T12:52:41Z" finished-at="2016-04-01T12:53:11Z">
           <params>
             <param index="0">
               <value>
@@ -37,12 +107,12 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[46.0]]>
+                <![CDATA[36.0]]>
               </value>
             </param>
             <param index="3">
@@ -56,338 +126,349 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
-            <message>
-              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
-Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
-System info: host: 'HW1611', ip: '172.16.13.34', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
-Driver info: driver.version: RemoteWebDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
-Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
-System info: host: 'HW1611', ip: '172.16.13.34', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:158)
-	at com.automation.accelerators.TestEngineWeb.setWebDriverForLocal(TestEngineWeb.java:284)
-	at com.automation.accelerators.TestEngineWeb.beforeTest(TestEngineWeb.java:137)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:170)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:104)
-	at org.testng.TestRunner.privateRun(TestRunner.java:773)
-	at org.testng.TestRunner.run(TestRunner.java:623)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 10.29.8.11:4444 [/10.29.8.11] failed: Connection timed out: connect
-	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:314)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:186)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
-	... 25 more
-Caused by: java.net.ConnectException: Connection timed out: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:589)
-	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
-	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:117)
-	... 38 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="SKIP" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Mumms.scripts.Admin@49c7b90e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-03-28T11:43:55Z" finished-at="2016-03-28T11:43:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="login(java.lang.String)[pri:0, instance:com.Mumms.scripts.Admin@49c7b90e]" name="login" is-config="true" duration-ms="0" started-at="2016-03-28T11:43:55Z" finished-at="2016-03-28T11:43:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="SKIP" signature="addNewRole(java.util.Hashtable)[pri:0, instance:com.Mumms.scripts.Admin@49c7b90e]" name="addNewRole" duration-ms="0" started-at="2016-03-28T11:43:55Z" data-provider="getTestDataFor_addNewRole" finished-at="2016-03-28T11:43:55Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Mumms.scripts.Home@4e42d390]" name="beforeMethod" is-config="true" duration-ms="18" started-at="2016-04-01T12:53:11Z" finished-at="2016-04-01T12:53:11Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{PhoneRevCode=7890, RunMode=Y, HCPCSCode=1234, DirectRevCode=5678, RolesGroup=Mumms_Role, Role=Testing}]]>
+                <![CDATA[public void com.Mumms.scripts.Home.verifyWidgetsfunctionslity(java.util.Hashtable) throws java.lang.Throwable]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addNewRole -->
-        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:com.Mumms.scripts.Admin@49c7b90e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2016-03-28T11:43:55Z" finished-at="2016-03-28T11:43:55Z">
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:com.Mumms.scripts.Home@4e42d390]" name="login" is-config="true" duration-ms="67054" started-at="2016-04-01T12:53:11Z" finished-at="2016-04-01T12:54:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AdminUser]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="verifyWidgetsfunctionslity(java.util.Hashtable)[pri:0, instance:com.Mumms.scripts.Home@4e42d390]" name="verifyWidgetsfunctionslity" duration-ms="20890" started-at="2016-04-01T12:54:18Z" data-provider="getTestDataFor_verifyWidgetsfunctionslity" finished-at="2016-04-01T12:54:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{RunMode=Y}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWidgetsfunctionslity -->
+        <test-method status="PASS" signature="logOut()[pri:0, instance:com.Mumms.scripts.Home@4e42d390]" name="logOut" is-config="true" duration-ms="18151" started-at="2016-04-01T12:54:39Z" finished-at="2016-04-01T12:54:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Mumms.scripts.Home@4e42d390]" name="afterMethod" is-config="true" duration-ms="9" started-at="2016-04-01T12:54:57Z" finished-at="2016-04-01T12:54:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="SKIP" signature="logOut()[pri:0, instance:com.Mumms.scripts.Admin@49c7b90e]" name="logOut" is-config="true" duration-ms="0" started-at="2016-03-28T11:43:55Z" finished-at="2016-03-28T11:43:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOut -->
-        <test-method status="SKIP" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Mumms.scripts.Admin@49c7b90e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-03-28T11:43:55Z" finished-at="2016-03-28T11:43:55Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Mumms.scripts.Home@4e42d390]" name="beforeMethod" is-config="true" duration-ms="10" started-at="2016-04-01T12:54:57Z" finished-at="2016-04-01T12:54:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.Mumms.scripts.Home.verifyMedicationsWidget(java.util.Hashtable) throws java.lang.Throwable]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="login(java.lang.String)[pri:0, instance:com.Mumms.scripts.Admin@49c7b90e]" name="login" is-config="true" duration-ms="0" started-at="2016-03-28T11:43:55Z" finished-at="2016-03-28T11:43:55Z">
+        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:com.Mumms.scripts.Home@4e42d390]" name="login" is-config="true" duration-ms="28996" started-at="2016-04-01T12:54:57Z" finished-at="2016-04-01T12:55:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AdminUser]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="SKIP" signature="updateAdjustmentReasons(java.util.Hashtable)[pri:0, instance:com.Mumms.scripts.Admin@49c7b90e]" name="updateAdjustmentReasons" duration-ms="0" started-at="2016-03-28T11:43:55Z" data-provider="getTestDataFor_updateAdjustmentReasons" finished-at="2016-03-28T11:43:55Z">
+        <test-method status="PASS" signature="verifyMedicationsWidget(java.util.Hashtable)[pri:0, instance:com.Mumms.scripts.Home@4e42d390]" name="verifyMedicationsWidget" duration-ms="9300" started-at="2016-04-01T12:55:26Z" data-provider="getTestDataFor_verifyMedicationsWidget" finished-at="2016-04-01T12:55:35Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{RunMode=Y, Code=REPLACED, ShortDesc=Mumms_AR, EditShortDesc=Mumms_AR_Edit, ClaimAdjustmentReason=Claim replaced}]]>
+                <![CDATA[{RunMode=Y}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- updateAdjustmentReasons -->
-        <test-method status="SKIP" signature="logOut()[pri:0, instance:com.Mumms.scripts.Admin@49c7b90e]" name="logOut" is-config="true" duration-ms="0" started-at="2016-03-28T11:43:55Z" finished-at="2016-03-28T11:43:55Z">
+        </test-method> <!-- verifyMedicationsWidget -->
+        <test-method status="PASS" signature="logOut()[pri:0, instance:com.Mumms.scripts.Home@4e42d390]" name="logOut" is-config="true" duration-ms="18146" started-at="2016-04-01T12:55:35Z" finished-at="2016-04-01T12:55:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOut -->
-        <test-method status="FAIL" signature="afterTest(java.lang.String)[pri:0, instance:com.Mumms.scripts.Admin@49c7b90e]" name="afterTest" is-config="true" duration-ms="0" started-at="2016-03-28T11:43:55Z" finished-at="2016-03-28T11:43:55Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Mumms.scripts.Home@4e42d390]" name="afterMethod" is-config="true" duration-ms="18" started-at="2016-04-01T12:55:53Z" finished-at="2016-04-01T12:55:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Mumms.scripts.Home@4e42d390]" name="beforeMethod" is-config="true" duration-ms="14" started-at="2016-04-01T12:55:54Z" finished-at="2016-04-01T12:55:54Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[public void com.Mumms.scripts.Home.verifyPatientsbyPayerType(java.util.Hashtable) throws java.lang.Throwable]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at com.automation.accelerators.TestEngineWeb.afterTest(TestEngineWeb.java:180)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:220)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:773)
-	at org.testng.TestRunner.run(TestRunner.java:623)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:com.Mumms.scripts.Home@4e42d390]" name="login" is-config="true" duration-ms="29003" started-at="2016-04-01T12:55:54Z" finished-at="2016-04-01T12:56:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AdminUser]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="verifyPatientsbyPayerType(java.util.Hashtable)[pri:0, instance:com.Mumms.scripts.Home@4e42d390]" name="verifyPatientsbyPayerType" duration-ms="25330" started-at="2016-04-01T12:56:23Z" data-provider="getTestDataFor_verifyPatientsbyPayerType" finished-at="2016-04-01T12:56:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PatientRace=Other, PatientSex=Male, PatientSuffix=IV, PatientEthnicity=Hispanic, diagnosisEmotionalCondition=9-Very Poor, diagnosisPhysicalCondition=8-Poor, phoneNumber=1234567899, effectiveDate_year=2014, admitDay=05, dob_day=05, PatientcallTakenBy=Smoke Receiver, admitMonth=01, effectiveDate_day=10, PatientNickName=Gallop NickName, PatientreRelationManager=test CRM role, earlier_referralDate_year=2014, PatientReligion=Other, patientGreatestNeed=PGN HB Smoke Test, PatientMiddleInitial=X, diagnosisPatient=Aware, patientLastName=Gallop_LN, PatientreferralSourceType=Facility, PatientCallReceivedFrom=Smoke Caller, diagnosisFamily=Unaware, personPhysicianPhone2=9876543211, personPhysicianPhone1=1234563212, earlier_referralDate_day=01, RunMode=Y, facilityInput=Q5001, maritalStatus=Single, dob_month=05, PatientPhoneNumber=9991237777, PrognosisFamily=Unaware, secondaryLanguage=English, effectiveDate_month=01, PatientTitle=Miss, PatientCauseOfStress=GCS HB Smoke Test, PatientZip2=1234, PatientZip1=45221, patientFirstName=Gallop_Diagnosis, PatientAdressLine2=Smoke, dob_year=1989, PatientAdressLine1=99th Smoke Test, admitYear=2014, PatientIDGTeams=Judy Wilson, PrognosisPatient=Aware, PatientOffice=Mumms, earlier_referralDate_month=01, PatientNotes=Note HB Smoke Test, PatientChurchName=Church1255, ssn=999111222}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPatientsbyPayerType -->
+        <test-method status="PASS" signature="logOut()[pri:0, instance:com.Mumms.scripts.Home@4e42d390]" name="logOut" is-config="true" duration-ms="18148" started-at="2016-04-01T12:56:48Z" finished-at="2016-04-01T12:57:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Mumms.scripts.Home@4e42d390]" name="afterMethod" is-config="true" duration-ms="23" started-at="2016-04-01T12:57:06Z" finished-at="2016-04-01T12:57:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Mumms.scripts.Home@4e42d390]" name="beforeMethod" is-config="true" duration-ms="9" started-at="2016-04-01T12:57:06Z" finished-at="2016-04-01T12:57:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.Mumms.scripts.Home.claimsManagement(java.util.Hashtable) throws java.lang.Throwable]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:com.Mumms.scripts.Home@4e42d390]" name="login" is-config="true" duration-ms="26476" started-at="2016-04-01T12:57:06Z" finished-at="2016-04-01T12:57:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AdminUser]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="claimsManagement(java.util.Hashtable)[pri:0, instance:com.Mumms.scripts.Home@4e42d390]" name="claimsManagement" duration-ms="616867" started-at="2016-04-01T12:57:33Z" data-provider="getTestDataFor_claimsManagement" finished-at="2016-04-01T13:07:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Statusmonth=11, Statusyear=2015, month=08, Status=PAID, LastName=Jimry, ID=502189-065, year=2015, RunMode=Y, Statusday=15, day=10, FirstName=Norman, Payer=Medicaid}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- claimsManagement -->
+        <test-method status="PASS" signature="logOut()[pri:0, instance:com.Mumms.scripts.Home@4e42d390]" name="logOut" is-config="true" duration-ms="18156" started-at="2016-04-01T13:07:49Z" finished-at="2016-04-01T13:08:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Mumms.scripts.Home@4e42d390]" name="afterMethod" is-config="true" duration-ms="16" started-at="2016-04-01T13:08:08Z" finished-at="2016-04-01T13:08:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Mumms.scripts.Home@4e42d390]" name="beforeMethod" is-config="true" duration-ms="17" started-at="2016-04-01T13:08:08Z" finished-at="2016-04-01T13:08:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.Mumms.scripts.Home.claimsManagementNoesTab(java.util.Hashtable) throws java.lang.Throwable]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:com.Mumms.scripts.Home@4e42d390]" name="login" is-config="true" duration-ms="34756" started-at="2016-04-01T13:08:08Z" finished-at="2016-04-01T13:08:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AdminUser]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="claimsManagementNoesTab(java.util.Hashtable)[pri:0, instance:com.Mumms.scripts.Home@4e42d390]" name="claimsManagementNoesTab" duration-ms="309323" started-at="2016-04-01T13:08:42Z" data-provider="getTestDataFor_claimsManagementNoesTab" finished-at="2016-04-01T13:13:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Cphysician=99999999, Status=Incomplete, LastName=Jimry, NoesID=502221-065, Aphysician=99999999, RunMode=Y, FirstName=Georgia, Office=, Insurance=MEDICARE, TOB=81A}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- claimsManagementNoesTab -->
+        <test-method status="PASS" signature="logOut()[pri:0, instance:com.Mumms.scripts.Home@4e42d390]" name="logOut" is-config="true" duration-ms="18174" started-at="2016-04-01T13:13:52Z" finished-at="2016-04-01T13:14:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Mumms.scripts.Home@4e42d390]" name="afterMethod" is-config="true" duration-ms="16" started-at="2016-04-01T13:14:10Z" finished-at="2016-04-01T13:14:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Mumms.scripts.Home@4e42d390]" name="beforeMethod" is-config="true" duration-ms="23" started-at="2016-04-01T13:14:10Z" finished-at="2016-04-01T13:14:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.Mumms.scripts.Home.claimsManagementBillingReport(java.util.Hashtable) throws java.lang.Throwable]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:com.Mumms.scripts.Home@4e42d390]" name="login" is-config="true" duration-ms="26619" started-at="2016-04-01T13:14:10Z" finished-at="2016-04-01T13:14:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AdminUser]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="claimsManagementBillingReport(java.util.Hashtable)[pri:0, instance:com.Mumms.scripts.Home@4e42d390]" name="claimsManagementBillingReport" duration-ms="342040" started-at="2016-04-01T13:14:37Z" data-provider="getTestDataFor_claimsManagementBillingReport" finished-at="2016-04-01T13:20:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{dob_day=05, HPDay=12, patientFirstName=Bills, HistoryYear=2016, allergyNameNew=NewAllergy, earlier_referralDate_month=03, HPYear=2015, PatientZip2=1234, ICDCode=011.14, PatientZip1=45221, AllergyType=Seasonal, ssn=849814984, ClaimsPayer=MEDICARE, admitDay=16, PatientEthnicity=Hispanic, PatientNotes=Note HB Smoke Test, diagnosisPhysicalCondition=8-Poor, earlier_referralDate_year=2016, PatientMiddleInitial=X, AllergyName=Allergy_Name, ssnBasic=999-11-1222, HPMonth=26, effectiveDate_month=03, PatientReligion=Other, AttoneyFirstName=Attoney1255, PatientSuffix=IV, APDay=12, Insurance=Medicare, DMEAdress=Sample, diagnosisPatient=Aware, patientGreatestNeed=PGN HB Smoke Test, diagnosisEmotionalCondition=9-Very Poor, attendingPhysician=Jeff Acker, , DMEFirstName=DME1255, phoneNumber=1234567899, PatientOffice=Mumms, certifyingDay=04, ICD10Code=Z3A12, APMonth=29, secondaryLanguage=English, patientLastName=repo, dob_month=05, PharmacyAdress=USA, effectiveDate_year=2016, HistoryDate=03, PatientPhoneNumber=9991237777, newPhoneNumber=(908) 765-4321, maritalStatus=Single, AttorneyLastName=Sample, PatientAdressLine2=Smoke, PatientRefPhysician=Jeff Acker,, RunMode=Y, PatientAdressLine1=99th Smoke Test, certifyingMonth=04, PatientSex=Male, PatientCallReceivedFrom=Smoke Caller, PatientreferralSourceType=Facility, HistoryMonth=17, PatientreRelationManager=test CRM role, PrognosisFamily=Unaware, PatientIDGTeams=Judy Wilson, diagnosisFamily=Unaware, PolicyNumber=84984984, facilityInput=Q5001, PrognosisPatient=Aware, PatientTitle=Miss, effectiveDate_day=10, dob_year=1989, PatientCauseOfStress=GCS HB Smoke Test, earlier_referralDate_day=01, certifyingYear=2014, personPhysicianPhone2=9876543211, PatientNickName=Gallop NickName, personPhysicianPhone1=1234563212, PharmacyName=Cipla1255, APYear=2015, admitMonth=02, admitYear=2016, PatientChurchName=Church1255, AllergyReaction=Reaction, PatientRace=Other, PatientcallTakenBy=Smoke Receiver, phoneNumberDemo=(123) 456-7899}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- claimsManagementBillingReport -->
+        <test-method status="PASS" signature="logOut()[pri:0, instance:com.Mumms.scripts.Home@4e42d390]" name="logOut" is-config="true" duration-ms="18177" started-at="2016-04-01T13:20:19Z" finished-at="2016-04-01T13:20:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Mumms.scripts.Home@4e42d390]" name="afterMethod" is-config="true" duration-ms="14" started-at="2016-04-01T13:20:37Z" finished-at="2016-04-01T13:20:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Mumms.scripts.Home@4e42d390]" name="beforeMethod" is-config="true" duration-ms="18" started-at="2016-04-01T13:20:37Z" finished-at="2016-04-01T13:20:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.Mumms.scripts.Home.claimsManagementRevenueDetails(java.util.Hashtable) throws java.lang.Throwable]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:com.Mumms.scripts.Home@4e42d390]" name="login" is-config="true" duration-ms="26323" started-at="2016-04-01T13:20:37Z" finished-at="2016-04-01T13:21:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AdminUser]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="claimsManagementRevenueDetails(java.util.Hashtable)[pri:0, instance:com.Mumms.scripts.Home@4e42d390]" name="claimsManagementRevenueDetails" duration-ms="196998" started-at="2016-04-01T13:21:03Z" data-provider="getTestDataFor_claimsManagementRevenueDetails" finished-at="2016-04-01T13:24:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{dob_day=05, HPDay=12, patientFirstName=Bills, HistoryYear=2016, allergyNameNew=NewAllergy, earlier_referralDate_month=03, HPYear=2015, PatientZip2=1234, ICDCode=011.14, PatientZip1=45221, AllergyType=Seasonal, ssn=999111222, ClaimsPayer=MEDICARE, admitDay=16, PatientEthnicity=Hispanic, PatientNotes=Note HB Smoke Test, diagnosisPhysicalCondition=8-Poor, earlier_referralDate_year=2016, PatientMiddleInitial=X, AllergyName=Allergy_Name, ssnBasic=999-11-1222, HPMonth=26, effectiveDate_month=03, PatientReligion=Other, AttoneyFirstName=Attoney1255, PatientSuffix=IV, APDay=12, Insurance=Medicare, DMEAdress=Sample, diagnosisPatient=Aware, patientGreatestNeed=PGN HB Smoke Test, diagnosisEmotionalCondition=9-Very Poor, attendingPhysician=Jeff Acker, , DMEFirstName=DME1255, phoneNumber=1234567899, PatientOffice=Mumms, certifyingDay=04, ICD10Code=Z3A12, APMonth=29, secondaryLanguage=English, patientLastName=repo, dob_month=05, PharmacyAdress=USA, effectiveDate_year=2016, HistoryDate=03, PatientPhoneNumber=9991237777, newPhoneNumber=(908) 765-4321, maritalStatus=Single, AttorneyLastName=Sample, PatientAdressLine2=Smoke, PatientRefPhysician=Jeff Acker,, RunMode=Y, PatientAdressLine1=99th Smoke Test, certifyingMonth=04, PatientSex=Male, PatientCallReceivedFrom=Smoke Caller, PatientreferralSourceType=Facility, HistoryMonth=17, PatientreRelationManager=test CRM role, PrognosisFamily=Unaware, PatientIDGTeams=Judy Wilson, diagnosisFamily=Unaware, PolicyNumber=84984984, facilityInput=Q5001, PrognosisPatient=Aware, PatientTitle=Miss, effectiveDate_day=10, dob_year=1989, PatientCauseOfStress=GCS HB Smoke Test, earlier_referralDate_day=01, certifyingYear=2014, personPhysicianPhone2=9876543211, PatientNickName=Gallop NickName, personPhysicianPhone1=1234563212, PharmacyName=Cipla1255, APYear=2015, admitMonth=02, admitYear=2016, PatientChurchName=Church1255, AllergyReaction=Reaction, PatientRace=Other, PatientcallTakenBy=Smoke Receiver, phoneNumberDemo=(123) 456-7899}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- claimsManagementRevenueDetails -->
+        <test-method status="PASS" signature="logOut()[pri:0, instance:com.Mumms.scripts.Home@4e42d390]" name="logOut" is-config="true" duration-ms="18206" started-at="2016-04-01T13:24:20Z" finished-at="2016-04-01T13:24:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Mumms.scripts.Home@4e42d390]" name="afterMethod" is-config="true" duration-ms="15" started-at="2016-04-01T13:24:38Z" finished-at="2016-04-01T13:24:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Mumms.scripts.Home@4e42d390]" name="beforeMethod" is-config="true" duration-ms="18" started-at="2016-04-01T13:24:38Z" finished-at="2016-04-01T13:24:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.Mumms.scripts.Home.verifyBillingWidget(java.util.Hashtable) throws java.lang.Throwable]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="login(java.lang.String)[pri:0, instance:com.Mumms.scripts.Home@4e42d390]" name="login" is-config="true" duration-ms="36334" started-at="2016-04-01T13:24:38Z" finished-at="2016-04-01T13:25:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AdminUser]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="verifyBillingWidget(java.util.Hashtable)[pri:0, instance:com.Mumms.scripts.Home@4e42d390]" name="verifyBillingWidget" duration-ms="66810" started-at="2016-04-01T13:25:15Z" data-provider="getTestDataFor_verifyBillingWidget" finished-at="2016-04-01T13:26:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{dob_day=05, HPDay=12, patientFirstName=Bills, HistoryYear=2016, allergyNameNew=NewAllergy, earlier_referralDate_month=03, HPYear=2015, PatientZip2=1234, ICDCode=011.14, PatientZip1=45221, AllergyType=Seasonal, ssn=999111222, admitDay=16, PatientEthnicity=Hispanic, PatientNotes=Note HB Smoke Test, diagnosisPhysicalCondition=8-Poor, earlier_referralDate_year=2016, PatientMiddleInitial=X, AllergyName=Allergy_Name, ssnBasic=999-11-1222, HPMonth=26, effectiveDate_month=03, PatientReligion=Other, AttoneyFirstName=Attoney1255, PatientSuffix=IV, APDay=12, Insurance=Medicare, DMEAdress=Sample, diagnosisPatient=Aware, patientGreatestNeed=PGN HB Smoke Test, diagnosisEmotionalCondition=9-Very Poor, attendingPhysician=Jeff Acker, , DMEFirstName=DME1255, phoneNumber=1234567899, PatientOffice=Mumms, certifyingDay=04, ICD10Code=Z3A12, APMonth=29, secondaryLanguage=English, patientLastName=repo, dob_month=05, PharmacyAdress=USA, effectiveDate_year=2016, HistoryDate=03, PatientPhoneNumber=9991237777, newPhoneNumber=(908) 765-4321, maritalStatus=Single, AttorneyLastName=Sample, PatientAdressLine2=Smoke, PatientRefPhysician=Jeff Acker,, RunMode=Y, PatientAdressLine1=99th Smoke Test, certifyingMonth=04, PatientSex=Male, PatientCallReceivedFrom=Smoke Caller, PatientreferralSourceType=Facility, HistoryMonth=17, PatientreRelationManager=test CRM role, PrognosisFamily=Unaware, PatientIDGTeams=Judy Wilson, diagnosisFamily=Unaware, PolicyNumber=84984984, facilityInput=Q5001, PrognosisPatient=Aware, PatientTitle=Miss, effectiveDate_day=10, dob_year=1989, PatientCauseOfStress=GCS HB Smoke Test, earlier_referralDate_day=01, certifyingYear=2014, personPhysicianPhone2=9876543211, PatientNickName=Gallop NickName, personPhysicianPhone1=1234563212, PharmacyName=Cipla1255, APYear=2015, admitMonth=02, admitYear=2016, PatientChurchName=Church1255, AllergyReaction=Reaction, PatientRace=Other, PatientcallTakenBy=Smoke Receiver, phoneNumberDemo=(123) 456-7899}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBillingWidget -->
+        <test-method status="PASS" signature="logOut()[pri:0, instance:com.Mumms.scripts.Home@4e42d390]" name="logOut" is-config="true" duration-ms="18157" started-at="2016-04-01T13:26:22Z" finished-at="2016-04-01T13:26:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Mumms.scripts.Home@4e42d390]" name="afterMethod" is-config="true" duration-ms="18" started-at="2016-04-01T13:26:40Z" finished-at="2016-04-01T13:26:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest(java.lang.String)[pri:0, instance:com.Mumms.scripts.Home@4e42d390]" name="afterTest" is-config="true" duration-ms="1062" started-at="2016-04-01T13:26:40Z" finished-at="2016-04-01T13:26:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:com.Mumms.scripts.Admin@49c7b90e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2016-03-28T11:43:55Z" finished-at="2016-03-28T11:43:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.Mumms.scripts.Admin -->
-      <class name="com.Mumms.scripts.Reports">
-        <test-method status="FAIL" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.Mumms.scripts.Reports@57d7f8ca]" name="beforeTest" is-config="true" duration-ms="0" started-at="2016-03-28T11:43:07Z" finished-at="2016-03-28T11:43:07Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[selenium]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[46.0]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[local]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[windows 7]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
-            <message>
-              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
-Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
-System info: host: 'HW1611', ip: '172.16.13.34', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
-Driver info: driver.version: RemoteWebDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
-Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
-System info: host: 'HW1611', ip: '172.16.13.34', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:158)
-	at com.automation.accelerators.TestEngineWeb.setWebDriverForLocal(TestEngineWeb.java:284)
-	at com.automation.accelerators.TestEngineWeb.beforeTest(TestEngineWeb.java:137)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:170)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:104)
-	at org.testng.TestRunner.privateRun(TestRunner.java:773)
-	at org.testng.TestRunner.run(TestRunner.java:623)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 10.29.8.11:4444 [/10.29.8.11] failed: Connection timed out: connect
-	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:314)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:186)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
-	... 25 more
-Caused by: java.net.ConnectException: Connection timed out: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:589)
-	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
-	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:117)
-	... 38 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="SKIP" signature="verifyCAHPSReport(java.util.Hashtable)[pri:0, instance:com.Mumms.scripts.Reports@57d7f8ca]" name="verifyCAHPSReport" duration-ms="1" started-at="2016-03-28T11:43:32Z" data-provider="getTestDataFor_verifyCAHPSReport" finished-at="2016-03-28T11:43:32Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{RunMode=Y, CAHPSYear=2015, CAHPSMonth=01}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCAHPSReport -->
-        <test-method status="SKIP" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Mumms.scripts.Reports@57d7f8ca]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-03-28T11:43:32Z" finished-at="2016-03-28T11:43:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="login(java.lang.String)[pri:0, instance:com.Mumms.scripts.Reports@57d7f8ca]" name="login" is-config="true" duration-ms="0" started-at="2016-03-28T11:43:32Z" finished-at="2016-03-28T11:43:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="SKIP" signature="logOut()[pri:0, instance:com.Mumms.scripts.Reports@57d7f8ca]" name="logOut" is-config="true" duration-ms="0" started-at="2016-03-28T11:43:32Z" finished-at="2016-03-28T11:43:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOut -->
-        <test-method status="FAIL" signature="afterTest(java.lang.String)[pri:0, instance:com.Mumms.scripts.Reports@57d7f8ca]" name="afterTest" is-config="true" duration-ms="0" started-at="2016-03-28T11:43:32Z" finished-at="2016-03-28T11:43:32Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at com.automation.accelerators.TestEngineWeb.afterTest(TestEngineWeb.java:180)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:220)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:773)
-	at org.testng.TestRunner.run(TestRunner.java:623)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:com.Mumms.scripts.Reports@57d7f8ca]" name="afterMethod" is-config="true" duration-ms="0" started-at="2016-03-28T11:43:32Z" finished-at="2016-03-28T11:43:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.Mumms.scripts.Reports -->
-    </test> <!-- chromeWindowsLocal -->
+      </class> <!-- com.Mumms.scripts.Home -->
+    </test> <!-- firefoxWindowsLocal -->
   </suite> <!-- Mumms Automation test suite -->
 </testng-results>
